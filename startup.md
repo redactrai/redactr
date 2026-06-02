@@ -48,6 +48,10 @@ scanning:
   gliner_enabled: false
 ```
 
+> Detection layers are managed per-rule under `scanning.rules` (most easily from
+> the dashboard **Config** tab). Legacy boolean flags like `gliner_enabled` are
+> still honored — they're auto-migrated to the per-rule form on load.
+
 ## Trust the CA Certificate
 
 The proxy performs MITM TLS interception. Your HTTP client must trust the generated CA certificate.

@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Build · vet · test (macOS)
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          cache: true
+      - name: Build
+        run: go build ./...
+      - name: Vet
+        run: go vet ./...
+      - name: Test
+        run: go test ./...
+
+  cross-compile:
+    name: Cross-compile (Windows + Linux, pure Go)
+    runs-on: ubuntu-latest
+    env:
+      CGO_ENABLED: "0"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          cache: true
+      - name: Windows amd64
+        run: GOOS=windows GOARCH=amd64 go build ./cmd/redactr ./cmd/redactr-mcp-wrap ./cmd/redactr-server
+      - name: Linux amd64
+        run: GOOS=linux GOARCH=amd64 go build ./cmd/redactr ./cmd/redactr-mcp-wrap ./cmd/redactr-server
