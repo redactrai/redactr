@@ -1,0 +1,4158 @@
+[
+  {
+    "text": "The case between the State of California and Mr. John Doe, holding the national ID number 123456789, was heard in the Superior Court on January 5, 2023. The charges included identity theft and fraud, to which Mr. Doe pleaded not guilty.",
+    "language": "English",
+    "domain": "legal",
+    "pii": [
+      {
+        "label": "government entity",
+        "value": "State of California",
+        "start": 21,
+        "end": 40
+      },
+      {
+        "label": "person",
+        "value": "Mr. John Doe",
+        "start": 45,
+        "end": 57
+      },
+      {
+        "label": "national id number",
+        "value": "123456789",
+        "start": 90,
+        "end": 99
+      },
+      {
+        "label": "legal institution",
+        "value": "Superior Court",
+        "start": 118,
+        "end": 132
+      },
+      {
+        "label": "date",
+        "value": "January 5, 2023",
+        "start": 136,
+        "end": 151
+      },
+      {
+        "label": "legal charge",
+        "value": "identity theft",
+        "start": 174,
+        "end": 188
+      },
+      {
+        "label": "legal charge",
+        "value": "fraud",
+        "start": 193,
+        "end": 198
+      }
+    ]
+  },
+  {
+    "text": "Jessica Thompson recently applied for a new credit card at Federal Bank. Her national ID number, 582-65-1234, was used to verify her identity. She also updated her personal information, including her phone number (555-123-4567) and address (123 Main Street, Springfield).",
+    "language": "English",
+    "domain": "banking",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Jessica Thompson",
+        "start": 0,
+        "end": 16
+      },
+      {
+        "label": "organization name",
+        "value": "Federal Bank",
+        "start": 59,
+        "end": 71
+      },
+      {
+        "label": "national id number",
+        "value": "582-65-1234",
+        "start": 97,
+        "end": 108
+      },
+      {
+        "label": "phone number",
+        "value": "555-123-4567",
+        "start": 214,
+        "end": 226
+      },
+      {
+        "label": "address",
+        "value": "123 Main Street, Springfield",
+        "start": 241,
+        "end": 269
+      }
+    ]
+  },
+  {
+    "text": "John Miller opened a new savings account at Horizon Financial. His national ID number is 398-47-6853, which was required during the application process. He provided his contact number (555-789-1234) and residence address (456 Elm Street, Rivertown).",
+    "language": "English",
+    "domain": "banking",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "John Miller",
+        "start": 0,
+        "end": 11
+      },
+      {
+        "label": "organization name",
+        "value": "Horizon Financial",
+        "start": 44,
+        "end": 61
+      },
+      {
+        "label": "national id number",
+        "value": "398-47-6853",
+        "start": 89,
+        "end": 100
+      },
+      {
+        "label": "phone number",
+        "value": "555-789-1234",
+        "start": 185,
+        "end": 197
+      },
+      {
+        "label": "address",
+        "value": "456 Elm Street, Rivertown",
+        "start": 222,
+        "end": 247
+      }
+    ]
+  },
+  {
+    "text": "Maria Johnson applied for a new job at TechNova Solutions. Her Swedish national ID number, 750319-1234, was required during the onboarding process. Maria, who graduated from the University of Gothenburg, is excited to start her role as a software developer.",
+    "language": "English",
+    "domain": "general",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Maria Johnson",
+        "start": 0,
+        "end": 13
+      },
+      {
+        "label": "organization",
+        "value": "TechNova Solutions",
+        "start": 39,
+        "end": 57
+      },
+      {
+        "label": "identifier type",
+        "value": "Swedish national ID number",
+        "start": 63,
+        "end": 89
+      },
+      {
+        "label": "identifier",
+        "value": "750319-1234",
+        "start": 91,
+        "end": 102
+      },
+      {
+        "label": "organization",
+        "value": "University of Gothenburg",
+        "start": 178,
+        "end": 202
+      },
+      {
+        "label": "job title",
+        "value": "software developer",
+        "start": 238,
+        "end": 256
+      }
+    ]
+  },
+  {
+    "text": "Carlos Diaz, whose Mexican national ID number is 850711-5678, recently purchased a house in Guadalajara. Carlos, a graduate of Monterrey Institute of Technology and Higher Education, works as a financial analyst.",
+    "language": "English",
+    "domain": "general",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Carlos Diaz",
+        "start": 0,
+        "end": 11
+      },
+      {
+        "label": "identifier type",
+        "value": "Mexican national ID number",
+        "start": 19,
+        "end": 45
+      },
+      {
+        "label": "identifier",
+        "value": "850711-5678",
+        "start": 49,
+        "end": 60
+      },
+      {
+        "label": "location",
+        "value": "Guadalajara",
+        "start": 92,
+        "end": 103
+      },
+      {
+        "label": "organization",
+        "value": "Monterrey Institute of Technology and Higher Education",
+        "start": 127,
+        "end": 181
+      },
+      {
+        "label": "job title",
+        "value": "financial analyst",
+        "start": 194,
+        "end": 211
+      }
+    ]
+  },
+  {
+    "text": "Dr. Susan Park, a cardiologist at Riverside Health Center, conducted an online consultation on February 18, 2023, using the IP address 192.168.1.10.",
+    "language": "English",
+    "domain": "healthcare",
+    "pii": [
+      {
+        "label": "person",
+        "value": "Dr. Susan Park",
+        "start": 0,
+        "end": 14
+      },
+      {
+        "label": "specialization",
+        "value": "cardiologist",
+        "start": 18,
+        "end": 30
+      },
+      {
+        "label": "hospital",
+        "value": "Riverside Health Center",
+        "start": 34,
+        "end": 57
+      },
+      {
+        "label": "date",
+        "value": "February 18, 2023",
+        "start": 95,
+        "end": 112
+      },
+      {
+        "label": "ip address",
+        "value": "192.168.1.10",
+        "start": 135,
+        "end": 147
+      }
+    ]
+  },
+  {
+    "text": "John Smith, the CFO of Tech Solutions Inc., noticed a suspicious login attempt from IP address 192.168.1.105. The attempted login occurred on September 15, 2023, at 03:45 PM, accessing confidential financial reports.",
+    "language": "English",
+    "domain": "finance",
+    "pii": [
+      {
+        "label": "person",
+        "value": "John Smith",
+        "start": 0,
+        "end": 10
+      },
+      {
+        "label": "job title",
+        "value": "CFO",
+        "start": 16,
+        "end": 19
+      },
+      {
+        "label": "company",
+        "value": "Tech Solutions Inc.",
+        "start": 23,
+        "end": 42
+      },
+      {
+        "label": "ip address",
+        "value": "192.168.1.105",
+        "start": 95,
+        "end": 108
+      },
+      {
+        "label": "date",
+        "value": "September 15, 2023",
+        "start": 142,
+        "end": 160
+      },
+      {
+        "label": "time",
+        "value": "03:45 PM",
+        "start": 165,
+        "end": 173
+      },
+      {
+        "label": "document",
+        "value": "confidential financial reports",
+        "start": 185,
+        "end": 215
+      }
+    ]
+  },
+  {
+    "text": "On September 22, 2023, John Doe reported a data breach involving client information on his server located at IP address 192.168.1.1. The incident has been under investigation by the cybersecurity team, and they have already informed the impacted clients. John Doe, an attorney based in New York, noted that the breach occurred due to an unsecured port.",
+    "language": "English",
+    "domain": "legal",
+    "pii": [
+      {
+        "label": "date",
+        "value": "September 22, 2023",
+        "start": 3,
+        "end": 21
+      },
+      {
+        "label": "person",
+        "value": "John Doe",
+        "start": 23,
+        "end": 31
+      },
+      {
+        "label": "legal issue",
+        "value": "data breach",
+        "start": 43,
+        "end": 54
+      },
+      {
+        "label": "data type",
+        "value": "client information",
+        "start": 65,
+        "end": 83
+      },
+      {
+        "label": "device",
+        "value": "server",
+        "start": 91,
+        "end": 97
+      },
+      {
+        "label": "ip address",
+        "value": "IP address 192.168.1.1",
+        "start": 109,
+        "end": 131
+      },
+      {
+        "label": "organization",
+        "value": "cybersecurity team",
+        "start": 182,
+        "end": 200
+      },
+      {
+        "label": "people group",
+        "value": "clients",
+        "start": 246,
+        "end": 253
+      },
+      {
+        "label": "location",
+        "value": "New York",
+        "start": 286,
+        "end": 294
+      },
+      {
+        "label": "security vulnerability",
+        "value": "unsecured port",
+        "start": 337,
+        "end": 351
+      }
+    ]
+  },
+  {
+    "text": "Alice Johnson, an account holder at First National Bank, accessed her online banking account on 2023-09-15 from the IP address 192.168.0.101. She noticed an unauthorized transaction of $500 transferred to an unknown account with the number 1234567890.",
+    "language": "English",
+    "domain": "banking",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Alice Johnson",
+        "start": 0,
+        "end": 13
+      },
+      {
+        "label": "organization",
+        "value": "First National Bank",
+        "start": 36,
+        "end": 55
+      },
+      {
+        "label": "date",
+        "value": "2023-09-15",
+        "start": 96,
+        "end": 106
+      },
+      {
+        "label": "ip address",
+        "value": "192.168.0.101",
+        "start": 127,
+        "end": 140
+      },
+      {
+        "label": "amount",
+        "value": "$500",
+        "start": 185,
+        "end": 189
+      },
+      {
+        "label": "account number",
+        "value": "1234567890",
+        "start": 240,
+        "end": 250
+      }
+    ]
+  },
+  {
+    "text": "On April 12, 2022, John Doe accessed our server from the IP address 192.168.1.15. He used this IP address multiple times on the same day to upload large files.",
+    "language": "English",
+    "domain": "general",
+    "pii": [
+      {
+        "label": "date",
+        "value": "April 12, 2022",
+        "start": 3,
+        "end": 17
+      },
+      {
+        "label": "person name",
+        "value": "John Doe",
+        "start": 19,
+        "end": 27
+      },
+      {
+        "label": "ip address",
+        "value": "192.168.1.15",
+        "start": 68,
+        "end": 80
+      }
+    ]
+  },
+  {
+    "text": "The security team noted suspicious activities from the IP address 172.16.254.1, which was traced back to an employee named Alice Johnson.",
+    "language": "English",
+    "domain": "general",
+    "pii": [
+      {
+        "label": "ip address",
+        "value": "172.16.254.1",
+        "start": 66,
+        "end": 78
+      },
+      {
+        "label": "person name",
+        "value": "Alice Johnson",
+        "start": 123,
+        "end": 136
+      }
+    ]
+  },
+  {
+    "text": "On July 4, 2023, a significant data breach was detected at 10:32 AM. The intruder, with the IP address 10.0.0.2, downloaded sensitive information.",
+    "language": "English",
+    "domain": "general",
+    "pii": [
+      {
+        "label": "date",
+        "value": "July 4, 2023",
+        "start": 3,
+        "end": 15
+      },
+      {
+        "label": "time",
+        "value": "10:32 AM",
+        "start": 59,
+        "end": 67
+      },
+      {
+        "label": "ip address",
+        "value": "10.0.0.2",
+        "start": 103,
+        "end": 111
+      }
+    ]
+  },
+  {
+    "text": "Michael Roberts received multiple failed login attempts from the IP address 203.0.113.5 on his account on March 3, 2021.",
+    "language": "English",
+    "domain": "general",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Michael Roberts",
+        "start": 0,
+        "end": 15
+      },
+      {
+        "label": "ip address",
+        "value": "203.0.113.5",
+        "start": 76,
+        "end": 87
+      },
+      {
+        "label": "date",
+        "value": "March 3, 2021",
+        "start": 106,
+        "end": 119
+      }
+    ]
+  },
+  {
+    "text": "Dr. Susan Harris, a renowned cardiologist, can be contacted for appointments at susanharris@heartclinic.com. She has been practicing for over 20 years at Heart Clinic, located at 123 Medical Avenue, Suite 400, New York, NY 10001.",
+    "language": "English",
+    "domain": "healthcare",
+    "pii": [
+      {
+        "label": "name",
+        "value": "Dr. Susan Harris",
+        "start": 0,
+        "end": 16
+      },
+      {
+        "label": "specialization",
+        "value": "cardiologist",
+        "start": 29,
+        "end": 41
+      },
+      {
+        "label": "email address",
+        "value": "susanharris@heartclinic.com",
+        "start": 80,
+        "end": 107
+      },
+      {
+        "label": "organization",
+        "value": "Heart Clinic",
+        "start": 154,
+        "end": 166
+      },
+      {
+        "label": "address",
+        "value": "123 Medical Avenue, Suite 400, New York, NY 10001",
+        "start": 179,
+        "end": 228
+      }
+    ]
+  },
+  {
+    "text": "You can reach out to Dr. Emily Roberts at emily.roberts@pediatriccare.com for pediatric consultations. She has been associated with Pediatric Care Center in Los Angeles, California, for the last decade.",
+    "language": "English",
+    "domain": "healthcare",
+    "pii": [
+      {
+        "label": "name",
+        "value": "Dr. Emily Roberts",
+        "start": 21,
+        "end": 38
+      },
+      {
+        "label": "email address",
+        "value": "emily.roberts@pediatriccare.com",
+        "start": 42,
+        "end": 73
+      },
+      {
+        "label": "organization",
+        "value": "Pediatric Care Center",
+        "start": 132,
+        "end": 153
+      },
+      {
+        "label": "location",
+        "value": "Los Angeles, California",
+        "start": 157,
+        "end": 180
+      }
+    ]
+  },
+  {
+    "text": "For any inquiries related to ophthalmology, please email Dr. Alan Green at alan.green@visionhealth.org. Dr. Green works at Vision Health Institute located at 456 Optic Road, Dallas, TX 75201.",
+    "language": "English",
+    "domain": "healthcare",
+    "pii": [
+      {
+        "label": "name",
+        "value": "Dr. Alan Green",
+        "start": 57,
+        "end": 71
+      },
+      {
+        "label": "email address",
+        "value": "alan.green@visionhealth.org",
+        "start": 75,
+        "end": 102
+      },
+      {
+        "label": "organization",
+        "value": "Vision Health Institute",
+        "start": 123,
+        "end": 146
+      },
+      {
+        "label": "address",
+        "value": "456 Optic Road, Dallas, TX 75201",
+        "start": 158,
+        "end": 190
+      }
+    ]
+  },
+  {
+    "text": "Hi John, As we discussed, I have reviewed the financial statements of XYZ Corp for the first quarter of 2023. It appears that their revenue has increased by 12% compared to the previous quarter. However, their operating expenses have also risen by 8%. Please review the attached analysis and let me know your thoughts. You can reach out to me at finance.analyst@financefirm.com if you have any questions. Best, Emily",
+    "language": "English",
+    "domain": "finance",
+    "pii": [
+      {
+        "label": "person",
+        "value": "John",
+        "start": 3,
+        "end": 7
+      },
+      {
+        "label": "organization",
+        "value": "XYZ Corp",
+        "start": 70,
+        "end": 78
+      },
+      {
+        "label": "time period",
+        "value": "first quarter of 2023",
+        "start": 87,
+        "end": 108
+      },
+      {
+        "label": "percentage",
+        "value": "12%",
+        "start": 157,
+        "end": 160
+      },
+      {
+        "label": "time period",
+        "value": "previous quarter",
+        "start": 177,
+        "end": 193
+      },
+      {
+        "label": "percentage",
+        "value": "8%",
+        "start": 248,
+        "end": 250
+      },
+      {
+        "label": "email address",
+        "value": "finance.analyst@financefirm.com",
+        "start": 346,
+        "end": 377
+      },
+      {
+        "label": "person",
+        "value": "Emily",
+        "start": 411,
+        "end": 416
+      }
+    ]
+  },
+  {
+    "text": "Dear Mr. Smith, The recent market analysis shows that investing in tech stocks could yield significant returns over the next five years. Please find the detailed report attached. For any clarifications, you can email me at robert.banks@investmentconsulting.com. Sincerely, Robert Banks",
+    "language": "English",
+    "domain": "finance",
+    "pii": [
+      {
+        "label": "person",
+        "value": "Mr. Smith",
+        "start": 5,
+        "end": 14
+      },
+      {
+        "label": "event",
+        "value": "recent market analysis",
+        "start": 20,
+        "end": 42
+      },
+      {
+        "label": "investment type",
+        "value": "tech stocks",
+        "start": 67,
+        "end": 78
+      },
+      {
+        "label": "time period",
+        "value": "next five years",
+        "start": 120,
+        "end": 135
+      },
+      {
+        "label": "email address",
+        "value": "robert.banks@investmentconsulting.com",
+        "start": 223,
+        "end": 260
+      },
+      {
+        "label": "person",
+        "value": "Robert Banks",
+        "start": 273,
+        "end": 285
+      }
+    ]
+  },
+  {
+    "text": "Jane Doe, a partner at the law firm Robertson & Partners, can be reached at jane.doe@robertsonlaw.com. She specializes in corporate law and has over 15 years of experience. The firm's office is located at 1234 Elm Street, Los Angeles, CA 90001.",
+    "language": "English",
+    "domain": "legal",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Jane Doe",
+        "start": 0,
+        "end": 8
+      },
+      {
+        "label": "job title",
+        "value": "partner",
+        "start": 12,
+        "end": 19
+      },
+      {
+        "label": "organization name",
+        "value": "Robertson & Partners",
+        "start": 36,
+        "end": 56
+      },
+      {
+        "label": "email address",
+        "value": "jane.doe@robertsonlaw.com",
+        "start": 76,
+        "end": 101
+      },
+      {
+        "label": "legal field",
+        "value": "corporate law",
+        "start": 122,
+        "end": 135
+      },
+      {
+        "label": "experience duration",
+        "value": "15 years",
+        "start": 149,
+        "end": 157
+      },
+      {
+        "label": "address",
+        "value": "1234 Elm Street",
+        "start": 205,
+        "end": 220
+      },
+      {
+        "label": "city name",
+        "value": "Los Angeles",
+        "start": 222,
+        "end": 233
+      },
+      {
+        "label": "state abbreviation",
+        "value": "CA",
+        "start": 235,
+        "end": 237
+      },
+      {
+        "label": "postal code",
+        "value": "90001",
+        "start": 238,
+        "end": 243
+      }
+    ]
+  },
+  {
+    "text": "For legal assistance on intellectual property matters, please contact Dr. Thomas Harris at thomas.harris@legalgroup.net. Dr. Harris is a renowned IP lawyer based in New York City, NY, with a track record of successful litigations.",
+    "language": "English",
+    "domain": "legal",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Dr. Thomas Harris",
+        "start": 70,
+        "end": 87
+      },
+      {
+        "label": "legal field",
+        "value": "intellectual property",
+        "start": 24,
+        "end": 45
+      },
+      {
+        "label": "email address",
+        "value": "thomas.harris@legalgroup.net",
+        "start": 91,
+        "end": 119
+      },
+      {
+        "label": "job title",
+        "value": "IP lawyer",
+        "start": 146,
+        "end": 155
+      },
+      {
+        "label": "city name",
+        "value": "New York City",
+        "start": 165,
+        "end": 178
+      },
+      {
+        "label": "state abbreviation",
+        "value": "NY",
+        "start": 180,
+        "end": 182
+      }
+    ]
+  },
+  {
+    "text": "Dear Mr. John Doe, thank you for reaching out to ABC Bank. Our records indicate that you have a current account with us under the account number 123456789. We have sent a detailed statement of your account activities for the past 6 months to your registered email address john.doe@example.com. For further queries, please contact our customer support at support@abcbank.com.",
+    "language": "English",
+    "domain": "banking",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Mr. John Doe",
+        "start": 5,
+        "end": 17
+      },
+      {
+        "label": "organization name",
+        "value": "ABC Bank",
+        "start": 49,
+        "end": 57
+      },
+      {
+        "label": "account number",
+        "value": "123456789",
+        "start": 145,
+        "end": 154
+      },
+      {
+        "label": "email address",
+        "value": "john.doe@example.com",
+        "start": 272,
+        "end": 292
+      },
+      {
+        "label": "email address",
+        "value": "support@abcbank.com",
+        "start": 354,
+        "end": 373
+      }
+    ]
+  },
+  {
+    "text": "Dear Ms. Jane Smith, we are excited to inform you that your loan application has been approved. The loan amount of $50,000 will be deposited into your account number 987654321 with XYZ Bank. For any inquiries, please do not hesitate to contact our financial advisor at jane.smith@xyzbank.com.",
+    "language": "English",
+    "domain": "banking",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Ms. Jane Smith",
+        "start": 5,
+        "end": 19
+      },
+      {
+        "label": "loan amount",
+        "value": "$50,000",
+        "start": 115,
+        "end": 122
+      },
+      {
+        "label": "account number",
+        "value": "987654321",
+        "start": 166,
+        "end": 175
+      },
+      {
+        "label": "organization name",
+        "value": "XYZ Bank",
+        "start": 181,
+        "end": 189
+      },
+      {
+        "label": "email address",
+        "value": "jane.smith@xyzbank.com",
+        "start": 269,
+        "end": 291
+      }
+    ]
+  },
+  {
+    "text": "My name is John Doe and you can reach me at john.doe@example.com for any queries.",
+    "language": "English",
+    "domain": "general",
+    "pii": [
+      {
+        "label": "name",
+        "value": "John Doe",
+        "start": 11,
+        "end": 19
+      },
+      {
+        "label": "email address",
+        "value": "john.doe@example.com",
+        "start": 44,
+        "end": 64
+      }
+    ]
+  },
+  {
+    "text": "If you have any further questions, feel free to send an email to samantha.smith@corporate.com.",
+    "language": "English",
+    "domain": "general",
+    "pii": [
+      {
+        "label": "email address",
+        "value": "samantha.smith@corporate.com",
+        "start": 65,
+        "end": 93
+      }
+    ]
+  },
+  {
+    "text": "For any assistance, contact Jane Doe via her email jane.doe@example.com.",
+    "language": "English",
+    "domain": "general",
+    "pii": [
+      {
+        "label": "name",
+        "value": "Jane Doe",
+        "start": 28,
+        "end": 36
+      },
+      {
+        "label": "email address",
+        "value": "jane.doe@example.com",
+        "start": 51,
+        "end": 71
+      }
+    ]
+  },
+  {
+    "text": "Please forward your resume to michael.brown@hrdept.com.",
+    "language": "English",
+    "domain": "general",
+    "pii": [
+      {
+        "label": "email address",
+        "value": "michael.brown@hrdept.com",
+        "start": 30,
+        "end": 54
+      }
+    ]
+  },
+  {
+    "text": "If you are interested in the job, reach out to Emily Clark at emily.clark@company.org.",
+    "language": "English",
+    "domain": "general",
+    "pii": [
+      {
+        "label": "name",
+        "value": "Emily Clark",
+        "start": 47,
+        "end": 58
+      },
+      {
+        "label": "email address",
+        "value": "emily.clark@company.org",
+        "start": 62,
+        "end": 85
+      }
+    ]
+  },
+  {
+    "text": "You can get in touch with me at charles.king@business.net for more details.",
+    "language": "English",
+    "domain": "general",
+    "pii": [
+      {
+        "label": "email address",
+        "value": "charles.king@business.net",
+        "start": 32,
+        "end": 57
+      }
+    ]
+  },
+  {
+    "text": "For further collaboration, please contact David Lee at david.lee@enterprise.com.",
+    "language": "English",
+    "domain": "general",
+    "pii": [
+      {
+        "label": "name",
+        "value": "David Lee",
+        "start": 42,
+        "end": 51
+      },
+      {
+        "label": "email address",
+        "value": "david.lee@enterprise.com",
+        "start": 55,
+        "end": 79
+      }
+    ]
+  },
+  {
+    "text": "Dr. Samantha Davis conducted a comprehensive medical examination on John Smith on the 15th of September, 2023. Following the consultation, the medical report was securely billed to the IBAN: DE89370400440532013000. For any inquiries, patients can contact the clinic located at 123 Health St, Springfield.",
+    "language": "English",
+    "domain": "healthcare",
+    "pii": [
+      {
+        "label": "person",
+        "value": "Dr. Samantha Davis",
+        "start": 0,
+        "end": 18
+      },
+      {
+        "label": "person",
+        "value": "John Smith",
+        "start": 68,
+        "end": 78
+      },
+      {
+        "label": "date",
+        "value": "15th of September, 2023",
+        "start": 86,
+        "end": 109
+      },
+      {
+        "label": "iban",
+        "value": "IBAN: DE89370400440532013000",
+        "start": 185,
+        "end": 213
+      },
+      {
+        "label": "address",
+        "value": "123 Health St, Springfield",
+        "start": 277,
+        "end": 303
+      }
+    ]
+  },
+  {
+    "text": "Jane Doe has recently opened a new savings account with the International Bank of Trust. Her new IBAN for this account is DE44500105175407324931. Jane was particularly interested in this bank because of their high interest rates and robust customer service.",
+    "language": "English",
+    "domain": "finance",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Jane Doe",
+        "start": 0,
+        "end": 8
+      },
+      {
+        "label": "financial product",
+        "value": "savings account",
+        "start": 35,
+        "end": 50
+      },
+      {
+        "label": "financial institution",
+        "value": "International Bank of Trust",
+        "start": 60,
+        "end": 87
+      },
+      {
+        "label": "iban",
+        "value": "DE44500105175407324931",
+        "start": 122,
+        "end": 144
+      },
+      {
+        "label": "financial feature",
+        "value": "high interest rates",
+        "start": 209,
+        "end": 228
+      },
+      {
+        "label": "service feature",
+        "value": "customer service",
+        "start": 240,
+        "end": 256
+      }
+    ]
+  },
+  {
+    "text": "Michael Johnson transferred \u20ac10,000 to his sister's account using IBAN GB29NWBK60161331926819 through the mobile banking app provided by the National Westminster Bank. The bank's app made the transaction seamless and secure.",
+    "language": "English",
+    "domain": "finance",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Michael Johnson",
+        "start": 0,
+        "end": 15
+      },
+      {
+        "label": "amount",
+        "value": "\u20ac10,000",
+        "start": 28,
+        "end": 35
+      },
+      {
+        "label": "iban",
+        "value": "GB29NWBK60161331926819",
+        "start": 71,
+        "end": 93
+      },
+      {
+        "label": "financial institution",
+        "value": "National Westminster Bank",
+        "start": 141,
+        "end": 166
+      },
+      {
+        "label": "technology",
+        "value": "mobile banking app",
+        "start": 106,
+        "end": 124
+      },
+      {
+        "label": "service feature",
+        "value": "seamless and secure",
+        "start": 204,
+        "end": 223
+      }
+    ]
+  },
+  {
+    "text": "During the court hearing on September 15, 2023, at the New York Supreme Court, the defendant John A. Smith was ordered to transfer the settlement amount of \u20ac10,000 to the plaintiff's IBAN: DE89370400440532013000. The transfer must be completed by the end of this fiscal year.",
+    "language": "English",
+    "domain": "legal",
+    "pii": [
+      {
+        "label": "date",
+        "value": "September 15, 2023",
+        "start": 28,
+        "end": 46
+      },
+      {
+        "label": "organization",
+        "value": "New York Supreme Court",
+        "start": 55,
+        "end": 77
+      },
+      {
+        "label": "person",
+        "value": "John A. Smith",
+        "start": 93,
+        "end": 106
+      },
+      {
+        "label": "money",
+        "value": "\u20ac10,000",
+        "start": 156,
+        "end": 163
+      },
+      {
+        "label": "iban",
+        "value": "DE89370400440532013000",
+        "start": 189,
+        "end": 211
+      },
+      {
+        "label": "date",
+        "value": "end of this fiscal year",
+        "start": 251,
+        "end": 274
+      }
+    ]
+  },
+  {
+    "text": "As per the legal agreement signed on June 12, 2021, between Maria Gonzales and ACME Corporation, the company is obliged to make a payment of \u20ac50,000 to her IBAN: NL91ABNA0417164300. This transaction must occur no later than October 1, 2023.",
+    "language": "English",
+    "domain": "legal",
+    "pii": [
+      {
+        "label": "date",
+        "value": "June 12, 2021",
+        "start": 37,
+        "end": 50
+      },
+      {
+        "label": "person",
+        "value": "Maria Gonzales",
+        "start": 60,
+        "end": 74
+      },
+      {
+        "label": "organization",
+        "value": "ACME Corporation",
+        "start": 79,
+        "end": 95
+      },
+      {
+        "label": "money",
+        "value": "\u20ac50,000",
+        "start": 141,
+        "end": 148
+      },
+      {
+        "label": "iban",
+        "value": "NL91ABNA0417164300",
+        "start": 162,
+        "end": 180
+      },
+      {
+        "label": "date",
+        "value": "October 1, 2023",
+        "start": 224,
+        "end": 239
+      }
+    ]
+  },
+  {
+    "text": "John Doe visited his local bank, Bank of America, to update his contact details. He provided his IBAN, which is GB29NWBK60161331926819, to the teller for his primary account. He also mentioned that his registered address is 1234 Elm Street, Springfield, IL 62701, United States.",
+    "language": "English",
+    "domain": "banking",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "John Doe",
+        "start": 0,
+        "end": 8
+      },
+      {
+        "label": "organization name",
+        "value": "Bank of America",
+        "start": 33,
+        "end": 48
+      },
+      {
+        "label": "iban",
+        "value": "GB29NWBK60161331926819",
+        "start": 112,
+        "end": 134
+      },
+      {
+        "label": "address",
+        "value": "1234 Elm Street, Springfield, IL 62701, United States",
+        "start": 224,
+        "end": 277
+      }
+    ]
+  },
+  {
+    "text": "James Anderson received a payment of $500 from his employer on August 15, 2023. His IBAN is DE89370400440532013000, and he confirmed that the transaction was successful via email.",
+    "language": "English",
+    "domain": "general",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "James Anderson",
+        "start": 0,
+        "end": 14
+      },
+      {
+        "label": "amount",
+        "value": "$500",
+        "start": 37,
+        "end": 41
+      },
+      {
+        "label": "entity type",
+        "value": "employer",
+        "start": 51,
+        "end": 59
+      },
+      {
+        "label": "date",
+        "value": "August 15, 2023",
+        "start": 63,
+        "end": 78
+      },
+      {
+        "label": "iban",
+        "value": "DE89370400440532013000",
+        "start": 92,
+        "end": 114
+      },
+      {
+        "label": "communication method",
+        "value": "email",
+        "start": 173,
+        "end": 178
+      }
+    ]
+  },
+  {
+    "text": "Maria Gomez transferred funds to her friend John Smith on November 22, 2022. The IBAN used for the transaction was FR1420041010050500013M02606. She notified him via a phone call.",
+    "language": "English",
+    "domain": "general",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Maria Gomez",
+        "start": 0,
+        "end": 11
+      },
+      {
+        "label": "person name",
+        "value": "John Smith",
+        "start": 44,
+        "end": 54
+      },
+      {
+        "label": "date",
+        "value": "November 22, 2022",
+        "start": 58,
+        "end": 75
+      },
+      {
+        "label": "iban",
+        "value": "FR1420041010050500013M02606",
+        "start": 115,
+        "end": 142
+      },
+      {
+        "label": "communication method",
+        "value": "phone call",
+        "start": 167,
+        "end": 177
+      }
+    ]
+  },
+  {
+    "text": "On January 10, 2023, Robert Lee purchased a new laptop and paid the amount of \u20ac1200. His IBAN for the transaction is IT60X0542811101000000123456. He received a confirmation message via SMS.",
+    "language": "English",
+    "domain": "general",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Robert Lee",
+        "start": 21,
+        "end": 31
+      },
+      {
+        "label": "date",
+        "value": "January 10, 2023",
+        "start": 3,
+        "end": 19
+      },
+      {
+        "label": "amount",
+        "value": "\u20ac1200",
+        "start": 78,
+        "end": 83
+      },
+      {
+        "label": "iban",
+        "value": "IT60X0542811101000000123456",
+        "start": 117,
+        "end": 144
+      },
+      {
+        "label": "communication method",
+        "value": "SMS",
+        "start": 185,
+        "end": 188
+      }
+    ]
+  },
+  {
+    "text": "Dr. Samantha Reed, a renowned cardiologist, confirmed my appointment for a follow-up check-up on December 15, 2023. I was instructed to make a payment using my credit card ending in 4321, which expires on 04/25. Dr. Reed emphasized the importance of continuing my current medication, Metoprolol, 50 mg daily, and advised me to avoid high sodium foods to manage my blood pressure.",
+    "language": "English",
+    "domain": "healthcare",
+    "pii": [
+      {
+        "label": "person",
+        "value": "Dr. Samantha Reed",
+        "start": 0,
+        "end": 17
+      },
+      {
+        "label": "profession",
+        "value": "cardiologist",
+        "start": 30,
+        "end": 42
+      },
+      {
+        "label": "date",
+        "value": "December 15, 2023",
+        "start": 97,
+        "end": 114
+      },
+      {
+        "label": "payment method",
+        "value": "credit card",
+        "start": 160,
+        "end": 171
+      },
+      {
+        "label": "credit card last four digits",
+        "value": "4321",
+        "start": 182,
+        "end": 186
+      },
+      {
+        "label": "credit card expiration date",
+        "value": "04/25",
+        "start": 205,
+        "end": 210
+      },
+      {
+        "label": "medication",
+        "value": "Metoprolol",
+        "start": 284,
+        "end": 294
+      },
+      {
+        "label": "dosage",
+        "value": "50 mg daily",
+        "start": 296,
+        "end": 307
+      },
+      {
+        "label": "dietary restriction",
+        "value": "high sodium foods",
+        "start": 333,
+        "end": 350
+      }
+    ]
+  },
+  {
+    "text": "Jennifer Smith noticed a suspicious charge on her credit card with the number 4123-4567-8901-2345 and immediately contacted her bank on October 15, 2023. Her credit card expires on 11/24, and she wanted to ensure there would be no fraudulent activity.",
+    "language": "English",
+    "domain": "finance",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Jennifer Smith",
+        "start": 0,
+        "end": 14
+      },
+      {
+        "label": "finance instrument",
+        "value": "credit card",
+        "start": 50,
+        "end": 61
+      },
+      {
+        "label": "credit card number",
+        "value": "4123-4567-8901-2345",
+        "start": 78,
+        "end": 97
+      },
+      {
+        "label": "date",
+        "value": "October 15, 2023",
+        "start": 136,
+        "end": 152
+      },
+      {
+        "label": "credit card expiration date",
+        "value": "11/24",
+        "start": 181,
+        "end": 186
+      }
+    ]
+  },
+  {
+    "text": "Michael Brown recently applied for a new credit card to replace his old one, which expires on 04/23. His current account balance is $5,230.45, and he ensures all his financial transactions are monitored closely.",
+    "language": "English",
+    "domain": "finance",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Michael Brown",
+        "start": 0,
+        "end": 13
+      },
+      {
+        "label": "finance instrument",
+        "value": "credit card",
+        "start": 41,
+        "end": 52
+      },
+      {
+        "label": "credit card expiration date",
+        "value": "04/23",
+        "start": 94,
+        "end": 99
+      },
+      {
+        "label": "financial amount",
+        "value": "$5,230.45",
+        "start": 132,
+        "end": 141
+      },
+      {
+        "label": "financial term",
+        "value": "account balance",
+        "start": 113,
+        "end": 128
+      },
+      {
+        "label": "financial term",
+        "value": "financial transactions",
+        "start": 166,
+        "end": 188
+      }
+    ]
+  },
+  {
+    "text": "Mr. John Doe, a respected attorney at Doe & Associates, had his client\u2019s credit card with the number 4111 1111 1111 1111 and expiration date of 11/24, ready for a transaction as per the retainer agreement signed on September 14, 2022.",
+    "language": "English",
+    "domain": "legal",
+    "pii": [
+      {
+        "label": "person",
+        "value": "Mr. John Doe",
+        "start": 0,
+        "end": 12
+      },
+      {
+        "label": "organization",
+        "value": "Doe & Associates",
+        "start": 38,
+        "end": 54
+      },
+      {
+        "label": "credit card number",
+        "value": "4111 1111 1111 1111",
+        "start": 101,
+        "end": 120
+      },
+      {
+        "label": "credit card expiration date",
+        "value": "11/24",
+        "start": 144,
+        "end": 149
+      },
+      {
+        "label": "date",
+        "value": "September 14, 2022",
+        "start": 215,
+        "end": 233
+      }
+    ]
+  },
+  {
+    "text": "John Doe received his new credit card last week. The card is set to expire on 05/25. He decided to link this card to his online banking account.",
+    "language": "English",
+    "domain": "banking",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "John Doe",
+        "start": 0,
+        "end": 8
+      },
+      {
+        "label": "credit card expiration date",
+        "value": "05/25",
+        "start": 78,
+        "end": 83
+      },
+      {
+        "label": "financial product",
+        "value": "credit card",
+        "start": 26,
+        "end": 37
+      },
+      {
+        "label": "financial product",
+        "value": "online banking account",
+        "start": 121,
+        "end": 143
+      }
+    ]
+  },
+  {
+    "text": "Jessica Smith was happy to finally receive her platinum credit card. She noted that the card will expire on 12/24, so she set a reminder on her phone.",
+    "language": "English",
+    "domain": "banking",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Jessica Smith",
+        "start": 0,
+        "end": 13
+      },
+      {
+        "label": "credit card expiration date",
+        "value": "12/24",
+        "start": 108,
+        "end": 113
+      },
+      {
+        "label": "financial product",
+        "value": "platinum credit card",
+        "start": 47,
+        "end": 67
+      }
+    ]
+  },
+  {
+    "text": "Emily Johnson updated her billing information on her bank's website. Her new card with an expiration date of 08/23 will now be used for automatic payments.",
+    "language": "English",
+    "domain": "banking",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Emily Johnson",
+        "start": 0,
+        "end": 13
+      },
+      {
+        "label": "credit card expiration date",
+        "value": "08/23",
+        "start": 109,
+        "end": 114
+      },
+      {
+        "label": "financial product",
+        "value": "billing information",
+        "start": 26,
+        "end": 45
+      },
+      {
+        "label": "service",
+        "value": "bank's website",
+        "start": 53,
+        "end": 67
+      }
+    ]
+  },
+  {
+    "text": "Michael Brown contacted his bank to inquire about a new credit card after noticing that his current card expires on 03/22.",
+    "language": "English",
+    "domain": "banking",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Michael Brown",
+        "start": 0,
+        "end": 13
+      },
+      {
+        "label": "credit card expiration date",
+        "value": "03/22",
+        "start": 116,
+        "end": 121
+      },
+      {
+        "label": "financial product",
+        "value": "credit card",
+        "start": 56,
+        "end": 67
+      },
+      {
+        "label": "institution",
+        "value": "bank",
+        "start": 28,
+        "end": 32
+      }
+    ]
+  },
+  {
+    "text": "While making an online purchase last night, Sarah Roberts used her Visa credit card. Her card number ends in 1234, and it will expire on 03/24.",
+    "language": "English",
+    "domain": "general",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Sarah Roberts",
+        "start": 44,
+        "end": 57
+      },
+      {
+        "label": "credit card type",
+        "value": "Visa",
+        "start": 67,
+        "end": 71
+      },
+      {
+        "label": "credit card number",
+        "value": "1234",
+        "start": 109,
+        "end": 113
+      },
+      {
+        "label": "credit card expiration date",
+        "value": "03/24",
+        "start": 137,
+        "end": 142
+      }
+    ]
+  },
+  {
+    "text": "Johnathan Brown recently moved to 742 Evergreen Terrace, Springfield. He updated his billing information, adding his Mastercard which expires in 11/25.",
+    "language": "English",
+    "domain": "general",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Johnathan Brown",
+        "start": 0,
+        "end": 15
+      },
+      {
+        "label": "address",
+        "value": "742 Evergreen Terrace",
+        "start": 34,
+        "end": 55
+      },
+      {
+        "label": "city",
+        "value": "Springfield",
+        "start": 57,
+        "end": 68
+      },
+      {
+        "label": "credit card type",
+        "value": "Mastercard",
+        "start": 117,
+        "end": 127
+      },
+      {
+        "label": "credit card expiration date",
+        "value": "11/25",
+        "start": 145,
+        "end": 150
+      }
+    ]
+  },
+  {
+    "text": "Emily Johnson finalized her flight booking to Paris using her American Express card. The card number ends in 5678 and has an expiration date of 09/26.",
+    "language": "English",
+    "domain": "general",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Emily Johnson",
+        "start": 0,
+        "end": 13
+      },
+      {
+        "label": "destination",
+        "value": "Paris",
+        "start": 46,
+        "end": 51
+      },
+      {
+        "label": "credit card type",
+        "value": "American Express",
+        "start": 62,
+        "end": 78
+      },
+      {
+        "label": "credit card number",
+        "value": "5678",
+        "start": 109,
+        "end": 113
+      },
+      {
+        "label": "credit card expiration date",
+        "value": "09/26",
+        "start": 144,
+        "end": 149
+      }
+    ]
+  },
+  {
+    "text": "Hey there, I'm @healthguru123. I've been diagnosed with Type 2 Diabetes last year and have been managing it with the help of Dr. Linda Hayes at the Greenfield Clinic. My recent HbA1c level was 6.8%, which is a significant improvement from the previous 8.4%. I've been following a strict diet and exercise regimen advised by Dr. Hayes, and I also attend bi-weekly support group meetings organized by the clinic.",
+    "language": "English",
+    "domain": "healthcare",
+    "pii": [
+      {
+        "label": "username",
+        "value": "@healthguru123",
+        "start": 15,
+        "end": 29
+      },
+      {
+        "label": "medical condition",
+        "value": "Type 2 Diabetes",
+        "start": 56,
+        "end": 71
+      },
+      {
+        "label": "person",
+        "value": "Dr. Linda Hayes",
+        "start": 125,
+        "end": 140
+      },
+      {
+        "label": "organization",
+        "value": "Greenfield Clinic",
+        "start": 148,
+        "end": 165
+      },
+      {
+        "label": "medical test",
+        "value": "HbA1c",
+        "start": 177,
+        "end": 182
+      },
+      {
+        "label": "test result",
+        "value": "6.8%",
+        "start": 193,
+        "end": 197
+      },
+      {
+        "label": "test result",
+        "value": "8.4%",
+        "start": 252,
+        "end": 256
+      },
+      {
+        "label": "treatment",
+        "value": "diet and exercise regimen",
+        "start": 287,
+        "end": 312
+      },
+      {
+        "label": "treatment",
+        "value": "support group meetings",
+        "start": 363,
+        "end": 385
+      }
+    ]
+  },
+  {
+    "text": "Username finance_guru123 posted a detailed analysis on the economic impact of the Federal Reserve's interest rate hike. They projected that the S&P 500 could experience a 5% drop by Q1 2024 due to these changes.",
+    "language": "English",
+    "domain": "finance",
+    "pii": [
+      {
+        "label": "username",
+        "value": "finance_guru123",
+        "start": 9,
+        "end": 24
+      },
+      {
+        "label": "finance term",
+        "value": "economic impact",
+        "start": 59,
+        "end": 74
+      },
+      {
+        "label": "organization",
+        "value": "Federal Reserve",
+        "start": 82,
+        "end": 97
+      },
+      {
+        "label": "finance term",
+        "value": "interest rate hike",
+        "start": 100,
+        "end": 118
+      },
+      {
+        "label": "financial index",
+        "value": "S&P 500",
+        "start": 144,
+        "end": 151
+      },
+      {
+        "label": "percentage",
+        "value": "5%",
+        "start": 171,
+        "end": 173
+      },
+      {
+        "label": "time period",
+        "value": "Q1 2024",
+        "start": 182,
+        "end": 189
+      }
+    ]
+  },
+  {
+    "text": "User investment_pro1987 commented on the recent quarterly earnings of Tesla, noting that the company's net income rose by 15% in Q3 2023 compared to the previous quarter.",
+    "language": "English",
+    "domain": "finance",
+    "pii": [
+      {
+        "label": "username",
+        "value": "investment_pro1987",
+        "start": 5,
+        "end": 23
+      },
+      {
+        "label": "finance term",
+        "value": "quarterly earnings",
+        "start": 48,
+        "end": 66
+      },
+      {
+        "label": "organization",
+        "value": "Tesla",
+        "start": 70,
+        "end": 75
+      },
+      {
+        "label": "finance term",
+        "value": "net income",
+        "start": 103,
+        "end": 113
+      },
+      {
+        "label": "percentage",
+        "value": "15%",
+        "start": 122,
+        "end": 125
+      },
+      {
+        "label": "time period",
+        "value": "Q3 2023",
+        "start": 129,
+        "end": 136
+      },
+      {
+        "label": "time period",
+        "value": "previous quarter",
+        "start": 153,
+        "end": 169
+      }
+    ]
+  },
+  {
+    "text": "User @LegalEagle07 just filed a new motion in the case of State of New York v. John Doe. The motion was submitted to Judge Emily Carter at the New York County Supreme Court on October 3, 2023. According to the case number 2023NY124578, the hearing is scheduled for December 15, 2023.",
+    "language": "English",
+    "domain": "legal",
+    "pii": [
+      {
+        "label": "username",
+        "value": "@LegalEagle07",
+        "start": 5,
+        "end": 18
+      },
+      {
+        "label": "case name",
+        "value": "State of New York v. John Doe",
+        "start": 58,
+        "end": 87
+      },
+      {
+        "label": "judge name",
+        "value": "Judge Emily Carter",
+        "start": 117,
+        "end": 135
+      },
+      {
+        "label": "court",
+        "value": "New York County Supreme Court",
+        "start": 143,
+        "end": 172
+      },
+      {
+        "label": "date",
+        "value": "October 3, 2023",
+        "start": 176,
+        "end": 191
+      },
+      {
+        "label": "case number",
+        "value": "2023NY124578",
+        "start": 222,
+        "end": 234
+      },
+      {
+        "label": "date",
+        "value": "December 15, 2023",
+        "start": 265,
+        "end": 282
+      }
+    ]
+  },
+  {
+    "text": "Username @LawExpert42 has been appointed as the lead attorney in the matter of United States v. Michael Smith. The case will be heard by Judge Robert Brown in the District Court for the Northern District of California on November 28, 2023, under case number 2023NDCA098765.",
+    "language": "English",
+    "domain": "legal",
+    "pii": [
+      {
+        "label": "username",
+        "value": "@LawExpert42",
+        "start": 9,
+        "end": 21
+      },
+      {
+        "label": "case name",
+        "value": "United States v. Michael Smith",
+        "start": 79,
+        "end": 109
+      },
+      {
+        "label": "judge name",
+        "value": "Judge Robert Brown",
+        "start": 137,
+        "end": 155
+      },
+      {
+        "label": "court",
+        "value": "District Court for the Northern District of California",
+        "start": 163,
+        "end": 217
+      },
+      {
+        "label": "date",
+        "value": "November 28, 2023",
+        "start": 221,
+        "end": 238
+      },
+      {
+        "label": "case number",
+        "value": "2023NDCA098765",
+        "start": 258,
+        "end": 272
+      }
+    ]
+  },
+  {
+    "text": "User @finance_guru updated their bank account information. The new account number 1234567890 is now linked with their Chase Bank account. If there are any issues, please contact them at john.doe@example.com or their mobile number +1-555-123-4567.",
+    "language": "English",
+    "domain": "banking",
+    "pii": [
+      {
+        "label": "username",
+        "value": "@finance_guru",
+        "start": 5,
+        "end": 18
+      },
+      {
+        "label": "banking term",
+        "value": "bank account information",
+        "start": 33,
+        "end": 57
+      },
+      {
+        "label": "account information",
+        "value": "account number 1234567890",
+        "start": 67,
+        "end": 92
+      },
+      {
+        "label": "account number",
+        "value": "1234567890",
+        "start": 82,
+        "end": 92
+      },
+      {
+        "label": "bank name",
+        "value": "Chase Bank",
+        "start": 118,
+        "end": 128
+      },
+      {
+        "label": "email address",
+        "value": "john.doe@example.com",
+        "start": 186,
+        "end": 206
+      },
+      {
+        "label": "phone number",
+        "value": "+1-555-123-4567",
+        "start": 230,
+        "end": 245
+      }
+    ]
+  },
+  {
+    "text": "User @alex_johnson83 shared an amazing story about visiting the Grand Canyon on August 15, 2021. He mentioned how breathtaking the view was and that it was a memorable trip he took during the summer holidays. Alex is an avid traveler and photographer, and his Instagram account is filled with stunning images from his adventures.",
+    "language": "English",
+    "domain": "general",
+    "pii": [
+      {
+        "label": "username",
+        "value": "@alex_johnson83",
+        "start": 5,
+        "end": 20
+      },
+      {
+        "label": "username",
+        "value": "alex_johnson83",
+        "start": 6,
+        "end": 20
+      },
+      {
+        "label": "location",
+        "value": "the Grand Canyon",
+        "start": 60,
+        "end": 76
+      },
+      {
+        "label": "date",
+        "value": "August 15, 2021",
+        "start": 80,
+        "end": 95
+      },
+      {
+        "label": "time period",
+        "value": "summer holidays",
+        "start": 192,
+        "end": 207
+      },
+      {
+        "label": "personal name",
+        "value": "Alex",
+        "start": 209,
+        "end": 213
+      },
+      {
+        "label": "hobby",
+        "value": "traveler",
+        "start": 225,
+        "end": 233
+      },
+      {
+        "label": "profession",
+        "value": "photographer",
+        "start": 238,
+        "end": 250
+      },
+      {
+        "label": "social media",
+        "value": "Instagram account",
+        "start": 260,
+        "end": 277
+      }
+    ]
+  },
+  {
+    "text": "Recently, @emily.green20 announced on Twitter that she got accepted into Harvard University for a Master's in Computer Science. Emily, originally from San Francisco, has always been passionate about technology and programming.",
+    "language": "English",
+    "domain": "general",
+    "pii": [
+      {
+        "label": "username",
+        "value": "@emily.green20",
+        "start": 10,
+        "end": 24
+      },
+      {
+        "label": "username",
+        "value": "emily.green20",
+        "start": 11,
+        "end": 24
+      },
+      {
+        "label": "social media",
+        "value": "Twitter",
+        "start": 38,
+        "end": 45
+      },
+      {
+        "label": "educational institution",
+        "value": "Harvard University",
+        "start": 73,
+        "end": 91
+      },
+      {
+        "label": "academic program",
+        "value": "Master's in Computer Science",
+        "start": 98,
+        "end": 126
+      },
+      {
+        "label": "personal name",
+        "value": "Emily",
+        "start": 128,
+        "end": 133
+      },
+      {
+        "label": "location",
+        "value": "San Francisco",
+        "start": 151,
+        "end": 164
+      },
+      {
+        "label": "interest",
+        "value": "technology",
+        "start": 199,
+        "end": 209
+      },
+      {
+        "label": "interest",
+        "value": "programming",
+        "start": 214,
+        "end": 225
+      }
+    ]
+  },
+  {
+    "text": "John Smith visited his primary care physician, Dr. Emily Carter, at Green Valley Medical Center on October 10, 2023. His health insurance number is 123456789, provided by Blue Cross Blue Shield. During the visit, John was diagnosed with hypertension and prescribed Lisinopril.",
+    "language": "English",
+    "domain": "healthcare",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "John Smith",
+        "start": 0,
+        "end": 10
+      },
+      {
+        "label": "profession",
+        "value": "primary care physician",
+        "start": 23,
+        "end": 45
+      },
+      {
+        "label": "person name",
+        "value": "Dr. Emily Carter",
+        "start": 47,
+        "end": 63
+      },
+      {
+        "label": "healthcare facility",
+        "value": "Green Valley Medical Center",
+        "start": 68,
+        "end": 95
+      },
+      {
+        "label": "date",
+        "value": "October 10, 2023",
+        "start": 99,
+        "end": 115
+      },
+      {
+        "label": "health insurance number",
+        "value": "123456789",
+        "start": 148,
+        "end": 157
+      },
+      {
+        "label": "insurance provider",
+        "value": "Blue Cross Blue Shield",
+        "start": 171,
+        "end": 193
+      },
+      {
+        "label": "medical condition",
+        "value": "hypertension",
+        "start": 237,
+        "end": 249
+      },
+      {
+        "label": "medication",
+        "value": "Lisinopril",
+        "start": 265,
+        "end": 275
+      }
+    ]
+  },
+  {
+    "text": "Maria Garcia attended her appointment at St. Luke's Hospital on September 15, 2023. Her health insurance number is 987654321, and her policy is under UnitedHealthcare. Maria was treated for acute bronchitis and was given a prescription for Amoxicillin.",
+    "language": "English",
+    "domain": "healthcare",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Maria Garcia",
+        "start": 0,
+        "end": 12
+      },
+      {
+        "label": "healthcare facility",
+        "value": "St. Luke's Hospital",
+        "start": 41,
+        "end": 60
+      },
+      {
+        "label": "date",
+        "value": "September 15, 2023",
+        "start": 64,
+        "end": 82
+      },
+      {
+        "label": "health insurance number",
+        "value": "987654321",
+        "start": 115,
+        "end": 124
+      },
+      {
+        "label": "insurance provider",
+        "value": "UnitedHealthcare",
+        "start": 150,
+        "end": 166
+      },
+      {
+        "label": "medical condition",
+        "value": "acute bronchitis",
+        "start": 190,
+        "end": 206
+      },
+      {
+        "label": "medication",
+        "value": "Amoxicillin",
+        "start": 240,
+        "end": 251
+      }
+    ]
+  },
+  {
+    "text": "Sarah Mitchell, a financial analyst at GreenTree Investments, recently updated her health insurance plan with number H123456789. She oversees the company's portfolio management and provides insights on market trends.",
+    "language": "English",
+    "domain": "finance",
+    "pii": [
+      {
+        "label": "person",
+        "value": "Sarah Mitchell",
+        "start": 0,
+        "end": 14
+      },
+      {
+        "label": "job title",
+        "value": "financial analyst",
+        "start": 18,
+        "end": 35
+      },
+      {
+        "label": "organization",
+        "value": "GreenTree Investments",
+        "start": 39,
+        "end": 60
+      },
+      {
+        "label": "health insurance number",
+        "value": "H123456789",
+        "start": 117,
+        "end": 127
+      },
+      {
+        "label": "finance term",
+        "value": "portfolio management",
+        "start": 156,
+        "end": 176
+      },
+      {
+        "label": "finance term",
+        "value": "market trends",
+        "start": 202,
+        "end": 215
+      }
+    ]
+  },
+  {
+    "text": "John Davis, CFO of TechFusion Ltd, has a health insurance number B987654321. He plays a critical role in the company's financial strategy and risk management.",
+    "language": "English",
+    "domain": "finance",
+    "pii": [
+      {
+        "label": "person",
+        "value": "John Davis",
+        "start": 0,
+        "end": 10
+      },
+      {
+        "label": "job title",
+        "value": "CFO",
+        "start": 12,
+        "end": 15
+      },
+      {
+        "label": "organization",
+        "value": "TechFusion Ltd",
+        "start": 19,
+        "end": 33
+      },
+      {
+        "label": "health insurance number",
+        "value": "B987654321",
+        "start": 65,
+        "end": 75
+      },
+      {
+        "label": "finance term",
+        "value": "financial strategy",
+        "start": 119,
+        "end": 137
+      },
+      {
+        "label": "finance term",
+        "value": "risk management",
+        "start": 142,
+        "end": 157
+      }
+    ]
+  },
+  {
+    "text": "Emily Roberts, a senior accountant at Future Horizons Inc., updated her health insurance information to include the number C135792468. Her responsibilities include financial reporting and auditing.",
+    "language": "English",
+    "domain": "finance",
+    "pii": [
+      {
+        "label": "person",
+        "value": "Emily Roberts",
+        "start": 0,
+        "end": 13
+      },
+      {
+        "label": "job title",
+        "value": "senior accountant",
+        "start": 17,
+        "end": 34
+      },
+      {
+        "label": "organization",
+        "value": "Future Horizons Inc.",
+        "start": 38,
+        "end": 58
+      },
+      {
+        "label": "health insurance number",
+        "value": "C135792468",
+        "start": 123,
+        "end": 133
+      },
+      {
+        "label": "finance term",
+        "value": "financial reporting",
+        "start": 164,
+        "end": 183
+      },
+      {
+        "label": "finance term",
+        "value": "auditing",
+        "start": 188,
+        "end": 196
+      }
+    ]
+  },
+  {
+    "text": "During the court proceedings, it was revealed that Johnathan S. Abrams, holding the health insurance number 987654321ABC, was entitled to medical compensation from the accident. As outlined in the insurance policy, any disputes should be resolved in the jurisdiction where Mr. Abrams resides.",
+    "language": "English",
+    "domain": "legal",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Johnathan S. Abrams",
+        "start": 51,
+        "end": 70
+      },
+      {
+        "label": "health insurance number",
+        "value": "987654321ABC",
+        "start": 108,
+        "end": 120
+      },
+      {
+        "label": "insurance policy detail",
+        "value": "987654321ABC",
+        "start": 108,
+        "end": 120
+      },
+      {
+        "label": "legal term",
+        "value": "medical compensation",
+        "start": 138,
+        "end": 158
+      },
+      {
+        "label": "legal term",
+        "value": "accident",
+        "start": 168,
+        "end": 176
+      },
+      {
+        "label": "legal document",
+        "value": "insurance policy",
+        "start": 197,
+        "end": 213
+      },
+      {
+        "label": "legal term",
+        "value": "jurisdiction",
+        "start": 254,
+        "end": 266
+      },
+      {
+        "label": "person name",
+        "value": "Mr. Abrams",
+        "start": 273,
+        "end": 283
+      }
+    ]
+  },
+  {
+    "text": "According to the affidavit submitted by Emily T. Johnson, her health insurance number 123-45-6789XYZ was crucial in proving the legitimacy of her claims. The legal counsel emphasized the importance of this number in the settlement negotiations.",
+    "language": "English",
+    "domain": "legal",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Emily T. Johnson",
+        "start": 40,
+        "end": 56
+      },
+      {
+        "label": "health insurance number",
+        "value": "123-45-6789XYZ",
+        "start": 86,
+        "end": 100
+      },
+      {
+        "label": "insurance policy detail",
+        "value": "123-45-6789XYZ",
+        "start": 86,
+        "end": 100
+      },
+      {
+        "label": "legal document",
+        "value": "affidavit",
+        "start": 17,
+        "end": 26
+      },
+      {
+        "label": "legal term",
+        "value": "legitimacy",
+        "start": 128,
+        "end": 138
+      },
+      {
+        "label": "legal term",
+        "value": "claims",
+        "start": 146,
+        "end": 152
+      },
+      {
+        "label": "legal profession",
+        "value": "legal counsel",
+        "start": 158,
+        "end": 171
+      },
+      {
+        "label": "legal term",
+        "value": "settlement negotiations",
+        "start": 220,
+        "end": 243
+      }
+    ]
+  },
+  {
+    "text": "John Doe visited the First National Bank to update his account information. During the process, he had to provide his health insurance number, which is H123456789, to verify his identity.",
+    "language": "English",
+    "domain": "banking",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "John Doe",
+        "start": 0,
+        "end": 8
+      },
+      {
+        "label": "organization name",
+        "value": "First National Bank",
+        "start": 21,
+        "end": 40
+      },
+      {
+        "label": "health insurance number",
+        "value": "H123456789",
+        "start": 152,
+        "end": 162
+      },
+      {
+        "label": "account information",
+        "value": "account information",
+        "start": 55,
+        "end": 74
+      },
+      {
+        "label": "verification type",
+        "value": "identity",
+        "start": 178,
+        "end": 186
+      }
+    ]
+  },
+  {
+    "text": "Maria Lopez contacted her bank, Summit Savings, to inquire about a transaction. She was asked to provide her health insurance number, A987654321, for additional verification.",
+    "language": "English",
+    "domain": "banking",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Maria Lopez",
+        "start": 0,
+        "end": 11
+      },
+      {
+        "label": "organization name",
+        "value": "Summit Savings",
+        "start": 32,
+        "end": 46
+      },
+      {
+        "label": "health insurance number",
+        "value": "A987654321",
+        "start": 134,
+        "end": 144
+      },
+      {
+        "label": "transaction",
+        "value": "transaction",
+        "start": 67,
+        "end": 78
+      },
+      {
+        "label": "verification type",
+        "value": "additional verification",
+        "start": 150,
+        "end": 173
+      }
+    ]
+  },
+  {
+    "text": "At Continental Credit Union, George Smith needed to update his beneficiary details. To ensure security, the bank required his health insurance number, S456789123, as part of the verification process.",
+    "language": "English",
+    "domain": "banking",
+    "pii": [
+      {
+        "label": "organization name",
+        "value": "Continental Credit Union",
+        "start": 3,
+        "end": 27
+      },
+      {
+        "label": "person name",
+        "value": "George Smith",
+        "start": 29,
+        "end": 41
+      },
+      {
+        "label": "account information",
+        "value": "beneficiary details",
+        "start": 63,
+        "end": 82
+      },
+      {
+        "label": "health insurance number",
+        "value": "S456789123",
+        "start": 151,
+        "end": 161
+      },
+      {
+        "label": "verification type",
+        "value": "verification process",
+        "start": 178,
+        "end": 198
+      }
+    ]
+  },
+  {
+    "text": "John Doe visited the primary care clinic for a routine check-up. His health insurance number is 123456789. During the visit, Dr. Emily Harper noted his vitals were stable and prescribed a follow-up appointment in three months.",
+    "language": "English",
+    "domain": "general",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "John Doe",
+        "start": 0,
+        "end": 8
+      },
+      {
+        "label": "location",
+        "value": "primary care clinic",
+        "start": 21,
+        "end": 40
+      },
+      {
+        "label": "health insurance number",
+        "value": "123456789",
+        "start": 96,
+        "end": 105
+      },
+      {
+        "label": "person name",
+        "value": "Dr. Emily Harper",
+        "start": 125,
+        "end": 141
+      }
+    ]
+  },
+  {
+    "text": "Emma Wilson recently enrolled in a new health insurance plan. Her health insurance number is 987654321. She plans to visit Dr. Jacob Reed for a consultation next week.",
+    "language": "English",
+    "domain": "general",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Emma Wilson",
+        "start": 0,
+        "end": 11
+      },
+      {
+        "label": "health insurance number",
+        "value": "987654321",
+        "start": 93,
+        "end": 102
+      },
+      {
+        "label": "person name",
+        "value": "Dr. Jacob Reed",
+        "start": 123,
+        "end": 137
+      }
+    ]
+  },
+  {
+    "text": "Michael Smith's health insurance number, 555666777, was required when he attended the annual health check-up at the downtown medical center. Dr. Laura Palmer performed the necessary tests and provided him with a detailed report.",
+    "language": "English",
+    "domain": "general",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Michael Smith",
+        "start": 0,
+        "end": 13
+      },
+      {
+        "label": "health insurance number",
+        "value": "555666777",
+        "start": 41,
+        "end": 50
+      },
+      {
+        "label": "location",
+        "value": "downtown medical center",
+        "start": 116,
+        "end": 139
+      },
+      {
+        "label": "person name",
+        "value": "Dr. Laura Palmer",
+        "start": 141,
+        "end": 157
+      }
+    ]
+  },
+  {
+    "text": "Mr. John Doe, with registration number HCR-783921, was admitted to Lincoln Hospital on April 12, 2023, for a routine checkup. His attending physician, Dr. Emily Carter, noted that he has a family history of diabetes.",
+    "language": "English",
+    "domain": "healthcare",
+    "pii": [
+      {
+        "label": "person",
+        "value": "Mr. John Doe",
+        "start": 0,
+        "end": 12
+      },
+      {
+        "label": "registration number",
+        "value": "HCR-783921",
+        "start": 39,
+        "end": 49
+      },
+      {
+        "label": "organization",
+        "value": "Lincoln Hospital",
+        "start": 67,
+        "end": 83
+      },
+      {
+        "label": "date",
+        "value": "April 12, 2023",
+        "start": 87,
+        "end": 101
+      },
+      {
+        "label": "person",
+        "value": "Dr. Emily Carter",
+        "start": 151,
+        "end": 167
+      },
+      {
+        "label": "medical condition",
+        "value": "diabetes",
+        "start": 207,
+        "end": 215
+      }
+    ]
+  },
+  {
+    "text": "John Doe registered for a new account at CapitalOne Bank with the registration number 123456789. His financial advisor, Emily Watson, suggested this bank for its excellent customer service. John's account, which is a Platinum Savings Account, comes with an annual interest rate of 2.5%.",
+    "language": "English",
+    "domain": "finance",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "John Doe",
+        "start": 0,
+        "end": 8
+      },
+      {
+        "label": "organization name",
+        "value": "CapitalOne Bank",
+        "start": 41,
+        "end": 56
+      },
+      {
+        "label": "registration number",
+        "value": "123456789",
+        "start": 86,
+        "end": 95
+      },
+      {
+        "label": "person name",
+        "value": "Emily Watson",
+        "start": 120,
+        "end": 132
+      },
+      {
+        "label": "account type",
+        "value": "Platinum Savings Account",
+        "start": 217,
+        "end": 241
+      },
+      {
+        "label": "interest rate",
+        "value": "2.5%",
+        "start": 281,
+        "end": 285
+      }
+    ]
+  },
+  {
+    "text": "Jane Doe, having registration number REG-2023-45789, filed a civil lawsuit against ABC Corporation on March 15, 2023. The case, filed in the Superior Court of California, involves a breach of contract claim, wherein Jane Doe alleges that ABC Corporation failed to deliver the agreed services as per their contract dated January 10, 2022.",
+    "language": "English",
+    "domain": "legal",
+    "pii": [
+      {
+        "label": "person",
+        "value": "Jane Doe",
+        "start": 0,
+        "end": 8
+      },
+      {
+        "label": "registration number",
+        "value": "REG-2023-45789",
+        "start": 37,
+        "end": 51
+      },
+      {
+        "label": "organization",
+        "value": "ABC Corporation",
+        "start": 83,
+        "end": 98
+      },
+      {
+        "label": "date",
+        "value": "March 15, 2023",
+        "start": 102,
+        "end": 116
+      },
+      {
+        "label": "organization",
+        "value": "Superior Court of California",
+        "start": 141,
+        "end": 169
+      },
+      {
+        "label": "legal issue",
+        "value": "breach of contract",
+        "start": 182,
+        "end": 200
+      },
+      {
+        "label": "date",
+        "value": "January 10, 2022",
+        "start": 320,
+        "end": 336
+      }
+    ]
+  },
+  {
+    "text": "On April 1, 2023, Michael Smith, with registration number REG-2023-10234, submitted a patent application for an innovative AI algorithm named 'SmartAI'. The application was submitted to the United States Patent and Trademark Office (USPTO), and it seeks to protect the intellectual property rights of the AI technology developed by SmithTech Innovations.",
+    "language": "English",
+    "domain": "legal",
+    "pii": [
+      {
+        "label": "date",
+        "value": "April 1, 2023",
+        "start": 3,
+        "end": 16
+      },
+      {
+        "label": "person",
+        "value": "Michael Smith",
+        "start": 18,
+        "end": 31
+      },
+      {
+        "label": "registration number",
+        "value": "REG-2023-10234",
+        "start": 58,
+        "end": 72
+      },
+      {
+        "label": "invention",
+        "value": "SmartAI",
+        "start": 143,
+        "end": 150
+      },
+      {
+        "label": "organization",
+        "value": "United States Patent and Trademark Office",
+        "start": 190,
+        "end": 231
+      },
+      {
+        "label": "organization",
+        "value": "SmithTech Innovations",
+        "start": 332,
+        "end": 353
+      }
+    ]
+  },
+  {
+    "text": "John Doe, holding registration number REG-98765432, opened a new savings account with Bank of America on 15th September 2022.",
+    "language": "English",
+    "domain": "banking",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "John Doe",
+        "start": 0,
+        "end": 8
+      },
+      {
+        "label": "registration number",
+        "value": "REG-98765432",
+        "start": 38,
+        "end": 50
+      },
+      {
+        "label": "account type",
+        "value": "savings account",
+        "start": 65,
+        "end": 80
+      },
+      {
+        "label": "organization name",
+        "value": "Bank of America",
+        "start": 86,
+        "end": 101
+      },
+      {
+        "label": "date",
+        "value": "15th September 2022",
+        "start": 105,
+        "end": 124
+      }
+    ]
+  },
+  {
+    "text": "Ms. Anna Smith with registration number REG-12345678 has successfully completed the loan application process at Chase Bank.",
+    "language": "English",
+    "domain": "banking",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Ms. Anna Smith",
+        "start": 0,
+        "end": 14
+      },
+      {
+        "label": "registration number",
+        "value": "REG-12345678",
+        "start": 40,
+        "end": 52
+      },
+      {
+        "label": "application type",
+        "value": "loan application",
+        "start": 84,
+        "end": 100
+      },
+      {
+        "label": "organization name",
+        "value": "Chase Bank",
+        "start": 112,
+        "end": 122
+      }
+    ]
+  },
+  {
+    "text": "Michael Brown, identified by registration number REG-87654321, transferred $10,000 to his investment account at Wells Fargo on 1st October 2022.",
+    "language": "English",
+    "domain": "banking",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Michael Brown",
+        "start": 0,
+        "end": 13
+      },
+      {
+        "label": "registration number",
+        "value": "REG-87654321",
+        "start": 49,
+        "end": 61
+      },
+      {
+        "label": "amount",
+        "value": "$10,000",
+        "start": 75,
+        "end": 82
+      },
+      {
+        "label": "account type",
+        "value": "investment account",
+        "start": 90,
+        "end": 108
+      },
+      {
+        "label": "organization name",
+        "value": "Wells Fargo",
+        "start": 112,
+        "end": 123
+      },
+      {
+        "label": "date",
+        "value": "1st October 2022",
+        "start": 127,
+        "end": 143
+      }
+    ]
+  },
+  {
+    "text": "Jane Doe registered for the summer workshop at the community center. Her registration number is RG123456. She completed the online form on March 15, 2023, and chose the advanced painting class.",
+    "language": "English",
+    "domain": "general",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Jane Doe",
+        "start": 0,
+        "end": 8
+      },
+      {
+        "label": "event name",
+        "value": "summer workshop",
+        "start": 28,
+        "end": 43
+      },
+      {
+        "label": "location",
+        "value": "community center",
+        "start": 51,
+        "end": 67
+      },
+      {
+        "label": "registration number",
+        "value": "RG123456",
+        "start": 96,
+        "end": 104
+      },
+      {
+        "label": "date",
+        "value": "March 15, 2023",
+        "start": 139,
+        "end": 153
+      },
+      {
+        "label": "class name",
+        "value": "advanced painting class",
+        "start": 169,
+        "end": 192
+      }
+    ]
+  },
+  {
+    "text": "Michael Smith has been assigned registration number ST789123 for the upcoming robotics competition. The event will take place at Greenfield High School on May 20, 2023.",
+    "language": "English",
+    "domain": "general",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Michael Smith",
+        "start": 0,
+        "end": 13
+      },
+      {
+        "label": "registration number",
+        "value": "ST789123",
+        "start": 52,
+        "end": 60
+      },
+      {
+        "label": "event name",
+        "value": "robotics competition",
+        "start": 78,
+        "end": 98
+      },
+      {
+        "label": "location",
+        "value": "Greenfield High School",
+        "start": 129,
+        "end": 151
+      },
+      {
+        "label": "date",
+        "value": "May 20, 2023",
+        "start": 155,
+        "end": 167
+      }
+    ]
+  },
+  {
+    "text": "Dr. Emily White, with registration number MD546789, will be presenting at the international medical conference in New York City on September 10, 2023. Her topic of presentation is 'Advancements in Neurosurgery'.",
+    "language": "English",
+    "domain": "general",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Dr. Emily White",
+        "start": 0,
+        "end": 15
+      },
+      {
+        "label": "registration number",
+        "value": "MD546789",
+        "start": 42,
+        "end": 50
+      },
+      {
+        "label": "event name",
+        "value": "international medical conference",
+        "start": 78,
+        "end": 110
+      },
+      {
+        "label": "location",
+        "value": "New York City",
+        "start": 114,
+        "end": 127
+      },
+      {
+        "label": "date",
+        "value": "September 10, 2023",
+        "start": 131,
+        "end": 149
+      },
+      {
+        "label": "presentation topic",
+        "value": "'Advancements in Neurosurgery'",
+        "start": 180,
+        "end": 210
+      }
+    ]
+  },
+  {
+    "text": "Hello, my name is Jessica Martin and I am a second-year medical student at Stanford University. My student ID number is 456321098. I have recently completed my rotation in pediatrics at Stanford Children's Hospital.",
+    "language": "English",
+    "domain": "healthcare",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Jessica Martin",
+        "start": 18,
+        "end": 32
+      },
+      {
+        "label": "education level",
+        "value": "second-year",
+        "start": 44,
+        "end": 55
+      },
+      {
+        "label": "occupation",
+        "value": "medical student",
+        "start": 56,
+        "end": 71
+      },
+      {
+        "label": "university",
+        "value": "Stanford University",
+        "start": 75,
+        "end": 94
+      },
+      {
+        "label": "student id number",
+        "value": "456321098",
+        "start": 120,
+        "end": 129
+      },
+      {
+        "label": "academic activity",
+        "value": "rotation",
+        "start": 160,
+        "end": 168
+      },
+      {
+        "label": "medical field",
+        "value": "pediatrics",
+        "start": 172,
+        "end": 182
+      },
+      {
+        "label": "hospital",
+        "value": "Stanford Children's Hospital",
+        "start": 186,
+        "end": 214
+      }
+    ]
+  },
+  {
+    "text": "My name is Alexander Lee, and my student ID number is 732054876. As a fourth-year nursing student at the University of Pennsylvania, I have gained valuable experience working in the oncology department at the Hospital of the University of Pennsylvania.",
+    "language": "English",
+    "domain": "healthcare",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Alexander Lee",
+        "start": 11,
+        "end": 24
+      },
+      {
+        "label": "student id number",
+        "value": "732054876",
+        "start": 54,
+        "end": 63
+      },
+      {
+        "label": "education level",
+        "value": "fourth-year",
+        "start": 70,
+        "end": 81
+      },
+      {
+        "label": "occupation",
+        "value": "nursing student",
+        "start": 82,
+        "end": 97
+      },
+      {
+        "label": "university",
+        "value": "University of Pennsylvania",
+        "start": 105,
+        "end": 131
+      },
+      {
+        "label": "medical department",
+        "value": "oncology department",
+        "start": 182,
+        "end": 201
+      },
+      {
+        "label": "hospital",
+        "value": "Hospital of the University of Pennsylvania",
+        "start": 209,
+        "end": 251
+      }
+    ]
+  },
+  {
+    "text": "Michael Johnson, a third-year student at New York University majoring in Finance, submitted his assignment on Financial Markets. His student id number is NYU2023456. In his paper, he analyzed the fluctuations in the S&P 500 index and compared it with the historical data provided by Bloomberg.",
+    "language": "English",
+    "domain": "finance",
+    "pii": [
+      {
+        "label": "name",
+        "value": "Michael Johnson",
+        "start": 0,
+        "end": 15
+      },
+      {
+        "label": "organization",
+        "value": "New York University",
+        "start": 41,
+        "end": 60
+      },
+      {
+        "label": "subject",
+        "value": "Finance",
+        "start": 73,
+        "end": 80
+      },
+      {
+        "label": "subject",
+        "value": "Financial Markets",
+        "start": 110,
+        "end": 127
+      },
+      {
+        "label": "student id number",
+        "value": "NYU2023456",
+        "start": 154,
+        "end": 164
+      },
+      {
+        "label": "financial index",
+        "value": "S&P 500 index",
+        "start": 216,
+        "end": 229
+      },
+      {
+        "label": "organization",
+        "value": "Bloomberg",
+        "start": 283,
+        "end": 292
+      }
+    ]
+  },
+  {
+    "text": "Sarah Lee, an MBA student focusing on Corporate Finance at Harvard Business School, presented her thesis on the impact of monetary policy on corporate capital structure. Her student id number is HBS123098. She utilized data from the Federal Reserve and included case studies on Apple Inc. and Microsoft Corporation.",
+    "language": "English",
+    "domain": "finance",
+    "pii": [
+      {
+        "label": "name",
+        "value": "Sarah Lee",
+        "start": 0,
+        "end": 9
+      },
+      {
+        "label": "degree",
+        "value": "MBA",
+        "start": 14,
+        "end": 17
+      },
+      {
+        "label": "subject",
+        "value": "Corporate Finance",
+        "start": 38,
+        "end": 55
+      },
+      {
+        "label": "organization",
+        "value": "Harvard Business School",
+        "start": 59,
+        "end": 82
+      },
+      {
+        "label": "topic",
+        "value": "monetary policy",
+        "start": 122,
+        "end": 137
+      },
+      {
+        "label": "topic",
+        "value": "corporate capital structure",
+        "start": 141,
+        "end": 168
+      },
+      {
+        "label": "student id number",
+        "value": "HBS123098",
+        "start": 195,
+        "end": 204
+      },
+      {
+        "label": "organization",
+        "value": "Federal Reserve",
+        "start": 233,
+        "end": 248
+      },
+      {
+        "label": "organization",
+        "value": "Apple Inc.",
+        "start": 278,
+        "end": 288
+      },
+      {
+        "label": "organization",
+        "value": "Microsoft Corporation",
+        "start": 293,
+        "end": 314
+      }
+    ]
+  },
+  {
+    "text": "John Doe, a law student at Stanford University, received his Student ID Number, S1234567, at the beginning of his second semester. He is particularly interested in criminal law and is currently working on a research project with Professor Emily Walters.",
+    "language": "English",
+    "domain": "legal",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "John Doe",
+        "start": 0,
+        "end": 8
+      },
+      {
+        "label": "organization name",
+        "value": "Stanford University",
+        "start": 27,
+        "end": 46
+      },
+      {
+        "label": "student id number",
+        "value": "S1234567",
+        "start": 80,
+        "end": 88
+      },
+      {
+        "label": "field of study",
+        "value": "criminal law",
+        "start": 164,
+        "end": 176
+      },
+      {
+        "label": "person name",
+        "value": "Professor Emily Walters",
+        "start": 229,
+        "end": 252
+      }
+    ]
+  },
+  {
+    "text": "Jane Smith, enrolled in her third year at Harvard Law School, recently submitted her dissertation on intellectual property law. Her Student ID Number is HLS987654. She is mentored by Dr. Robert Thompson, a leading expert in the field.",
+    "language": "English",
+    "domain": "legal",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Jane Smith",
+        "start": 0,
+        "end": 10
+      },
+      {
+        "label": "organization name",
+        "value": "Harvard Law School",
+        "start": 42,
+        "end": 60
+      },
+      {
+        "label": "student id number",
+        "value": "HLS987654",
+        "start": 153,
+        "end": 162
+      },
+      {
+        "label": "field of study",
+        "value": "intellectual property law",
+        "start": 101,
+        "end": 126
+      },
+      {
+        "label": "person name",
+        "value": "Dr. Robert Thompson",
+        "start": 183,
+        "end": 202
+      }
+    ]
+  },
+  {
+    "text": "John Doe, a diligent third-year student at Wharton School with student ID number STU294883, visited the Chase Bank branch on 5th Avenue to open a new checking account.",
+    "language": "English",
+    "domain": "banking",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "John Doe",
+        "start": 0,
+        "end": 8
+      },
+      {
+        "label": "education status",
+        "value": "third-year student",
+        "start": 21,
+        "end": 39
+      },
+      {
+        "label": "education institution",
+        "value": "Wharton School",
+        "start": 43,
+        "end": 57
+      },
+      {
+        "label": "student id number",
+        "value": "student ID number STU294883",
+        "start": 63,
+        "end": 90
+      },
+      {
+        "label": "bank name",
+        "value": "Chase Bank",
+        "start": 104,
+        "end": 114
+      },
+      {
+        "label": "street address",
+        "value": "5th Avenue",
+        "start": 125,
+        "end": 135
+      }
+    ]
+  },
+  {
+    "text": "Maria Sanchez, holding student ID number STU193847 from Columbia Business School, successfully applied for a student loan at Wells Fargo on September 12, 2023.",
+    "language": "English",
+    "domain": "banking",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Maria Sanchez",
+        "start": 0,
+        "end": 13
+      },
+      {
+        "label": "student id number",
+        "value": "student ID number STU193847",
+        "start": 23,
+        "end": 50
+      },
+      {
+        "label": "education institution",
+        "value": "Columbia Business School",
+        "start": 56,
+        "end": 80
+      },
+      {
+        "label": "banking product",
+        "value": "student loan",
+        "start": 109,
+        "end": 121
+      },
+      {
+        "label": "bank name",
+        "value": "Wells Fargo",
+        "start": 125,
+        "end": 136
+      },
+      {
+        "label": "date",
+        "value": "September 12, 2023",
+        "start": 140,
+        "end": 158
+      }
+    ]
+  },
+  {
+    "text": "Alexandra Barnes, a student at Green Valley High School, has been assigned the student ID number 586732. Her favorite subjects include biology and chemistry. She has consistently maintained a GPA of 3.8 throughout her sophomore year.",
+    "language": "English",
+    "domain": "general",
+    "pii": [
+      {
+        "label": "person",
+        "value": "Alexandra Barnes",
+        "start": 0,
+        "end": 16
+      },
+      {
+        "label": "institution",
+        "value": "Green Valley High School",
+        "start": 31,
+        "end": 55
+      },
+      {
+        "label": "identifier",
+        "value": "586732",
+        "start": 97,
+        "end": 103
+      },
+      {
+        "label": "academic discipline",
+        "value": "biology",
+        "start": 135,
+        "end": 142
+      },
+      {
+        "label": "academic discipline",
+        "value": "chemistry",
+        "start": 147,
+        "end": 156
+      },
+      {
+        "label": "gpa",
+        "value": "3.8",
+        "start": 199,
+        "end": 202
+      },
+      {
+        "label": "time period",
+        "value": "sophomore year",
+        "start": 218,
+        "end": 232
+      }
+    ]
+  },
+  {
+    "text": "John Doe visited the hospital on 12th March 2023 due to severe chest pain. His insurance number, 123-45-6789, was provided at the reception. Dr. Emily Smith, his attending physician, recommended an immediate ECG. John, who is 45 years old, has a history of hypertension and was advised to undergo further tests.",
+    "language": "English",
+    "domain": "healthcare",
+    "pii": [
+      {
+        "label": "patient name",
+        "value": "John Doe",
+        "start": 0,
+        "end": 8
+      },
+      {
+        "label": "location",
+        "value": "hospital",
+        "start": 21,
+        "end": 29
+      },
+      {
+        "label": "date",
+        "value": "12th March 2023",
+        "start": 33,
+        "end": 48
+      },
+      {
+        "label": "symptom",
+        "value": "chest pain",
+        "start": 63,
+        "end": 73
+      },
+      {
+        "label": "insurance number",
+        "value": "123-45-6789",
+        "start": 97,
+        "end": 108
+      },
+      {
+        "label": "doctor name",
+        "value": "Dr. Emily Smith",
+        "start": 141,
+        "end": 156
+      },
+      {
+        "label": "medical procedure",
+        "value": "ECG",
+        "start": 208,
+        "end": 211
+      },
+      {
+        "label": "patient age",
+        "value": "45 years old",
+        "start": 226,
+        "end": 238
+      },
+      {
+        "label": "medical history",
+        "value": "hypertension",
+        "start": 257,
+        "end": 269
+      }
+    ]
+  },
+  {
+    "text": "John Doe, who resides in New York, recently applied for a life insurance policy through Liberty Mutual. His insurance number is 123-45-6789. Given his current annual income of $85,000, he opted for a comprehensive coverage plan. As a 35-year-old, he believes this will ensure financial security for his family.",
+    "language": "English",
+    "domain": "finance",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "John Doe",
+        "start": 0,
+        "end": 8
+      },
+      {
+        "label": "location",
+        "value": "New York",
+        "start": 25,
+        "end": 33
+      },
+      {
+        "label": "insurance type",
+        "value": "life insurance policy",
+        "start": 58,
+        "end": 79
+      },
+      {
+        "label": "company name",
+        "value": "Liberty Mutual",
+        "start": 88,
+        "end": 102
+      },
+      {
+        "label": "insurance number",
+        "value": "123-45-6789",
+        "start": 128,
+        "end": 139
+      },
+      {
+        "label": "financial amount",
+        "value": "$85,000",
+        "start": 176,
+        "end": 183
+      },
+      {
+        "label": "insurance plan",
+        "value": "comprehensive coverage plan",
+        "start": 200,
+        "end": 227
+      },
+      {
+        "label": "age",
+        "value": "35-year-old",
+        "start": 234,
+        "end": 245
+      },
+      {
+        "label": "financial concept",
+        "value": "financial security",
+        "start": 276,
+        "end": 294
+      },
+      {
+        "label": "dependent",
+        "value": "family",
+        "start": 303,
+        "end": 309
+      }
+    ]
+  },
+  {
+    "text": "John Doe, who resides at 123 Elm Street, Springfield, has been involved in a legal case regarding an insurance claim. His insurance number, 789456123, was essential in processing the claim. The legal proceedings were held in the Springfield District Court on October 5th, 2023, where he was represented by attorney Jane Smith.",
+    "language": "English",
+    "domain": "legal",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "John Doe",
+        "start": 0,
+        "end": 8
+      },
+      {
+        "label": "street address",
+        "value": "123 Elm Street",
+        "start": 25,
+        "end": 39
+      },
+      {
+        "label": "city",
+        "value": "Springfield",
+        "start": 41,
+        "end": 52
+      },
+      {
+        "label": "insurance number",
+        "value": "789456123",
+        "start": 140,
+        "end": 149
+      },
+      {
+        "label": "court",
+        "value": "Springfield District Court",
+        "start": 229,
+        "end": 255
+      },
+      {
+        "label": "date",
+        "value": "October 5th, 2023",
+        "start": 259,
+        "end": 276
+      },
+      {
+        "label": "attorney name",
+        "value": "Jane Smith",
+        "start": 315,
+        "end": 325
+      }
+    ]
+  },
+  {
+    "text": "Maria Garcia, living at 456 Oak Avenue, Metropolis, recently filed a lawsuit involving her car insurance number, 654321987. The case was heard in the Metropolis Superior Court on September 12th, 2023, with her legal representation being attorney Robert Johnson.",
+    "language": "English",
+    "domain": "legal",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Maria Garcia",
+        "start": 0,
+        "end": 12
+      },
+      {
+        "label": "street address",
+        "value": "456 Oak Avenue",
+        "start": 24,
+        "end": 38
+      },
+      {
+        "label": "city",
+        "value": "Metropolis",
+        "start": 40,
+        "end": 50
+      },
+      {
+        "label": "insurance number",
+        "value": "654321987",
+        "start": 113,
+        "end": 122
+      },
+      {
+        "label": "court",
+        "value": "Metropolis Superior Court",
+        "start": 150,
+        "end": 175
+      },
+      {
+        "label": "date",
+        "value": "September 12th, 2023",
+        "start": 179,
+        "end": 199
+      },
+      {
+        "label": "attorney name",
+        "value": "Robert Johnson",
+        "start": 246,
+        "end": 260
+      }
+    ]
+  },
+  {
+    "text": "John Doe recently updated his bank information to link his savings account with insurance number ABCD-1234-XYZ. He made these changes at the Midtown Branch of First National Bank on March 12, 2023.",
+    "language": "English",
+    "domain": "banking",
+    "pii": [
+      {
+        "label": "person",
+        "value": "John Doe",
+        "start": 0,
+        "end": 8
+      },
+      {
+        "label": "banking",
+        "value": "bank information",
+        "start": 30,
+        "end": 46
+      },
+      {
+        "label": "banking",
+        "value": "savings account",
+        "start": 59,
+        "end": 74
+      },
+      {
+        "label": "insurance number",
+        "value": "insurance number ABCD-1234-XYZ",
+        "start": 80,
+        "end": 110
+      },
+      {
+        "label": "bank branch",
+        "value": "Midtown Branch",
+        "start": 141,
+        "end": 155
+      },
+      {
+        "label": "bank",
+        "value": "First National Bank",
+        "start": 159,
+        "end": 178
+      },
+      {
+        "label": "date",
+        "value": "March 12, 2023",
+        "start": 182,
+        "end": 196
+      }
+    ]
+  },
+  {
+    "text": "Sarah Lee applied for a loan and provided her insurance number XYZZ-9876-QWER. The loan application was processed by River Bank, Downtown Office on February 20, 2023.",
+    "language": "English",
+    "domain": "banking",
+    "pii": [
+      {
+        "label": "person",
+        "value": "Sarah Lee",
+        "start": 0,
+        "end": 9
+      },
+      {
+        "label": "banking",
+        "value": "loan",
+        "start": 24,
+        "end": 28
+      },
+      {
+        "label": "insurance number",
+        "value": "insurance number XYZZ-9876-QWER",
+        "start": 46,
+        "end": 77
+      },
+      {
+        "label": "bank",
+        "value": "River Bank",
+        "start": 117,
+        "end": 127
+      },
+      {
+        "label": "bank branch",
+        "value": "Downtown Office",
+        "start": 129,
+        "end": 144
+      },
+      {
+        "label": "date",
+        "value": "February 20, 2023",
+        "start": 148,
+        "end": 165
+      }
+    ]
+  },
+  {
+    "text": "John Doe applied for a new insurance policy with Exemplar Insurance last week. His insurance number is INS123456789. He is looking to secure his family's future with this policy. His address is 1234 Elm Street, Springfield, IL 62704, and you can contact him via john.doe@example.com or at (217) 555-1234.",
+    "language": "English",
+    "domain": "general",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "John Doe",
+        "start": 0,
+        "end": 8
+      },
+      {
+        "label": "organization name",
+        "value": "Exemplar Insurance",
+        "start": 49,
+        "end": 67
+      },
+      {
+        "label": "insurance number",
+        "value": "INS123456789",
+        "start": 103,
+        "end": 115
+      },
+      {
+        "label": "address",
+        "value": "1234 Elm Street",
+        "start": 194,
+        "end": 209
+      },
+      {
+        "label": "city",
+        "value": "Springfield",
+        "start": 211,
+        "end": 222
+      },
+      {
+        "label": "state",
+        "value": "IL",
+        "start": 224,
+        "end": 226
+      },
+      {
+        "label": "postal code",
+        "value": "62704",
+        "start": 227,
+        "end": 232
+      },
+      {
+        "label": "email address",
+        "value": "john.doe@example.com",
+        "start": 262,
+        "end": 282
+      },
+      {
+        "label": "phone number",
+        "value": "(217) 555-1234",
+        "start": 289,
+        "end": 303
+      }
+    ]
+  },
+  {
+    "text": "Martha Evans received her insurance card with the number GHI987654321 from BrightFuture Insurance. She has recently moved to 5678 Oak Avenue, Boulder, CO 80301, and updates her contact as martha.evans@domain.com or (303) 555-6789.",
+    "language": "English",
+    "domain": "general",
+    "pii": [
+      {
+        "label": "person name",
+        "value": "Martha Evans",
+        "start": 0,
+        "end": 12
+      },
+      {
+        "label": "insurance number",
+        "value": "GHI987654321",
+        "start": 57,
+        "end": 69
+      },
+      {
+        "label": "organization name",
+        "value": "BrightFuture Insurance",
+        "start": 75,
+        "end": 97
+      },
+      {
+        "label": "address",
+        "value": "5678 Oak Avenue",
+        "start": 125,
+        "end": 140
+      },
+      {
+        "label": "city",
+        "value": "Boulder",
+        "start": 142,
+        "end": 149
+      },
+      {
+        "label": "state",
+        "value": "CO",
+        "start": 151,
+        "end": 153
+      },
+      {
+        "label": "postal code",
+        "value": "80301",
+        "start": 154,
+        "end": 159
+      },
+      {
+        "label": "email address",
+        "value": "martha.evans@domain.com",
+        "start": 188,
+        "end": 211
+      },
+      {
+        "label": "phone number",
+        "value": "(303) 555-6789",
+        "start": 215,
+        "end": 229
+      }
+    ]
+  },
+  {
+    "text": "Dr. Susan Boyd, a renowned cardiologist from the Mayo Clinic, was traveling on flight AA125 from New York to London for a medical conference. As soon as she landed, she received an urgent message from her colleague, Dr. John Smith, about a critical patient who was admitted to the ICU with acute myocardial infarction. Dr. Boyd immediately coordinated with the hospital's staff to ensure the patient received prompt treatment.",
+    "language": "English",
+    "domain": "healthcare",
+    "pii": [
+      {
+        "label": "person",
+        "value": "Dr. Susan Boyd",
+        "start": 0,
+        "end": 14
+      },
+      {
+        "label": "job title",
+        "value": "cardiologist",
+        "start": 27,
+        "end": 39
+      },
+      {
+        "label": "organization",
+        "value": "Mayo Clinic",
+        "start": 49,
+        "end": 60
+      },
+      {
+        "label": "flight number",
+        "value": "flight AA125",
+        "start": 79,
+        "end": 91
+      },
+      {
+        "label": "location",
+        "value": "New York",
+        "start": 97,
+        "end": 105
+      },
+      {
+        "label": "location",
+        "value": "London",
+        "start": 109,
+        "end": 115
+      },
+      {
+        "label": "person",
+        "value": "Dr. John Smith",
+        "start": 216,
+        "end": 230
+      },
+      {
+        "label": "medical department",
+        "value": "ICU",
+        "start": 281,
+        "end": 284
+      },
+      {
+        "label": "medical condition",
+        "value": "acute myocardial infarction",
+        "start": 290,
+        "end": 317
+      },
+      {
+        "label": "organization",
+        "value": "hospital",
+        "start": 361,
+        "end": 369
+      }
+    ]
+  },
+  {
+    "text": "Mr. John Smith, the CFO of FinTech Global Ltd., will be flying to New York on flight AA1234 to discuss the company's latest quarterly earnings.",
+    "language": "English",
+    "domain": "finance",
+    "pii": [
+      {
+        "label": "person",
+        "value": "Mr. John Smith",
+        "start": 0,
+        "end": 14
+      },
+      {
+        "label": "position",
+        "value": "CFO",
+        "start": 20,
+        "end": 23
+      },
+      {
+        "label": "organization",
+        "value": "FinTech Global Ltd.",
+        "start": 27,
+        "end": 46
+      },
+      {
+        "label": "location",
+        "value": "New York",
+        "start": 66,
+        "end": 74
+      },
+      {
+        "label": "flight number",
+        "value": "flight AA1234",
+        "start": 78,
+        "end": 91
+      },
+      {
+        "label": "financial information",
+        "value": "company's latest quarterly earnings",
+        "start": 107,
+        "end": 142
+      }
+    ]
+  },
+  {
+    "text": "Jessica Lee, a senior analyst at GreenWave Capital, took flight BA987 to London to present a new investment strategy to the board.",
+    "language": "English",
+    "domain": "finance",
+    "pii": [
+      {
+        "label": "person",
+        "value": "Jessica Lee",
+        "start": 0,
+        "end": 11
+      },
+      {
+        "label": "position",
+        "value": "senior analyst",
+        "start": 15,
+        "end": 29
+      },
+      {
+        "label": "organization",
+        "value": "GreenWave Capital",
+        "start": 33,
+        "end": 50
+      },
+      {
+        "label": "flight number",
+        "value": "flight BA987",
+        "start": 57,
+        "end": 69
+      },
+      {
+        "label": "location",
+        "value": "London",
+        "start": 73,
+        "end": 79
+      },
+      {
+        "label": "financial information",
+        "value": "new investment strategy",
+        "start": 93,
+        "end": 116
+      }
+    ]
+  }
+]

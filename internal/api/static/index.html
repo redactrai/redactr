@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redactr — Control Plane</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <div class="brand-mark" aria-label="Redactr">
+          <svg viewBox="0 0 32 32" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="bm-bg" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#1a1f27"/>
+                <stop offset="1" stop-color="#08090b"/>
+              </linearGradient>
+              <linearGradient id="bm-bar" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#1c1c1c"/>
+                <stop offset="1" stop-color="#000"/>
+              </linearGradient>
+              <linearGradient id="bm-line" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#34d399"/>
+                <stop offset="1" stop-color="#10b981"/>
+              </linearGradient>
+            </defs>
+            <rect width="32" height="32" rx="9" fill="url(#bm-bg)"/>
+            <rect x="0.6" y="0.6" width="30.8" height="30.8" rx="8.4" fill="none" stroke="#34d399" stroke-opacity="0.20" stroke-width="0.7"/>
+            <rect x="5" y="9.5" width="22" height="8" rx="1.6" fill="url(#bm-bar)"/>
+            <rect x="5.4" y="10" width="21.2" height="0.7" rx="0.35" fill="#fff" fill-opacity="0.06"/>
+            <rect x="5" y="20" width="13.5" height="1.6" rx="0.8" fill="url(#bm-line)"/>
+            <rect class="brand-caret" x="20.5" y="19.4" width="1.7" height="2.8" rx="0.4" fill="#34d399"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Redactr</span>
+          <span class="brand-eyebrow"><em>control plane</em></span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-section-label">Workspace</div>
+        <button class="nav-item active" data-tab="overview">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg>
+          <span>Overview</span>
+        </button>
+        <button class="nav-item" data-tab="logs">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+          <span>Scan Logs</span>
+          <span class="nav-badge" id="nav-log-count">0</span>
+        </button>
+        <button class="nav-item" data-tab="sessions">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M7 20h10M9 16v4M15 16v4"/></svg>
+          <span>Sessions</span>
+          <span class="nav-badge" id="nav-runaway-count" hidden>0</span>
+        </button>
+        <button class="nav-item" data-tab="testscan">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <span>Test Scan</span>
+        </button>
+        <button class="nav-item" data-tab="config">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          <span>Configuration</span>
+        </button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="live-pill" id="live-pill" data-state="off">
+          <span class="live-dot"></span>
+          <span class="live-label" id="live-label">Disconnected</span>
+        </div>
+        <div class="footer-row">
+          <div class="footer-meta">
+            <span class="footer-eyebrow"><em>build</em></span>
+            <span class="footer-value" id="footer-addr">—</span>
+          </div>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+            <svg class="t-sun"  viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            <svg class="t-moon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+
+      <header class="topbar">
+        <div class="topbar-title">
+          <span class="topbar-eyebrow"><em>section</em></span>
+          <h1 id="page-title">Overview</h1>
+        </div>
+        <div class="topbar-actions">
+          <div class="proxy-pill" id="proxy-pill" data-state="off">
+            <span class="proxy-dot"></span>
+            <div class="proxy-pill-text">
+              <span class="proxy-pill-label" id="proxy-label">Proxy offline</span>
+              <span class="proxy-pill-addr" id="proxy-addr"></span>
+            </div>
+          </div>
+          <button class="btn btn-primary" id="proxy-toggle">
+            <span class="btn-dot"></span>
+            <span id="proxy-btn-label">Enable proxy</span>
+          </button>
+        </div>
+      </header>
+
+      <div class="content">
+
+        <!-- Overview -->
+        <section id="overview" class="tab-content active">
+
+          <div class="hero-row">
+            <div class="hero-card">
+              <div class="hero-eyebrow"><em>posture</em></div>
+              <div class="hero-headline" id="hero-headline">All scanning layers active</div>
+              <div class="hero-sub" id="hero-sub">Requests passing through the proxy are inspected by regex, entropy, and ML pipelines.</div>
+              <div class="hero-banner" id="hero-banner" hidden>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                <div class="hero-banner-text">
+                  <strong id="hero-banner-title">Best-practice rules disabled</strong>
+                  <span id="hero-banner-detail"></span>
+                </div>
+                <button class="link-btn" data-jump="config" id="hero-banner-jump">Review →</button>
+              </div>
+              <div class="hero-meta">
+                <div class="hero-meta-item">
+                  <span class="hero-meta-label">Cache hit rate</span>
+                  <span class="hero-meta-value" id="hero-cache-rate">—</span>
+                </div>
+                <div class="hero-meta-item">
+                  <span class="hero-meta-label">Cache size</span>
+                  <span class="hero-meta-value" id="hero-cache-size">—</span>
+                </div>
+                <div class="hero-meta-item">
+                  <span class="hero-meta-label">Active layers</span>
+                  <span class="hero-meta-value" id="hero-layers">—</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="metrics">
+            <div class="stat-card" data-tone="primary">
+              <div class="stat-card-head">
+                <span class="stat-eyebrow">Requests scanned</span>
+                <span class="stat-trend" id="trend-scanned">—</span>
+              </div>
+              <div class="stat-value" id="m-scanned">0</div>
+              <div class="stat-spark"><svg id="spark-scanned" viewBox="0 0 100 28" preserveAspectRatio="none"></svg></div>
+            </div>
+            <div class="stat-card" data-tone="warning">
+              <div class="stat-card-head">
+                <span class="stat-eyebrow">PII redacted</span>
+                <span class="stat-trend" id="trend-redacted">—</span>
+              </div>
+              <div class="stat-value" id="m-redacted">0</div>
+              <div class="stat-spark"><svg id="spark-redacted" viewBox="0 0 100 28" preserveAspectRatio="none"></svg></div>
+            </div>
+            <div class="stat-card" data-tone="danger">
+              <div class="stat-card-head">
+                <span class="stat-eyebrow">Requests blocked</span>
+                <span class="stat-trend" id="trend-blocked">—</span>
+              </div>
+              <div class="stat-value" id="m-blocked">0</div>
+              <div class="stat-spark"><svg id="spark-blocked" viewBox="0 0 100 28" preserveAspectRatio="none"></svg></div>
+            </div>
+            <div class="stat-card" data-tone="info">
+              <div class="stat-card-head">
+                <span class="stat-eyebrow">Avg latency</span>
+                <span class="stat-trend">p50</span>
+              </div>
+              <div class="stat-value" id="m-latency">0<span class="stat-unit">ms</span></div>
+              <div class="stat-spark"><svg id="spark-latency" viewBox="0 0 100 28" preserveAspectRatio="none"></svg></div>
+            </div>
+          </div>
+
+          <div class="grid-12">
+            <div class="card span-8">
+              <div class="card-head">
+                <div>
+                  <span class="card-eyebrow"><em>last 24 hours</em></span>
+                  <h2>Request trend</h2>
+                </div>
+                <div class="chart-legend">
+                  <span class="legend-item"><span class="legend-dot dot-scanned"></span>Scanned</span>
+                  <span class="legend-item"><span class="legend-dot dot-redacted"></span>Redacted</span>
+                  <span class="legend-item"><span class="legend-dot dot-blocked"></span>Blocked</span>
+                </div>
+              </div>
+              <div class="chart-wrap">
+                <svg id="trend-chart" viewBox="0 0 600 220" preserveAspectRatio="none"></svg>
+              </div>
+            </div>
+
+            <div class="card span-4">
+              <div class="card-head">
+                <div>
+                  <span class="card-eyebrow"><em>integrations</em></span>
+                  <h2>Intercepted tools</h2>
+                </div>
+              </div>
+              <div id="tools-list" class="tools-list"></div>
+            </div>
+
+            <div class="card span-7 warnings-card">
+              <div class="card-head">
+                <div>
+                  <span class="card-eyebrow"><em>safety</em></span>
+                  <h2>Recommendations</h2>
+                </div>
+                <span class="rec-summary" id="rec-summary">—</span>
+              </div>
+              <div id="recommendations" class="rec-list"></div>
+            </div>
+
+            <div class="card span-5">
+              <div class="card-head">
+                <div>
+                  <span class="card-eyebrow"><em>recent</em></span>
+                  <h2>Latest activity</h2>
+                </div>
+                <button class="link-btn" data-jump="logs">View all →</button>
+              </div>
+              <div id="recent-list" class="recent-list"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Logs -->
+        <section id="logs" class="tab-content">
+          <div class="card">
+            <div class="card-head">
+              <div>
+                <span class="card-eyebrow"><em>stream</em></span>
+                <h2>Scan logs</h2>
+              </div>
+              <div class="logs-controls">
+                <div class="search-input">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+                  <input type="text" id="log-search" placeholder="Filter by content, label, or provider…">
+                </div>
+                <select id="log-filter-provider" class="select-input">
+                  <option value="">All providers</option>
+                </select>
+                <select id="log-filter-status" class="select-input">
+                  <option value="">All statuses</option>
+                  <option value="redacted">Redacted</option>
+                  <option value="blocked">Blocked</option>
+                  <option value="clean">Clean</option>
+                </select>
+                <button class="btn btn-ghost btn-sm" id="log-refresh">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 15.5-6.36L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15.5 6.36L3 16"/><path d="M3 21v-5h5"/></svg>
+                  Refresh
+                </button>
+              </div>
+            </div>
+            <div id="log-list" class="log-list"></div>
+          </div>
+        </section>
+
+        <!-- Sessions -->
+        <section id="sessions" class="tab-content">
+          <div class="card">
+            <div class="card-head">
+              <div>
+                <span class="card-eyebrow"><em>posture</em></span>
+                <h2>Active AI sessions</h2>
+              </div>
+              <div class="logs-controls">
+                <button class="btn btn-primary btn-sm" id="sessions-launch">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+                  Open protected shell
+                </button>
+                <button class="btn btn-ghost btn-sm" id="sessions-refresh">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 15.5-6.36L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15.5 6.36L3 16"/><path d="M3 21v-5h5"/></svg>
+                  Refresh
+                </button>
+              </div>
+            </div>
+
+            <div class="sessions-summary" id="sessions-summary"></div>
+            <div class="session-list" id="session-list"></div>
+
+            <details class="session-help">
+              <summary>How does binding work?</summary>
+              <div>
+                <p><strong>For new sessions</strong> — click <em>Open protected shell</em>. It opens a Terminal window with <code>HTTPS_PROXY</code>, <code>NODE_EXTRA_CA_CERTS</code> and <code>REDACTR_BOUND=1</code> set. Anything you launch from that shell (<code>claude</code>, <code>codex</code>, …) is automatically routed through the redaction proxy.</p>
+                <p><strong>For runaway sessions</strong> — env vars cannot be injected into a process that&apos;s already running. <em>Stop &amp; reopen</em> sends SIGTERM to the runaway and opens a protected shell so you can re-run the command (the previous command is still in your shell history).</p>
+                <p><strong>Equivalent shell command:</strong></p>
+                <pre><code id="bind-command">redactr shell</code></pre>
+              </div>
+            </details>
+          </div>
+        </section>
+
+        <!-- Test Scan -->
+        <section id="testscan" class="tab-content">
+          <div class="card testscan-card">
+            <div class="card-head">
+              <div>
+                <span class="card-eyebrow"><em>diagnostic</em></span>
+                <h2>Test the scanner</h2>
+              </div>
+              <span class="card-hint-pill">Direct → /api/scan</span>
+            </div>
+            <p class="testscan-hint">Paste any text below to inspect what Redactr would redact before forwarding it to an AI provider.</p>
+
+            <div class="testscan-grid">
+              <div class="testscan-input">
+                <label class="field-label">Input</label>
+                <textarea id="ts-input" rows="12" placeholder="My email is jane.doe@example.com and my AWS key is AKIAIOSFODNN7EXAMPLE. Call me at +1 415 555 0136."></textarea>
+                <div class="testscan-actions">
+                  <button class="btn btn-ghost btn-sm" id="ts-sample">Load sample</button>
+                  <button class="btn btn-primary" id="ts-run">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3l14 9-14 9z"/></svg>
+                    Run scan
+                  </button>
+                </div>
+              </div>
+
+              <div class="testscan-output">
+                <label class="field-label">
+                  <span>Result</span>
+                  <span id="ts-result-meta" class="field-meta"></span>
+                </label>
+                <div id="ts-output" class="testscan-output-pane">
+                  <div class="empty-pane">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    <span>Awaiting input</span>
+                  </div>
+                </div>
+                <div id="ts-findings" class="testscan-findings"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Config -->
+        <section id="config" class="tab-content">
+          <div class="card span-12 detection-rules-card">
+            <div class="card-head">
+              <div>
+                <span class="card-eyebrow"><em>detection</em></span>
+                <h2>Detection rules</h2>
+              </div>
+              <div class="search-input">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+                <input type="text" id="rule-search" placeholder="Search rules…">
+              </div>
+            </div>
+            <div id="rule-tiers"></div>
+          </div>
+
+          <div class="config-grid">
+            <div class="card">
+              <div class="card-head">
+                <div>
+                  <span class="card-eyebrow"><em>routing</em></span>
+                  <h2>Intercepted domains</h2>
+                </div>
+              </div>
+              <p class="field-hint">AI provider hosts whose traffic is decrypted and scanned through the proxy.</p>
+              <textarea id="cfg-intercept" rows="5" placeholder="api.anthropic.com&#10;api.openai.com"></textarea>
+            </div>
+
+            <div class="card">
+              <div class="card-head">
+                <div>
+                  <span class="card-eyebrow"><em>denylist</em></span>
+                  <h2>Blocked domains</h2>
+                </div>
+              </div>
+              <p class="field-hint">Hosts that AI tools should never reach — telemetry, third-party logging.</p>
+              <textarea id="cfg-blocked-domains" rows="5" placeholder="telemetry.example.com"></textarea>
+            </div>
+
+            <div class="card">
+              <div class="card-head">
+                <div>
+                  <span class="card-eyebrow"><em>files</em></span>
+                  <h2>Blocked extensions</h2>
+                </div>
+              </div>
+              <p class="field-hint">Files with these extensions are stripped before transmission.</p>
+              <textarea id="cfg-extensions" rows="4" placeholder=".env&#10;.tfstate&#10;.pem"></textarea>
+            </div>
+
+            <div class="card">
+              <div class="card-head">
+                <div>
+                  <span class="card-eyebrow"><em>integration</em></span>
+                  <h2>Claude Code hooks</h2>
+                </div>
+              </div>
+              <label class="toggle-row">
+                <input type="checkbox" id="cfg-hooks">
+                <span class="toggle-track"><span class="toggle-thumb"></span></span>
+                <span class="toggle-text">
+                  <span class="toggle-title">Enable hooks</span>
+                  <span class="toggle-sub">Inject pre/post hooks into compatible AI agents</span>
+                </span>
+              </label>
+              <label class="toggle-row">
+                <input type="checkbox" id="cfg-claude-hooks">
+                <span class="toggle-track"><span class="toggle-thumb"></span></span>
+                <span class="toggle-text">
+                  <span class="toggle-title">Claude Code integration</span>
+                  <span class="toggle-sub">Restrict shell commands via the safecmd allowlist</span>
+                </span>
+              </label>
+            </div>
+
+            <div class="card">
+              <div class="card-head">
+                <div>
+                  <span class="card-eyebrow"><em>performance</em></span>
+                  <h2>Cache</h2>
+                </div>
+              </div>
+              <div class="field">
+                <label class="field-label">Max cache size</label>
+                <input type="number" id="cfg-cache-size" min="0" max="100000">
+                <span class="field-hint">Maximum number of scan results to retain in-memory.</span>
+              </div>
+              <div class="field" style="margin-top:16px">
+                <label class="field-label">Entropy threshold</label>
+                <input type="number" id="cfg-entropy-thresh" step="0.1" min="1" max="8">
+                <span class="field-hint">Bits per character. Lower = stricter; higher = looser.</span>
+              </div>
+              <div class="cache-stats" id="cache-stats">
+                <div class="cache-stat"><span class="cache-stat-label">Hits</span><span class="cache-stat-value" id="cache-hits">0</span></div>
+                <div class="cache-stat"><span class="cache-stat-label">Misses</span><span class="cache-stat-value" id="cache-misses">0</span></div>
+                <div class="cache-stat"><span class="cache-stat-label">Size</span><span class="cache-stat-value" id="cache-size">0</span></div>
+              </div>
+              <button class="btn btn-ghost btn-sm" id="cache-clear">Clear cache</button>
+            </div>
+          </div>
+
+          <div class="config-actions">
+            <button class="btn btn-primary" id="config-save">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+              Save configuration
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <!-- Toast container -->
+  <div class="toast-stack" id="toasts"></div>
+
+  <div class="modal-backdrop" id="modal-backdrop" hidden>
+    <div class="modal" role="dialog" aria-modal="true">
+      <div class="modal-head">
+        <span class="modal-eyebrow"><em>warning</em></span>
+        <h2 id="modal-title">Disable a critical detection rule?</h2>
+      </div>
+      <div class="modal-body" id="modal-body"></div>
+      <div class="modal-actions">
+        <button class="btn btn-ghost" id="modal-cancel">Cancel</button>
+        <button class="btn btn-danger" id="modal-confirm">Disable anyway</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,3830 @@
+[
+  {
+    "id": "058211ab4d324e3a9e5b83c557a341d6",
+    "text": "I, Jason, am applying for a financial services account. My date of birth is 1987-05-22. I live at 87 Avenida De La Estrella. I am employed full-time.",
+    "locale": "us",
+    "domain": "Identity Verification Services",
+    "pii": [
+      {
+        "value": "Jason",
+        "start": 3,
+        "end": 8,
+        "label": "first_name"
+      },
+      {
+        "value": "1987-05-22",
+        "start": 76,
+        "end": 86,
+        "label": "date_of_birth"
+      },
+      {
+        "value": "87 Avenida De La Estrella",
+        "start": 98,
+        "end": 123,
+        "label": "street_address"
+      },
+      {
+        "value": "full-time",
+        "start": 139,
+        "end": 148,
+        "label": "employment_status"
+      }
+    ]
+  },
+  {
+    "id": "564aaab4a96a4afba303c9d702ce435e",
+    "text": "**Blood Donor Registration Form**\n\nThank you for your interest in donating blood. Please complete the following information to the best of your ability.\n\nFirst, let's start with your personal details. Your first name is Patricia.\n\nYour date of birth is 1961-05-25. This helps us ensure you meet the age requirements for donation.\n\nNext, we need to know your blood type. Your blood type is O positive.\n\nPlease ensure that all the information provided is accurate and up-to-date. If you have any questions or need further assistance, feel free to ask.",
+    "locale": "us",
+    "domain": "Healthcare",
+    "pii": [
+      {
+        "value": "Patricia",
+        "start": 220,
+        "end": 228,
+        "label": "first_name"
+      },
+      {
+        "value": "1961-05-25",
+        "start": 253,
+        "end": 263,
+        "label": "date_of_birth"
+      },
+      {
+        "value": "O positive",
+        "start": 389,
+        "end": 399,
+        "label": "blood_type"
+      }
+    ]
+  },
+  {
+    "id": "1f1e650b4c7f42cd822cc53d4a1a3399",
+    "text": "SwiftFlow Logistics has issued this Bill of Lading. The vehicle identifier is VF3FJ7X14G0001234. For tracking, please visit https://dhl.com/tracking?trackingId=12345. The goods are being transported to the USA.",
+    "locale": "us",
+    "domain": "Logistics",
+    "pii": [
+      {
+        "value": "SwiftFlow Logistics",
+        "start": 0,
+        "end": 19,
+        "label": "company_name"
+      },
+      {
+        "value": "VF3FJ7X14G0001234",
+        "start": 78,
+        "end": 95,
+        "label": "vehicle_identifier"
+      },
+      {
+        "value": "https://dhl.com/tracking?trackingId=12345",
+        "start": 124,
+        "end": 165,
+        "label": "url"
+      },
+      {
+        "value": "USA",
+        "start": 206,
+        "end": 209,
+        "label": "country"
+      }
+    ]
+  },
+  {
+    "id": "7167c6f50a2c4bd6b349163980c79c71",
+    "text": "Maria, born on 2002-03-05, is a Spanish individual with B+ blood type. Her phone number is 707-859-9753.",
+    "locale": "us",
+    "domain": "Identity Verification Services",
+    "pii": [
+      {
+        "value": "Maria",
+        "start": 0,
+        "end": 5,
+        "label": "first_name"
+      },
+      {
+        "value": "2002-03-05",
+        "start": 15,
+        "end": 25,
+        "label": "date_of_birth"
+      },
+      {
+        "value": "spanish",
+        "start": 32,
+        "end": 39,
+        "label": "race_ethnicity"
+      },
+      {
+        "value": "B+",
+        "start": 56,
+        "end": 58,
+        "label": "blood_type"
+      },
+      {
+        "value": "707-859-9753",
+        "start": 91,
+        "end": 103,
+        "label": "phone_number"
+      }
+    ]
+  },
+  {
+    "id": "f6eefc3133614611a421681c3d9df1b5",
+    "text": "**VeriTrust ID**\n\n**Legal Correspondence Cover Page**\n\nFrom:\n\nCynthia Boyce\nboycec1971@gmail.com\n\nTo:\n\nIdentity Verification Department\nVerification Status Update\nSubject Line: Identity Verification Request\n\n---\n\n**VeriTrust ID**\nIdentity Verification Services\nbank routing number: 641100487\nswift bic: GHTSUS4KX8L\ncredit debit card: 5147 6232 9417 8653",
+    "locale": "us",
+    "domain": "Identity Verification Services",
+    "pii": [
+      {
+        "value": "VeriTrust ID",
+        "start": 2,
+        "end": 14,
+        "label": "company_name"
+      },
+      {
+        "value": "Cynthia",
+        "start": 62,
+        "end": 69,
+        "label": "first_name"
+      },
+      {
+        "value": "Boyce",
+        "start": 70,
+        "end": 75,
+        "label": "last_name"
+      },
+      {
+        "value": "boycec1971@gmail.com",
+        "start": 76,
+        "end": 96,
+        "label": "email"
+      },
+      {
+        "value": "Identity Verification Department",
+        "start": 103,
+        "end": 135,
+        "label": "occupation"
+      },
+      {
+        "value": "VeriTrust ID",
+        "start": 215,
+        "end": 227,
+        "label": "company_name"
+      },
+      {
+        "value": "641100487",
+        "start": 282,
+        "end": 291,
+        "label": "bank_routing_number"
+      },
+      {
+        "value": "GHTSUS4KX8L",
+        "start": 303,
+        "end": 314,
+        "label": "swift_bic"
+      },
+      {
+        "value": "5147 6232 9417 8653",
+        "start": 334,
+        "end": 353,
+        "label": "credit_debit_card"
+      }
+    ]
+  },
+  {
+    "id": "e7496a06d3594231a0cedca37877a7c6",
+    "text": "On 2023-08-15, at 10:30 AM, VitaGenesis Biotechnologies conducted a comprehensive biotechnology lab experiment. The results of this experiment were documented and uploaded to the company's secure server, accessible at https://biotechinnovations.com/reports/lab-report-2024. The swift bic code for the transaction was QWERTUS45JHW. The employment status of the part-time researcher who conducted the experiment was asexual.",
+    "locale": "us",
+    "domain": "Biotechnology",
+    "pii": [
+      {
+        "value": "2023-08-15",
+        "start": 3,
+        "end": 13,
+        "label": "date"
+      },
+      {
+        "value": "10:30 AM",
+        "start": 18,
+        "end": 26,
+        "label": "time"
+      },
+      {
+        "value": "VitaGenesis Biotechnologies",
+        "start": 28,
+        "end": 55,
+        "label": "company_name"
+      },
+      {
+        "value": "https://biotechinnovations.com/reports/lab-report-2024",
+        "start": 218,
+        "end": 272,
+        "label": "url"
+      },
+      {
+        "value": "QWERTUS45JHW",
+        "start": 317,
+        "end": 329,
+        "label": "swift_bic"
+      },
+      {
+        "value": "part-time",
+        "start": 360,
+        "end": 369,
+        "label": "employment_status"
+      },
+      {
+        "value": "asexual",
+        "start": 414,
+        "end": 421,
+        "label": "sexuality"
+      }
+    ]
+  },
+  {
+    "id": "8dba243e065f4f12800be2541ffbc170",
+    "text": "Raul Riggio is a dedicated high school student currently residing in Todd County. He can be reached at 931-608-0499 or via email at raulr1968@hotmail.com. Raul identifies as Puerto Rican and is currently employed part-time to support his education. He has a strong academic background and is actively involved in various extracurricular activities to enhance his skills and knowledge. His objective is to leverage his educational background and part-time work experience to pursue higher education and achieve his career goals.",
+    "locale": "us",
+    "domain": "Education",
+    "pii": [
+      {
+        "value": "Raul",
+        "start": 0,
+        "end": 4,
+        "label": "first_name"
+      },
+      {
+        "value": "Riggio",
+        "start": 5,
+        "end": 11,
+        "label": "last_name"
+      },
+      {
+        "value": "high school",
+        "start": 27,
+        "end": 38,
+        "label": "education_level"
+      },
+      {
+        "value": "Todd County",
+        "start": 69,
+        "end": 80,
+        "label": "county"
+      },
+      {
+        "value": "931-608-0499",
+        "start": 103,
+        "end": 115,
+        "label": "phone_number"
+      },
+      {
+        "value": "raulr1968@hotmail.com",
+        "start": 132,
+        "end": 153,
+        "label": "email"
+      },
+      {
+        "value": "Raul",
+        "start": 155,
+        "end": 159,
+        "label": "first_name"
+      },
+      {
+        "value": "puerto rican",
+        "start": 174,
+        "end": 186,
+        "label": "race_ethnicity"
+      },
+      {
+        "value": "part-time",
+        "start": 213,
+        "end": 222,
+        "label": "employment_status"
+      },
+      {
+        "value": "part-time",
+        "start": 445,
+        "end": 454,
+        "label": "employment_status"
+      }
+    ]
+  },
+  {
+    "id": "d3510ec89ab94e5e9446922d2a637d67",
+    "text": "I am applying for student financial aid through Identity Verification Services. My first name is Peggy. I am a resident of Laurens County and my religious belief is Christian. For verification purposes, please use the following details: Social Security Number 250-38-8116.",
+    "locale": "us",
+    "domain": "Identity Verification Services",
+    "pii": [
+      {
+        "value": "Peggy",
+        "start": 97,
+        "end": 102,
+        "label": "first_name"
+      },
+      {
+        "value": "Laurens County",
+        "start": 123,
+        "end": 137,
+        "label": "county"
+      },
+      {
+        "value": "Christian",
+        "start": 165,
+        "end": 174,
+        "label": "religious_belief"
+      },
+      {
+        "value": "250-38-8116",
+        "start": 260,
+        "end": 271,
+        "label": "ssn"
+      }
+    ]
+  },
+  {
+    "id": "4443c8e7f35e43aeb510cf44721f54ec",
+    "text": "Please provide your taxpayer identification number: 547-44-7315. Your name, Kyle Kyle, and the address at 205 Avalon Avenue, have been entered into the system. Please verify that your email address, kylekelly4@icloud.com, is correct. If you need to update your information, please contact the office in Santa Clara County.",
+    "locale": "us",
+    "domain": "Identity Management",
+    "pii": [
+      {
+        "value": "547-44-7315",
+        "start": 52,
+        "end": 63,
+        "label": "ssn"
+      },
+      {
+        "value": "Kyle",
+        "start": 76,
+        "end": 80,
+        "label": "last_name"
+      },
+      {
+        "value": "Kyle",
+        "start": 81,
+        "end": 85,
+        "label": "last_name"
+      },
+      {
+        "value": "205 Avalon Avenue",
+        "start": 106,
+        "end": 123,
+        "label": "street_address"
+      },
+      {
+        "value": "kylekelly4@icloud.com",
+        "start": 199,
+        "end": 220,
+        "label": "email"
+      },
+      {
+        "value": "Santa Clara County",
+        "start": 303,
+        "end": 321,
+        "label": "county"
+      }
+    ]
+  },
+  {
+    "id": "2d5cf7ec703249c28de36a081cf6f094",
+    "text": "Patient presents today with a chief complaint of fatigue and mild shortness of breath. Patient's medical record number is 0009271658. Vital signs are stable, with a blood pressure of 120/80 mmHg and a heart rate of 72 bpm. Laboratory results indicate that the patient's blood type is O+. No other significant findings were noted during the physical examination. The patient was advised to follow up in two weeks if symptoms persist.",
+    "locale": "us",
+    "domain": "Healthcare",
+    "pii": [
+      {
+        "value": "0009271658",
+        "start": 122,
+        "end": 132,
+        "label": "medical_record_number"
+      },
+      {
+        "value": "O+",
+        "start": 284,
+        "end": 286,
+        "label": "blood_type"
+      }
+    ]
+  },
+  {
+    "id": "aa68de98f33149b08b231a63a9dc0c6c",
+    "text": "This Health Insurance Enrollment Form is for Arnold Varner, born on 1979-08-22. The Social Security number provided is 024-48-0709. The address listed is 116 Thatcher Brook Ln. The health plan beneficiary number is PA-0004382965.",
+    "locale": "us",
+    "domain": "Identity Verification Services",
+    "pii": [
+      {
+        "value": "Arnold",
+        "start": 45,
+        "end": 51,
+        "label": "first_name"
+      },
+      {
+        "value": "Varner",
+        "start": 52,
+        "end": 58,
+        "label": "last_name"
+      },
+      {
+        "value": "1979-08-22",
+        "start": 68,
+        "end": 78,
+        "label": "date_of_birth"
+      },
+      {
+        "value": "024-48-0709",
+        "start": 119,
+        "end": 130,
+        "label": "ssn"
+      },
+      {
+        "value": "116 Thatcher Brook Ln",
+        "start": 154,
+        "end": 175,
+        "label": "street_address"
+      },
+      {
+        "value": "PA-0004382965",
+        "start": 215,
+        "end": 228,
+        "label": "health_plan_beneficiary_number"
+      }
+    ]
+  },
+  {
+    "id": "7074cfbaf28f4405af99a479ca881a86",
+    "text": "On November 15, 2023, the final Closing Disclosure for the loan associated with customer id SFO-5813924 has been prepared. The loan terms for the property located at 315 Hulmeville Road Apartment 1 have been finalized. The account number for this transaction is 87352916. This disclosure outlines the projected monthly payments and the detailed breakdown of costs associated with closing the mortgage loan.",
+    "locale": "us",
+    "domain": "Real Estate",
+    "pii": [
+      {
+        "value": "November 15, 2023",
+        "start": 3,
+        "end": 20,
+        "label": "date"
+      },
+      {
+        "value": "SFO-5813924",
+        "start": 92,
+        "end": 103,
+        "label": "customer_id"
+      },
+      {
+        "value": "315 Hulmeville Road Apartment 1",
+        "start": 166,
+        "end": 197,
+        "label": "street_address"
+      },
+      {
+        "value": "87352916",
+        "start": 262,
+        "end": 270,
+        "label": "account_number"
+      }
+    ]
+  },
+  {
+    "id": "c607017070564056aea425cf797f78e6",
+    "text": "The quarterly revenue report for LumaLens Media has shown significant growth across various entertainment sectors. Our box office earnings for the latest movie release surpassed expectations, with ticket sales reaching unprecedented heights. Merchandise revenue also saw a notable increase, driven by high demand for exclusive products. Detailed financial metrics and charts can be accessed at http://192.168.1.100:8080/reports/revenue. For those interested in the financial health of the company, the report also includes a section on the education level of our executive team, which includes individuals with a bachelor's degree. The company's success is also attributed to its diverse workforce, which includes individuals with varying religious beliefs, such as Lutheran. Additionally, the report highlights the security measures in place, including the use of a unique pin, 513345, to access sensitive financial data.",
+    "locale": "us",
+    "domain": "Entertainment",
+    "pii": [
+      {
+        "value": "LumaLens Media",
+        "start": 33,
+        "end": 47,
+        "label": "company_name"
+      },
+      {
+        "value": "http://192.168.1.100:8080/reports/revenue",
+        "start": 394,
+        "end": 435,
+        "label": "url"
+      },
+      {
+        "value": "bachelor's degree",
+        "start": 613,
+        "end": 630,
+        "label": "education_level"
+      },
+      {
+        "value": "Lutheran",
+        "start": 766,
+        "end": 774,
+        "label": "religious_belief"
+      },
+      {
+        "value": "513345",
+        "start": 879,
+        "end": 885,
+        "label": "pin"
+      }
+    ]
+  },
+  {
+    "id": "78de636c025f44f9909b11cd8183138d",
+    "text": "The construction inspection report for the project in Anne Arundel County was conducted on R05/07/2023. The inspector, holding certificate license number FL-72903246, noted several key observations. The site's network infrastructure, identified by the mac address 00:24:81:A7:B2:F9, was functional but required updates to ensure compliance with current regulations. The inspection covered various aspects of the construction, including structural integrity, electrical systems, and compliance with state MD safety standards. The inspector recommended immediate corrective actions for identified issues to ensure the project's timely completion and adherence to safety protocols.",
+    "locale": "us",
+    "domain": "Construction",
+    "pii": [
+      {
+        "value": "Anne Arundel County",
+        "start": 54,
+        "end": 73,
+        "label": "county"
+      },
+      {
+        "value": "R05/07/2023",
+        "start": 91,
+        "end": 102,
+        "label": "date"
+      },
+      {
+        "value": "FL-72903246",
+        "start": 154,
+        "end": 165,
+        "label": "certificate_license_number"
+      },
+      {
+        "value": "00:24:81:A7:B2:F9",
+        "start": 264,
+        "end": 281,
+        "label": "mac_address"
+      },
+      {
+        "value": "MD",
+        "start": 504,
+        "end": 506,
+        "label": "state"
+      }
+    ]
+  },
+  {
+    "id": "50a582d9e6964dc8acd40844d144f1f6",
+    "text": "As a 44 years old physical therapist, I stand before you today, a 44 years old male, with a strong religious belief as a Christian, to declare my support for equal rights and protections based on sexual orientation and gender identity. My political view is MAGA and I am straight. I believe that every individual, regardless of their sexuality, deserves the same rights and protections under the law. As a Christian, I am guided by the principles of love, compassion, and justice. I am committed to advocating for policies that ensure fairness and equality for all, including those who identify as LGBTQ+. My occupation as a physical therapist has taught me the importance of empathy and understanding, values that I bring to this cause. I urge my fellow citizens to join me in this fight for equality, and to stand up for the rights of all individuals, regardless of their sexual orientation or gender identity.",
+    "locale": "us",
+    "domain": "Civil Rights",
+    "pii": [
+      {
+        "value": 44,
+        "start": 5,
+        "end": 7,
+        "label": "age"
+      },
+      {
+        "value": "physical therapist",
+        "start": 18,
+        "end": 36,
+        "label": "occupation"
+      },
+      {
+        "value": 44,
+        "start": 66,
+        "end": 68,
+        "label": "age"
+      },
+      {
+        "value": "male",
+        "start": 79,
+        "end": 83,
+        "label": "gender"
+      },
+      {
+        "value": "Christian",
+        "start": 121,
+        "end": 130,
+        "label": "religious_belief"
+      },
+      {
+        "value": "MAGA",
+        "start": 257,
+        "end": 261,
+        "label": "political_view"
+      },
+      {
+        "value": "straight",
+        "start": 271,
+        "end": 279,
+        "label": "sexuality"
+      },
+      {
+        "value": "Christian",
+        "start": 406,
+        "end": 415,
+        "label": "religious_belief"
+      },
+      {
+        "value": "physical therapist",
+        "start": 625,
+        "end": 643,
+        "label": "occupation"
+      }
+    ]
+  },
+  {
+    "id": "b5301ea67fbf45ad946aa841bdcd7a54",
+    "text": "I, Theresa Brunat, a resident of Manchester, New Hampshire, would like to declare my political affiliation and experiences related to civil rights. On 2023-09-15, I decided to formally affiliate myself with the Tea Party movement. This decision was not made lightly, as it reflects my deep-seated beliefs in limited government and individual liberties. Living in Manchester, New Hampshire, I have witnessed firsthand the importance of civil rights and the need for vigilant protection of our constitutional freedoms. As a Tea Party member, I am committed to advocating for policies that uphold these principles and ensure that every citizen's rights are respected.",
+    "locale": "us",
+    "domain": "Civil Rights",
+    "pii": [
+      {
+        "value": "Theresa",
+        "start": 3,
+        "end": 10,
+        "label": "first_name"
+      },
+      {
+        "value": "Brunat",
+        "start": 11,
+        "end": 17,
+        "label": "last_name"
+      },
+      {
+        "value": "Manchester",
+        "start": 33,
+        "end": 43,
+        "label": "city"
+      },
+      {
+        "value": "New Hampshire",
+        "start": 45,
+        "end": 58,
+        "label": "state"
+      },
+      {
+        "value": "2023-09-15",
+        "start": 151,
+        "end": 161,
+        "label": "date"
+      },
+      {
+        "value": "Manchester",
+        "start": 363,
+        "end": 373,
+        "label": "city"
+      },
+      {
+        "value": "New Hampshire",
+        "start": 375,
+        "end": 388,
+        "label": "state"
+      },
+      {
+        "value": "Tea Party member",
+        "start": 522,
+        "end": 538,
+        "label": "political_view"
+      }
+    ]
+  },
+  {
+    "id": "7f889409ce024b4ea3626c9b38bcd016",
+    "text": "The shipment of goods from SwiftRide will be transported via a vehicle with license plate FJL421. The contact information for any customs inquiries is 214-824-1255 and derrickanthonymetelus@gmail.com. The truck's mac address is 79:3E:48:1A:6F:B2.",
+    "locale": "us",
+    "domain": "Transportation",
+    "pii": [
+      {
+        "value": "SwiftRide",
+        "start": 27,
+        "end": 36,
+        "label": "company_name"
+      },
+      {
+        "value": "FJL421",
+        "start": 90,
+        "end": 96,
+        "label": "license_plate"
+      },
+      {
+        "value": "214-824-1255",
+        "start": 151,
+        "end": 163,
+        "label": "phone_number"
+      },
+      {
+        "value": "derrickanthonymetelus@gmail.com",
+        "start": 168,
+        "end": 199,
+        "label": "email"
+      },
+      {
+        "value": "79:3E:48:1A:6F:B2",
+        "start": 228,
+        "end": 245,
+        "label": "mac_address"
+      }
+    ]
+  },
+  {
+    "id": "9d53d13f0e3d4abfaff21347796f73e4",
+    "text": "The Equity Allocation Report for account number C37529641 details the current investment strategies and portfolio performance. The report can be accessed at https://financialreports.com. Our investment strategy focuses on diversifying across various asset classes to mitigate risk. The swift bic GHTBUS45KLX is used for international transactions, ensuring secure and efficient transfers. The portfolio includes a mix of equities, bonds, and other financial instruments, with a specific focus on high-growth sectors. The financial projections indicate a positive outlook, with expected returns aligning with our investment goals.",
+    "locale": "us",
+    "domain": "Finance",
+    "pii": [
+      {
+        "value": "C37529641",
+        "start": 48,
+        "end": 57,
+        "label": "account_number"
+      },
+      {
+        "value": "https://financialreports.com",
+        "start": 157,
+        "end": 185,
+        "label": "url"
+      },
+      {
+        "value": "GHTBUS45KLX",
+        "start": 296,
+        "end": 307,
+        "label": "swift_bic"
+      }
+    ]
+  },
+  {
+    "id": "6253950d172940c6bd8a1ab8b27e8468",
+    "text": "TransAmerica Logistics\n\nWeight Ticket\n\nVIN: 5UXKL72M4KL501245\n\nLicense Plate: FTR 832\n\nDate/Time: 2025-08-01T05:24:48\n\nGross Weight: 45,000 lbs\n\nTare Weight: 10,000 lbs\n\nNet Weight: 35,000 lbs\n\nScale Operator: John Doe",
+    "locale": "us",
+    "domain": "Transportation",
+    "pii": [
+      {
+        "value": "5UXKL72M4KL501245",
+        "start": 44,
+        "end": 61,
+        "label": "vehicle_identifier"
+      },
+      {
+        "value": "FTR 832",
+        "start": 78,
+        "end": 85,
+        "label": "license_plate"
+      },
+      {
+        "value": "2025-08-01T05:24:48",
+        "start": 98,
+        "end": 117,
+        "label": "date_time"
+      },
+      {
+        "value": "Scale Operator",
+        "start": 194,
+        "end": 208,
+        "label": "occupation"
+      },
+      {
+        "value": "John",
+        "start": 210,
+        "end": 214,
+        "label": "first_name"
+      },
+      {
+        "value": "Doe",
+        "start": 215,
+        "end": 218,
+        "label": "last_name"
+      }
+    ]
+  },
+  {
+    "id": "426053824c59426685e669a0dae643e3",
+    "text": "```\nOrder Number: 123456\nCard Type: credit debit card\nLast Four Digits: 1014\nCVV Code: 775\nExpiration Date: 12/25\nConfirmation Status: Confirmed\n```",
+    "locale": "us",
+    "domain": "Ecommerce",
+    "pii": [
+      {
+        "value": "775",
+        "start": 87,
+        "end": 90,
+        "label": "cvv"
+      },
+      {
+        "value": "12/25",
+        "start": 108,
+        "end": 113,
+        "label": "date"
+      }
+    ]
+  },
+  {
+    "id": "ae3fd891114247358a18ebe05f3177ca",
+    "text": "The device with the device identifier a8f8a8f8f3d2a1e2 is located at coordinate 28.6432 N, 81.2886 W. This device is a Samsung Galaxy S23 and can be checked for compatibility with 5G networks at the url https://telecomprovider.com/device-compatibility?brand=Samsung&model=GalaxyS23&network=5G.",
+    "locale": "us",
+    "domain": "Telecommunications",
+    "pii": [
+      {
+        "value": "a8f8a8f8f3d2a1e2",
+        "start": 38,
+        "end": 54,
+        "label": "device_identifier"
+      },
+      {
+        "value": "28.6432 N, 81.2886 W",
+        "start": 80,
+        "end": 100,
+        "label": "coordinate"
+      },
+      {
+        "value": "https://telecomprovider.com/device-compatibility?brand=Samsung&model=GalaxyS23&network=5G",
+        "start": 203,
+        "end": 292,
+        "label": "url"
+      }
+    ]
+  },
+  {
+    "id": "bd1287737399409593db75048d67b5b0",
+    "text": "---\n\n**Personal Information**\n\nFirst Name: Tayla\n\nLast Name:\n\nMiddle Name:\n\nDate of Birth: 1989-09-05\n\nSocial Security Number: 562-54-8773\n\nEducation Level: some college\n\nBiometric Identifier: BIO-5728946135\n\n**Loan Details**\n\nLoan Amount:\n\nLoan Type:\n\nLoan Purpose:\n\n**Identity Verification Consent**\n\nI, Tayla, hereby consent to the verification of my identity using the provided information, including my Biometric Identifier: BIO-5728946135, for the purpose of processing this loan application.\n\n**Submission Details**\n\nSubmission Time: 07:23 AM\n\n---",
+    "locale": "us",
+    "domain": "Identity Verification Services",
+    "pii": [
+      {
+        "value": "Tayla",
+        "start": 43,
+        "end": 48,
+        "label": "first_name"
+      },
+      {
+        "value": "1989-09-05",
+        "start": 91,
+        "end": 101,
+        "label": "date_of_birth"
+      },
+      {
+        "value": "562-54-8773",
+        "start": 127,
+        "end": 138,
+        "label": "ssn"
+      },
+      {
+        "value": "some college",
+        "start": 157,
+        "end": 169,
+        "label": "education_level"
+      },
+      {
+        "value": "BIO-5728946135",
+        "start": 193,
+        "end": 207,
+        "label": "biometric_identifier"
+      },
+      {
+        "value": "Tayla",
+        "start": 306,
+        "end": 311,
+        "label": "first_name"
+      },
+      {
+        "value": "BIO-5728946135",
+        "start": 430,
+        "end": 444,
+        "label": "biometric_identifier"
+      },
+      {
+        "value": "07:23 AM",
+        "start": 541,
+        "end": 549,
+        "label": "time"
+      }
+    ]
+  },
+  {
+    "id": "d204231bd08a4f0896ce5cd125b79465",
+    "text": "Here are the VPN credentials for accessing the Revel Retail network:\n\nThe user name is daxaben_coder. The password is G9t$fR2mXk5. The VPN server address is 12.34.56.78. Please use the employee ID 23-MKT-562 for authentication.",
+    "locale": "us",
+    "domain": "Retail",
+    "pii": [
+      {
+        "value": "Revel Retail",
+        "start": 47,
+        "end": 59,
+        "label": "company_name"
+      },
+      {
+        "value": "daxaben_coder",
+        "start": 87,
+        "end": 100,
+        "label": "user_name"
+      },
+      {
+        "value": "G9t$fR2mXk5",
+        "start": 118,
+        "end": 129,
+        "label": "password"
+      },
+      {
+        "value": "12.34.56.78",
+        "start": 157,
+        "end": 168,
+        "label": "ipv4"
+      },
+      {
+        "value": "23-MKT-562",
+        "start": 197,
+        "end": 207,
+        "label": "employee_id"
+      }
+    ]
+  },
+  {
+    "id": "a909d7003fbb4b66830bd87990a3b80c",
+    "text": "ChemTech Industries has recently updated its chemical formula sheet, which can be accessed via ftp://formulas.example.com/chemicals/formulas. This document includes a comprehensive list of chemical names and their corresponding formulas, along with molecular weights and safety information. The certificate license number for this document is 87532917. For any inquiries or further details, please contact us at hoitang@chemicals.com. The latest update was made on 2024-10-09. The document was last reviewed at 2024-06-15T14:30:00.",
+    "locale": "us",
+    "domain": "Chemicals",
+    "pii": [
+      {
+        "value": "ChemTech Industries",
+        "start": 0,
+        "end": 19,
+        "label": "company_name"
+      },
+      {
+        "value": "ftp://formulas.example.com/chemicals/formulas",
+        "start": 95,
+        "end": 140,
+        "label": "url"
+      },
+      {
+        "value": "87532917",
+        "start": 343,
+        "end": 351,
+        "label": "certificate_license_number"
+      },
+      {
+        "value": "hoitang@chemicals.com",
+        "start": 412,
+        "end": 433,
+        "label": "email"
+      },
+      {
+        "value": "2024-10-09",
+        "start": 465,
+        "end": 475,
+        "label": "date"
+      },
+      {
+        "value": "2024-06-15T14:30:00",
+        "start": 511,
+        "end": 530,
+        "label": "date_time"
+      }
+    ]
+  },
+  {
+    "id": "4a452ce6b685496f9f7f7f58db9f557c",
+    "text": "The blood bank inventory record for 2023-12-12 shows a significant amount of O+ blood type units available. The expiration date for these units is not specified, but the units are well within the usable range. The donor information includes a biometric identifier: D64837291598. The donor's sexuality: gay was noted during the donation process, but this information is not typically used for blood typing or inventory management. The swift bic: ABXCUS4LK73 code is listed for reference.",
+    "locale": "us",
+    "domain": "Healthcare",
+    "pii": [
+      {
+        "value": "2023-12-12",
+        "start": 36,
+        "end": 46,
+        "label": "date"
+      },
+      {
+        "value": "O+",
+        "start": 77,
+        "end": 79,
+        "label": "blood_type"
+      },
+      {
+        "value": "D64837291598",
+        "start": 265,
+        "end": 277,
+        "label": "biometric_identifier"
+      },
+      {
+        "value": "gay",
+        "start": 302,
+        "end": 305,
+        "label": "sexuality"
+      },
+      {
+        "value": "ABXCUS4LK73",
+        "start": 445,
+        "end": 456,
+        "label": "swift_bic"
+      }
+    ]
+  },
+  {
+    "id": "08b7ad8f4b574be38d8202bc882512f9",
+    "text": "The property located at 311 Oakwood Ave was appraised on 2024-08-15. The appraisal report, which includes detailed photographs and a comprehensive market analysis, can be accessed at https://realestatepro.com/appraisal/reports?property_id=12345&date=2024-08-15. This report is an essential document for real estate professionals and potential buyers, providing valuable insights into the property's value and market trends. The appraised value is determined based on comparable sales data and other relevant factors, ensuring an accurate assessment. The report is structured with various sections and appendices, making it easy to navigate and understand.",
+    "locale": "us",
+    "domain": "Real Estate",
+    "pii": [
+      {
+        "value": "311 Oakwood Ave",
+        "start": 24,
+        "end": 39,
+        "label": "street_address"
+      },
+      {
+        "value": "2024-08-15",
+        "start": 57,
+        "end": 67,
+        "label": "date"
+      },
+      {
+        "value": "https://realestatepro.com/appraisal/reports?property_id=12345&date=2024-08-15",
+        "start": 183,
+        "end": 260,
+        "label": "url"
+      }
+    ]
+  },
+  {
+    "id": "5344e719fbb24d86bbb80212eabfbab2",
+    "text": "This Partnership Agreement is entered into on 07/15/2024 between Community Impact Foundation and Elisabeth Setzer. Elisabeth Setzer can be reached at elisabeth.setzer67@gmail.com or by phone at 559-856-4876. The scope of work includes collaborative efforts to achieve our mutual goals. This agreement outlines the responsibilities and financial arrangements between the parties. The effective date of this agreement is 07/15/2024.",
+    "locale": "us",
+    "domain": "Non-Profit",
+    "pii": [
+      {
+        "value": "07/15/2024",
+        "start": 46,
+        "end": 56,
+        "label": "date"
+      },
+      {
+        "value": "Community Impact Foundation",
+        "start": 65,
+        "end": 92,
+        "label": "company_name"
+      },
+      {
+        "value": "Elisabeth",
+        "start": 97,
+        "end": 106,
+        "label": "first_name"
+      },
+      {
+        "value": "Setzer",
+        "start": 107,
+        "end": 113,
+        "label": "last_name"
+      },
+      {
+        "value": "Elisabeth",
+        "start": 115,
+        "end": 124,
+        "label": "first_name"
+      },
+      {
+        "value": "Setzer",
+        "start": 125,
+        "end": 131,
+        "label": "last_name"
+      },
+      {
+        "value": "elisabeth.setzer67@gmail.com",
+        "start": 150,
+        "end": 178,
+        "label": "email"
+      },
+      {
+        "value": "559-856-4876",
+        "start": 194,
+        "end": 206,
+        "label": "phone_number"
+      },
+      {
+        "value": "07/15/2024",
+        "start": 419,
+        "end": 429,
+        "label": "date"
+      }
+    ]
+  },
+  {
+    "id": "2019c9cd046d4bdd8e4ccf358b25142f",
+    "text": "This Derivative Contract is effective as of the date 2023-08-15 between Vanguard Capital and the counterparty. The contract pertains to a notional amount of $5,000,000, with the underlying asset being a basket of equities. Payments will be made from the account number 1023-5847-6970, with settlement details to be handled through the bank routing number 684106238.",
+    "locale": "us",
+    "domain": "Finance",
+    "pii": [
+      {
+        "value": "2023-08-15",
+        "start": 53,
+        "end": 63,
+        "label": "date"
+      },
+      {
+        "value": "Vanguard Capital",
+        "start": 72,
+        "end": 88,
+        "label": "company_name"
+      },
+      {
+        "value": "1023-5847-6970",
+        "start": 269,
+        "end": 283,
+        "label": "account_number"
+      },
+      {
+        "value": "684106238",
+        "start": 355,
+        "end": 364,
+        "label": "bank_routing_number"
+      }
+    ]
+  },
+  {
+    "id": "a20670d943794f209595e39a57743041",
+    "text": "The maintenance schedule for TechCorp can be accessed at https://techcorp.com/maintenance-schedule. The latest update was made on 2025-02-24T05:36:54. The maintenance task for the device with identifier 4A6B3C9D-2E8F-4A7C-A98B-1F6E7D2C3B4E is scheduled for next week. The technician responsible for this task is a full-time employee.",
+    "locale": "us",
+    "domain": "Technology",
+    "pii": [
+      {
+        "value": "https://techcorp.com/maintenance-schedule",
+        "start": 57,
+        "end": 98,
+        "label": "url"
+      },
+      {
+        "value": "2025-02-24T05:36:54",
+        "start": 130,
+        "end": 149,
+        "label": "date_time"
+      },
+      {
+        "value": "4A6B3C9D-2E8F-4A7C-A98B-1F6E7D2C3B4E",
+        "start": 203,
+        "end": 239,
+        "label": "device_identifier"
+      },
+      {
+        "value": "full-time",
+        "start": 314,
+        "end": 323,
+        "label": "employment_status"
+      }
+    ]
+  },
+  {
+    "id": "4bb3ddfa63e44e42875321914be0d714",
+    "text": "Mark your calendars for our upcoming event, \"Green Futures Summit,\" scheduled for 2023-11-15. The event will kick off at 7:30 PM, and we are excited to host a variety of speakers who share our environmentalist views.\n\nTo secure your spot, please register online. We accept credit debit card payments, and you can use your card ending in 1236. Make sure to have your CVV, 144, ready for a smooth transaction.",
+    "locale": "us",
+    "domain": "Non-Profit",
+    "pii": [
+      {
+        "value": "2023-11-15",
+        "start": 82,
+        "end": 92,
+        "label": "date"
+      },
+      {
+        "value": "7:30 PM",
+        "start": 121,
+        "end": 128,
+        "label": "time"
+      },
+      {
+        "value": "Environmentalist",
+        "start": 193,
+        "end": 209,
+        "label": "political_view"
+      },
+      {
+        "value": 144,
+        "start": 371,
+        "end": 374,
+        "label": "cvv"
+      }
+    ]
+  },
+  {
+    "id": "9c0f9bb98689482fb586592ed885ef75",
+    "text": "The freight rate table for shipments departing from the USA, includes a variety of routes and transit times. For example, a shipment leaving at 7:23 am from Newnan, USA, to Atlanta, USA, for a homoflexible  freight type, has a base rate of $2.50 per pound. There is a surcharge of $0.50 for handling.  The transit time is approximately 24 hours.  Please ensure that the CVV 934 is included on the invoice.",
+    "locale": "us",
+    "domain": "Logistics",
+    "pii": [
+      {
+        "value": "USA",
+        "start": 56,
+        "end": 59,
+        "label": "country"
+      },
+      {
+        "value": "7:23 am",
+        "start": 144,
+        "end": 151,
+        "label": "time"
+      },
+      {
+        "value": "Newnan",
+        "start": 157,
+        "end": 163,
+        "label": "city"
+      },
+      {
+        "value": "USA",
+        "start": 165,
+        "end": 168,
+        "label": "country"
+      },
+      {
+        "value": "Atlanta",
+        "start": 173,
+        "end": 180,
+        "label": "city"
+      },
+      {
+        "value": "USA",
+        "start": 182,
+        "end": 185,
+        "label": "country"
+      },
+      {
+        "value": "homoflexible",
+        "start": 193,
+        "end": 205,
+        "label": "sexuality"
+      },
+      {
+        "value": 934,
+        "start": 374,
+        "end": 377,
+        "label": "cvv"
+      }
+    ]
+  },
+  {
+    "id": "0afacc760d454b2092522bb83607fd68",
+    "text": "### Environmental Impact Assessment\n\n#### Executive Summary\nThis Environmental Impact Assessment (EIA) for GearGlee Manufacturing, located at coordinate 39.2904, -76.6122 in USA, MD, provides a comprehensive evaluation of the potential environmental impacts of the proposed manufacturing project. The assessment covers various environmental aspects, including air, water, land, noise, and waste, and outlines mitigation measures and a monitoring plan to ensure compliance with environmental regulations.\n\n#### Project Description\nGearGlee Manufacturing proposes to establish a new manufacturing facility in MD, USA. The project aims to produce high-quality manufacturing components. The facility will be located at coordinate 39.2904, -76.6122. The construction and operation of the facility are expected to commence on 15-08-2026. For more detailed information, please refer to the company's website at https://manufacturinginsights.com/environmental-impact-assessments#section-4.\n\n#### Environmental Baseline\nThe environmental baseline for the project site includes an assessment of the current air quality, water resources, land use, noise levels, and waste management practices in the area. The baseline data will be used to evaluate the potential impacts of the proposed manufacturing activities.",
+    "locale": "us",
+    "domain": "Manufacturing",
+    "pii": [
+      {
+        "value": "GearGlee Manufacturing",
+        "start": 107,
+        "end": 129,
+        "label": "company_name"
+      },
+      {
+        "value": "39.2904, -76.6122",
+        "start": 153,
+        "end": 170,
+        "label": "coordinate"
+      },
+      {
+        "value": "USA",
+        "start": 174,
+        "end": 177,
+        "label": "country"
+      },
+      {
+        "value": "MD",
+        "start": 179,
+        "end": 181,
+        "label": "state"
+      },
+      {
+        "value": "GearGlee Manufacturing",
+        "start": 530,
+        "end": 552,
+        "label": "company_name"
+      },
+      {
+        "value": "MD",
+        "start": 607,
+        "end": 609,
+        "label": "state"
+      },
+      {
+        "value": "USA",
+        "start": 611,
+        "end": 614,
+        "label": "country"
+      },
+      {
+        "value": "39.2904, -76.6122",
+        "start": 726,
+        "end": 743,
+        "label": "coordinate"
+      },
+      {
+        "value": "15-08-2026",
+        "start": 820,
+        "end": 830,
+        "label": "date"
+      },
+      {
+        "value": "https://manufacturinginsights.com/environmental-impact-assessments#section-4",
+        "start": 904,
+        "end": 980,
+        "label": "url"
+      }
+    ]
+  },
+  {
+    "id": "31ee8fd013e4445d83d6f15169f76ba7",
+    "text": "The biological activity report for the drug compound APX-123, conducted by Astraeus Pharmaceuticals under certificate license number 80431726, was completed on 15/07/2024. The study, led by employee MKT-3912, involved a series of biological assays designed to evaluate the compound's efficacy and safety profile. The medical record number 0004372819 was assigned to track the progress and results of these assays. The data collected from these experiments were meticulously documented and analyzed, providing valuable insights into the compound's potential therapeutic applications. Unfortunately, the employment status of the employee MKT-3912 is layoff.",
+    "locale": "us",
+    "domain": "Pharmaceuticals",
+    "pii": [
+      {
+        "value": "Astraeus Pharmaceuticals",
+        "start": 75,
+        "end": 99,
+        "label": "company_name"
+      },
+      {
+        "value": "80431726",
+        "start": 133,
+        "end": 141,
+        "label": "certificate_license_number"
+      },
+      {
+        "value": "15/07/2024",
+        "start": 160,
+        "end": 170,
+        "label": "date"
+      },
+      {
+        "value": "MKT-3912",
+        "start": 199,
+        "end": 207,
+        "label": "employee_id"
+      },
+      {
+        "value": "0004372819",
+        "start": 339,
+        "end": 349,
+        "label": "medical_record_number"
+      },
+      {
+        "value": "MKT-3912",
+        "start": 636,
+        "end": 644,
+        "label": "employee_id"
+      },
+      {
+        "value": "layoff",
+        "start": 648,
+        "end": 654,
+        "label": "employment_status"
+      }
+    ]
+  },
+  {
+    "id": "e72cac380844453eba958f4ce874e352",
+    "text": "You are cordially invited to our upcoming agricultural event hosted by HarvestGold Farms. The event will take place on 2024-09-15 at 18:25 in Surprise, Arizona, USA. This is a fantastic opportunity to engage with industry experts and learn about the latest advancements in agriculture. Our keynote speaker will be a renowned figure in the field, and the agenda includes a variety of informative sessions and workshops. The event will be held at 127 East 24th Street. Please RSVP by 2024-05-11T21:11:40 to ensure your spot. We look forward to seeing you there.",
+    "locale": "us",
+    "domain": "Agriculture",
+    "pii": [
+      {
+        "value": "HarvestGold Farms",
+        "start": 71,
+        "end": 88,
+        "label": "company_name"
+      },
+      {
+        "value": "2024-09-15",
+        "start": 119,
+        "end": 129,
+        "label": "date"
+      },
+      {
+        "value": "18:25",
+        "start": 133,
+        "end": 138,
+        "label": "time"
+      },
+      {
+        "value": "Surprise",
+        "start": 142,
+        "end": 150,
+        "label": "city"
+      },
+      {
+        "value": "Arizona",
+        "start": 152,
+        "end": 159,
+        "label": "state"
+      },
+      {
+        "value": "USA",
+        "start": 161,
+        "end": 164,
+        "label": "country"
+      },
+      {
+        "value": "127 East 24th Street",
+        "start": 445,
+        "end": 465,
+        "label": "street_address"
+      },
+      {
+        "value": "2024-05-11T21:11:40",
+        "start": 482,
+        "end": 501,
+        "label": "date_time"
+      }
+    ]
+  },
+  {
+    "id": "c9618c64d17d4300bb9a869ec09b929b",
+    "text": "This Building Permit is issued to Josue Aguirre at 387 Hills Dr, Riverview, Florida, 33578, USA. The applicant can be reached at 501-934-0446 or via email at josueaguirre@gmail.com. The scope of work includes a renovation project for the property. The permit number is pending and will be issued upon approval.",
+    "locale": "us",
+    "domain": "Real Estate",
+    "pii": [
+      {
+        "value": "Josue",
+        "start": 34,
+        "end": 39,
+        "label": "first_name"
+      },
+      {
+        "value": "Aguirre",
+        "start": 40,
+        "end": 47,
+        "label": "last_name"
+      },
+      {
+        "value": "387 Hills Dr",
+        "start": 51,
+        "end": 63,
+        "label": "street_address"
+      },
+      {
+        "value": "Riverview",
+        "start": 65,
+        "end": 74,
+        "label": "city"
+      },
+      {
+        "value": "Florida",
+        "start": 76,
+        "end": 83,
+        "label": "state"
+      },
+      {
+        "value": "33578",
+        "start": 85,
+        "end": 90,
+        "label": "postcode"
+      },
+      {
+        "value": "USA",
+        "start": 92,
+        "end": 95,
+        "label": "country"
+      },
+      {
+        "value": "501-934-0446",
+        "start": 129,
+        "end": 141,
+        "label": "phone_number"
+      },
+      {
+        "value": "josueaguirre@gmail.com",
+        "start": 158,
+        "end": 180,
+        "label": "email"
+      }
+    ]
+  },
+  {
+    "id": "254b1bb9ddf94a7cacbaad48fe228341",
+    "text": "I purchased a new television from your store on 2023-09-15. My name is Joseph Zarecki. I can be reached at 727-360-0442 or via email at josephzarecki55@yahoo.com. The product was excellent, and I rated my experience a 5 out of 5. The service was outstanding.",
+    "locale": "us",
+    "domain": "Retail",
+    "pii": [
+      {
+        "value": "2023-09-15",
+        "start": 48,
+        "end": 58,
+        "label": "date"
+      },
+      {
+        "value": "Joseph",
+        "start": 71,
+        "end": 77,
+        "label": "first_name"
+      },
+      {
+        "value": "Zarecki",
+        "start": 78,
+        "end": 85,
+        "label": "last_name"
+      },
+      {
+        "value": "727-360-0442",
+        "start": 107,
+        "end": 119,
+        "label": "phone_number"
+      },
+      {
+        "value": "josephzarecki55@yahoo.com",
+        "start": 136,
+        "end": 161,
+        "label": "email"
+      }
+    ]
+  },
+  {
+    "id": "a9a5624479e04bdd885289ddf17cc40a",
+    "text": "The National Philanthropic Alliance, based in Conway, Horry County, SC, USA, has been instrumental in addressing community needs and challenges. The organization's community impact study, available at https://globalgiving.org/community-impact-study, provides a comprehensive overview of its initiatives and programs. As of 2024-07-15, the study highlights the significant strides made in community development and support. One of the key testimonials in the report comes from melva_davis@yahoo.com, who praised the organization's dedication and impact. The report also includes a fax number, 854-501-5730, for those who wish to reach out for more detailed information. The study emphasizes the importance of community engagement and the role of non-profits in driving positive change.",
+    "locale": "us",
+    "domain": "Non-Profit",
+    "pii": [
+      {
+        "value": "The National Philanthropic Alliance",
+        "start": 0,
+        "end": 35,
+        "label": "company_name"
+      },
+      {
+        "value": "Conway",
+        "start": 46,
+        "end": 52,
+        "label": "city"
+      },
+      {
+        "value": "Horry County",
+        "start": 54,
+        "end": 66,
+        "label": "county"
+      },
+      {
+        "value": "SC",
+        "start": 68,
+        "end": 70,
+        "label": "state"
+      },
+      {
+        "value": "USA",
+        "start": 72,
+        "end": 75,
+        "label": "country"
+      },
+      {
+        "value": "https://globalgiving.org/community-impact-study",
+        "start": 201,
+        "end": 248,
+        "label": "url"
+      },
+      {
+        "value": "2024-07-15",
+        "start": 323,
+        "end": 333,
+        "label": "date"
+      },
+      {
+        "value": "melva_davis@yahoo.com",
+        "start": 476,
+        "end": 497,
+        "label": "email"
+      },
+      {
+        "value": "854-501-5730",
+        "start": 592,
+        "end": 604,
+        "label": "fax_number"
+      }
+    ]
+  },
+  {
+    "id": "ebb927d91cfd489086d4f3db9b6a325b",
+    "text": "Please complete the following form to verify your PIN for telecom services. Ensure all information is accurate and legible.\n\nYour first name is Stephanie. Please provide your account number and PIN below. Your PIN is 334728. Your date of birth is 1976-12-13.\n\nFor contact purposes, please list your phone number, which is 936-349-1094, and your email, which is stephanieculbertson@outlook.com.\n\nAfter filling out this form, please sign below to verify the information provided. Your signature will confirm that all details, including your PIN, 334728, are correct.\n\nThank you for your cooperation.",
+    "locale": "us",
+    "domain": "Manufacturing",
+    "pii": [
+      {
+        "value": "Stephanie",
+        "start": 144,
+        "end": 153,
+        "label": "first_name"
+      },
+      {
+        "value": "334728",
+        "start": 217,
+        "end": 223,
+        "label": "pin"
+      },
+      {
+        "value": "1976-12-13",
+        "start": 247,
+        "end": 257,
+        "label": "date_of_birth"
+      },
+      {
+        "value": "936-349-1094",
+        "start": 322,
+        "end": 334,
+        "label": "phone_number"
+      },
+      {
+        "value": "stephanieculbertson@outlook.com",
+        "start": 361,
+        "end": 392,
+        "label": "email"
+      },
+      {
+        "value": "334728",
+        "start": 544,
+        "end": 550,
+        "label": "pin"
+      }
+    ]
+  },
+  {
+    "id": "d7bb334d653944cb8a059feab9504f0a",
+    "text": "### Biometric Intake Report\n\n**Guest Information:**\n\n- **Guest Name:** Arthur\n- **Date of Birth:** 1963-11-20\n- **Biometric Identifier:** BIO-4729856134\n\n**Check-In/Check-Out Details:**\n\n- **Check-In Time:** Not specified\n- **Check-Out Time:** Not specified\n- **Room Assignment:** Not specified\n- **Special Requests:** None\n\n**Biometric Verification Process:**\n\nThe biometric verification process for the guest was completed successfully. The biometric identifier BIO-4729856134 was used for verification.\n\n**Additional Notes:**\n\nThe guest has agreed to the consent agreement with the http cookie value consent_agreement=zxv82b7n9l; Path=/; Expires=Mon, 15 Oct 2024 10:00:00 GMT.",
+    "locale": "us",
+    "domain": "Hospitality",
+    "pii": [
+      {
+        "value": "Arthur",
+        "start": 71,
+        "end": 77,
+        "label": "first_name"
+      },
+      {
+        "value": "1963-11-20",
+        "start": 99,
+        "end": 109,
+        "label": "date_of_birth"
+      },
+      {
+        "value": "BIO-4729856134",
+        "start": 138,
+        "end": 152,
+        "label": "biometric_identifier"
+      },
+      {
+        "value": "BIO-4729856134",
+        "start": 464,
+        "end": 478,
+        "label": "biometric_identifier"
+      },
+      {
+        "value": "consent_agreement=zxv82b7n9l; Path=/; Expires=Mon, 15 Oct 2024 10:00:00 GMT",
+        "start": 603,
+        "end": 678,
+        "label": "http_cookie"
+      }
+    ]
+  },
+  {
+    "id": "2b545c6044b6406daaddfdb625e20801",
+    "text": "Surgical Report for Shobhanaben, Medical Record Number: 1234-56-7890\n\nPreoperative Diagnosis:\n\nThe patient, Shobhanaben, medical record number 1234-56-7890, presented with a preoperative diagnosis of abdominal pain. The patient's blood type is AB positive. She resides in Suffolk County, with a pin of 180372.\n\nOperative Procedures Performed:\n\nAt 18:30, the surgical team performed a laparoscopic appendectomy. The procedure involved the removal of the inflamed appendix. The surgery was conducted under general anesthesia, and the patient tolerated the procedure well.\n\nFindings:\n\nDuring the operation, the surgical team noted significant inflammation around the appendix. There were no other abnormalities detected. The patient's vital signs remained stable throughout the procedure.\n\nPostoperative Plan:\n\nThe patient will be monitored closely in the recovery room. Pain management will be administered as needed. The patient will be discharged with instructions for wound care and follow-up appointments.",
+    "locale": "us",
+    "domain": "Healthcare",
+    "pii": [
+      {
+        "value": "Shobhanaben",
+        "start": 20,
+        "end": 31,
+        "label": "first_name"
+      },
+      {
+        "value": "1234-56-7890",
+        "start": 56,
+        "end": 68,
+        "label": "medical_record_number"
+      },
+      {
+        "value": "Shobhanaben",
+        "start": 108,
+        "end": 119,
+        "label": "first_name"
+      },
+      {
+        "value": "1234-56-7890",
+        "start": 143,
+        "end": 155,
+        "label": "medical_record_number"
+      },
+      {
+        "value": "AB positive",
+        "start": 244,
+        "end": 255,
+        "label": "blood_type"
+      },
+      {
+        "value": "Suffolk County",
+        "start": 272,
+        "end": 286,
+        "label": "county"
+      },
+      {
+        "value": "180372",
+        "start": 302,
+        "end": 308,
+        "label": "pin"
+      },
+      {
+        "value": "18:30",
+        "start": 347,
+        "end": 352,
+        "label": "time"
+      }
+    ]
+  },
+  {
+    "id": "f01ee64713ed4c15921eeb4477f1b0e9",
+    "text": "At Innovatix Manufacturing, effective inventory management is crucial for maintaining smooth production processes. As of 2024-05-28, all inventory management policies are available on the company's website at https://industry40.com/policies?document_type=Inventory Management Policies&department=Production&version=1.0. These policies outline the procedures for stock management, ensuring that all departments, including sales representatives of services, adhere to the guidelines set forth. For example, on 2024-04-15, employee id SM321 reported a discrepancy in inventory levels at 19:45:32.123. This was detected through the company's automated system, which uses MAC address B8:91:5C:12:34:56 to track inventory movements.",
+    "locale": "us",
+    "domain": "Manufacturing",
+    "pii": [
+      {
+        "value": "Innovatix Manufacturing",
+        "start": 3,
+        "end": 26,
+        "label": "company_name"
+      },
+      {
+        "value": "2024-05-28",
+        "start": 121,
+        "end": 131,
+        "label": "date"
+      },
+      {
+        "value": "https://industry40.com/policies?document_type=Inventory Management Policies&department=Production&version=1.0",
+        "start": 209,
+        "end": 318,
+        "label": "url"
+      },
+      {
+        "value": "2024-04-15",
+        "start": 508,
+        "end": 518,
+        "label": "date"
+      },
+      {
+        "value": "SM321",
+        "start": 532,
+        "end": 537,
+        "label": "employee_id"
+      },
+      {
+        "value": "19:45:32.123",
+        "start": 584,
+        "end": 596,
+        "label": "time"
+      },
+      {
+        "value": "B8:91:5C:12:34:56",
+        "start": 679,
+        "end": 696,
+        "label": "mac_address"
+      }
+    ]
+  },
+  {
+    "id": "3d8301992f1949f38c1cbed3e7b4dba4",
+    "text": "Exploring the intricate world map of Eldoria, we find ourselves in the vibrant city of Athens, located in the state of GA, USA. The coordinate 33.7490, -84.3880 marks the exact spot where this bustling metropolis resides within Clarke County. For those interested in diving deeper into the lore, visit https://wizardsuniverse.com/worlds/eldoria.",
+    "locale": "us",
+    "domain": "Entertainment",
+    "pii": [
+      {
+        "value": "Athens",
+        "start": 87,
+        "end": 93,
+        "label": "city"
+      },
+      {
+        "value": "GA",
+        "start": 119,
+        "end": 121,
+        "label": "state"
+      },
+      {
+        "value": "USA",
+        "start": 123,
+        "end": 126,
+        "label": "country"
+      },
+      {
+        "value": "33.7490, -84.3880",
+        "start": 143,
+        "end": 160,
+        "label": "coordinate"
+      },
+      {
+        "value": "Clarke County",
+        "start": 228,
+        "end": 241,
+        "label": "county"
+      },
+      {
+        "value": "https://wizardsuniverse.com/worlds/eldoria",
+        "start": 302,
+        "end": 344,
+        "label": "url"
+      }
+    ]
+  },
+  {
+    "id": "6d2ea4353d324ce48ab48969f2d5815f",
+    "text": "This Vehicle Insurance Policy outlines the coverage details for the vehicle with vehicle identifier JM1GJ56K48M123456. The policy includes liability coverage, collision protection, comprehensive coverage, and uninsured motorist protection. The vehicle, with license plate 567 LHJ 89, is covered under a full-time employment status of the insured. The premiums and deductibles are clearly stated, with the policy limits specified for each type of coverage. The bank routing number 683102795 is provided for direct payment options. This policy reflects the Progressive political view of the insured.",
+    "locale": "us",
+    "domain": "Transportation",
+    "pii": [
+      {
+        "value": "JM1GJ56K48M123456",
+        "start": 100,
+        "end": 117,
+        "label": "vehicle_identifier"
+      },
+      {
+        "value": "567 LHJ 89",
+        "start": 272,
+        "end": 282,
+        "label": "license_plate"
+      },
+      {
+        "value": "full-time",
+        "start": 303,
+        "end": 312,
+        "label": "employment_status"
+      },
+      {
+        "value": "683102795",
+        "start": 480,
+        "end": 489,
+        "label": "bank_routing_number"
+      },
+      {
+        "value": "Progressive",
+        "start": 555,
+        "end": 566,
+        "label": "political_view"
+      }
+    ]
+  },
+  {
+    "id": "75de0aba136e49148e39ef09435183d1",
+    "text": "This Real Estate Purchase Agreement is executed by the parties involved in the transaction. The property in question is located at 140 Palmdale Rd in Fresno, Fresno County, California, 93710, USA. The purchase price and other financial details, including the bank routing number, 102901348, and swift bic, ZYXWUS7KL2M, are outlined in the agreement. The parties involved include the buyer and the seller, represented by Harper & Lane Real Estate. The agreement is written in English. This document contains the legal description of the property, the terms of the sale, any contingencies, and the signatures of all parties involved. The notary acknowledgment is also included to ensure the legality of the transaction.",
+    "locale": "us",
+    "domain": "Real Estate",
+    "pii": [
+      {
+        "value": "140 Palmdale Rd",
+        "start": 131,
+        "end": 146,
+        "label": "street_address"
+      },
+      {
+        "value": "Fresno",
+        "start": 150,
+        "end": 156,
+        "label": "city"
+      },
+      {
+        "value": "Fresno County",
+        "start": 158,
+        "end": 171,
+        "label": "county"
+      },
+      {
+        "value": "California",
+        "start": 173,
+        "end": 183,
+        "label": "state"
+      },
+      {
+        "value": "93710",
+        "start": 185,
+        "end": 190,
+        "label": "postcode"
+      },
+      {
+        "value": "USA",
+        "start": 192,
+        "end": 195,
+        "label": "country"
+      },
+      {
+        "value": "102901348",
+        "start": 280,
+        "end": 289,
+        "label": "bank_routing_number"
+      },
+      {
+        "value": "ZYXWUS7KL2M",
+        "start": 306,
+        "end": 317,
+        "label": "swift_bic"
+      },
+      {
+        "value": "Harper & Lane Real Estate",
+        "start": 420,
+        "end": 445,
+        "label": "company_name"
+      },
+      {
+        "value": "English",
+        "start": 475,
+        "end": 482,
+        "label": "language"
+      }
+    ]
+  },
+  {
+    "id": "64a2d6d8a0ed46589de341d684670769",
+    "text": "### Contract Renewal Form\n\n**Contract Number:** _______________________\n\n**Renewal Date:** 2028-07-15\n\n**Customer ID:** 5213804976\n\n**Company Name:** Harrison Household Goods\n\n**Product/Service Details:**\n- Description: _______________________\n- Quantity: _______________________\n- Unit Price: _______________________\n\n**Pricing Terms:**\n- Total Price: _______________________\n- Payment Terms: _______________________\n- Payment Method: _______________________\n\n**Signature Lines:**\n\n_____________________________\nAuthorized Signature\n\n_____________________________\nPrint Name\n\n_____________________________\nDate\n\n**Additional Clauses:**\n\nAny amendments or additional clauses will be included here.\n\n**Swift Bic:** GJHTUS4KWX1\n\n**CVV:** 107",
+    "locale": "us",
+    "domain": "Consumer Goods",
+    "pii": [
+      {
+        "value": "2028-07-15",
+        "start": 91,
+        "end": 101,
+        "label": "date"
+      },
+      {
+        "value": "5213804976",
+        "start": 120,
+        "end": 130,
+        "label": "customer_id"
+      },
+      {
+        "value": "Harrison Household Goods",
+        "start": 150,
+        "end": 174,
+        "label": "company_name"
+      },
+      {
+        "value": "GJHTUS4KWX1",
+        "start": 714,
+        "end": 725,
+        "label": "swift_bic"
+      },
+      {
+        "value": 107,
+        "start": 736,
+        "end": 739,
+        "label": "cvv"
+      }
+    ]
+  },
+  {
+    "id": "c0e9cea3a39242c6bc041b70deb7ae9f",
+    "text": "I, Angelene, am completing this mobile banking security form to ensure the safety of my account. My account number is 72538164. For verification purposes, please note that my phone number is 334-393-9067. Additionally, my device identifier is WX76P7X2MZ8D.",
+    "locale": "us",
+    "domain": "Retail",
+    "pii": [
+      {
+        "value": "Angelene",
+        "start": 3,
+        "end": 11,
+        "label": "first_name"
+      },
+      {
+        "value": "72538164",
+        "start": 118,
+        "end": 126,
+        "label": "account_number"
+      },
+      {
+        "value": "334-393-9067",
+        "start": 191,
+        "end": 203,
+        "label": "phone_number"
+      },
+      {
+        "value": "WX76P7X2MZ8D",
+        "start": 243,
+        "end": 255,
+        "label": "device_identifier"
+      }
+    ]
+  },
+  {
+    "id": "6c14285fdf7a471ebc0d1755f46d2dd3",
+    "text": "Your test registration PIN is 551823. The registration date is 20240315. Please note that this PIN is specific to you and should not be shared with anyone else. If you have any questions or need assistance, feel free to reach out.",
+    "locale": "us",
+    "domain": "Energy",
+    "pii": [
+      {
+        "value": "551823",
+        "start": 30,
+        "end": 36,
+        "label": "pin"
+      },
+      {
+        "value": "20240315",
+        "start": 63,
+        "end": 71,
+        "label": "date"
+      }
+    ]
+  },
+  {
+    "id": "71114f2cae1345b18a170bfc9654efd6",
+    "text": "Title: PulseStream Media Quarterly Update\n\nSlide 1: Title Slide\nPresentation Title: PulseStream Media Quarterly Update\nAuthor: ketankumar@pulse.com\nDate: 2023-09-15\n\nSlide 2: Company Overview\nWelcome to the PulseStream Media Quarterly Update for 2023-09-15. PulseStream Media is a leading innovator in the media industry, dedicated to delivering high-quality content and exceptional service. For more information, visit our website at https://pulse.com or contact us at 331-359-2343.\n\nSlide 3: Recent Achievements\nOur recent achievements include a significant milestone in content distribution. We successfully expanded our reach to the state of IL, enhancing our capabilities and services. Our dedicated team worked tirelessly to ensure seamless integration and delivery of content.\n\nSlide 4: Contact Information\nFor any inquiries or further details, please feel free to reach out to us at 331-359-2343 or via email at ketankumar@pulse.com. Our fax number is 331-359-2343.\n\nSlide 5: Future Plans\nLooking ahead, we have exciting plans to further innovate and expand our services. One of our upcoming projects involves the integration of advanced technology to enhance our content delivery. Our license plate number is 234 678 194.",
+    "locale": "us",
+    "domain": "Media",
+    "pii": [
+      {
+        "value": "PulseStream Media",
+        "start": 7,
+        "end": 24,
+        "label": "company_name"
+      },
+      {
+        "value": "PulseStream Media",
+        "start": 84,
+        "end": 101,
+        "label": "company_name"
+      },
+      {
+        "value": "ketankumar@pulse.com",
+        "start": 127,
+        "end": 147,
+        "label": "email"
+      },
+      {
+        "value": "2023-09-15",
+        "start": 154,
+        "end": 164,
+        "label": "date"
+      },
+      {
+        "value": "PulseStream Media",
+        "start": 207,
+        "end": 224,
+        "label": "company_name"
+      },
+      {
+        "value": "2023-09-15",
+        "start": 246,
+        "end": 256,
+        "label": "date"
+      },
+      {
+        "value": "PulseStream Media",
+        "start": 258,
+        "end": 275,
+        "label": "company_name"
+      },
+      {
+        "value": "https://pulse.com",
+        "start": 435,
+        "end": 452,
+        "label": "url"
+      },
+      {
+        "value": "331-359-2343",
+        "start": 470,
+        "end": 482,
+        "label": "phone_number"
+      },
+      {
+        "value": "IL",
+        "start": 646,
+        "end": 648,
+        "label": "state"
+      },
+      {
+        "value": "331-359-2343",
+        "start": 891,
+        "end": 903,
+        "label": "phone_number"
+      },
+      {
+        "value": "ketankumar@pulse.com",
+        "start": 920,
+        "end": 940,
+        "label": "email"
+      },
+      {
+        "value": "331-359-2343",
+        "start": 960,
+        "end": 972,
+        "label": "phone_number"
+      },
+      {
+        "value": "234 678 194",
+        "start": 1218,
+        "end": 1229,
+        "label": "license_plate"
+      }
+    ]
+  },
+  {
+    "id": "494d0f0fad614f5f8f9071341788ce36",
+    "text": "This Vehicle Purchase Agreement is made between the seller and Carla Mcgrath. The vehicle in question is identified by the vehicle identifier LVSZF14E6X2012345. The vehicle currently has the license plate WXG 527. Carla can be contacted at carlam1970@icloud.com or by phone at 813-881-6598. The purchase agreement is valid for the vehicle located at 737 Long Iron Dr.",
+    "locale": "us",
+    "domain": "Automotive",
+    "pii": [
+      {
+        "value": "Carla",
+        "start": 63,
+        "end": 68,
+        "label": "first_name"
+      },
+      {
+        "value": "Mcgrath",
+        "start": 69,
+        "end": 76,
+        "label": "last_name"
+      },
+      {
+        "value": "LVSZF14E6X2012345",
+        "start": 142,
+        "end": 159,
+        "label": "vehicle_identifier"
+      },
+      {
+        "value": "WXG 527",
+        "start": 205,
+        "end": 212,
+        "label": "license_plate"
+      },
+      {
+        "value": "Carla",
+        "start": 214,
+        "end": 219,
+        "label": "first_name"
+      },
+      {
+        "value": "carlam1970@icloud.com",
+        "start": 240,
+        "end": 261,
+        "label": "email"
+      },
+      {
+        "value": "813-881-6598",
+        "start": 277,
+        "end": 289,
+        "label": "phone_number"
+      },
+      {
+        "value": "737 Long Iron Dr",
+        "start": 350,
+        "end": 366,
+        "label": "street_address"
+      }
+    ]
+  },
+  {
+    "id": "722a4838747845dfa1fe6eb666ac9372",
+    "text": "In the regulatory submission summary for the clinical trial conducted by VitalisPharma, we received an adverse event report for the medical record number 0008374925. The event was logged at 7:22 AM by the clinical trial coordinator, who noted the patient's age 22. Further details were requested from Shirley Clark via email at shirley_clark03@hotmail.com.",
+    "locale": "us",
+    "domain": "Pharmaceuticals",
+    "pii": [
+      {
+        "value": "VitalisPharma",
+        "start": 73,
+        "end": 86,
+        "label": "company_name"
+      },
+      {
+        "value": "0008374925",
+        "start": 154,
+        "end": 164,
+        "label": "medical_record_number"
+      },
+      {
+        "value": "7:22 AM",
+        "start": 190,
+        "end": 197,
+        "label": "time"
+      },
+      {
+        "value": 22,
+        "start": 261,
+        "end": 263,
+        "label": "age"
+      },
+      {
+        "value": "Shirley",
+        "start": 301,
+        "end": 308,
+        "label": "first_name"
+      },
+      {
+        "value": "Clark",
+        "start": 309,
+        "end": 314,
+        "label": "last_name"
+      },
+      {
+        "value": "shirley_clark03@hotmail.com",
+        "start": 328,
+        "end": 355,
+        "label": "email"
+      }
+    ]
+  },
+  {
+    "id": "c5684ac005f745b4b925ad13a00e952e",
+    "text": "**Military Medical Record**\n\n**Patient Demographics**\n\n| Field | Value |\n| --- | --- |\n| First Name | Ann |\n| Medical Record Number | LAC-00018325 |\n\n**Medical History**\n\n| Field | Value |\n| --- | --- |\n| Allergies | None Reported |\n| Medications | None Prescribed |\n| Immunization Records | Up-to-date |\n\n**Treatment Plans**\n\n| Field | Value |\n| --- | --- |\n| Current Treatment | None |\n| Encounter Notes | None |",
+    "locale": "us",
+    "domain": "Identity Management",
+    "pii": [
+      {
+        "value": "Military Medical Record",
+        "start": 2,
+        "end": 25,
+        "label": "occupation"
+      },
+      {
+        "value": "Ann",
+        "start": 102,
+        "end": 105,
+        "label": "first_name"
+      },
+      {
+        "value": "LAC-00018325",
+        "start": 134,
+        "end": 146,
+        "label": "medical_record_number"
+      }
+    ]
+  },
+  {
+    "id": "3070ea69382344e38c066f1133426843",
+    "text": "I, Doris Jones, hereby register as an organ donor. My date of birth is 1974-04-04 and I am male. I reside at 254 Sullivan Dormitory, Chicago. My contact information includes a phone number of 872-858-4074 and my social security number is 335-78-4804. I understand the importance of this decision and consent to the use of my organs upon my passing. My health plan beneficiary number is 4F92-KL7-PT39.",
+    "locale": "us",
+    "domain": "Identity Management",
+    "pii": [
+      {
+        "value": "Doris",
+        "start": 3,
+        "end": 8,
+        "label": "first_name"
+      },
+      {
+        "value": "Jones",
+        "start": 9,
+        "end": 14,
+        "label": "last_name"
+      },
+      {
+        "value": "1974-04-04",
+        "start": 71,
+        "end": 81,
+        "label": "date_of_birth"
+      },
+      {
+        "value": "male",
+        "start": 91,
+        "end": 95,
+        "label": "gender"
+      },
+      {
+        "value": "254 Sullivan Dormitory",
+        "start": 109,
+        "end": 131,
+        "label": "street_address"
+      },
+      {
+        "value": "Chicago",
+        "start": 133,
+        "end": 140,
+        "label": "city"
+      },
+      {
+        "value": "872-858-4074",
+        "start": 192,
+        "end": 204,
+        "label": "phone_number"
+      },
+      {
+        "value": "335-78-4804",
+        "start": 238,
+        "end": 249,
+        "label": "ssn"
+      },
+      {
+        "value": "4F92-KL7-PT39",
+        "start": 386,
+        "end": 399,
+        "label": "health_plan_beneficiary_number"
+      }
+    ]
+  },
+  {
+    "id": "69a87d8cba3f45a682d0d4a9040cb121",
+    "text": "I, Donald Giard, born on 1946-12-28, a resident of Raton, NM, USA, am writing to file a civil rights complaint. My email address is donaldg20@icloud.com. I am a lifelong resident of the USA and have faced discrimination based on my age. I am not a member of the public, but a victim of the discrimination. I am a victim of discrimination, and this is my complaint. My SSN is 527-48-8869.",
+    "locale": "us",
+    "domain": "Civil Rights",
+    "pii": [
+      {
+        "value": "Donald",
+        "start": 3,
+        "end": 9,
+        "label": "first_name"
+      },
+      {
+        "value": "Giard",
+        "start": 10,
+        "end": 15,
+        "label": "last_name"
+      },
+      {
+        "value": "1946-12-28",
+        "start": 25,
+        "end": 35,
+        "label": "date_of_birth"
+      },
+      {
+        "value": "Raton",
+        "start": 51,
+        "end": 56,
+        "label": "city"
+      },
+      {
+        "value": "NM",
+        "start": 58,
+        "end": 60,
+        "label": "state"
+      },
+      {
+        "value": "USA",
+        "start": 62,
+        "end": 65,
+        "label": "country"
+      },
+      {
+        "value": "donaldg20@icloud.com",
+        "start": 132,
+        "end": 152,
+        "label": "email"
+      },
+      {
+        "value": "USA",
+        "start": 186,
+        "end": 189,
+        "label": "country"
+      },
+      {
+        "value": "527-48-8869",
+        "start": 375,
+        "end": 386,
+        "label": "ssn"
+      }
+    ]
+  },
+  {
+    "id": "3491df21a1e3463493bd2e9aaa7239aa",
+    "text": "Hartford Automotive Solutions has received a request for service on the vehicle with the vehicle identifier SB1EJ57F42K512346, which has the license plate H23-K65. The requested services include an oil change and brake inspection. The food server nonrestaurant, with credit debit card 4916 7832 6401 9872, has approved the estimate. The labor costs are $150, and the parts required will be $80. The total charges, including taxes, will be $250.",
+    "locale": "us",
+    "domain": "Automotive",
+    "pii": [
+      {
+        "value": "Hartford Automotive Solutions",
+        "start": 0,
+        "end": 29,
+        "label": "company_name"
+      },
+      {
+        "value": "SB1EJ57F42K512346",
+        "start": 108,
+        "end": 125,
+        "label": "vehicle_identifier"
+      },
+      {
+        "value": "H23-K65",
+        "start": 155,
+        "end": 162,
+        "label": "license_plate"
+      },
+      {
+        "value": "food server nonrestaurant",
+        "start": 235,
+        "end": 260,
+        "label": "occupation"
+      },
+      {
+        "value": "4916 7832 6401 9872",
+        "start": 285,
+        "end": 304,
+        "label": "credit_debit_card"
+      }
+    ]
+  },
+  {
+    "id": "857b96105a43429baa0f3dfe3a816f2e",
+    "text": "This Purchase Agreement is entered into by and between the buyer and the seller for the property located at 196 N West St, Findlay, Ohio 45840. The property is legally described as a single-family residential dwelling. The purchase price for the property is to be agreed upon by both parties. An earnest money deposit of $5,000 will be held in escrow until the closing date, which is to be determined. The buyer has a financing contingency, meaning the sale is contingent upon the buyer securing financing. The buyer's social security number is 286-70-4438. The closing date will be determined by both parties and will be agreed upon in writing. The buyer and seller will sign this agreement, finalizing the terms of the sale.",
+    "locale": "us",
+    "domain": "Real Estate",
+    "pii": [
+      {
+        "value": "196 N West St",
+        "start": 108,
+        "end": 121,
+        "label": "street_address"
+      },
+      {
+        "value": "Findlay",
+        "start": 123,
+        "end": 130,
+        "label": "city"
+      },
+      {
+        "value": "Ohio",
+        "start": 132,
+        "end": 136,
+        "label": "state"
+      },
+      {
+        "value": "45840",
+        "start": 137,
+        "end": 142,
+        "label": "postcode"
+      },
+      {
+        "value": "286-70-4438",
+        "start": 545,
+        "end": 556,
+        "label": "ssn"
+      }
+    ]
+  },
+  {
+    "id": "8f491c83d20b4af89db5dd3da7c3dfcc",
+    "text": "Receipt\n\nDate and Time: 2025-07-21T06:57:19\n\nThank you for your purchase! Your customer ID is 3487291650.",
+    "locale": "us",
+    "domain": "Retail",
+    "pii": [
+      {
+        "value": "2025-07-21T06:57:19",
+        "start": 24,
+        "end": 43,
+        "label": "date_time"
+      },
+      {
+        "value": "3487291650",
+        "start": 94,
+        "end": 104,
+        "label": "customer_id"
+      }
+    ]
+  },
+  {
+    "id": "240b3ad042ad44ec989be7baa2ac86ea",
+    "text": "One of the key segments we have identified is the frequent shopper demographic. This group, predominantly male, often includes individuals with an age of 33. These customers, like donnie_glasser25@icloud.com, tend to have a significant impact on our sales due to their high purchase frequency and average order value. For instance, a customer with an occupation of a maid housekeeping cleaner, might have an education level of an associate degree. This segment is particularly active in the USA, and often uses a swift bic of FHGLUS2QA43 for international transactions. Understanding these characteristics allows us to tailor our marketing strategies more effectively, ensuring that we meet the needs of our diverse customer base.",
+    "locale": "us",
+    "domain": "Ecommerce",
+    "pii": [
+      {
+        "value": "male",
+        "start": 106,
+        "end": 110,
+        "label": "gender"
+      },
+      {
+        "value": "33",
+        "start": 154,
+        "end": 156,
+        "label": "age"
+      },
+      {
+        "value": "donnie_glasser25@icloud.com",
+        "start": 180,
+        "end": 207,
+        "label": "email"
+      },
+      {
+        "value": "maid housekeeping cleaner",
+        "start": 367,
+        "end": 392,
+        "label": "occupation"
+      },
+      {
+        "value": "associate degree",
+        "start": 430,
+        "end": 446,
+        "label": "education_level"
+      },
+      {
+        "value": "USA",
+        "start": 491,
+        "end": 494,
+        "label": "country"
+      },
+      {
+        "value": "FHGLUS2QA43",
+        "start": 526,
+        "end": 537,
+        "label": "swift_bic"
+      }
+    ]
+  },
+  {
+    "id": "aa44bfd07cd340b788cf70f3dcae7dc6",
+    "text": "The Construction and Material Specifications document outlines the project requirements for BuildBright Construction. This document is in compliance with the certificate license number WA-ENG-573281. The scope of work includes the installation of steel reinforcement, with detailed specifications available at https://constructionmaterials.com/specs/steel-reinforcement. The project will be managed by a full-time project manager who is 56 years old. The project manager will be identified using the biometric identifier BIO-7256198345.",
+    "locale": "us",
+    "domain": "Construction",
+    "pii": [
+      {
+        "value": "BuildBright Construction",
+        "start": 92,
+        "end": 116,
+        "label": "company_name"
+      },
+      {
+        "value": "WA-ENG-573281",
+        "start": 185,
+        "end": 198,
+        "label": "certificate_license_number"
+      },
+      {
+        "value": "https://constructionmaterials.com/specs/steel-reinforcement",
+        "start": 310,
+        "end": 369,
+        "label": "url"
+      },
+      {
+        "value": "full-time",
+        "start": 404,
+        "end": 413,
+        "label": "employment_status"
+      },
+      {
+        "value": 56,
+        "start": 437,
+        "end": 439,
+        "label": "age"
+      },
+      {
+        "value": "BIO-7256198345",
+        "start": 521,
+        "end": 535,
+        "label": "biometric_identifier"
+      }
+    ]
+  },
+  {
+    "id": "fb92457c13d0438cbfb3bd386dfde8c2",
+    "text": "**Loan Application Form**\n\n**Personal Information**\n\n- First Name: Thomas\n- Date of Birth: 1961-12-29\n- Street Address: 722 Stonecutter Ct\n\n**Identification Details**\n\n- Biometric Identifier: BIO-5724891638\n- Time: 14:30:00Z\n\n**Employment History**\n\n- Education Level: associate's degree\n\n**Loan Specifics**\n\n- Amount:  __________\n- Type: __________\n- Purpose: __________\n\n**Verification Status**\n\n- Verification Status: __________\n\n**Supporting Documentation**\n\n- Please attach the following documents:\n  - Photo ID\n  - Proof of Address\n  - Income Statements\n  - Employment History\n\n**Signature Lines**\n\n- Applicant Signature: __________\n- Verifier Signature: __________",
+    "locale": "us",
+    "domain": "Identity Verification Services",
+    "pii": [
+      {
+        "value": "Thomas",
+        "start": 67,
+        "end": 73,
+        "label": "first_name"
+      },
+      {
+        "value": "1961-12-29",
+        "start": 91,
+        "end": 101,
+        "label": "date_of_birth"
+      },
+      {
+        "value": "722 Stonecutter Ct",
+        "start": 120,
+        "end": 138,
+        "label": "street_address"
+      },
+      {
+        "value": "BIO-5724891638",
+        "start": 192,
+        "end": 206,
+        "label": "biometric_identifier"
+      },
+      {
+        "value": "14:30:00Z",
+        "start": 215,
+        "end": 224,
+        "label": "time"
+      },
+      {
+        "value": "associate's degree",
+        "start": 269,
+        "end": 287,
+        "label": "education_level"
+      }
+    ]
+  },
+  {
+    "id": "b75a9d2dc0cb4e62a735913b9b119f47",
+    "text": "**Shipping Confirmation**\n\n**Order Number:** 12345\n\n**Customer Name:**\nFirst Name: Christel\nLast Name: Larsen\n\n**Shipping Address:**\n41 Fm 524 D\n\n**Phone Number:** 817-904-6609\n\n**Itemized List of Products:**\n\n| Quantity | Description     |\n|----------|-----------------|\n| 2        | Blue Widget      |\n| 1        | Red Gadget       |\n\n**Tracking Number:** 987654321\n\n**Estimated Delivery Date:** 12/25/2023\n\n**Shipping Carrier:** UPS",
+    "locale": "us",
+    "domain": "Retail",
+    "pii": [
+      {
+        "value": "Christel",
+        "start": 83,
+        "end": 91,
+        "label": "first_name"
+      },
+      {
+        "value": "Larsen",
+        "start": 103,
+        "end": 109,
+        "label": "last_name"
+      },
+      {
+        "value": "41 Fm 524 D",
+        "start": 133,
+        "end": 144,
+        "label": "street_address"
+      },
+      {
+        "value": "817-904-6609",
+        "start": 164,
+        "end": 176,
+        "label": "phone_number"
+      },
+      {
+        "value": "12/25/2023",
+        "start": 398,
+        "end": 408,
+        "label": "date"
+      }
+    ]
+  },
+  {
+    "id": "05a64a295b8040dea3dbd88875dd789e",
+    "text": "### Customer Insights Report\n\n**Customer Demographics**\n\n| Field              | Value                       |\n|--------------------|-----------------------------|\n| First Name         | Valerie                     |\n| Last Name          | Carter                      |\n| Date of Birth      | 1956-09-28                  |\n| Gender             | female                      |\n| Phone Number       | 818-834-8961                |\n\n**Purchasing Behavior**\n\n| Field              | Value                       |\n|--------------------|-----------------------------|\n| Frequency          | Monthly                    |\n| Recency            | 15 days                    |\n| Monetary Value     | $250.00                    |\n\n**Channel Preferences**\n\n| Field              | Value                       |\n|--------------------|-----------------------------|\n| Primary Channel    | Online                      |\n| Secondary Channel  | In-store                    |\n\n**Loyalty Program Status**\n\n| Field              | Value                       |\n|--------------------|-----------------------------|\n| Membership Status  | Gold Member                 |\n| Credit Card Number | 5278 3890 1276 4589         |",
+    "locale": "us",
+    "domain": "Retail",
+    "pii": [
+      {
+        "value": "Valerie",
+        "start": 186,
+        "end": 193,
+        "label": "first_name"
+      },
+      {
+        "value": "Carter",
+        "start": 239,
+        "end": 245,
+        "label": "last_name"
+      },
+      {
+        "value": "1956-09-28",
+        "start": 292,
+        "end": 302,
+        "label": "date_of_birth"
+      },
+      {
+        "value": "female",
+        "start": 345,
+        "end": 351,
+        "label": "gender"
+      },
+      {
+        "value": "818-834-8961",
+        "start": 398,
+        "end": 410,
+        "label": "phone_number"
+      },
+      {
+        "value": "5278 3890 1276 4589",
+        "start": 1165,
+        "end": 1184,
+        "label": "credit_debit_card"
+      }
+    ]
+  },
+  {
+    "id": "04a7fcc5664f4f3c88e854f0e653aa09",
+    "text": "**Claim Denial Letter**\n\n**Policyholder Information:**\n- First Name: Maryam\n- Last Name: Robertson\n- Customer ID: BOS-5619327\n\n**Claim Details:**\n- Claim Number: 123456\n- Date of Claim: 10/05/2023\n- Claim Type: Medical Expenses\n\n**Denial Reason:**\nThe claim has been denied due to lack of necessary documentation as per the policy clauses. Specifically, the policy requires that all medical claims include a signed physician's report, which was not provided for the claim under customer ID BOS-5619327.\n\n**Policy Reference:**\nPlease refer to Section 5.2 of your insurance policy, which outlines the documentation requirements for medical claims.\n\n**Next Steps:**\nIf you believe this decision is in error, you may request a review by contacting our customer service department at your earliest convenience. Please ensure that all required documentation is included in your appeal.\n\n**Contact Information:**\nCustomer Service Department\nEmail: support@insurancecompany.com\nPhone: (123) 456-7890",
+    "locale": "us",
+    "domain": "Insurance",
+    "pii": [
+      {
+        "value": "Maryam",
+        "start": 69,
+        "end": 75,
+        "label": "first_name"
+      },
+      {
+        "value": "Robertson",
+        "start": 89,
+        "end": 98,
+        "label": "last_name"
+      },
+      {
+        "value": "BOS-5619327",
+        "start": 114,
+        "end": 125,
+        "label": "customer_id"
+      },
+      {
+        "value": "10/05/2023",
+        "start": 186,
+        "end": 196,
+        "label": "date"
+      },
+      {
+        "value": "BOS-5619327",
+        "start": 490,
+        "end": 501,
+        "label": "customer_id"
+      },
+      {
+        "value": "support@insurancecompany.com",
+        "start": 941,
+        "end": 969,
+        "label": "email"
+      }
+    ]
+  },
+  {
+    "id": "52c594144a6644e8aeefba8566dd50b4",
+    "text": "Harrington & Sons Construction is responsible for the foundation requirements as outlined in the company's specifications, which can be accessed at https://construction.com/specifications#foundation-requirements. The laborer freight stock or material mover will be tasked with handling the materials as per the specifications. The foundation requirements include the use of high-quality materials that meet industry standards, ensuring the stability and durability of the structure. All materials must be stored and handled with care, with special attention given to the pin 963882. The execution of the foundation work will follow the guidelines provided by the manufacturer, ensuring that the CVV 875 is properly adhered to.",
+    "locale": "us",
+    "domain": "Construction",
+    "pii": [
+      {
+        "value": "Harrington & Sons Construction",
+        "start": 0,
+        "end": 30,
+        "label": "company_name"
+      },
+      {
+        "value": "https://construction.com/specifications#foundation-requirements",
+        "start": 148,
+        "end": 211,
+        "label": "url"
+      },
+      {
+        "value": "laborer freight stock or material mover",
+        "start": 217,
+        "end": 256,
+        "label": "occupation"
+      },
+      {
+        "value": "963882",
+        "start": 575,
+        "end": 581,
+        "label": "pin"
+      },
+      {
+        "value": 875,
+        "start": 699,
+        "end": 702,
+        "label": "cvv"
+      }
+    ]
+  },
+  {
+    "id": "15a570cf680646a8a4f8f3582829a0af",
+    "text": "Kristen Overton, customer ID CUS459108, has requested to return the device with the device identifier 310260123456789. The return reason provided is due to a malfunction. The return authorization code is valid from 08h30. The customer's credit debit card 5432 1567 8901 2345 will be credited upon successful return and verification of the device. Please ensure the http cookie user_session=qw2x5v8j9k1z; Path=/; HttpOnly; Secure; SameSite=Strict is included in the return package to facilitate the process.",
+    "locale": "us",
+    "domain": "Telecommunications",
+    "pii": [
+      {
+        "value": "Kristen",
+        "start": 0,
+        "end": 7,
+        "label": "first_name"
+      },
+      {
+        "value": "Overton",
+        "start": 8,
+        "end": 15,
+        "label": "last_name"
+      },
+      {
+        "value": "CUS459108",
+        "start": 29,
+        "end": 38,
+        "label": "customer_id"
+      },
+      {
+        "value": "310260123456789",
+        "start": 102,
+        "end": 117,
+        "label": "device_identifier"
+      },
+      {
+        "value": "08h30",
+        "start": 215,
+        "end": 220,
+        "label": "time"
+      },
+      {
+        "value": "5432 1567 8901 2345",
+        "start": 255,
+        "end": 274,
+        "label": "credit_debit_card"
+      },
+      {
+        "value": "user_session=qw2x5v8j9k1z; Path=/; HttpOnly; Secure; SameSite=Strict",
+        "start": 377,
+        "end": 445,
+        "label": "http_cookie"
+      }
+    ]
+  },
+  {
+    "id": "9628d36f49dc42619a0245d36be0f04a",
+    "text": "This Energy and Energy Supply Contract is agreed upon between Verdant Energy Solutions and the customer id 39724681, effective 2023-09-15. This contract outlines the terms and conditions for the supply of electricity to the customer's location in Santa Barbara County. The contract duration is for one year, with a pricing structure based on market rates as of the date 2023-09-15. Payment schedules will be monthly, with delivery terms ensuring continuous supply. The contract can be terminated with a 30-day notice period.",
+    "locale": "us",
+    "domain": "Energy",
+    "pii": [
+      {
+        "value": "Verdant Energy Solutions",
+        "start": 62,
+        "end": 86,
+        "label": "company_name"
+      },
+      {
+        "value": "39724681",
+        "start": 107,
+        "end": 115,
+        "label": "customer_id"
+      },
+      {
+        "value": "2023-09-15",
+        "start": 127,
+        "end": 137,
+        "label": "date"
+      },
+      {
+        "value": "Santa Barbara County",
+        "start": 247,
+        "end": 267,
+        "label": "county"
+      },
+      {
+        "value": "2023-09-15",
+        "start": 370,
+        "end": 380,
+        "label": "date"
+      }
+    ]
+  },
+  {
+    "id": "9edd3389bd9d4b4b91ddfc3c25afbe37",
+    "text": "The procurement process for the government contract was initiated by Ana from Government Solutions Inc. The bidder information was submitted on 08/15/2024. Ana provided her email address, ana.lanz61@gmail.com, for all official communications. The contract details included a requirement for a certificate license number, which was 37198520. This information was crucial for verifying the bidder's qualifications and ensuring compliance with the procurement specifications.",
+    "locale": "us",
+    "domain": "Government",
+    "pii": [
+      {
+        "value": "Ana",
+        "start": 69,
+        "end": 72,
+        "label": "first_name"
+      },
+      {
+        "value": "Government Solutions Inc.",
+        "start": 78,
+        "end": 103,
+        "label": "company_name"
+      },
+      {
+        "value": "08/15/2024",
+        "start": 144,
+        "end": 154,
+        "label": "date"
+      },
+      {
+        "value": "Ana",
+        "start": 156,
+        "end": 159,
+        "label": "first_name"
+      },
+      {
+        "value": "ana.lanz61@gmail.com",
+        "start": 188,
+        "end": 208,
+        "label": "email"
+      },
+      {
+        "value": "37198520",
+        "start": 331,
+        "end": 339,
+        "label": "certificate_license_number"
+      }
+    ]
+  },
+  {
+    "id": "f5002ca63b7e4ed49d3de240b88bf7c4",
+    "text": "The As-Built Drawings for the project completed by BuildSage on 07/15/2024 are detailed in this document. The project is located at the coordinate 37.5489 N, 77.4361 W in Virginia Beach, Virginia Beach city, USA. These drawings include all final revisions and are certified by the engineer with the license number ENG-78365291. For more detailed specifications and standards, refer to the blueprint available at https://bluebeam.com.",
+    "locale": "us",
+    "domain": "Construction",
+    "pii": [
+      {
+        "value": "BuildSage",
+        "start": 51,
+        "end": 60,
+        "label": "company_name"
+      },
+      {
+        "value": "07/15/2024",
+        "start": 64,
+        "end": 74,
+        "label": "date"
+      },
+      {
+        "value": "37.5489 N, 77.4361 W",
+        "start": 147,
+        "end": 167,
+        "label": "coordinate"
+      },
+      {
+        "value": "Virginia Beach",
+        "start": 171,
+        "end": 185,
+        "label": "city"
+      },
+      {
+        "value": "Virginia Beach city",
+        "start": 187,
+        "end": 206,
+        "label": "county"
+      },
+      {
+        "value": "USA",
+        "start": 208,
+        "end": 211,
+        "label": "country"
+      },
+      {
+        "value": "ENG-78365291",
+        "start": 314,
+        "end": 326,
+        "label": "certificate_license_number"
+      },
+      {
+        "value": "https://bluebeam.com",
+        "start": 412,
+        "end": 432,
+        "label": "url"
+      }
+    ]
+  },
+  {
+    "id": "8873eaf5829d418d81ada9a3581fb1bd",
+    "text": "**Automotive Trade-In Form**\n\n**Vehicle Information**\n\n- Vehicle Identification Number (VIN): NMTKP5F24JC012345\n- License Plate: B78-KLZ\n- Make:\n- Model:\n- Year:\n- Mileage:\n\n**Condition Assessment**\n\n- Exterior Condition:\n- Interior Condition:\n- Mechanical Condition:\n\n**Trade-In Details**\n\n- Trade-In Value:\n\n**Buyer/Seller Information**\n\n- First Name: Angela\n- Last Name: Stewart\n- Phone Number: 326-608-6601\n- Occupation:",
+    "locale": "us",
+    "domain": "Automotive",
+    "pii": [
+      {
+        "value": "NMTKP5F24JC012345",
+        "start": 94,
+        "end": 111,
+        "label": "vehicle_identifier"
+      },
+      {
+        "value": "B78-KLZ",
+        "start": 129,
+        "end": 136,
+        "label": "license_plate"
+      },
+      {
+        "value": "Buyer/Seller Information",
+        "start": 312,
+        "end": 336,
+        "label": "occupation"
+      },
+      {
+        "value": "Angela",
+        "start": 354,
+        "end": 360,
+        "label": "first_name"
+      },
+      {
+        "value": "Stewart",
+        "start": 374,
+        "end": 381,
+        "label": "last_name"
+      },
+      {
+        "value": "326-608-6601",
+        "start": 398,
+        "end": 410,
+        "label": "phone_number"
+      }
+    ]
+  },
+  {
+    "id": "7e72c31421494912850373363e62eb36",
+    "text": "### Telecommunications and Number Allocation Report\n\n**Report Date:** 15-07-2027\n\n**Allocated Numbers and Details**\n\n| Allocated Number | Assigned Carrier | Service Type | Geographic Region |\n|------------------|------------------|--------------|-------------------|\n| 251-446-3250     |                  |              | Mobile County     |\n\n**Additional Information**\n\n**Fax Number:** 251-446-3250\n\n**Country:** USA\n\n**Biometric Identifier:** BIO-9483725610",
+    "locale": "us",
+    "domain": "Telecommunications",
+    "pii": [
+      {
+        "value": "15-07-2027",
+        "start": 70,
+        "end": 80,
+        "label": "date"
+      },
+      {
+        "value": "251-446-3250",
+        "start": 269,
+        "end": 281,
+        "label": "phone_number"
+      },
+      {
+        "value": "Mobile County",
+        "start": 322,
+        "end": 335,
+        "label": "county"
+      },
+      {
+        "value": "251-446-3250",
+        "start": 387,
+        "end": 399,
+        "label": "phone_number"
+      },
+      {
+        "value": "USA",
+        "start": 414,
+        "end": 417,
+        "label": "country"
+      },
+      {
+        "value": "BIO-9483725610",
+        "start": 445,
+        "end": 459,
+        "label": "biometric_identifier"
+      }
+    ]
+  },
+  {
+    "id": "26b18aca94ed4715be16cacf58d790fa",
+    "text": "Harper Media Group is excited to present our comprehensive media and marketing plan for 2024. The plan can be accessed at http://marketingpros.com:8080/2024-plan. This document outlines our strategies, tactics, and objectives to drive success in the coming year. Our target audience analysis reveals a diverse demographic with varying media consumption habits. Market research indicates a strong demand for digital content, which will be a focal point of our strategies. One of our key objectives is to increase our digital footprint by 25%. To achieve this, we will implement a multi-channel approach, including social media campaigns, email marketing, and targeted advertising. Our tactics will involve leveraging the bank routing number 241208753 to streamline our financial operations, ensuring seamless execution of our marketing initiatives. We will also utilize the mac address 00:26:AB:4F:7D:12 for network security to protect our data and ensure the integrity of our operations. The health plan beneficiary number 1HJ7-KL9-MA45 will be used to manage our employee benefits, ensuring that our team remains healthy and productive. Our timeline is structured to maximize impact, with key milestones set throughout the year. The budget allocation is detailed to ensure efficient use of resources, with a focus on high-impact initiatives. Metrics for success will include engagement rates, conversion rates, and ROI. Appendices will include detailed reports and data analysis to support our strategies. We are confident that this plan will position Harper Media Group for continued growth and success.",
+    "locale": "us",
+    "domain": "Media",
+    "pii": [
+      {
+        "value": "Harper Media Group",
+        "start": 0,
+        "end": 18,
+        "label": "company_name"
+      },
+      {
+        "value": "http://marketingpros.com:8080/2024-plan",
+        "start": 122,
+        "end": 161,
+        "label": "url"
+      },
+      {
+        "value": "email marketing",
+        "start": 637,
+        "end": 652,
+        "label": "email"
+      },
+      {
+        "value": "241208753",
+        "start": 740,
+        "end": 749,
+        "label": "bank_routing_number"
+      },
+      {
+        "value": "00:26:AB:4F:7D:12",
+        "start": 885,
+        "end": 902,
+        "label": "mac_address"
+      },
+      {
+        "value": "1HJ7-KL9-MA45",
+        "start": 1023,
+        "end": 1036,
+        "label": "health_plan_beneficiary_number"
+      },
+      {
+        "value": "Harper Media Group",
+        "start": 1553,
+        "end": 1571,
+        "label": "company_name"
+      }
+    ]
+  },
+  {
+    "id": "4d8c14613e2b489688b54575a26d515b",
+    "text": "This License Agreement is effective as of 07/15/2024 between Harrison & Associates and the licensee. The licensee is granted the right to use the software with the certificate license number IL-0025734. The licensee acknowledges that the software is licensed, not sold, and that all rights not expressly granted are reserved by Harrison & Associates. The licensee agrees to comply with all terms and conditions outlined in this agreement. The licensee is prohibited from modifying, reverse engineering, or disassembling the software. Any breach of these terms may result in the immediate termination of this license agreement. Harrison & Associates disclaims all liability for any damages arising from the use of the software. The licensee must not use the software with a mac address of 00:3F:66:1A:7C:2D for any unauthorized purposes. For any inquiries, the licensee may contact Harrison & Associates via fax at 479-772-7297.",
+    "locale": "us",
+    "domain": "Legal",
+    "pii": [
+      {
+        "value": "07/15/2024",
+        "start": 42,
+        "end": 52,
+        "label": "date"
+      },
+      {
+        "value": "Harrison & Associates",
+        "start": 61,
+        "end": 82,
+        "label": "company_name"
+      },
+      {
+        "value": "IL-0025734",
+        "start": 191,
+        "end": 201,
+        "label": "certificate_license_number"
+      },
+      {
+        "value": "Harrison & Associates",
+        "start": 328,
+        "end": 349,
+        "label": "company_name"
+      },
+      {
+        "value": "Harrison & Associates",
+        "start": 627,
+        "end": 648,
+        "label": "company_name"
+      },
+      {
+        "value": "00:3F:66:1A:7C:2D",
+        "start": 788,
+        "end": 805,
+        "label": "mac_address"
+      },
+      {
+        "value": "Harrison & Associates",
+        "start": 881,
+        "end": 902,
+        "label": "company_name"
+      },
+      {
+        "value": "479-772-7297",
+        "start": 914,
+        "end": 926,
+        "label": "fax_number"
+      }
+    ]
+  },
+  {
+    "id": "b30a384018af4fb6a7d490a9a88ae8c8",
+    "text": "To access the Wi-Fi network through our identity management system, follow these steps:\n\n1. Open your web browser and navigate to https://idmanagementinc.com/secure/wifi-access-instructions. This is the secure portal where you can manage your network settings.\n\n2. Log in using your credentials. Your user name is rachel.milliner. Your password is Michael1995.\n\n3. Once logged in, you will be directed to the Wi-Fi access dashboard. Here, you can configure your network settings, view your connection status, and troubleshoot any issues.\n\n4. If you encounter any problems, refer to the troubleshooting tips provided on the dashboard. Common issues can often be resolved by restarting your device or checking your network settings.\n\n5. Ensure that your device is connected to the correct network. The network settings should be configured to match the SSID and security type specified in the instructions.\n\n6. If you need further assistance, contact our support team through the secure portal. They can provide additional guidance and help resolve any connectivity issues you may face.",
+    "locale": "us",
+    "domain": "Identity Management",
+    "pii": [
+      {
+        "value": "https://idmanagementinc.com/secure/wifi-access-instructions",
+        "start": 130,
+        "end": 189,
+        "label": "url"
+      },
+      {
+        "value": "rachel.milliner",
+        "start": 314,
+        "end": 329,
+        "label": "user_name"
+      },
+      {
+        "value": "Michael1995",
+        "start": 348,
+        "end": 359,
+        "label": "password"
+      }
+    ]
+  },
+  {
+    "id": "ef429804471c40be9c5db8c0454dafde",
+    "text": "Vitalix Pharma has developed a comprehensive Risk Management Plan for its new medicinal product. The plan, certified under certificate license number PHY-837294, outlines strategies to identify, characterize, prevent, or minimize risks associated with the product. Risk identification involves monitoring adverse events reported in medical records, such as the one with the medical record number 000623458. These events are carefully assessed to understand their potential impact on patient safety.\n\nRisk assessment is conducted using various tools and methodologies, including flowcharts and detailed descriptions of safety concerns. For instance, on Wed, 15 Nov 2023, a thorough risk assessment was performed to evaluate the potential risks associated with the product. The findings were documented and communicated to relevant stakeholders, including those at the coordinate 41.6856, -72.9105.\n\nRisk minimization strategies are implemented to prevent or mitigate identified risks. These strategies include patient education, healthcare provider training, and regular updates on safety information. Communication is a critical component of the risk management plan. Updates and safety alerts are sent to email addresses such as christinafharris62@icloud.com to ensure that all stakeholders are informed and prepared to address any potential issues.",
+    "locale": "us",
+    "domain": "Pharmaceuticals",
+    "pii": [
+      {
+        "value": "Vitalix Pharma",
+        "start": 0,
+        "end": 14,
+        "label": "company_name"
+      },
+      {
+        "value": "PHY-837294",
+        "start": 150,
+        "end": 160,
+        "label": "certificate_license_number"
+      },
+      {
+        "value": "000623458",
+        "start": 396,
+        "end": 405,
+        "label": "medical_record_number"
+      },
+      {
+        "value": "Wed, 15 Nov 2023",
+        "start": 652,
+        "end": 668,
+        "label": "date"
+      },
+      {
+        "value": "41.6856, -72.9105",
+        "start": 878,
+        "end": 895,
+        "label": "coordinate"
+      },
+      {
+        "value": "christinafharris62@icloud.com",
+        "start": 1230,
+        "end": 1259,
+        "label": "email"
+      }
+    ]
+  },
+  {
+    "id": "03ca38a3d07c4eb68fd5998c281846cf",
+    "text": "**Freedom of Information Act Request**\n\n**Requester Information:**\n- Name: Jeanette\n- Address: 510 W 15th Ave\n- County: Cook County\n\n**Request Details:**\n- **Date and Time of Request**: 18:45\n- **Subject Matter**: All records related to public works projects.\n- **Date Range**: January 1, 2020 to December 31, 2022\n- **Format Preference**: Electronic format, preferably PDF.\n\n**Fee Exemption Declaration:**\n- I declare that I am exempt from fees as I am requesting information for personal use.\n\n**Contact Information**:\n- **Password**: RiverFlow@2025",
+    "locale": "us",
+    "domain": "Government",
+    "pii": [
+      {
+        "value": "Jeanette",
+        "start": 75,
+        "end": 83,
+        "label": "first_name"
+      },
+      {
+        "value": "510 W 15th Ave",
+        "start": 95,
+        "end": 109,
+        "label": "street_address"
+      },
+      {
+        "value": "Cook County",
+        "start": 120,
+        "end": 131,
+        "label": "county"
+      },
+      {
+        "value": "Date and Time of Request",
+        "start": 158,
+        "end": 182,
+        "label": "date_time"
+      },
+      {
+        "value": "18:45",
+        "start": 186,
+        "end": 191,
+        "label": "time"
+      },
+      {
+        "value": "January 1, 2020",
+        "start": 278,
+        "end": 293,
+        "label": "date"
+      },
+      {
+        "value": "December 31, 2022",
+        "start": 297,
+        "end": 314,
+        "label": "date"
+      },
+      {
+        "value": "RiverFlow@2025",
+        "start": 537,
+        "end": 551,
+        "label": "password"
+      }
+    ]
+  },
+  {
+    "id": "42859b33dab94a79b78fd9185b682084",
+    "text": "Invoice Number: INV20300715-001\n\nDate: 2030-07-15\n\nDear Customer,\n\nThank you for your recent purchase. Below are the details of your order:\n\nCustomer ID: CUS502974\n\nItems Purchased:\n1. Product A - Quantity: 2, Price: $29.99 each\n2. Product B - Quantity: 1, Price: $49.99 each\n\nSubtotal: $109.97\n\nTax: $8.79\n\nTotal Amount Due: $118.76\n\nPayment Information:\nCredit/Debit Card: 4532 1469 7831 2098\n\nOrder Time: 08:15:23 AM\n\nPlease ensure that your payment is made by the due date to avoid any late fees. If you have any questions or need further assistance, feel free to reach out to our customer support team.",
+    "locale": "us",
+    "domain": "Ecommerce",
+    "pii": [
+      {
+        "value": "2030-07-15",
+        "start": 39,
+        "end": 49,
+        "label": "date"
+      },
+      {
+        "value": "CUS502974",
+        "start": 154,
+        "end": 163,
+        "label": "customer_id"
+      },
+      {
+        "value": "4532 1469 7831 2098",
+        "start": 375,
+        "end": 394,
+        "label": "credit_debit_card"
+      },
+      {
+        "value": "08:15:23 AM",
+        "start": 408,
+        "end": 419,
+        "label": "time"
+      }
+    ]
+  },
+  {
+    "id": "2ae104f6b13e4246a919b24f718f8342",
+    "text": "John Cook, a sales related worker with customer id 1029384756, recently provided feedback on our biotechnology product. In his email, sent from cookj92@gmail.com, he highlighted the ease of use and the significant improvement in his workflow. He mentioned, \"The product has been a game-changer for me.\" He also suggested that the customer support team could be more responsive, especially when reached at 689-210-7141.",
+    "locale": "us",
+    "domain": "Biotechnology",
+    "pii": [
+      {
+        "value": "John",
+        "start": 0,
+        "end": 4,
+        "label": "first_name"
+      },
+      {
+        "value": "Cook",
+        "start": 5,
+        "end": 9,
+        "label": "last_name"
+      },
+      {
+        "value": "sales related worker",
+        "start": 13,
+        "end": 33,
+        "label": "occupation"
+      },
+      {
+        "value": "1029384756",
+        "start": 51,
+        "end": 61,
+        "label": "customer_id"
+      },
+      {
+        "value": "cookj92@gmail.com",
+        "start": 144,
+        "end": 161,
+        "label": "email"
+      },
+      {
+        "value": "689-210-7141",
+        "start": 405,
+        "end": 417,
+        "label": "phone_number"
+      }
+    ]
+  },
+  {
+    "id": "fbb0f537c6104acd8b516657128487cb",
+    "text": "| Scenario ID | Description | Preconditions | Test Steps | Expected Results | Actual Results |\n|-------------|-------------|---------------|------------|------------------|---------------|\n| QA001       | Cookie Persistence | User is logged in at the URL http://192.168.1.100:8080/retail/qa_cookie_scenario_sheet.pdf | 1. Close the browser. 2. Reopen the browser and navigate to the URL. 3. Check the presence of the cookie. | The cookie should be present. | The cookie is present. |\n| QA002       | Cookie Value Validation | User is logged in and the cookie http cookie: user_session=xf98bk7l3p; Path=/; HttpOnly; Secure; SameSite=Lax is set. | 1. Log out of the session. 2. Check the cookie value. | The cookie value should be invalidated. | The cookie value is invalidated. |\n| QA003       | Email Notification | User is logged in and email is cwilliams@icloud.com. | 1. Perform a transaction. 2. Check the inbox for a confirmation email. | A confirmation email should be received. | A confirmation email is received. |",
+    "locale": "us",
+    "domain": "Retail",
+    "pii": [
+      {
+        "value": "http://192.168.1.100:8080/retail/qa_cookie_scenario_sheet.pdf",
+        "start": 255,
+        "end": 316,
+        "label": "url"
+      },
+      {
+        "value": "user_session=xf98bk7l3p; Path=/; HttpOnly; Secure; SameSite=Lax",
+        "start": 572,
+        "end": 635,
+        "label": "http_cookie"
+      },
+      {
+        "value": "cwilliams@icloud.com",
+        "start": 847,
+        "end": 867,
+        "label": "email"
+      }
+    ]
+  },
+  {
+    "id": "3a6945fcc2d1468f808ee32488e402f8",
+    "text": "**Call Blocking Request**\n\n**Customer Information**\n\nFirst Name: Letitia\nAccount Number: 7238519402\nPhone Number: 363-288-6032\n\n**Blocking Details**\n\nPhone Numbers to Block: 363-288-6032\nBlocking Duration: Permanent\n\n**Reason for Blocking:**\n\nHarassment\n\n**Request Date:**\n\n03/15/2024\n\n**Authorization Signature:**\n\n_______________________________\n\nBiometric Identifier: M72983456187",
+    "locale": "us",
+    "domain": "Telecommunications",
+    "pii": [
+      {
+        "value": "Letitia",
+        "start": 65,
+        "end": 72,
+        "label": "first_name"
+      },
+      {
+        "value": "7238519402",
+        "start": 89,
+        "end": 99,
+        "label": "account_number"
+      },
+      {
+        "value": "363-288-6032",
+        "start": 114,
+        "end": 126,
+        "label": "phone_number"
+      },
+      {
+        "value": "363-288-6032",
+        "start": 174,
+        "end": 186,
+        "label": "phone_number"
+      },
+      {
+        "value": "03/15/2024",
+        "start": 274,
+        "end": 284,
+        "label": "date"
+      },
+      {
+        "value": "M72983456187",
+        "start": 371,
+        "end": 383,
+        "label": "biometric_identifier"
+      }
+    ]
+  },
+  {
+    "id": "fea045682ac244f78bf7f00c06926b45",
+    "text": "The cash flow statement for Vanguard Forge highlights several key financial activities. Under operating activities, the company received significant inflows from sales revenue, amounting to $5,000,000. Additionally, employee 003572 was responsible for managing the accounts payable, ensuring timely payments to suppliers. The account number 2347895162 was utilized for the swift bic GRTYUS4PZ2 for the transfer of funds, ensuring efficient financial transactions. Investing activities included the purchase of new machinery for $1,500,000, which is expected to enhance production capabilities. Financing activities showed a net inflow of $800,000 from a long-term loan, which will support the company's expansion plans. The network traffic was monitored using the mac address D6:B7:7B:1E:4F:9A.",
+    "locale": "us",
+    "domain": "Manufacturing",
+    "pii": [
+      {
+        "value": "Vanguard Forge",
+        "start": 28,
+        "end": 42,
+        "label": "company_name"
+      },
+      {
+        "value": "003572",
+        "start": 225,
+        "end": 231,
+        "label": "employee_id"
+      },
+      {
+        "value": "2347895162",
+        "start": 341,
+        "end": 351,
+        "label": "account_number"
+      },
+      {
+        "value": "D6:B7:7B:1E:4F:9A",
+        "start": 776,
+        "end": 793,
+        "label": "mac_address"
+      }
+    ]
+  },
+  {
+    "id": "019c754cf0724e9d9fe4a69fc644363c",
+    "text": "I am writing to request a change in the MAC address for my device. The current MAC address is 00:38:E1:1A:7C:2F.  I would like to change it to a new MAC address.  The device identifier is 98765432109876543210987654.  I am a laborer freight stock or material mover and use this device to access the network for work purposes. I am a Protestant and do not have any religious concerns with the change.  Please contact me at thomasp@icloud.com for any further details or to discuss the pin 657297.",
+    "locale": "us",
+    "domain": "Cybersecurity",
+    "pii": [
+      {
+        "value": "00:38:E1:1A:7C:2F",
+        "start": 94,
+        "end": 111,
+        "label": "mac_address"
+      },
+      {
+        "value": "98765432109876543210987654",
+        "start": 188,
+        "end": 214,
+        "label": "device_identifier"
+      },
+      {
+        "value": "laborer freight stock or material mover",
+        "start": 224,
+        "end": 263,
+        "label": "occupation"
+      },
+      {
+        "value": "Protestant",
+        "start": 332,
+        "end": 342,
+        "label": "religious_belief"
+      },
+      {
+        "value": "thomasp@icloud.com",
+        "start": 421,
+        "end": 439,
+        "label": "email"
+      },
+      {
+        "value": "657297",
+        "start": 486,
+        "end": 492,
+        "label": "pin"
+      }
+    ]
+  },
+  {
+    "id": "b14d448095564ce995565cddf2e2f05b",
+    "text": "The teacher evaluation for Guillermo Moreno, who holds a bachelor's degree, has been conducted. Guillermo Moreno can be reached at gmoreno@gmail.com or by phone at 832-345-2345. The evaluation focuses on various criteria, including instructional methods, classroom management, and student engagement. The rater comments highlight Guillermo Moreno's effective use of instructional strategies and his ability to manage the classroom environment. Overall, the performance rating reflects a high level of competency in engaging students and maintaining a productive learning atmosphere. The narrative feedback includes detailed observations and recommendations for further improvement. Both the evaluator and Guillermo Moreno have signed off on the evaluation, confirming the accuracy of the feedback and the commitment to continuous professional development.",
+    "locale": "us",
+    "domain": "Education",
+    "pii": [
+      {
+        "value": "Guillermo",
+        "start": 27,
+        "end": 36,
+        "label": "first_name"
+      },
+      {
+        "value": "Moreno",
+        "start": 37,
+        "end": 43,
+        "label": "last_name"
+      },
+      {
+        "value": "bachelor's degree",
+        "start": 57,
+        "end": 74,
+        "label": "education_level"
+      },
+      {
+        "value": "Guillermo",
+        "start": 96,
+        "end": 105,
+        "label": "first_name"
+      },
+      {
+        "value": "Moreno",
+        "start": 106,
+        "end": 112,
+        "label": "last_name"
+      },
+      {
+        "value": "gmoreno@gmail.com",
+        "start": 131,
+        "end": 148,
+        "label": "email"
+      },
+      {
+        "value": "832-345-2345",
+        "start": 164,
+        "end": 176,
+        "label": "phone_number"
+      },
+      {
+        "value": "Guillermo",
+        "start": 330,
+        "end": 339,
+        "label": "first_name"
+      },
+      {
+        "value": "Moreno",
+        "start": 340,
+        "end": 346,
+        "label": "last_name"
+      },
+      {
+        "value": "Guillermo",
+        "start": 705,
+        "end": 714,
+        "label": "first_name"
+      },
+      {
+        "value": "Moreno",
+        "start": 715,
+        "end": 721,
+        "label": "last_name"
+      }
+    ]
+  },
+  {
+    "id": "00ec4ede333a455fad6cde1459afddab",
+    "text": "17/08/2024\n\nDepartment of Transportation\nFreedom of Information Act Request\n\nMarcos Collado\n473 Alborada\n\nDear Sir/Madam,\n\nI am writing to request information under the Freedom of Information Act. My name is Marcos Collado, age 58. I am seeking records related to the environmental impact assessments conducted for the highway expansion project. Specifically, I am interested in any studies or reports that detail the potential effects on local wildlife and water quality. I am also requesting any communications between the Department of Transportation and environmental consulting firms, particularly those that include the swift bic MNBUS47KZX.\n\nPlease waive any fees associated with this request, as the information is crucial for my ongoing research. I am happy to provide further details or narrow the scope if necessary.",
+    "locale": "us",
+    "domain": "Government",
+    "pii": [
+      {
+        "value": "17/08/2024",
+        "start": 0,
+        "end": 10,
+        "label": "date"
+      },
+      {
+        "value": "Marcos",
+        "start": 77,
+        "end": 83,
+        "label": "first_name"
+      },
+      {
+        "value": "Collado",
+        "start": 84,
+        "end": 91,
+        "label": "last_name"
+      },
+      {
+        "value": "473 Alborada",
+        "start": 92,
+        "end": 104,
+        "label": "street_address"
+      },
+      {
+        "value": "Marcos",
+        "start": 208,
+        "end": 214,
+        "label": "first_name"
+      },
+      {
+        "value": "Collado",
+        "start": 215,
+        "end": 222,
+        "label": "last_name"
+      },
+      {
+        "value": 58,
+        "start": 228,
+        "end": 230,
+        "label": "age"
+      },
+      {
+        "value": "MNBUS47KZX",
+        "start": 636,
+        "end": 646,
+        "label": "swift_bic"
+      }
+    ]
+  },
+  {
+    "id": "931a0d9108fa4049b5c9b004fa88ea17",
+    "text": "This Legal Indemnity Agreement is between Hartford & Associates and Nelida Pendola. The indemnity clause specifies that Nelida Pendola will indemnify Hartford & Associates for any losses or damages arising from the use of the fax number 772-430-2043. The scope of indemnity includes all claims, liabilities, and expenses resulting from the use of the mac address 97:F4:CA:2E:7A:1B. The indemnity is subject to limitations and exclusions, including any claims arising from the use of the pin 742819. This agreement is governed by the laws of the relevant jurisdiction.",
+    "locale": "us",
+    "domain": "Legal",
+    "pii": [
+      {
+        "value": "Hartford & Associates",
+        "start": 42,
+        "end": 63,
+        "label": "company_name"
+      },
+      {
+        "value": "Nelida",
+        "start": 68,
+        "end": 74,
+        "label": "first_name"
+      },
+      {
+        "value": "Pendola",
+        "start": 75,
+        "end": 82,
+        "label": "last_name"
+      },
+      {
+        "value": "Nelida",
+        "start": 120,
+        "end": 126,
+        "label": "first_name"
+      },
+      {
+        "value": "Pendola",
+        "start": 127,
+        "end": 134,
+        "label": "last_name"
+      },
+      {
+        "value": "Hartford & Associates",
+        "start": 150,
+        "end": 171,
+        "label": "company_name"
+      },
+      {
+        "value": "772-430-2043",
+        "start": 237,
+        "end": 249,
+        "label": "fax_number"
+      },
+      {
+        "value": "97:F4:CA:2E:7A:1B",
+        "start": 363,
+        "end": 380,
+        "label": "mac_address"
+      },
+      {
+        "value": "742819",
+        "start": 491,
+        "end": 497,
+        "label": "pin"
+      }
+    ]
+  },
+  {
+    "id": "3427915b4b6747a09c1f31fdb1b29e06",
+    "text": "---\n\n**Government 401K Contribution Form**\n\n**Employee Information**\n\n| Field                  | Value                         |\n|------------------------|-------------------------------|\n| First Name             | Chaddrick                     |\n| Social Security Number | 243-62-6759                   |\n| Employee ID            | MKT-4189                      |\n\n**Contribution Elections**\n\n| Field                  | Value                         |\n|------------------------|-------------------------------|\n| Contribution Percentage|                              |\n| Investment Choices      |                              |\n\n**Signature**\n\n| Field                  | Value                         |\n|------------------------|-------------------------------|\n| Employee Signature     |                              |\n| Date                   |                              |\n\n**Bank Information**\n\n| Field                  | Value                         |\n|------------------------|-------------------------------|\n| Bank Routing Number    | 802106547                     |\n| SWIFT BIC              | ZYXWUS5K987                    |",
+    "locale": "us",
+    "domain": "Government",
+    "pii": [
+      {
+        "value": "Chaddrick",
+        "start": 215,
+        "end": 224,
+        "label": "first_name"
+      },
+      {
+        "value": "243-62-6759",
+        "start": 274,
+        "end": 285,
+        "label": "ssn"
+      },
+      {
+        "value": "MKT-4189",
+        "start": 333,
+        "end": 341,
+        "label": "employee_id"
+      },
+      {
+        "value": "802106547",
+        "start": 1047,
+        "end": 1056,
+        "label": "bank_routing_number"
+      },
+      {
+        "value": "ZYXWUS5K987",
+        "start": 1106,
+        "end": 1117,
+        "label": "swift_bic"
+      }
+    ]
+  },
+  {
+    "id": "70654f1fdce54dc7ac02b91a51764ecf",
+    "text": "**Ecommerce Customer Satisfaction Survey**\n\n**1. Demographic Information**\n\n1.1 Email Address: justin.peeler@example.com\n\n1.2 Customer ID: SM-72915\n\n1.3 Race/Ethnicity: white\n\n1.4 County: Mobile County\n\n**2. Purchase Details**\n\n2.1 Credit/Debit Card Used for Purchase: 3456 789012 34567\n\n**3. Shopping Experience Ratings**\n\n3.1 Please rate the following aspects of your shopping experience on a scale of 1-5 (1 being very dissatisfied, 5 being very satisfied):\n\n- Ease of Navigation: ______\n- Product Selection: ______\n- Checkout Process: ______\n- Delivery Speed: ______\n- Customer Service: ______\n\n**4. Open-Ended Feedback**\n\n4.1 What did you like most about your shopping experience? _____________________\n\n4.2 What did you like least about your shopping experience? _____________________\n\n4.3 Any additional comments or suggestions? _____________________\n\n**5. Overall Satisfaction**\n\n5.1 On a scale of 1-10, how would you rate your overall satisfaction with our service? ______",
+    "locale": "us",
+    "domain": "Ecommerce",
+    "pii": [
+      {
+        "value": "justin.peeler@example.com",
+        "start": 95,
+        "end": 120,
+        "label": "email"
+      },
+      {
+        "value": "SM-72915",
+        "start": 139,
+        "end": 147,
+        "label": "customer_id"
+      },
+      {
+        "value": "white",
+        "start": 169,
+        "end": 174,
+        "label": "race_ethnicity"
+      },
+      {
+        "value": "Mobile County",
+        "start": 188,
+        "end": 201,
+        "label": "county"
+      },
+      {
+        "value": "3456 789012 34567",
+        "start": 269,
+        "end": 286,
+        "label": "credit_debit_card"
+      }
+    ]
+  },
+  {
+    "id": "077ca101faf34b179e9025cb741888ff",
+    "text": "I, Haley Mahoney, am submitting this Civil Rights and Political Affiliation Form to declare my political view as Liberal. I am committed to advocating for civil rights and have been involved in various activities that align with my Liberal political view. My biometric identifier is X92837465183.",
+    "locale": "us",
+    "domain": "Civil Rights",
+    "pii": [
+      {
+        "value": "Haley",
+        "start": 3,
+        "end": 8,
+        "label": "first_name"
+      },
+      {
+        "value": "Mahoney",
+        "start": 9,
+        "end": 16,
+        "label": "last_name"
+      },
+      {
+        "value": "Liberal",
+        "start": 113,
+        "end": 120,
+        "label": "political_view"
+      },
+      {
+        "value": "Liberal",
+        "start": 232,
+        "end": 239,
+        "label": "political_view"
+      },
+      {
+        "value": "X92837465183",
+        "start": 283,
+        "end": 295,
+        "label": "biometric_identifier"
+      }
+    ]
+  },
+  {
+    "id": "fc306c761d374f9080512075154e49aa",
+    "text": "**Shipping Terms**\n\n**Shipment Details**\n\n- **Origin Address**:\n  - 60 School St\n\n- **Destination Coordinates**:\n  - 41.4145, -72.2991\n\n- **Shipping Method**:\n  - Express\n\n- **Carrier Information**:\n  - DHL\n  - Terms and Conditions: https://dhl.com/en/express/shipping/terms-and-conditions.html\n\n- **Tracking Number**:\n  - 2F57-RE4-KD91\n\n**Terms and Conditions**\n\n- **Payment Terms**:\n  - Payment is due at 19:23 on the date of shipment.\n\n- **Insurance Details**:\n  - Insurance coverage is included with the shipment.\n\n- **Liability Clauses**:\n  - The carrier is not liable for any damages or losses occurring after the shipment has been delivered to the destination address.",
+    "locale": "us",
+    "domain": "Logistics",
+    "pii": [
+      {
+        "value": "60 School St",
+        "start": 68,
+        "end": 80,
+        "label": "street_address"
+      },
+      {
+        "value": "41.4145, -72.2991",
+        "start": 117,
+        "end": 134,
+        "label": "coordinate"
+      },
+      {
+        "value": "https://dhl.com/en/express/shipping/terms-and-conditions.html",
+        "start": 233,
+        "end": 294,
+        "label": "url"
+      },
+      {
+        "value": "2F57-RE4-KD91",
+        "start": 323,
+        "end": 336,
+        "label": "health_plan_beneficiary_number"
+      },
+      {
+        "value": "19:23",
+        "start": 407,
+        "end": 412,
+        "label": "time"
+      }
+    ]
+  }
+]

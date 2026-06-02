@@ -1,0 +1,53 @@
+proxy:
+  enabled: false
+  intercepted_domains:
+    - api.anthropic.com
+    - api.openai.com
+    - api.githubcopilot.com
+    - copilot-proxy.githubusercontent.com
+  blocked_domains: []
+
+scanning:
+  inference_timeout_ms: 5000
+  regex_enabled: true
+  entropy_enabled: true
+  entropy_threshold: 4.5
+  gliner_enabled: true
+  custom_patterns: []
+  custom_blocked_words: []
+  allowed_words: []
+  bypass:
+    - path: "/v1/models"
+    - prefix: "/.well-known/"
+    - method: "OPTIONS"
+  cache_max_size: 10000
+
+file_blocking:
+  blocked_extensions:
+    - ".env"
+    - ".tfstate"
+    - ".pem"
+    - ".key"
+    - ".p12"
+    - ".pfx"
+  content_patterns_enabled: true
+
+hooks:
+  enabled: false
+  claude_code: false
+  safecmd_overrides:
+    added: []
+    removed: []
+
+admin:
+  port: 9090
+
+logging:
+  level: info
+  output: stdout
+
+licensing:
+  key: ""
+
+mcp:
+  wrapped_servers: {}

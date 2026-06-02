@@ -1,0 +1,20 @@
+# redactr-base — hardened sandbox base (local stand-in for subsystem A's
+# central build+sign+registry pipeline).
+FROM node:22-bookworm-slim
+
+# The "few binaries": git, python, build toolchain, iptables (Task 10), su-exec.
+RUN apt-get update && apt-get install -y --no-install-recommends \
+      git python3 python3-pip build-essential ca-certificates iptables curl gosu \
+    && rm -rf /var/lib/apt/lists/*
+
+# Claude CLI (the first agent we prove end-to-end).
+RUN npm install -g @anthropic-ai/claude-code
+
+# Unprivileged run user; entrypoint drops to this after netns setup.
+RUN useradd -m -u 1000 redactr
+
+COPY redactr-entrypoint.sh /usr/local/bin/redactr-entrypoint
+RUN chmod +x /usr/local/bin/redactr-entrypoint
+
+WORKDIR /work
+ENTRYPOINT ["/usr/local/bin/redactr-entrypoint"]

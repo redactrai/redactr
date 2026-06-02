@@ -1,0 +1,3425 @@
+[
+  {
+    "id": "40767A",
+    "source_text": "Subject: Group Messaging for Admissions Process\n\nGood morning, everyone,\n\nI hope this message finds you well. As we continue our admissions processes, I would like to update you on the latest developments and key information. Please find below the timeline for our upcoming meetings:\n\n- wynqvrh053 - Meeting at 10:20am\n- luka.burg - Meeting at 21\n- qahil.wittauer - Meeting at quarter past 13\n- gholamhossein.ruschke - Meeting at 9:47 PM\n- pdmjrsyoz1460 ",
+    "target_text": "Subject: Group Messaging for Admissions Process\n\nGood morning, everyone,\n\nI hope this message finds you well. As we continue our admissions processes, I would like to update you on the latest developments and key information. Please find below the timeline for our upcoming meetings:\n\n- [USERNAME] - Meeting at [TIME]\n- [USERNAME] - Meeting at [TIME]\n- [USERNAME] - Meeting at [TIME]\n- [USERNAME] - Meeting at [TIME]\n- [USERNAME] ",
+    "pii": [
+      {
+        "value": "wynqvrh053",
+        "start": 287,
+        "end": 297,
+        "label": "USERNAME",
+        "mapped_label": "USERNAME"
+      },
+      {
+        "value": "10:20am",
+        "start": 311,
+        "end": 318,
+        "label": "TIME",
+        "mapped_label": "TIME"
+      },
+      {
+        "value": "luka.burg",
+        "start": 321,
+        "end": 330,
+        "label": "USERNAME",
+        "mapped_label": "USERNAME"
+      },
+      {
+        "value": "21",
+        "start": 344,
+        "end": 346,
+        "label": "TIME",
+        "mapped_label": "TIME"
+      },
+      {
+        "value": "qahil.wittauer",
+        "start": 349,
+        "end": 363,
+        "label": "USERNAME",
+        "mapped_label": "USERNAME"
+      },
+      {
+        "value": "quarter past 13",
+        "start": 377,
+        "end": 392,
+        "label": "TIME",
+        "mapped_label": "TIME"
+      },
+      {
+        "value": "gholamhossein.ruschke",
+        "start": 395,
+        "end": 416,
+        "label": "USERNAME",
+        "mapped_label": "USERNAME"
+      },
+      {
+        "value": "9:47 PM",
+        "start": 430,
+        "end": 437,
+        "label": "TIME",
+        "mapped_label": "TIME"
+      },
+      {
+        "value": "pdmjrsyoz1460",
+        "start": 440,
+        "end": 453,
+        "label": "USERNAME",
+        "mapped_label": "USERNAME"
+      }
+    ]
+  },
+  {
+    "id": "40767B",
+    "source_text": "- Meeting at 2:33 PM\n- N23 - Meeting at 11:29pm\n- wennmann27 - Meeting at 4:45 PM\n\nKindly make sure to adjust your schedules accordingly. Our group messaging platform will be utilized for any updates, reminders, or changes to the agenda. This collaborative approach will ensure smooth communication and coordination throughout the admissions process.\n\nLooking forward to our productive discussions and successful collaboration.\n\nWarm regards,\n[Your Name]",
+    "target_text": "- Meeting at [TIME]\n- [USERNAME] - Meeting at [TIME]\n- [USERNAME] - Meeting at [TIME]\n\nKindly make sure to adjust your schedules accordingly. Our group messaging platform will be utilized for any updates, reminders, or changes to the agenda. This collaborative approach will ensure smooth communication and coordination throughout the admissions process.\n\nLooking forward to our productive discussions and successful collaboration.\n\nWarm regards,\n[Your Name]",
+    "pii": [
+      {
+        "value": "2:33 PM",
+        "start": 13,
+        "end": 20,
+        "label": "TIME",
+        "mapped_label": "TIME"
+      },
+      {
+        "value": "N23",
+        "start": 23,
+        "end": 26,
+        "label": "USERNAME",
+        "mapped_label": "USERNAME"
+      },
+      {
+        "value": "11:29pm",
+        "start": 40,
+        "end": 47,
+        "label": "TIME",
+        "mapped_label": "TIME"
+      },
+      {
+        "value": "wennmann27",
+        "start": 50,
+        "end": 60,
+        "label": "USERNAME",
+        "mapped_label": "USERNAME"
+      },
+      {
+        "value": "4:45 PM",
+        "start": 74,
+        "end": 81,
+        "label": "TIME",
+        "mapped_label": "TIME"
+      }
+    ]
+  },
+  {
+    "id": "40768A",
+    "source_text": "Subject: Admission Notification - Great Britain University\\n\\nDear Applicants,\\n\\nWe are thrilled to inform you about the status of your admission to Great Britain University. Please read the details below for the automated notification.\\n\\nDate of Notification: 5:24am on August 5th, 2057\\n\\n**Applicant Details**\\n\\n1. Applicant: Balloi Eckrich\\n   Email: bballoi@yahoo.com\\n   Social Number: 996 076 6460\\n   ID ",
+    "target_text": "Subject: Admission Notification - Great Britain University\\n\\nDear Applicants,\\n\\nWe are thrilled to inform you about the status of your admission to Great Britain University. Please read the details below for the automated notification.\\n\\nDate of Notification: [TIME] on [DATE]\\n\\n**Applicant Details**\\n\\n1. Applicant: [LASTNAME1] [LASTNAME2]\\n   Email: [EMAIL]\\n   Social Number: [SOCIALNUMBER]\\n   ID ",
+    "pii": [
+      {
+        "value": "5:24am",
+        "start": 263,
+        "end": 269,
+        "label": "TIME",
+        "mapped_label": "TIME"
+      },
+      {
+        "value": "August 5th, 2057",
+        "start": 273,
+        "end": 289,
+        "label": "DATE",
+        "mapped_label": "DATE"
+      },
+      {
+        "value": "Balloi",
+        "start": 332,
+        "end": 338,
+        "label": "LASTNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Eckrich",
+        "start": 339,
+        "end": 346,
+        "label": "LASTNAME2",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "bballoi@yahoo.com",
+        "start": 358,
+        "end": 375,
+        "label": "EMAIL",
+        "mapped_label": "EMAIL"
+      },
+      {
+        "value": "996 076 6460",
+        "start": 395,
+        "end": 407,
+        "label": "SOCIALNUMBER",
+        "mapped_label": "SSN"
+      }
+    ]
+  },
+  {
+    "id": "40768B",
+    "source_text": "Card: KB90324ER\\n   Country: GB\\n   Building: 163\\n   Street: Conygre Grove\\n   City: Bristol\\n   State: ENG\\n   Postcode: BS34 7HU, BS34 7HZ\\n   Password: q4R\\\\\\n\\n2. Applicant: Baasgaran Palmoso\\n   Email: blerenbaasgara@gmail.com\\n   Social Number: 107-393-9036\\n   ID Card: SC78428CU\\n   Country: United Kingdom\\n   Building: 646\\n   Street: School Lane\\n   City: Altrincham\\n   State: ENG\\n   Postcode: WA14 5R",
+    "target_text": "Card: [IDCARD]\\n   Country: [COUNTRY]\\n   Building: [BUILDING]\\n   Street: [STREET]\\n   City: [CITY]\\n   State: [STATE]\\n   Postcode: [POSTCODE]\\n   Password: [PASS]\\n\\n2. Applicant: [LASTNAME1] [LASTNAME2]\\n   Email: [EMAIL]\\n   Social Number: [SOCIALNUMBER]\\n   ID Card: [IDCARD]\\n   Country: [COUNTRY]\\n   Building: [BUILDING]\\n   Street: [STREET]\\n   City: [CITY]\\n   State: [STATE]\\n   Postcode: WA14 5R",
+    "pii": [
+      {
+        "value": "KB90324ER",
+        "start": 6,
+        "end": 15,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      },
+      {
+        "value": "GB",
+        "start": 29,
+        "end": 31,
+        "label": "COUNTRY",
+        "mapped_label": "COUNTRY"
+      },
+      {
+        "value": "163",
+        "start": 46,
+        "end": 49,
+        "label": "BUILDING",
+        "mapped_label": "BUILDING"
+      },
+      {
+        "value": "Conygre Grove",
+        "start": 62,
+        "end": 75,
+        "label": "STREET",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "Bristol",
+        "start": 86,
+        "end": 93,
+        "label": "CITY",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "ENG",
+        "start": 105,
+        "end": 108,
+        "label": "STATE",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "BS34 7HU, BS34 7HZ",
+        "start": 123,
+        "end": 141,
+        "label": "POSTCODE",
+        "mapped_label": "POSTCODE"
+      },
+      {
+        "value": "q4R\\\\",
+        "start": 156,
+        "end": 161,
+        "label": "PASS",
+        "mapped_label": "GENERIC-SECRET"
+      },
+      {
+        "value": "Baasgaran",
+        "start": 179,
+        "end": 188,
+        "label": "LASTNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Palmoso",
+        "start": 189,
+        "end": 196,
+        "label": "LASTNAME2",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "blerenbaasgara@gmail.com",
+        "start": 208,
+        "end": 232,
+        "label": "EMAIL",
+        "mapped_label": "EMAIL"
+      },
+      {
+        "value": "107-393-9036",
+        "start": 252,
+        "end": 264,
+        "label": "SOCIALNUMBER",
+        "mapped_label": "SSN"
+      },
+      {
+        "value": "SC78428CU",
+        "start": 278,
+        "end": 287,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      },
+      {
+        "value": "United Kingdom",
+        "start": 301,
+        "end": 315,
+        "label": "COUNTRY",
+        "mapped_label": "COUNTRY"
+      },
+      {
+        "value": "646",
+        "start": 330,
+        "end": 333,
+        "label": "BUILDING",
+        "mapped_label": "BUILDING"
+      },
+      {
+        "value": "School Lane",
+        "start": 346,
+        "end": 357,
+        "label": "STREET",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "Altrincham",
+        "start": 368,
+        "end": 378,
+        "label": "CITY",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "ENG",
+        "start": 390,
+        "end": 393,
+        "label": "STATE",
+        "mapped_label": "ADDRESS"
+      }
+    ]
+  },
+  {
+    "id": "40768C",
+    "source_text": "N, WA14 5RW\\n   Password: r]iD1#8\\n\\n...and so on for all applicants listed.\\n\\nCongratulations to all successful applicants. Please await further communication from the admission office regarding the next steps to finalize your enrollment. We look forward to welcoming you to Great Britain University for the academic year starting on August 5th, 2057.\\n\\nBest regards,\\nAdmissions Team\\nGreat Britain University\"",
+    "target_text": "N, WA14 5RW\\n   Password: [PASS]\\n\\n...and so on for all applicants listed.\\n\\nCongratulations to all successful applicants. Please await further communication from the admission office regarding the next steps to finalize your enrollment. We look forward to welcoming you to Great Britain University for the academic year starting on [DATE].\\n\\nBest regards,\\nAdmissions Team\\nGreat Britain University\"",
+    "pii": [
+      {
+        "value": "r]iD1#8",
+        "start": 26,
+        "end": 33,
+        "label": "PASS",
+        "mapped_label": "GENERIC-SECRET"
+      },
+      {
+        "value": "August 5th, 2057",
+        "start": 336,
+        "end": 352,
+        "label": "DATE",
+        "mapped_label": "DATE"
+      }
+    ]
+  },
+  {
+    "id": "40769A",
+    "source_text": "Subject: Admission Application Attachments Confirmation\n\nDear Applicants,\n\nWe hope this email finds you well. \n\nThis is to confirm that we have received the necessary documentation for your admission applications. Please find attached below the list of attachments for each applicant:\n\nApplicant A:\n- Passport: 301025226\n- Driver's License: ROSAL 955306 9 ",
+    "target_text": "Subject: Admission Application Attachments Confirmation\n\nDear Applicants,\n\nWe hope this email finds you well. \n\nThis is to confirm that we have received the necessary documentation for your admission applications. Please find attached below the list of attachments for each applicant:\n\nApplicant A:\n- Passport: [PASSPORT]\n- Driver's License: ROSAL 955306 9 ",
+    "pii": [
+      {
+        "value": "301025226",
+        "start": 311,
+        "end": 320,
+        "label": "PASSPORT",
+        "mapped_label": "PASSPORT"
+      }
+    ]
+  },
+  {
+    "id": "40769B",
+    "source_text": "981\n- Social Security Number: 554.575.9355\n- Email: vtpkbqcutaxb799@yahoo.com\n- Telephone: +1322380 4181\n\nApplicant B:\n- Passport: 933932951\n- Driver's License: LOUMA.657200.9.504\n- Social Security Number: 0610780437\n- Email: xwjhgbgg009@outlook.com\n- Telephone: +543 51-082.8035\n\n...and so forth for the remaining applicants.\n\nPlease review the attachment",
+    "target_text": "981\n- Social Security Number: [SOCIALNUMBER]\n- Email: [EMAIL]\n- Telephone: [TEL]\n\nApplicant B:\n- Passport: [PASSPORT]\n- Driver's License: [DRIVERLICENSE]\n- Social Security Number: [SOCIALNUMBER]\n- Email: [EMAIL]\n- Telephone: [TEL]\n\n...and so forth for the remaining applicants.\n\nPlease review the attachment",
+    "pii": [
+      {
+        "value": "554.575.9355",
+        "start": 30,
+        "end": 42,
+        "label": "SOCIALNUMBER",
+        "mapped_label": "SSN"
+      },
+      {
+        "value": "vtpkbqcutaxb799@yahoo.com",
+        "start": 52,
+        "end": 77,
+        "label": "EMAIL",
+        "mapped_label": "EMAIL"
+      },
+      {
+        "value": "+1322380 4181",
+        "start": 91,
+        "end": 104,
+        "label": "TEL",
+        "mapped_label": "PHONE"
+      },
+      {
+        "value": "933932951",
+        "start": 131,
+        "end": 140,
+        "label": "PASSPORT",
+        "mapped_label": "PASSPORT"
+      },
+      {
+        "value": "LOUMA.657200.9.504",
+        "start": 161,
+        "end": 179,
+        "label": "DRIVERLICENSE",
+        "mapped_label": "DRIVER-LICENSE"
+      },
+      {
+        "value": "0610780437",
+        "start": 206,
+        "end": 216,
+        "label": "SOCIALNUMBER",
+        "mapped_label": "SSN"
+      },
+      {
+        "value": "xwjhgbgg009@outlook.com",
+        "start": 226,
+        "end": 249,
+        "label": "EMAIL",
+        "mapped_label": "EMAIL"
+      },
+      {
+        "value": "+543 51-082.8035",
+        "start": 263,
+        "end": 279,
+        "label": "TEL",
+        "mapped_label": "PHONE"
+      }
+    ]
+  },
+  {
+    "id": "40769C",
+    "source_text": "s carefully and inform us immediately if there are any discrepancies or if you require further assistance. \n\nWe appreciate your cooperation in this process and look forward to reviewing your applications.\n\nWarm regards,\n\nAdmissions Office \n[University Name]  \n[University Address]  \n[City, State, Postcode]   \n[Country, Rue des \u00c9coles]  \n13, September/54  ",
+    "target_text": "s carefully and inform us immediately if there are any discrepancies or if you require further assistance. \n\nWe appreciate your cooperation in this process and look forward to reviewing your applications.\n\nWarm regards,\n\nAdmissions Office \n[University Name]  \n[University Address]  \n[City, State, Postcode]   \n[Country, [STREET]]  \n[TIME], [DATE]  ",
+    "pii": [
+      {
+        "value": "Rue des \u00c9coles",
+        "start": 320,
+        "end": 334,
+        "label": "STREET",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "13",
+        "start": 338,
+        "end": 340,
+        "label": "TIME",
+        "mapped_label": "TIME"
+      },
+      {
+        "value": "September/54",
+        "start": 342,
+        "end": 354,
+        "label": "DATE",
+        "mapped_label": "DATE"
+      }
+    ]
+  },
+  {
+    "id": "40772A",
+    "source_text": "- id_1:\n  Feb 8, 1986\n  iloweint\u00f6gl\n  4929-667-4889\n  Details: Engaged in extracurricular activities throughout high school, showcasing leadership skills. Enthusiastic about pursuing higher education to further develop interpersonal and academic abilities.\n- id_2:\n  26/10/2004\n  abdi\n  076 1352.8018\n  Details: Demonstrated exceptional academic performance in mathematics and sciences, with a keen interest in research and innovation. Activel",
+    "target_text": "- id_1:\n  [BOD]\n  [USERNAME]\n  [TEL]\n  Details: Engaged in extracurricular activities throughout high school, showcasing leadership skills. Enthusiastic about pursuing higher education to further develop interpersonal and academic abilities.\n- id_2:\n  [BOD]\n  [USERNAME]\n  [TEL]\n  Details: Demonstrated exceptional academic performance in mathematics and sciences, with a keen interest in research and innovation. Activel",
+    "pii": [
+      {
+        "value": "Feb 8, 1986",
+        "start": 10,
+        "end": 21,
+        "label": "BOD",
+        "mapped_label": "DATE-OF-BIRTH"
+      },
+      {
+        "value": "iloweint\u00f6gl",
+        "start": 24,
+        "end": 35,
+        "label": "USERNAME",
+        "mapped_label": "USERNAME"
+      },
+      {
+        "value": "4929-667-4889",
+        "start": 38,
+        "end": 51,
+        "label": "TEL",
+        "mapped_label": "PHONE"
+      },
+      {
+        "value": "26/10/2004",
+        "start": 267,
+        "end": 277,
+        "label": "BOD",
+        "mapped_label": "DATE-OF-BIRTH"
+      },
+      {
+        "value": "abdi",
+        "start": 280,
+        "end": 284,
+        "label": "USERNAME",
+        "mapped_label": "USERNAME"
+      },
+      {
+        "value": "076 1352.8018",
+        "start": 287,
+        "end": 300,
+        "label": "TEL",
+        "mapped_label": "PHONE"
+      }
+    ]
+  },
+  {
+    "id": "40772B",
+    "source_text": "y involved in community service initiatives.\n- id_3:\n  Apr 29, 1973\n  29summikota\n  +51-063-367.7939\n  Details: Possesses extensive experience in the field of education, fostering a passion for nurturing young minds and shaping future generations through impactful teaching methodologies.\n- id_4:\n  May 26, 1993\n  npvhxlrgvjdhzjaf439498\n  +20-914.834.1296\n  Details: Recognized for outstanding achievements in academic research, particularly i",
+    "target_text": "y involved in community service initiatives.\n- id_3:\n  [BOD]\n  [USERNAME]\n  [TEL]\n  Details: Possesses extensive experience in the field of education, fostering a passion for nurturing young minds and shaping future generations through impactful teaching methodologies.\n- id_4:\n  [BOD]\n  [USERNAME]\n  [TEL]\n  Details: Recognized for outstanding achievements in academic research, particularly i",
+    "pii": [
+      {
+        "value": "Apr 29, 1973",
+        "start": 55,
+        "end": 67,
+        "label": "BOD",
+        "mapped_label": "DATE-OF-BIRTH"
+      },
+      {
+        "value": "29summikota",
+        "start": 70,
+        "end": 81,
+        "label": "USERNAME",
+        "mapped_label": "USERNAME"
+      },
+      {
+        "value": "+51-063-367.7939",
+        "start": 84,
+        "end": 100,
+        "label": "TEL",
+        "mapped_label": "PHONE"
+      },
+      {
+        "value": "May 26, 1993",
+        "start": 299,
+        "end": 311,
+        "label": "BOD",
+        "mapped_label": "DATE-OF-BIRTH"
+      },
+      {
+        "value": "npvhxlrgvjdhzjaf439498",
+        "start": 314,
+        "end": 336,
+        "label": "USERNAME",
+        "mapped_label": "USERNAME"
+      },
+      {
+        "value": "+20-914.834.1296",
+        "start": 339,
+        "end": 355,
+        "label": "TEL",
+        "mapped_label": "PHONE"
+      }
+    ]
+  },
+  {
+    "id": "40772C",
+    "source_text": "n the realm of social sciences. Committed to promoting inclusivity and diversity within academic environments.\n- id_5:\n  Sep 26, 1940\n  sangyal.alabdulmohsin\n  +3380820 0420\n  Details: A seasoned educator with a wealth of experience in curriculum development and student mentorship. Known for innovative teaching approaches that cater to diverse learning styles.\n- id_6:\n  Dec 18, 1969\n  nilou.ucci12\n  01881.881.151-3030\n  Details: Visionary ",
+    "target_text": "n the realm of social sciences. Committed to promoting inclusivity and diversity within academic environments.\n- id_5:\n  [BOD]\n  [USERNAME]\n  [TEL]\n  Details: A seasoned educator with a wealth of experience in curriculum development and student mentorship. Known for innovative teaching approaches that cater to diverse learning styles.\n- id_6:\n  [BOD]\n  [USERNAME]\n  [TEL]\n  Details: Visionary ",
+    "pii": [
+      {
+        "value": "Sep 26, 1940",
+        "start": 121,
+        "end": 133,
+        "label": "BOD",
+        "mapped_label": "DATE-OF-BIRTH"
+      },
+      {
+        "value": "sangyal.alabdulmohsin",
+        "start": 136,
+        "end": 157,
+        "label": "USERNAME",
+        "mapped_label": "USERNAME"
+      },
+      {
+        "value": "+3380820 0420",
+        "start": 160,
+        "end": 173,
+        "label": "TEL",
+        "mapped_label": "PHONE"
+      },
+      {
+        "value": "Dec 18, 1969",
+        "start": 373,
+        "end": 385,
+        "label": "BOD",
+        "mapped_label": "DATE-OF-BIRTH"
+      },
+      {
+        "value": "nilou.ucci12",
+        "start": 388,
+        "end": 400,
+        "label": "USERNAME",
+        "mapped_label": "USERNAME"
+      },
+      {
+        "value": "01881.881.151-3030",
+        "start": 403,
+        "end": 421,
+        "label": "TEL",
+        "mapped_label": "PHONE"
+      }
+    ]
+  },
+  {
+    "id": "40772D",
+    "source_text": "educational leader with a track record of driving institutional improvements and fostering a culture of academic excellence. Passionate about creating inclusive and equitable educational environments.\n- id_7:\n  Jan 28, 1995\n  lqsdrojhmrlcw54\n  +07 69-909 8310\n  Details: A dynamic and forward-thinking educator dedicated to leveraging technology in education. Strong advocate for student-centered learning and personalized academic support.",
+    "target_text": "educational leader with a track record of driving institutional improvements and fostering a culture of academic excellence. Passionate about creating inclusive and equitable educational environments.\n- id_7:\n  [BOD]\n  [USERNAME]\n  [TEL]\n  Details: A dynamic and forward-thinking educator dedicated to leveraging technology in education. Strong advocate for student-centered learning and personalized academic support.",
+    "pii": [
+      {
+        "value": "Jan 28, 1995",
+        "start": 211,
+        "end": 223,
+        "label": "BOD",
+        "mapped_label": "DATE-OF-BIRTH"
+      },
+      {
+        "value": "lqsdrojhmrlcw54",
+        "start": 226,
+        "end": 241,
+        "label": "USERNAME",
+        "mapped_label": "USERNAME"
+      },
+      {
+        "value": "+07 69-909 8310",
+        "start": 244,
+        "end": 259,
+        "label": "TEL",
+        "mapped_label": "PHONE"
+      }
+    ]
+  },
+  {
+    "id": "40773",
+    "source_text": "\"Dear [1980refad.cha\u00efb], \n\nWe are pleased to inform you that your application has been processed and a decision has been reached regarding your admission status. Please be advised to check your email for detailed information on the outcome of your application.\n\nShould you have any questions or require further assistance, feel free to contact us at [japeschk92] or visit our office at [Preston Road]. \n\nCongratulations on your successful admission!\n\nBest regards,\n[GR]\"",
+    "target_text": "\"Dear [[USERNAME]], \n\nWe are pleased to inform you that your application has been processed and a decision has been reached regarding your admission status. Please be advised to check your email for detailed information on the outcome of your application.\n\nShould you have any questions or require further assistance, feel free to contact us at [[USERNAME]] or visit our office at [[STREET]]. \n\nCongratulations on your successful admission!\n\nBest regards,\n[[USERNAME]]\"",
+    "pii": [
+      {
+        "value": "1980refad.cha\u00efb",
+        "start": 7,
+        "end": 22,
+        "label": "USERNAME",
+        "mapped_label": "USERNAME"
+      },
+      {
+        "value": "japeschk92",
+        "start": 351,
+        "end": 361,
+        "label": "USERNAME",
+        "mapped_label": "USERNAME"
+      },
+      {
+        "value": "Preston Road",
+        "start": 387,
+        "end": 399,
+        "label": "STREET",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "GR",
+        "start": 466,
+        "end": 468,
+        "label": "USERNAME",
+        "mapped_label": "USERNAME"
+      }
+    ]
+  },
+  {
+    "id": "40774A",
+    "source_text": "Evaluation Report: Candidate Suitability for Admission\n\nDate: 29/06/2013\nTime: 7:59 PM\nLocation: CM21\n\nCandidate A:\n- Sex: M\n- Date of Birth: October/97\n- Email: MVC@tutanota.com\n- ID Card Number: RF69601MW\n- Driver's License: MASCU910077MV815\n- IP Address: 7836:3dcf:9edf:692:fd5f:4de5:a9d6:da24\n- Password: Be~o}.zq8^1\"\n\nCandidate B:\n- Sex: F\n- Date of Birth: 7th August 1963\n- Email: mindkassir@hotmail.com\n- ID Card Number: DE83548AE\n- Driver's ",
+    "target_text": "Evaluation Report: Candidate Suitability for Admission\n\nDate: [DATE]\nTime: [TIME]\nLocation: [POSTCODE]\n\nCandidate A:\n- Sex: [SEX]\n- Date of Birth: [BOD]\n- Email: [EMAIL]\n- ID Card Number: [IDCARD]\n- Driver's License: [DRIVERLICENSE]\n- IP Address: [IP]\n- Password: [PASS]\n\nCandidate B:\n- Sex: [SEX]\n- Date of Birth: [BOD]\n- Email: [EMAIL]\n- ID Card Number: [IDCARD]\n- Driver's ",
+    "pii": [
+      {
+        "value": "29/06/2013",
+        "start": 62,
+        "end": 72,
+        "label": "DATE",
+        "mapped_label": "DATE"
+      },
+      {
+        "value": "7:59 PM",
+        "start": 79,
+        "end": 86,
+        "label": "TIME",
+        "mapped_label": "TIME"
+      },
+      {
+        "value": "CM21",
+        "start": 97,
+        "end": 101,
+        "label": "POSTCODE",
+        "mapped_label": "POSTCODE"
+      },
+      {
+        "value": "M",
+        "start": 123,
+        "end": 124,
+        "label": "SEX",
+        "mapped_label": "SEX"
+      },
+      {
+        "value": "October/97",
+        "start": 142,
+        "end": 152,
+        "label": "BOD",
+        "mapped_label": "DATE-OF-BIRTH"
+      },
+      {
+        "value": "MVC@tutanota.com",
+        "start": 162,
+        "end": 178,
+        "label": "EMAIL",
+        "mapped_label": "EMAIL"
+      },
+      {
+        "value": "RF69601MW",
+        "start": 197,
+        "end": 206,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      },
+      {
+        "value": "MASCU910077MV815",
+        "start": 227,
+        "end": 243,
+        "label": "DRIVERLICENSE",
+        "mapped_label": "DRIVER-LICENSE"
+      },
+      {
+        "value": "7836:3dcf:9edf:692:fd5f:4de5:a9d6:da24",
+        "start": 258,
+        "end": 296,
+        "label": "IP",
+        "mapped_label": "IP-ADDRESS"
+      },
+      {
+        "value": "Be~o}.zq8^1\"",
+        "start": 309,
+        "end": 321,
+        "label": "PASS",
+        "mapped_label": "GENERIC-SECRET"
+      },
+      {
+        "value": "F",
+        "start": 343,
+        "end": 344,
+        "label": "SEX",
+        "mapped_label": "SEX"
+      },
+      {
+        "value": "7th August 1963",
+        "start": 362,
+        "end": 377,
+        "label": "BOD",
+        "mapped_label": "DATE-OF-BIRTH"
+      },
+      {
+        "value": "mindkassir@hotmail.com",
+        "start": 387,
+        "end": 409,
+        "label": "EMAIL",
+        "mapped_label": "EMAIL"
+      },
+      {
+        "value": "DE83548AE",
+        "start": 428,
+        "end": 437,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      }
+    ]
+  },
+  {
+    "id": "40774B",
+    "source_text": "License: MINDA.658073.MR.352\n- IP Address: 1dca:680f:2938:6035:4ed8:81d:c6d6:3b1a\n- Password: \"{0w7/U\n\nOther Candidates:\n- Candidate C: Email: asukas55@aol.com, ID Card Number: UK57900JK\n- Candidate D: Email: 3chunmei@protonmail.com, ID Card Number: UGG576437H\n- Candidate E: Email: ydtjqhxrfiv1162@hotmail.com, ID Card Number: OU79828NR\n- Candidate F: Email: A@protonmail.com, ID Card Number: FE15976DV\n- Candidate G: Email: tdjispgtfiqx547@tutanot",
+    "target_text": "License: [DRIVERLICENSE]\n- IP Address: [IP]\n- Password: [PASS]\n\nOther Candidates:\n- Candidate C: Email: [EMAIL], ID Card Number: [IDCARD]\n- Candidate D: Email: [EMAIL], ID Card Number: [IDCARD]\n- Candidate E: Email: [EMAIL], ID Card Number: [IDCARD]\n- Candidate F: Email: [EMAIL], ID Card Number: [IDCARD]\n- Candidate G: Email: tdjispgtfiqx547@tutanot",
+    "pii": [
+      {
+        "value": "MINDA.658073.MR.352",
+        "start": 9,
+        "end": 28,
+        "label": "DRIVERLICENSE",
+        "mapped_label": "DRIVER-LICENSE"
+      },
+      {
+        "value": "1dca:680f:2938:6035:4ed8:81d:c6d6:3b1a",
+        "start": 43,
+        "end": 81,
+        "label": "IP",
+        "mapped_label": "IP-ADDRESS"
+      },
+      {
+        "value": "\"{0w7/U",
+        "start": 94,
+        "end": 101,
+        "label": "PASS",
+        "mapped_label": "GENERIC-SECRET"
+      },
+      {
+        "value": "asukas55@aol.com",
+        "start": 143,
+        "end": 159,
+        "label": "EMAIL",
+        "mapped_label": "EMAIL"
+      },
+      {
+        "value": "UK57900JK",
+        "start": 177,
+        "end": 186,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      },
+      {
+        "value": "3chunmei@protonmail.com",
+        "start": 209,
+        "end": 232,
+        "label": "EMAIL",
+        "mapped_label": "EMAIL"
+      },
+      {
+        "value": "UGG576437H",
+        "start": 250,
+        "end": 260,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      },
+      {
+        "value": "ydtjqhxrfiv1162@hotmail.com",
+        "start": 283,
+        "end": 310,
+        "label": "EMAIL",
+        "mapped_label": "EMAIL"
+      },
+      {
+        "value": "OU79828NR",
+        "start": 328,
+        "end": 337,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      },
+      {
+        "value": "A@protonmail.com",
+        "start": 360,
+        "end": 376,
+        "label": "EMAIL",
+        "mapped_label": "EMAIL"
+      },
+      {
+        "value": "FE15976DV",
+        "start": 394,
+        "end": 403,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      }
+    ]
+  },
+  {
+    "id": "40774C",
+    "source_text": "a.com, ID Card Number: RS96293BB\n- Candidate H: Email: N@gmail.com, ID Card Number: BK03584DF\n- Candidate I: Email: 1938qun@hotmail.com, ID Card Number: XW39670SY\n- Candidate J: Email: babitha.iliksoy1969@hotmail.com, ID Card Number: LE33574SP\n\nThis comprehensive evaluation report covers a detailed assessment of each candidate's suitability for admission, taking into account their personal information and background details provided.\n\nThank you.",
+    "target_text": "a.com, ID Card Number: [IDCARD]\n- Candidate H: Email: [EMAIL], ID Card Number: [IDCARD]\n- Candidate I: Email: [EMAIL], ID Card Number: [IDCARD]\n- Candidate J: Email: [EMAIL], ID Card Number: [IDCARD]\n\nThis comprehensive evaluation report covers a detailed assessment of each candidate's suitability for admission, taking into account their personal information and background details provided.\n\nThank you.",
+    "pii": [
+      {
+        "value": "RS96293BB",
+        "start": 23,
+        "end": 32,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      },
+      {
+        "value": "N@gmail.com",
+        "start": 55,
+        "end": 66,
+        "label": "EMAIL",
+        "mapped_label": "EMAIL"
+      },
+      {
+        "value": "BK03584DF",
+        "start": 84,
+        "end": 93,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      },
+      {
+        "value": "1938qun@hotmail.com",
+        "start": 116,
+        "end": 135,
+        "label": "EMAIL",
+        "mapped_label": "EMAIL"
+      },
+      {
+        "value": "XW39670SY",
+        "start": 153,
+        "end": 162,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      },
+      {
+        "value": "babitha.iliksoy1969@hotmail.com",
+        "start": 185,
+        "end": 216,
+        "label": "EMAIL",
+        "mapped_label": "EMAIL"
+      },
+      {
+        "value": "LE33574SP",
+        "start": 234,
+        "end": 243,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      }
+    ]
+  },
+  {
+    "id": "40775A",
+    "source_text": "- Sample Form -\n\n```\n**Student Enrollment Application Form**\n\n**Applicant 1**\n- Full Name: Helbert\n- Gender: F\n- Username: helbert\n- Email: helbert@gmail.com\n- Social Security Number: 080065505\n- ID Card Type: EPY\n- Telephone: 0070-07 986.4979\n- Nationality: Nederland\n- Address: 53, Zantelweg\n- City: Rhoon\n- State: Zuid-Holland\n- Postal Code: 3161\n- IP Address: 7c0c:35a3:e210:d7f1:6366:4206:353a:9ca9\n- Preferred Time: 2:38pm\n\n**Applicant 2**\n- Full Name: Gyo",
+    "target_text": "- Sample Form -\n\n```\n**Student Enrollment Application Form**\n\n**Applicant 1**\n- Full Name: [LASTNAME1]\n- Gender: [SEX]\n- Username: [USERNAME]\n- Email: [EMAIL]\n- Social Security Number: [SOCIALNUMBER]\n- ID Card Type: [IDCARD]\n- Telephone: [TEL]\n- Nationality: [COUNTRY]\n- Address: [BUILDING], [STREET]\n- City: [CITY]\n- State: [STATE]\n- Postal Code: [POSTCODE]\n- IP Address: [IP]\n- Preferred Time: [TIME]\n\n**Applicant 2**\n- Full Name: Gyo",
+    "pii": [
+      {
+        "value": "Helbert",
+        "start": 91,
+        "end": 98,
+        "label": "LASTNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "F",
+        "start": 109,
+        "end": 110,
+        "label": "SEX",
+        "mapped_label": "SEX"
+      },
+      {
+        "value": "helbert",
+        "start": 123,
+        "end": 130,
+        "label": "USERNAME",
+        "mapped_label": "USERNAME"
+      },
+      {
+        "value": "helbert@gmail.com",
+        "start": 140,
+        "end": 157,
+        "label": "EMAIL",
+        "mapped_label": "EMAIL"
+      },
+      {
+        "value": "080065505",
+        "start": 184,
+        "end": 193,
+        "label": "SOCIALNUMBER",
+        "mapped_label": "SSN"
+      },
+      {
+        "value": "EPY",
+        "start": 210,
+        "end": 213,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      },
+      {
+        "value": "0070-07 986.4979",
+        "start": 227,
+        "end": 243,
+        "label": "TEL",
+        "mapped_label": "PHONE"
+      },
+      {
+        "value": "Nederland",
+        "start": 259,
+        "end": 268,
+        "label": "COUNTRY",
+        "mapped_label": "COUNTRY"
+      },
+      {
+        "value": "53",
+        "start": 280,
+        "end": 282,
+        "label": "BUILDING",
+        "mapped_label": "BUILDING"
+      },
+      {
+        "value": "Zantelweg",
+        "start": 284,
+        "end": 293,
+        "label": "STREET",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "Rhoon",
+        "start": 302,
+        "end": 307,
+        "label": "CITY",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "Zuid-Holland",
+        "start": 317,
+        "end": 329,
+        "label": "STATE",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "3161",
+        "start": 345,
+        "end": 349,
+        "label": "POSTCODE",
+        "mapped_label": "POSTCODE"
+      },
+      {
+        "value": "7c0c:35a3:e210:d7f1:6366:4206:353a:9ca9",
+        "start": 364,
+        "end": 403,
+        "label": "IP",
+        "mapped_label": "IP-ADDRESS"
+      },
+      {
+        "value": "2:38pm",
+        "start": 422,
+        "end": 428,
+        "label": "TIME",
+        "mapped_label": "TIME"
+      }
+    ]
+  },
+  {
+    "id": "40775B",
+    "source_text": "rgy, Guirard\n- Gender: Masculine\n- Username: kees.gyorgy02\n- Email: keesguirard@aol.com\n- Social Security Number: 464501286\n- ID Card Type: RGI\n- Telephone: 00758-30091\n- Nationality: Nederland\n- Address: 397, Kostverlorenkade\n- City: Amstelveen, State: NH\n- Postal Code: 1183 TM, Secondary Address: PB 73\n- IP Address: 11.47.34.34, Preferred Time: 2:58am\n\n**Applicant 3**\n- Last Name: Potkonjak\n\n**Applicant 4**\n- Last Name: Ucha, Mastrogiacomo, Raizner\n\n**Appl",
+    "target_text": "rgy, [LASTNAME2]\n- Gender: [SEX]\n- Username: [USERNAME]\n- Email: [EMAIL]\n- Social Security Number: [SOCIALNUMBER]\n- ID Card Type: [IDCARD]\n- Telephone: [TEL]\n- Nationality: [COUNTRY]\n- Address: [BUILDING], [STREET]\n- City: [CITY], State: [STATE]\n- Postal Code: [POSTCODE], Secondary Address: [SECADDRESS]\n- IP Address: [IP], Preferred Time: [TIME]\n\n**Applicant 3**\n- Last Name: [LASTNAME1]\n\n**Applicant 4**\n- Last Name: [LASTNAME1], [LASTNAME2], [LASTNAME3]\n\n**Appl",
+    "pii": [
+      {
+        "value": "Guirard",
+        "start": 5,
+        "end": 12,
+        "label": "LASTNAME2",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Masculine",
+        "start": 23,
+        "end": 32,
+        "label": "SEX",
+        "mapped_label": "SEX"
+      },
+      {
+        "value": "kees.gyorgy02",
+        "start": 45,
+        "end": 58,
+        "label": "USERNAME",
+        "mapped_label": "USERNAME"
+      },
+      {
+        "value": "keesguirard@aol.com",
+        "start": 68,
+        "end": 87,
+        "label": "EMAIL",
+        "mapped_label": "EMAIL"
+      },
+      {
+        "value": "464501286",
+        "start": 114,
+        "end": 123,
+        "label": "SOCIALNUMBER",
+        "mapped_label": "SSN"
+      },
+      {
+        "value": "RGI",
+        "start": 140,
+        "end": 143,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      },
+      {
+        "value": "00758-30091",
+        "start": 157,
+        "end": 168,
+        "label": "TEL",
+        "mapped_label": "PHONE"
+      },
+      {
+        "value": "Nederland",
+        "start": 184,
+        "end": 193,
+        "label": "COUNTRY",
+        "mapped_label": "COUNTRY"
+      },
+      {
+        "value": "397",
+        "start": 205,
+        "end": 208,
+        "label": "BUILDING",
+        "mapped_label": "BUILDING"
+      },
+      {
+        "value": "Kostverlorenkade",
+        "start": 210,
+        "end": 226,
+        "label": "STREET",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "Amstelveen",
+        "start": 235,
+        "end": 245,
+        "label": "CITY",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "NH",
+        "start": 254,
+        "end": 256,
+        "label": "STATE",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "1183 TM",
+        "start": 272,
+        "end": 279,
+        "label": "POSTCODE",
+        "mapped_label": "POSTCODE"
+      },
+      {
+        "value": "PB 73",
+        "start": 300,
+        "end": 305,
+        "label": "SECADDRESS",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "11.47.34.34",
+        "start": 320,
+        "end": 331,
+        "label": "IP",
+        "mapped_label": "IP-ADDRESS"
+      },
+      {
+        "value": "2:58am",
+        "start": 349,
+        "end": 355,
+        "label": "TIME",
+        "mapped_label": "TIME"
+      },
+      {
+        "value": "Potkonjak",
+        "start": 386,
+        "end": 395,
+        "label": "LASTNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Ucha",
+        "start": 426,
+        "end": 430,
+        "label": "LASTNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Mastrogiacomo",
+        "start": 432,
+        "end": 445,
+        "label": "LASTNAME2",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Raizner",
+        "start": 447,
+        "end": 454,
+        "label": "LASTNAME3",
+        "mapped_label": "PERSON-NAME"
+      }
+    ]
+  },
+  {
+    "id": "40775C",
+    "source_text": "icant 5**\n- Last Name: Speil-Ehrenreich\n\n**Applicant 6**\n- Last Name: Ginat\n\n**Applicant 7**\n- Last Name: Kafa, Piccio\n\n**Applicant 8**\n- Last Name: al Najjar, Francioni, Rolny\n\n**Applicant 9**\n- Last Name: El-Gharbawy, Nezirevic\n\n**Applicant 10**\n- Last Name: Ipek, Lelouch-Ferdinand, Jupin\n\n**Applicant 11**\n- Last Name: El Bouchti\n\n**Applicant 12**\n- Last Name: Verzaro\n\n- Background Information -\n- Time: 22:29:58\n- City: Brighton\n- Date: 23rd June 1958\n```",
+    "target_text": "icant 5**\n- Last Name: [LASTNAME1]\n\n**Applicant 6**\n- Last Name: [LASTNAME1]\n\n**Applicant 7**\n- Last Name: [LASTNAME1], [LASTNAME2]\n\n**Applicant 8**\n- Last Name: [LASTNAME1], [LASTNAME2], [LASTNAME3]\n\n**Applicant 9**\n- Last Name: [LASTNAME1], [LASTNAME2]\n\n**Applicant 10**\n- Last Name: [LASTNAME1], [LASTNAME2], [LASTNAME3]\n\n**Applicant 11**\n- Last Name: [LASTNAME1]\n\n**Applicant 12**\n- Last Name: [LASTNAME1]\n\n- Background Information -\n- Time: [TIME]\n- City: [CITY]\n- Date: [DATE]\n```",
+    "pii": [
+      {
+        "value": "Speil-Ehrenreich",
+        "start": 23,
+        "end": 39,
+        "label": "LASTNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Ginat",
+        "start": 70,
+        "end": 75,
+        "label": "LASTNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Kafa",
+        "start": 106,
+        "end": 110,
+        "label": "LASTNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Piccio",
+        "start": 112,
+        "end": 118,
+        "label": "LASTNAME2",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "al Najjar",
+        "start": 149,
+        "end": 158,
+        "label": "LASTNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Francioni",
+        "start": 160,
+        "end": 169,
+        "label": "LASTNAME2",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Rolny",
+        "start": 171,
+        "end": 176,
+        "label": "LASTNAME3",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "El-Gharbawy",
+        "start": 207,
+        "end": 218,
+        "label": "LASTNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Nezirevic",
+        "start": 220,
+        "end": 229,
+        "label": "LASTNAME2",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Ipek",
+        "start": 261,
+        "end": 265,
+        "label": "LASTNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Lelouch-Ferdinand",
+        "start": 267,
+        "end": 284,
+        "label": "LASTNAME2",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Jupin",
+        "start": 286,
+        "end": 291,
+        "label": "LASTNAME3",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "El Bouchti",
+        "start": 323,
+        "end": 333,
+        "label": "LASTNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Verzaro",
+        "start": 365,
+        "end": 372,
+        "label": "LASTNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "22:29:58",
+        "start": 409,
+        "end": 417,
+        "label": "TIME",
+        "mapped_label": "TIME"
+      },
+      {
+        "value": "Brighton",
+        "start": 426,
+        "end": 434,
+        "label": "CITY",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "23rd June 1958",
+        "start": 443,
+        "end": 457,
+        "label": "DATE",
+        "mapped_label": "DATE"
+      }
+    ]
+  },
+  {
+    "id": "40776",
+    "source_text": "{\n  \"admitted_students\": [\n    {\n      \"id\": \"3454101823\",\n      \"full_name\": {\n        \"first_name\": \"Mayza\",\n        \"middle_name\": \"Wongduean\",\n        \"last_name\": \"Rasia\"\n      },\n      \"sex\": \"Feminine\",\n      \"title\": \"Sel\",\n      \"email\": \"wonrasi@aol.com\",\n      \"social_number\": \"3454101823\",\n      \"password\": \"2iGk^\"\n    }\n  ],\n  \"background_info\": {\n    \"timestamp\": \"13:21\",\n    \"street_address\": \"Stockbridge Road\",\n    \"admission_date\": \"2076-12-08T00:00:00\"\n  }\n}",
+    "target_text": "{\n  \"admitted_students\": [\n    {\n      \"id\": \"3454101823\",\n      \"full_name\": {\n        \"first_name\": \"[GIVENNAME1]\",\n        \"middle_name\": \"[GIVENNAME2]\",\n        \"last_name\": \"[LASTNAME1]\"\n      },\n      \"sex\": \"[SEX]\",\n      \"title\": \"[TITLE]\",\n      \"email\": \"[EMAIL]\",\n      \"social_number\": \"[SOCIALNUMBER]\",\n      \"password\": \"[PASS]\"\n    }\n  ],\n  \"background_info\": {\n    \"timestamp\": \"[TIME]\",\n    \"street_address\": \"[STREET]\",\n    \"admission_date\": \"[DATE]\"\n  }\n}",
+    "pii": [
+      {
+        "value": "Mayza",
+        "start": 103,
+        "end": 108,
+        "label": "GIVENNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Wongduean",
+        "start": 135,
+        "end": 144,
+        "label": "GIVENNAME2",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Rasia",
+        "start": 169,
+        "end": 174,
+        "label": "LASTNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Feminine",
+        "start": 199,
+        "end": 207,
+        "label": "SEX",
+        "mapped_label": "SEX"
+      },
+      {
+        "value": "Sel",
+        "start": 226,
+        "end": 229,
+        "label": "TITLE",
+        "mapped_label": "TITLE"
+      },
+      {
+        "value": "wonrasi@aol.com",
+        "start": 248,
+        "end": 263,
+        "label": "EMAIL",
+        "mapped_label": "EMAIL"
+      },
+      {
+        "value": "3454101823",
+        "start": 290,
+        "end": 300,
+        "label": "SOCIALNUMBER",
+        "mapped_label": "SSN"
+      },
+      {
+        "value": "2iGk^",
+        "start": 322,
+        "end": 327,
+        "label": "PASS",
+        "mapped_label": "GENERIC-SECRET"
+      },
+      {
+        "value": "13:21",
+        "start": 381,
+        "end": 386,
+        "label": "TIME",
+        "mapped_label": "TIME"
+      },
+      {
+        "value": "Stockbridge Road",
+        "start": 412,
+        "end": 428,
+        "label": "STREET",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "2076-12-08T00:00:00",
+        "start": 454,
+        "end": 473,
+        "label": "DATE",
+        "mapped_label": "DATE"
+      }
+    ]
+  },
+  {
+    "id": "40777A",
+    "source_text": "Public Comment Thread - Online Course Development\n\n**Thread: Online Learning Strategies**\n\ud83d\udd39 **Comment by 'Andreoni':**  \n\"Hello everyone, I am excited to be part of this course development community. With my background in education, I hope to contribute valuable insights to enhance the learning experience. Looking forward to collaborating with all of you.\"\n\n\ud83d\udd39 **Reply by 'Modrusan':**  \n\"Welcome, 'Andreoni'! Your expertise will undoubtedly enrich our discussions. I am particularly interested i",
+    "target_text": "Public Comment Thread - Online Course Development\n\n**Thread: Online Learning Strategies**\n\ud83d\udd39 **Comment by '[LASTNAME1]':**  \n\"Hello everyone, I am excited to be part of this course development community. With my background in education, I hope to contribute valuable insights to enhance the learning experience. Looking forward to collaborating with all of you.\"\n\n\ud83d\udd39 **Reply by '[LASTNAME1]':**  \n\"Welcome, '[LASTNAME1]'! Your expertise will undoubtedly enrich our discussions. I am particularly interested i",
+    "pii": [
+      {
+        "value": "Andreoni",
+        "start": 106,
+        "end": 114,
+        "label": "LASTNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Modrusan",
+        "start": 374,
+        "end": 382,
+        "label": "LASTNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Andreoni",
+        "start": 400,
+        "end": 408,
+        "label": "LASTNAME1",
+        "mapped_label": "PERSON-NAME"
+      }
+    ]
+  },
+  {
+    "id": "40777B",
+    "source_text": "n your perspectives on instructional design and assessment methodologies.\"\n\n\ud83d\udd39 **Comment by 'Nguy':**  \n\"Good day, fellow educators! As someone passionate about online pedagogy, I am keen on exploring innovative approaches to engage learners effectively. Excited to exchange ideas with this diverse group.\"\n\n\ud83d\udd39 **Reply by 'Fisler':**  \n\"Greetings, 'Nguy'! Your enthusiasm for student engagement is commendable. I look forward to learning from your experiences in implementing interactive course mate",
+    "target_text": "n your perspectives on instructional design and assessment methodologies.\"\n\n\ud83d\udd39 **Comment by '[LASTNAME1]':**  \n\"Good day, fellow educators! As someone passionate about online pedagogy, I am keen on exploring innovative approaches to engage learners effectively. Excited to exchange ideas with this diverse group.\"\n\n\ud83d\udd39 **Reply by '[LASTNAME1]':**  \n\"Greetings, '[LASTNAME1]'! Your enthusiasm for student engagement is commendable. I look forward to learning from your experiences in implementing interactive course mate",
+    "pii": [
+      {
+        "value": "Nguy",
+        "start": 92,
+        "end": 96,
+        "label": "LASTNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Fisler",
+        "start": 321,
+        "end": 327,
+        "label": "LASTNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Nguy",
+        "start": 347,
+        "end": 351,
+        "label": "LASTNAME1",
+        "mapped_label": "PERSON-NAME"
+      }
+    ]
+  },
+  {
+    "id": "40777C",
+    "source_text": "rials.\"\n\n\ud83d\udd39 **Comment by 'M\u00f6nkhoff':**  \n\"Hello, everyone! With a background in e-learning research, I aim to contribute evidence-based strategies to optimize online course development. Let's collaborate to create dynamic and learner-centered modules.\"\n\n\ud83d\udd39 **Reply by 'Represa':**  \n\"Nice to connect, 'M\u00f6nkhoff'! Your research-oriented approach aligns well with the course objectives. I am eager to explore how we can integrate interactive technologies to foster student engagement.\"\n\n\ud83d\udd39 **Comment by",
+    "target_text": "rials.\"\n\n\ud83d\udd39 **Comment by '[LASTNAME1]':**  \n\"Hello, everyone! With a background in e-learning research, I aim to contribute evidence-based strategies to optimize online course development. Let's collaborate to create dynamic and learner-centered modules.\"\n\n\ud83d\udd39 **Reply by '[LASTNAME1]':**  \n\"Nice to connect, '[LASTNAME1]'! Your research-oriented approach aligns well with the course objectives. I am eager to explore how we can integrate interactive technologies to foster student engagement.\"\n\n\ud83d\udd39 **Comment by",
+    "pii": [
+      {
+        "value": "M\u00f6nkhoff",
+        "start": 25,
+        "end": 33,
+        "label": "LASTNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Represa",
+        "start": 267,
+        "end": 274,
+        "label": "LASTNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "M\u00f6nkhoff",
+        "start": 300,
+        "end": 308,
+        "label": "LASTNAME1",
+        "mapped_label": "PERSON-NAME"
+      }
+    ]
+  },
+  {
+    "id": "40777D",
+    "source_text": " 'Pari':**  \n\"Greetings, esteemed colleagues! Bringing a blend of theoretical knowledge and instructional expertise, I am thrilled to participate in shaping the future of online learning. Let's work together to make education accessible and engaging for all.\"\n\n\ud83d\udd39 **Reply by 'Bissinger':**  \n\"Hello, 'Pari'! Your commitment to inclusive education is inspiring. I look forward to exploring strategies that promote diversity and inclusivity in online learning environments.\"\n\n\ud83d\udd52 **Timestamp: 1:21pm**",
+    "target_text": " '[LASTNAME1]':**  \n\"Greetings, esteemed colleagues! Bringing a blend of theoretical knowledge and instructional expertise, I am thrilled to participate in shaping the future of online learning. Let's work together to make education accessible and engaging for all.\"\n\n\ud83d\udd39 **Reply by '[LASTNAME1]':**  \n\"Hello, '[LASTNAME1]'! Your commitment to inclusive education is inspiring. I look forward to exploring strategies that promote diversity and inclusivity in online learning environments.\"\n\n\ud83d\udd52 **Timestamp: [TIME]**",
+    "pii": [
+      {
+        "value": "Pari",
+        "start": 2,
+        "end": 6,
+        "label": "LASTNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Bissinger",
+        "start": 275,
+        "end": 284,
+        "label": "LASTNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Pari",
+        "start": 300,
+        "end": 304,
+        "label": "LASTNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "1:21pm",
+        "start": 488,
+        "end": 494,
+        "label": "TIME",
+        "mapped_label": "TIME"
+      }
+    ]
+  },
+  {
+    "id": "40778B",
+    "source_text": "urvey Link: [Survey Link here]\n\nYour input is highly appreciated and will be instrumental in shaping the future of online learning at our institution. The survey should take no more than 15 minutes to complete.\n\nWe value your perspective and look forward to receiving your feedback. Thank you for your time and contribution to our continuous improvement efforts.\n\nWarm regards,\n\n[Course Development Team]  \nCommon Lane, 531, Rochester Upnor, ENG, United Kingdom, 22nd August 2007",
+    "target_text": "urvey Link: [Survey Link here]\n\nYour input is highly appreciated and will be instrumental in shaping the future of online learning at our institution. The survey should take no more than 15 minutes to complete.\n\nWe value your perspective and look forward to receiving your feedback. Thank you for your time and contribution to our continuous improvement efforts.\n\nWarm regards,\n\n[Course Development Team]  \n[STREET], [BUILDING], [CITY], [STATE], [COUNTRY], 22nd August 2007",
+    "pii": [
+      {
+        "value": "Common Lane",
+        "start": 407,
+        "end": 418,
+        "label": "STREET",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "531",
+        "start": 420,
+        "end": 423,
+        "label": "BUILDING",
+        "mapped_label": "BUILDING"
+      },
+      {
+        "value": "Rochester Upnor",
+        "start": 425,
+        "end": 440,
+        "label": "CITY",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "ENG",
+        "start": 442,
+        "end": 445,
+        "label": "STATE",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "United Kingdom",
+        "start": 447,
+        "end": 461,
+        "label": "COUNTRY",
+        "mapped_label": "COUNTRY"
+      }
+    ]
+  },
+  {
+    "id": "40781A",
+    "source_text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<online_course>\n\t<course>\n\t\t<instructor>\n\t\t\t<name>Ansgar</name>\n\t\t\t<sex>M</sex>\n\t\t\t<time>7 o'clock</time>\n\t\t</instructor>\n\t\t<students>\n\t\t\t<student>\n\t\t\t\t<name>D\u00e9lina</name>\n\t\t\t\t<sex>Prefer not to disclose</sex>\n\t\t\t\t<time>3:49am</time>\n\t\t\t</student>\n\t\t\t<student>\n\t\t\t\t<name>Szimonetta</name>\n\t\t\t\t<sex>F</sex>\n\t",
+    "target_text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<online_course>\n\t<course>\n\t\t<instructor>\n\t\t\t<name>[GIVENNAME1]</name>\n\t\t\t<sex>[SEX]</sex>\n\t\t\t<time>[TIME]</time>\n\t\t</instructor>\n\t\t<students>\n\t\t\t<student>\n\t\t\t\t<name>[GIVENNAME2]</name>\n\t\t\t\t<sex>[SEX]</sex>\n\t\t\t\t<time>[TIME]</time>\n\t\t\t</student>\n\t\t\t<student>\n\t\t\t\t<name>[GIVENNAME1]</name>\n\t\t\t\t<sex>[SEX]</sex>\n\t",
+    "pii": [
+      {
+        "value": "Ansgar",
+        "start": 89,
+        "end": 95,
+        "label": "GIVENNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "M",
+        "start": 111,
+        "end": 112,
+        "label": "SEX",
+        "mapped_label": "SEX"
+      },
+      {
+        "value": "7 o'clock",
+        "start": 128,
+        "end": 137,
+        "label": "TIME",
+        "mapped_label": "TIME"
+      },
+      {
+        "value": "D\u00e9lina",
+        "start": 197,
+        "end": 203,
+        "label": "GIVENNAME2",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Prefer not to disclose",
+        "start": 220,
+        "end": 242,
+        "label": "SEX",
+        "mapped_label": "SEX"
+      },
+      {
+        "value": "3:49am",
+        "start": 259,
+        "end": 265,
+        "label": "TIME",
+        "mapped_label": "TIME"
+      },
+      {
+        "value": "Szimonetta",
+        "start": 310,
+        "end": 320,
+        "label": "GIVENNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "F",
+        "start": 337,
+        "end": 338,
+        "label": "SEX",
+        "mapped_label": "SEX"
+      }
+    ]
+  },
+  {
+    "id": "40781B",
+    "source_text": "\t\t\t<time>2:05 PM</time>\n\t\t\t</student>\n\t\t\t<student>\n\t\t\t\t<name>Nasnet</name>\n\t\t\t\t<sex>F</sex>\n\t\t\t\t<time>1:28 PM</time>\n\t\t\t</student>\n\t\t\t<student>\n\t\t\t\t<name>Fania</name>\n\t\t\t\t<sex>Female</sex>\n\t\t\t\t<time>04</time>\n\t\t\t</student>\n\t\t</students>\n\t</course>\n\t<location>\n\t\t<street>Chirton Grove</street>\n\t\t<time>11:51am</time>\n\t</location>\n</online_course>",
+    "target_text": "\t\t\t<time>[TIME]</time>\n\t\t\t</student>\n\t\t\t<student>\n\t\t\t\t<name>[GIVENNAME1]</name>\n\t\t\t\t<sex>[SEX]</sex>\n\t\t\t\t<time>[TIME]</time>\n\t\t\t</student>\n\t\t\t<student>\n\t\t\t\t<name>[GIVENNAME1]</name>\n\t\t\t\t<sex>[SEX]</sex>\n\t\t\t\t<time>[TIME]</time>\n\t\t\t</student>\n\t\t</students>\n\t</course>\n\t<location>\n\t\t<street>[STREET]</street>\n\t\t<time>[TIME]</time>\n\t</location>\n</online_course>",
+    "pii": [
+      {
+        "value": "2:05 PM",
+        "start": 9,
+        "end": 16,
+        "label": "TIME",
+        "mapped_label": "TIME"
+      },
+      {
+        "value": "Nasnet",
+        "start": 61,
+        "end": 67,
+        "label": "GIVENNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "F",
+        "start": 84,
+        "end": 85,
+        "label": "SEX",
+        "mapped_label": "SEX"
+      },
+      {
+        "value": "1:28 PM",
+        "start": 102,
+        "end": 109,
+        "label": "TIME",
+        "mapped_label": "TIME"
+      },
+      {
+        "value": "Fania",
+        "start": 154,
+        "end": 159,
+        "label": "GIVENNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Female",
+        "start": 176,
+        "end": 182,
+        "label": "SEX",
+        "mapped_label": "SEX"
+      },
+      {
+        "value": "04",
+        "start": 199,
+        "end": 201,
+        "label": "TIME",
+        "mapped_label": "TIME"
+      },
+      {
+        "value": "Chirton Grove",
+        "start": 270,
+        "end": 283,
+        "label": "STREET",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "11:51am",
+        "start": 301,
+        "end": 308,
+        "label": "TIME",
+        "mapped_label": "TIME"
+      }
+    ]
+  },
+  {
+    "id": "40782A",
+    "source_text": "{\n  \"course_details\": {\n    \"course_name\": \"Online Course Development Masterclass\",\n    \"instructor\": \"Iso\",\n    \"designer\": \"Liwam\",\n    \"description\": \"This advanced course will take you on a journey through the latest strategies and technologies in online course development. Learn from industry experts and enhance your skills to create engaging and effe",
+    "target_text": "{\n  \"course_details\": {\n    \"course_name\": \"Online Course Development Masterclass\",\n    \"instructor\": \"[GIVENNAME1]\",\n    \"designer\": \"[GIVENNAME1]\",\n    \"description\": \"This advanced course will take you on a journey through the latest strategies and technologies in online course development. Learn from industry experts and enhance your skills to create engaging and effe",
+    "pii": [
+      {
+        "value": "Iso",
+        "start": 103,
+        "end": 106,
+        "label": "GIVENNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Liwam",
+        "start": 126,
+        "end": 131,
+        "label": "GIVENNAME1",
+        "mapped_label": "PERSON-NAME"
+      }
+    ]
+  },
+  {
+    "id": "40782C",
+    "source_text": "\"4:00 PM\"\n        }\n      ],\n      \"location\": \"ENG\"\n    },\n    \"enrollment_deadline\": \"2023-08-15\",\n    \"cost\": \"$499\",\n    \"requirements\": {\n      \"software\": \"Iso's Online Course Creation Tool\",\n      \"experience\": \"Basic knowledge of online teaching\"\n    },\n    \"contacts\": {\n      \"email\": \"tiurid@yahoo.com\",\n      \"phone\": \"+4402033654632\"\n    }\n  }\n}",
+    "target_text": "\"4:00 PM\"\n        }\n      ],\n      \"location\": \"[STATE]\"\n    },\n    \"enrollment_deadline\": \"2023-08-15\",\n    \"cost\": \"$499\",\n    \"requirements\": {\n      \"software\": \"[GIVENNAME1]'s Online Course Creation Tool\",\n      \"experience\": \"Basic knowledge of online teaching\"\n    },\n    \"contacts\": {\n      \"email\": \"[EMAIL]\",\n      \"phone\": \"+4402033654632\"\n    }\n  }\n}",
+    "pii": [
+      {
+        "value": "ENG",
+        "start": 48,
+        "end": 51,
+        "label": "STATE",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "Iso",
+        "start": 162,
+        "end": 165,
+        "label": "GIVENNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "tiurid@yahoo.com",
+        "start": 296,
+        "end": 312,
+        "label": "EMAIL",
+        "mapped_label": "EMAIL"
+      }
+    ]
+  },
+  {
+    "id": "40784A",
+    "source_text": "Alajouri\t2033-10-22T00:00:00\tM\t09:30\tA141981\t471477552\tKS\t+31880-385-2406\tDK5dJz=\t\"Heading: Online Course Development - Best Practices\n---\nWelcome to the world of online course development! In this course, we will cover the essential techniques and strategies required to create engaging and effective online learning experiences. Let's dive in and explore the innovative methods that will help you design courses that captivate and educat",
+    "target_text": "Alajouri\t2033-10-22T00:00:00\t[SEX]\t[TIME]\t[USERNAME]\t[SOCIALNUMBER]\t[PASSPORT]\t[TEL]\t[PASS]\t\"Heading: Online Course Development - Best Practices\n---\nWelcome to the world of online course development! In this course, we will cover the essential techniques and strategies required to create engaging and effective online learning experiences. Let's dive in and explore the innovative methods that will help you design courses that captivate and educat",
+    "pii": [
+      {
+        "value": "M",
+        "start": 29,
+        "end": 30,
+        "label": "SEX",
+        "mapped_label": "SEX"
+      },
+      {
+        "value": "09:30",
+        "start": 31,
+        "end": 36,
+        "label": "TIME",
+        "mapped_label": "TIME"
+      },
+      {
+        "value": "A141981",
+        "start": 37,
+        "end": 44,
+        "label": "USERNAME",
+        "mapped_label": "USERNAME"
+      },
+      {
+        "value": "471477552",
+        "start": 45,
+        "end": 54,
+        "label": "SOCIALNUMBER",
+        "mapped_label": "SSN"
+      },
+      {
+        "value": "KS",
+        "start": 55,
+        "end": 57,
+        "label": "PASSPORT",
+        "mapped_label": "PASSPORT"
+      },
+      {
+        "value": "+31880-385-2406",
+        "start": 58,
+        "end": 73,
+        "label": "TEL",
+        "mapped_label": "PHONE"
+      },
+      {
+        "value": "DK5dJz=",
+        "start": 74,
+        "end": 81,
+        "label": "PASS",
+        "mapped_label": "GENERIC-SECRET"
+      }
+    ]
+  },
+  {
+    "id": "40784B",
+    "source_text": "e your audience.\n---\nSession 1: Understanding Learner Needs\n- Identifying target learners: Use the insights from 471477552 to determine the specific requirements and preferences of your audience. This personalized approach will ensure that your course content resonates with the learners.\n- Crafting learning objectives: With the input from KS and +31880-385-2406, develop clear and measurable learning outcomes that align with the overall",
+    "target_text": "e your audience.\n---\nSession 1: Understanding Learner Needs\n- Identifying target learners: Use the insights from [SOCIALNUMBER] to determine the specific requirements and preferences of your audience. This personalized approach will ensure that your course content resonates with the learners.\n- Crafting learning objectives: With the input from [PASSPORT] and [TEL], develop clear and measurable learning outcomes that align with the overall",
+    "pii": [
+      {
+        "value": "471477552",
+        "start": 113,
+        "end": 122,
+        "label": "SOCIALNUMBER",
+        "mapped_label": "SSN"
+      },
+      {
+        "value": "KS",
+        "start": 341,
+        "end": 343,
+        "label": "PASSPORT",
+        "mapped_label": "PASSPORT"
+      },
+      {
+        "value": "+31880-385-2406",
+        "start": 348,
+        "end": 363,
+        "label": "TEL",
+        "mapped_label": "PHONE"
+      }
+    ]
+  },
+  {
+    "id": "40784C",
+    "source_text": " course goals. This step is crucial for guiding the instructional design process.\n---\nSession 2: Creating Engaging Content\n- Multimedia integration: Explore innovative ways to incorporate multimedia elements into your course materials. Utilize +31880-385-2406 and DK5dJz= to enrich the learning experience and make the content more interactive.\n- Interactive assessments: Design effective assessments that gauge learner understanding and p",
+    "target_text": " course goals. This step is crucial for guiding the instructional design process.\n---\nSession 2: Creating Engaging Content\n- Multimedia integration: Explore innovative ways to incorporate multimedia elements into your course materials. Utilize [TEL] and [PASS] to enrich the learning experience and make the content more interactive.\n- Interactive assessments: Design effective assessments that gauge learner understanding and p",
+    "pii": [
+      {
+        "value": "+31880-385-2406",
+        "start": 244,
+        "end": 259,
+        "label": "TEL",
+        "mapped_label": "PHONE"
+      },
+      {
+        "value": "DK5dJz=",
+        "start": 264,
+        "end": 271,
+        "label": "PASS",
+        "mapped_label": "GENERIC-SECRET"
+      }
+    ]
+  },
+  {
+    "id": "40784D",
+    "source_text": "rogress. Leveraging the insights from 471477552 and A141981, implement quizzes and assignments that provide valuable feedback to learners. \n---\nBy leveraging these key strategies and insights, you will be well-equipped to develop impactful online courses that inspire and empower learners. Get ready to embark on a transformative journey in the realm of online education! Let's create engaging and dynamic learning experiences together.\"",
+    "target_text": "rogress. Leveraging the insights from [SOCIALNUMBER] and [USERNAME], implement quizzes and assignments that provide valuable feedback to learners. \n---\nBy leveraging these key strategies and insights, you will be well-equipped to develop impactful online courses that inspire and empower learners. Get ready to embark on a transformative journey in the realm of online education! Let's create engaging and dynamic learning experiences together.\"",
+    "pii": [
+      {
+        "value": "471477552",
+        "start": 38,
+        "end": 47,
+        "label": "SOCIALNUMBER",
+        "mapped_label": "SSN"
+      },
+      {
+        "value": "A141981",
+        "start": 52,
+        "end": 59,
+        "label": "USERNAME",
+        "mapped_label": "USERNAME"
+      }
+    ]
+  },
+  {
+    "id": "40785A",
+    "source_text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<online_course>\n    <instructor>\n        <name>\n            <title>Friar</title>\n            <social_number>068 474 0939</social_number>\n            <id_card>MX83635SU</id_card>\n        </name>\n    </instructor>\n    <instructor>\n        <name>\n            <title>Mr</title>\n            <social_number>2642308028</social_number>\n            <id_card>YD99673DV</id_card>\n        </name>\n    ",
+    "target_text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<online_course>\n    <instructor>\n        <name>\n            <title>[TITLE]</title>\n            <social_number>[SOCIALNUMBER]</social_number>\n            <id_card>[IDCARD]</id_card>\n        </name>\n    </instructor>\n    <instructor>\n        <name>\n            <title>[TITLE]</title>\n            <social_number>[SOCIALNUMBER]</social_number>\n            <id_card>[IDCARD]</id_card>\n        </name>\n    ",
+    "pii": [
+      {
+        "value": "Friar",
+        "start": 106,
+        "end": 111,
+        "label": "TITLE",
+        "mapped_label": "TITLE"
+      },
+      {
+        "value": "068 474 0939",
+        "start": 147,
+        "end": 159,
+        "label": "SOCIALNUMBER",
+        "mapped_label": "SSN"
+      },
+      {
+        "value": "MX83635SU",
+        "start": 197,
+        "end": 206,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      },
+      {
+        "value": "Mr",
+        "start": 302,
+        "end": 304,
+        "label": "TITLE",
+        "mapped_label": "TITLE"
+      },
+      {
+        "value": "2642308028",
+        "start": 340,
+        "end": 350,
+        "label": "SOCIALNUMBER",
+        "mapped_label": "SSN"
+      },
+      {
+        "value": "YD99673DV",
+        "start": 388,
+        "end": 397,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      }
+    ]
+  },
+  {
+    "id": "40785B",
+    "source_text": "</instructor>\n    <instructor>\n        <name>\n            <title>Mayoress</title>\n            <social_number>3341955554</social_number>\n            <id_card>TY41985ST</id_card>\n        </name>\n    </instructor>\n    <instructor>\n        <name>\n            <title>Father</title>\n            <social_number>299.463.5913</social_number>\n            <id_card>EA38031TP</id_card>\n        </name>\n    </instructor>\n    <instructor>\n   ",
+    "target_text": "</instructor>\n    <instructor>\n        <name>\n            <title>[TITLE]</title>\n            <social_number>[SOCIALNUMBER]</social_number>\n            <id_card>[IDCARD]</id_card>\n        </name>\n    </instructor>\n    <instructor>\n        <name>\n            <title>[TITLE]</title>\n            <social_number>[SOCIALNUMBER]</social_number>\n            <id_card>[IDCARD]</id_card>\n        </name>\n    </instructor>\n    <instructor>\n   ",
+    "pii": [
+      {
+        "value": "Mayoress",
+        "start": 65,
+        "end": 73,
+        "label": "TITLE",
+        "mapped_label": "TITLE"
+      },
+      {
+        "value": "3341955554",
+        "start": 109,
+        "end": 119,
+        "label": "SOCIALNUMBER",
+        "mapped_label": "SSN"
+      },
+      {
+        "value": "TY41985ST",
+        "start": 157,
+        "end": 166,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      },
+      {
+        "value": "Father",
+        "start": 262,
+        "end": 268,
+        "label": "TITLE",
+        "mapped_label": "TITLE"
+      },
+      {
+        "value": "299.463.5913",
+        "start": 304,
+        "end": 316,
+        "label": "SOCIALNUMBER",
+        "mapped_label": "SSN"
+      },
+      {
+        "value": "EA38031TP",
+        "start": 354,
+        "end": 363,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      }
+    ]
+  },
+  {
+    "id": "40785C",
+    "source_text": "     <name>\n            <title>Ass</title>\n            <social_number>430.139.6032</social_number>\n            <id_card>XV81764OU</id_card>\n        </name>\n    </instructor>\n    <instructor>\n        <name>\n            <title>Master</title>\n            <social_number>355.991.6837</social_number>\n            <id_card>ZJ46781NJ</id_card>\n        </name>\n    </instructor>\n    <instructor>\n        <name>\n            <title>Prince",
+    "target_text": "     <name>\n            <title>[TITLE]</title>\n            <social_number>[SOCIALNUMBER]</social_number>\n            <id_card>[IDCARD]</id_card>\n        </name>\n    </instructor>\n    <instructor>\n        <name>\n            <title>[TITLE]</title>\n            <social_number>[SOCIALNUMBER]</social_number>\n            <id_card>[IDCARD]</id_card>\n        </name>\n    </instructor>\n    <instructor>\n        <name>\n            <title>Prince",
+    "pii": [
+      {
+        "value": "Ass",
+        "start": 31,
+        "end": 34,
+        "label": "TITLE",
+        "mapped_label": "TITLE"
+      },
+      {
+        "value": "430.139.6032",
+        "start": 70,
+        "end": 82,
+        "label": "SOCIALNUMBER",
+        "mapped_label": "SSN"
+      },
+      {
+        "value": "XV81764OU",
+        "start": 120,
+        "end": 129,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      },
+      {
+        "value": "Master",
+        "start": 225,
+        "end": 231,
+        "label": "TITLE",
+        "mapped_label": "TITLE"
+      },
+      {
+        "value": "355.991.6837",
+        "start": 267,
+        "end": 279,
+        "label": "SOCIALNUMBER",
+        "mapped_label": "SSN"
+      },
+      {
+        "value": "ZJ46781NJ",
+        "start": 317,
+        "end": 326,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      }
+    ]
+  },
+  {
+    "id": "40785D",
+    "source_text": "ss</title>\n            <social_number>870.416.0406</social_number>\n            <id_card>KN74777BL</id_card>\n        </name>\n    </instructor>\n    <instructor>\n        <name>\n            <title>Prince</title>\n            <social_number>483.608.3595</social_number>\n            <id_card>TA40365XP</id_card>\n        </name>\n    </instructor>\n    <instructor>\n        <name>\n            <title>Corporal</title>\n            <social_n",
+    "target_text": "ss</title>\n            <social_number>[SOCIALNUMBER]</social_number>\n            <id_card>[IDCARD]</id_card>\n        </name>\n    </instructor>\n    <instructor>\n        <name>\n            <title>[TITLE]</title>\n            <social_number>[SOCIALNUMBER]</social_number>\n            <id_card>[IDCARD]</id_card>\n        </name>\n    </instructor>\n    <instructor>\n        <name>\n            <title>[TITLE]</title>\n            <social_n",
+    "pii": [
+      {
+        "value": "870.416.0406",
+        "start": 38,
+        "end": 50,
+        "label": "SOCIALNUMBER",
+        "mapped_label": "SSN"
+      },
+      {
+        "value": "KN74777BL",
+        "start": 88,
+        "end": 97,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      },
+      {
+        "value": "Prince",
+        "start": 193,
+        "end": 199,
+        "label": "TITLE",
+        "mapped_label": "TITLE"
+      },
+      {
+        "value": "483.608.3595",
+        "start": 235,
+        "end": 247,
+        "label": "SOCIALNUMBER",
+        "mapped_label": "SSN"
+      },
+      {
+        "value": "TA40365XP",
+        "start": 285,
+        "end": 294,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      },
+      {
+        "value": "Corporal",
+        "start": 390,
+        "end": 398,
+        "label": "TITLE",
+        "mapped_label": "TITLE"
+      }
+    ]
+  },
+  {
+    "id": "40785E",
+    "source_text": "umber>27.01.06.52.N67.7</social_number>\n            <id_card>K95240816</id_card>\n        </name>\n    </instructor>\n    <instructor>\n        <name>\n            <title>Solicit</title>\n            <social_number>393.439.2617</social_number>\n            <id_card>PG17814MF</id_card>\n        </name>\n    </instructor>\n    <background>\n        <time>6:51 PM</time>\n        <country>France</country>\n    </background>\n</online_course>",
+    "target_text": "umber>[SOCIALNUMBER]</social_number>\n            <id_card>[IDCARD]</id_card>\n        </name>\n    </instructor>\n    <instructor>\n        <name>\n            <title>[TITLE]</title>\n            <social_number>[SOCIALNUMBER]</social_number>\n            <id_card>[IDCARD]</id_card>\n        </name>\n    </instructor>\n    <background>\n        <time>[TIME]</time>\n        <country>[COUNTRY]</country>\n    </background>\n</online_course>",
+    "pii": [
+      {
+        "value": "27.01.06.52.N67.7",
+        "start": 6,
+        "end": 23,
+        "label": "SOCIALNUMBER",
+        "mapped_label": "SSN"
+      },
+      {
+        "value": "K95240816",
+        "start": 61,
+        "end": 70,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      },
+      {
+        "value": "Solicit",
+        "start": 166,
+        "end": 173,
+        "label": "TITLE",
+        "mapped_label": "TITLE"
+      },
+      {
+        "value": "393.439.2617",
+        "start": 209,
+        "end": 221,
+        "label": "SOCIALNUMBER",
+        "mapped_label": "SSN"
+      },
+      {
+        "value": "PG17814MF",
+        "start": 259,
+        "end": 268,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      },
+      {
+        "value": "6:51 PM",
+        "start": 344,
+        "end": 351,
+        "label": "TIME",
+        "mapped_label": "TIME"
+      },
+      {
+        "value": "France",
+        "start": 376,
+        "end": 382,
+        "label": "COUNTRY",
+        "mapped_label": "COUNTRY"
+      }
+    ]
+  },
+  {
+    "id": "40786A",
+    "source_text": "\"ID,SOCIALNUMBER,TEL,COMMENTS\\n1,777 064 4987,007.200-193-8263,\\\"Plan, develop, and implement engaging online course content tailored to diverse learning styles and accommodate interactive features for optimal student engagement.\\\"\\n2,710.076.3818,099 3802-9499,\\\"Integrate multimedia elements into the online course material to enhance visual and auditory learning experiences, ensuring accessibility and inclusivity for all learners.\\\"\\n3",
+    "target_text": "\"ID,SOCIALNUMBER,TEL,COMMENTS\\n1,[SOCIALNUMBER],[TEL],\\\"Plan, develop, and implement engaging online course content tailored to diverse learning styles and accommodate interactive features for optimal student engagement.\\\"\\n2,[SOCIALNUMBER],[TEL],\\\"Integrate multimedia elements into the online course material to enhance visual and auditory learning experiences, ensuring accessibility and inclusivity for all learners.\\\"\\n3",
+    "pii": [
+      {
+        "value": "777 064 4987",
+        "start": 33,
+        "end": 45,
+        "label": "SOCIALNUMBER",
+        "mapped_label": "SSN"
+      },
+      {
+        "value": "007.200-193-8263",
+        "start": 46,
+        "end": 62,
+        "label": "TEL",
+        "mapped_label": "PHONE"
+      },
+      {
+        "value": "710.076.3818",
+        "start": 235,
+        "end": 247,
+        "label": "SOCIALNUMBER",
+        "mapped_label": "SSN"
+      },
+      {
+        "value": "099 3802-9499",
+        "start": 248,
+        "end": 261,
+        "label": "TEL",
+        "mapped_label": "PHONE"
+      }
+    ]
+  },
+  {
+    "id": "40786B",
+    "source_text": ",479-196-8430,08810 67094 ,\\\"Utilize learning management systems to monitor student progress, provide timely feedback, and facilitate collaborative discussions within the online learning community.\\\"\\n4,340 960 5345,+97-50.294 1379,\\\"Implement interactive assessments and quizzes to gauge student understanding and reinforce key concepts, fostering a dynamic and participatory online learning environment.\\\"\\n5,247-985-3689,082-1814520 ,\\\"I",
+    "target_text": ",[SOCIALNUMBER],[TEL],\\\"Utilize learning management systems to monitor student progress, provide timely feedback, and facilitate collaborative discussions within the online learning community.\\\"\\n4,[SOCIALNUMBER],[TEL],\\\"Implement interactive assessments and quizzes to gauge student understanding and reinforce key concepts, fostering a dynamic and participatory online learning environment.\\\"\\n5,[SOCIALNUMBER],[TEL],\\\"I",
+    "pii": [
+      {
+        "value": "479-196-8430",
+        "start": 1,
+        "end": 13,
+        "label": "SOCIALNUMBER",
+        "mapped_label": "SSN"
+      },
+      {
+        "value": "08810 67094 ",
+        "start": 14,
+        "end": 26,
+        "label": "TEL",
+        "mapped_label": "PHONE"
+      },
+      {
+        "value": "340 960 5345",
+        "start": 203,
+        "end": 215,
+        "label": "SOCIALNUMBER",
+        "mapped_label": "SSN"
+      },
+      {
+        "value": "+97-50.294 1379",
+        "start": 216,
+        "end": 231,
+        "label": "TEL",
+        "mapped_label": "PHONE"
+      },
+      {
+        "value": "247-985-3689",
+        "start": 411,
+        "end": 423,
+        "label": "SOCIALNUMBER",
+        "mapped_label": "SSN"
+      },
+      {
+        "value": "082-1814520 ",
+        "start": 424,
+        "end": 436,
+        "label": "TEL",
+        "mapped_label": "PHONE"
+      }
+    ]
+  },
+  {
+    "id": "40786C",
+    "source_text": "ncorporate gamification elements and virtual simulations to enhance student motivation, promote active learning, and increase retention rates in the online course modules.\\\"\\n6,111879641455,+60.62 412 0065,\\\"Adopt best practices in online course development, including adherence to quality standards, regular updates based on feedback, and continuous improvement for an enriching and impactful learning experience for all participants.\\\"\"",
+    "target_text": "ncorporate gamification elements and virtual simulations to enhance student motivation, promote active learning, and increase retention rates in the online course modules.\\\"\\n6,[SOCIALNUMBER],[TEL],\\\"Adopt best practices in online course development, including adherence to quality standards, regular updates based on feedback, and continuous improvement for an enriching and impactful learning experience for all participants.\\\"\"",
+    "pii": [
+      {
+        "value": "111879641455",
+        "start": 177,
+        "end": 189,
+        "label": "SOCIALNUMBER",
+        "mapped_label": "SSN"
+      },
+      {
+        "value": "+60.62 412 0065",
+        "start": 190,
+        "end": 205,
+        "label": "TEL",
+        "mapped_label": "PHONE"
+      }
+    ]
+  },
+  {
+    "id": "40787A",
+    "source_text": "Dear Participants,\n\nWelcome to the Massive Open Online Course Forums on Physical Plant Management! We are thrilled to have a diverse group of learners joining us from different locales. Let's kick off this exciting learning journey together.\n\nLet's introduce a few participants who will be actively engaging in discussions and activities throughout this course:\n\n1. **Participant A:**\n   - Sex: Male\n   ",
+    "target_text": "Dear Participants,\n\nWelcome to the Massive Open Online Course Forums on Physical Plant Management! We are thrilled to have a diverse group of learners joining us from different locales. Let's kick off this exciting learning journey together.\n\nLet's introduce a few participants who will be actively engaging in discussions and activities throughout this course:\n\n1. **Participant A:**\n   - Sex: [SEX]\n   ",
+    "pii": [
+      {
+        "value": "Male",
+        "start": 395,
+        "end": 399,
+        "label": "SEX",
+        "mapped_label": "SEX"
+      }
+    ]
+  },
+  {
+    "id": "40787B",
+    "source_text": "- Driver's License: 0722897516\n\n2. **Participant B:**\n   - Sex: Non-binary\n   - Driver's License: ELISI9110889426\n\n3. **Participant C:**\n   - Sex: Masculine\n   - Driver's License: HERNA-607199-HK-599\n\n4. **Participant D:**\n   - Sex: Female\n   - Driver's License: PKD1O0TQR\n\n5. **Participant E:**\n   - Sex: Masculine\n   - Driver's License: S792987805409\n\n6. **Participant F:**\n   - Sex: Female\n   - Drive",
+    "target_text": "- Driver's License: [DRIVERLICENSE]\n\n2. **Participant B:**\n   - Sex: [SEX]\n   - Driver's License: [DRIVERLICENSE]\n\n3. **Participant C:**\n   - Sex: [SEX]\n   - Driver's License: [DRIVERLICENSE]\n\n4. **Participant D:**\n   - Sex: [SEX]\n   - Driver's License: [DRIVERLICENSE]\n\n5. **Participant E:**\n   - Sex: [SEX]\n   - Driver's License: [DRIVERLICENSE]\n\n6. **Participant F:**\n   - Sex: [SEX]\n   - Drive",
+    "pii": [
+      {
+        "value": "0722897516",
+        "start": 20,
+        "end": 30,
+        "label": "DRIVERLICENSE",
+        "mapped_label": "DRIVER-LICENSE"
+      },
+      {
+        "value": "Non-binary",
+        "start": 64,
+        "end": 74,
+        "label": "SEX",
+        "mapped_label": "SEX"
+      },
+      {
+        "value": "ELISI9110889426",
+        "start": 98,
+        "end": 113,
+        "label": "DRIVERLICENSE",
+        "mapped_label": "DRIVER-LICENSE"
+      },
+      {
+        "value": "Masculine",
+        "start": 147,
+        "end": 156,
+        "label": "SEX",
+        "mapped_label": "SEX"
+      },
+      {
+        "value": "HERNA-607199-HK-599",
+        "start": 180,
+        "end": 199,
+        "label": "DRIVERLICENSE",
+        "mapped_label": "DRIVER-LICENSE"
+      },
+      {
+        "value": "Female",
+        "start": 233,
+        "end": 239,
+        "label": "SEX",
+        "mapped_label": "SEX"
+      },
+      {
+        "value": "PKD1O0TQR",
+        "start": 263,
+        "end": 272,
+        "label": "DRIVERLICENSE",
+        "mapped_label": "DRIVER-LICENSE"
+      },
+      {
+        "value": "Masculine",
+        "start": 306,
+        "end": 315,
+        "label": "SEX",
+        "mapped_label": "SEX"
+      },
+      {
+        "value": "S792987805409",
+        "start": 339,
+        "end": 352,
+        "label": "DRIVERLICENSE",
+        "mapped_label": "DRIVER-LICENSE"
+      },
+      {
+        "value": "Female",
+        "start": 386,
+        "end": 392,
+        "label": "SEX",
+        "mapped_label": "SEX"
+      }
+    ]
+  },
+  {
+    "id": "40787C",
+    "source_text": "r's License: LAURE762231LN974\n\n7. **Participant G:**\n   - Sex: Masculine\n   - Driver's License: W556PENLCCL9\n\n8. **Participant H:**\n   - Sex: M\n   - Driver's License: RAY\u00c8N 605149 9 187\n\nFeel free to interact, ask questions, and share insights within the forums. Let's make the most out of this course together!\n\nBest regards,\nCourse Organizers\n\nBackground Information:\n- Postcode: GL54\n- Date: April/32",
+    "target_text": "r's License: [DRIVERLICENSE]\n\n7. **Participant G:**\n   - Sex: [SEX]\n   - Driver's License: [DRIVERLICENSE]\n\n8. **Participant H:**\n   - Sex: [SEX]\n   - Driver's License: [DRIVERLICENSE]\n\nFeel free to interact, ask questions, and share insights within the forums. Let's make the most out of this course together!\n\nBest regards,\nCourse Organizers\n\nBackground Information:\n- Postcode: [POSTCODE]\n- Date: April/32",
+    "pii": [
+      {
+        "value": "LAURE762231LN974",
+        "start": 13,
+        "end": 29,
+        "label": "DRIVERLICENSE",
+        "mapped_label": "DRIVER-LICENSE"
+      },
+      {
+        "value": "Masculine",
+        "start": 63,
+        "end": 72,
+        "label": "SEX",
+        "mapped_label": "SEX"
+      },
+      {
+        "value": "W556PENLCCL9",
+        "start": 96,
+        "end": 108,
+        "label": "DRIVERLICENSE",
+        "mapped_label": "DRIVER-LICENSE"
+      },
+      {
+        "value": "M",
+        "start": 142,
+        "end": 143,
+        "label": "SEX",
+        "mapped_label": "SEX"
+      },
+      {
+        "value": "RAY\u00c8N 605149 9 187",
+        "start": 167,
+        "end": 185,
+        "label": "DRIVERLICENSE",
+        "mapped_label": "DRIVER-LICENSE"
+      },
+      {
+        "value": "GL54",
+        "start": 382,
+        "end": 386,
+        "label": "POSTCODE",
+        "mapped_label": "POSTCODE"
+      }
+    ]
+  },
+  {
+    "id": "40789B",
+    "source_text": "th the latest updates and action items.\n\nDate: September/32\nTime: 9:48 AM\nLocation: Black Country Route, Bilston, ENG, WV14\n\nBelow are the details of each team member involved in this collaborative effort:\n\n1. Team Member: Nicol\u00f3\n   - Birthdate: April/58\n   - Username: 12MN1958\n   - Social Security Number: 668.482.7266\n   - ID Card: UK68849MT\n   - Country: United Kingdom\n   - Building Number: 993\n   - Street: Black Country Route\n   - City: Bilston\n   - State: ENG\n ",
+    "target_text": "th the latest updates and action items.\n\nDate: [DATE]\nTime: [TIME]\nLocation: [STREET], [CITY], [STATE], [POSTCODE]\n\nBelow are the details of each team member involved in this collaborative effort:\n\n1. Team Member: [LASTNAME1]\n   - Birthdate: [BOD]\n   - Username: [USERNAME]\n   - Social Security Number: [SOCIALNUMBER]\n   - ID Card: [IDCARD]\n   - Country: [COUNTRY]\n   - Building Number: [BUILDING]\n   - Street: [STREET]\n   - City: [CITY]\n   - State: [STATE]\n ",
+    "pii": [
+      {
+        "value": "September/32",
+        "start": 47,
+        "end": 59,
+        "label": "DATE",
+        "mapped_label": "DATE"
+      },
+      {
+        "value": "9:48 AM",
+        "start": 66,
+        "end": 73,
+        "label": "TIME",
+        "mapped_label": "TIME"
+      },
+      {
+        "value": "Black Country Route",
+        "start": 84,
+        "end": 103,
+        "label": "STREET",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "Bilston",
+        "start": 105,
+        "end": 112,
+        "label": "CITY",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "ENG",
+        "start": 114,
+        "end": 117,
+        "label": "STATE",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "WV14",
+        "start": 119,
+        "end": 123,
+        "label": "POSTCODE",
+        "mapped_label": "POSTCODE"
+      },
+      {
+        "value": "Nicol\u00f3",
+        "start": 223,
+        "end": 229,
+        "label": "LASTNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "April/58",
+        "start": 246,
+        "end": 254,
+        "label": "BOD",
+        "mapped_label": "DATE-OF-BIRTH"
+      },
+      {
+        "value": "12MN1958",
+        "start": 270,
+        "end": 278,
+        "label": "USERNAME",
+        "mapped_label": "USERNAME"
+      },
+      {
+        "value": "668.482.7266",
+        "start": 308,
+        "end": 320,
+        "label": "SOCIALNUMBER",
+        "mapped_label": "SSN"
+      },
+      {
+        "value": "UK68849MT",
+        "start": 335,
+        "end": 344,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      },
+      {
+        "value": "United Kingdom",
+        "start": 359,
+        "end": 373,
+        "label": "COUNTRY",
+        "mapped_label": "COUNTRY"
+      },
+      {
+        "value": "993",
+        "start": 396,
+        "end": 399,
+        "label": "BUILDING",
+        "mapped_label": "BUILDING"
+      },
+      {
+        "value": "Black Country Route",
+        "start": 413,
+        "end": 432,
+        "label": "STREET",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "Bilston",
+        "start": 444,
+        "end": 451,
+        "label": "CITY",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "ENG",
+        "start": 464,
+        "end": 467,
+        "label": "STATE",
+        "mapped_label": "ADDRESS"
+      }
+    ]
+  },
+  {
+    "id": "40789C",
+    "source_text": "  - Postcode: WV14\n   - Secondary Address: Quadruplex 578\n   - Meeting Time: 16\n\n...And more details for each team member as necessary.\n\nWe look forward to your continued collaboration and contribution to the physical plant management efforts. Should you have any questions or need further clarification, please do not hesitate to reach out.\n\nThank you for your dedication and commitment to excellence.\n\nWarm regards,\n\n[Your Name]\nPhysical Plant Management Coordinator",
+    "target_text": "  - Postcode: [POSTCODE]\n   - Secondary Address: [SECADDRESS]\n   - Meeting Time: [TIME]\n\n...And more details for each team member as necessary.\n\nWe look forward to your continued collaboration and contribution to the physical plant management efforts. Should you have any questions or need further clarification, please do not hesitate to reach out.\n\nThank you for your dedication and commitment to excellence.\n\nWarm regards,\n\n[Your Name]\nPhysical Plant Management Coordinator",
+    "pii": [
+      {
+        "value": "WV14",
+        "start": 14,
+        "end": 18,
+        "label": "POSTCODE",
+        "mapped_label": "POSTCODE"
+      },
+      {
+        "value": "Quadruplex 578",
+        "start": 43,
+        "end": 57,
+        "label": "SECADDRESS",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "16",
+        "start": 77,
+        "end": 79,
+        "label": "TIME",
+        "mapped_label": "TIME"
+      }
+    ]
+  },
+  {
+    "id": "40791",
+    "source_text": "Energy efficiency plays a crucial role in improving sustainability within the physical plant. Conducting energy assessments such as qxafnhrnawspkykb83 and Haftner, lauralie.canossi and Canossi, 07jungmichel and Jungmichel, MI1990 and Muscas, lppeobjfn3359 and Maistrello Palankon, d\u00e1vila and D\u00e1vila, boves2003 and Boves, provides valuable insights into energy consumption patterns. The assessments are scheduled in Didcot on 2019-09-29T00:00:00, starting at half past 16.",
+    "target_text": "Energy efficiency plays a crucial role in improving sustainability within the physical plant. Conducting energy assessments such as [USERNAME] and [LASTNAME1], [USERNAME] and [LASTNAME1], [USERNAME] and [LASTNAME1], [USERNAME] and [LASTNAME1], [USERNAME] and [LASTNAME1] [LASTNAME2], [USERNAME] and [LASTNAME1], [USERNAME] and [LASTNAME1], provides valuable insights into energy consumption patterns. The assessments are scheduled in [CITY] on [DATE], starting at [TIME].",
+    "pii": [
+      {
+        "value": "qxafnhrnawspkykb83",
+        "start": 132,
+        "end": 150,
+        "label": "USERNAME",
+        "mapped_label": "USERNAME"
+      },
+      {
+        "value": "Haftner",
+        "start": 155,
+        "end": 162,
+        "label": "LASTNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "lauralie.canossi",
+        "start": 164,
+        "end": 180,
+        "label": "USERNAME",
+        "mapped_label": "USERNAME"
+      },
+      {
+        "value": "Canossi",
+        "start": 185,
+        "end": 192,
+        "label": "LASTNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "07jungmichel",
+        "start": 194,
+        "end": 206,
+        "label": "USERNAME",
+        "mapped_label": "USERNAME"
+      },
+      {
+        "value": "Jungmichel",
+        "start": 211,
+        "end": 221,
+        "label": "LASTNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "MI1990",
+        "start": 223,
+        "end": 229,
+        "label": "USERNAME",
+        "mapped_label": "USERNAME"
+      },
+      {
+        "value": "Muscas",
+        "start": 234,
+        "end": 240,
+        "label": "LASTNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "lppeobjfn3359",
+        "start": 242,
+        "end": 255,
+        "label": "USERNAME",
+        "mapped_label": "USERNAME"
+      },
+      {
+        "value": "Maistrello",
+        "start": 260,
+        "end": 270,
+        "label": "LASTNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Palankon",
+        "start": 271,
+        "end": 279,
+        "label": "LASTNAME2",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "d\u00e1vila",
+        "start": 281,
+        "end": 287,
+        "label": "USERNAME",
+        "mapped_label": "USERNAME"
+      },
+      {
+        "value": "D\u00e1vila",
+        "start": 292,
+        "end": 298,
+        "label": "LASTNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "boves2003",
+        "start": 300,
+        "end": 309,
+        "label": "USERNAME",
+        "mapped_label": "USERNAME"
+      },
+      {
+        "value": "Boves",
+        "start": 314,
+        "end": 319,
+        "label": "LASTNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Didcot",
+        "start": 415,
+        "end": 421,
+        "label": "CITY",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "2019-09-29T00:00:00",
+        "start": 425,
+        "end": 444,
+        "label": "DATE",
+        "mapped_label": "DATE"
+      },
+      {
+        "value": "half past 16",
+        "start": 458,
+        "end": 470,
+        "label": "TIME",
+        "mapped_label": "TIME"
+      }
+    ]
+  },
+  {
+    "id": "40792A",
+    "source_text": "Inventory Records - Equipment and Supplies\n\nDate of Inventory: 05:48\n\nID: CB22356OB\n- Email: SSJEB@yahoo.com\n- Country: GB\n- Building Number: 499\n- Street: Bonby Lane\n- City: York\n- State: ENG\n- Postcode: YO19\n\nID: GM26061IE\n- Email: ZB@yahoo.com\n- Country: GB\n- Building Number: 80\n- Street: Blenheim Palace\n- City: Woodstock\n- State: ENG\n- Postcode: OX20\n- Secondary Address: RV 416\n\nID: NV22510SC\n- Email: 30viria.alatas@gmail.com\n- Country: United Kingdom\n- Building Nu",
+    "target_text": "Inventory Records - Equipment and Supplies\n\nDate of Inventory: [TIME]\n\nID: [IDCARD]\n- Email: [EMAIL]\n- Country: [COUNTRY]\n- Building Number: [BUILDING]\n- Street: [STREET]\n- City: [CITY]\n- State: [STATE]\n- Postcode: [POSTCODE]\n\nID: [IDCARD]\n- Email: [EMAIL]\n- Country: [COUNTRY]\n- Building Number: [BUILDING]\n- Street: [STREET]\n- City: [CITY]\n- State: [STATE]\n- Postcode: [POSTCODE]\n- Secondary Address: [SECADDRESS]\n\nID: [IDCARD]\n- Email: [EMAIL]\n- Country: [COUNTRY]\n- Building Nu",
+    "pii": [
+      {
+        "value": "05:48",
+        "start": 63,
+        "end": 68,
+        "label": "TIME",
+        "mapped_label": "TIME"
+      },
+      {
+        "value": "CB22356OB",
+        "start": 74,
+        "end": 83,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      },
+      {
+        "value": "SSJEB@yahoo.com",
+        "start": 93,
+        "end": 108,
+        "label": "EMAIL",
+        "mapped_label": "EMAIL"
+      },
+      {
+        "value": "GB",
+        "start": 120,
+        "end": 122,
+        "label": "COUNTRY",
+        "mapped_label": "COUNTRY"
+      },
+      {
+        "value": "499",
+        "start": 142,
+        "end": 145,
+        "label": "BUILDING",
+        "mapped_label": "BUILDING"
+      },
+      {
+        "value": "Bonby Lane",
+        "start": 156,
+        "end": 166,
+        "label": "STREET",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "York",
+        "start": 175,
+        "end": 179,
+        "label": "CITY",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "ENG",
+        "start": 189,
+        "end": 192,
+        "label": "STATE",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "YO19",
+        "start": 205,
+        "end": 209,
+        "label": "POSTCODE",
+        "mapped_label": "POSTCODE"
+      },
+      {
+        "value": "GM26061IE",
+        "start": 215,
+        "end": 224,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      },
+      {
+        "value": "ZB@yahoo.com",
+        "start": 234,
+        "end": 246,
+        "label": "EMAIL",
+        "mapped_label": "EMAIL"
+      },
+      {
+        "value": "GB",
+        "start": 258,
+        "end": 260,
+        "label": "COUNTRY",
+        "mapped_label": "COUNTRY"
+      },
+      {
+        "value": "80",
+        "start": 280,
+        "end": 282,
+        "label": "BUILDING",
+        "mapped_label": "BUILDING"
+      },
+      {
+        "value": "Blenheim Palace",
+        "start": 293,
+        "end": 308,
+        "label": "STREET",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "Woodstock",
+        "start": 317,
+        "end": 326,
+        "label": "CITY",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "ENG",
+        "start": 336,
+        "end": 339,
+        "label": "STATE",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "OX20",
+        "start": 352,
+        "end": 356,
+        "label": "POSTCODE",
+        "mapped_label": "POSTCODE"
+      },
+      {
+        "value": "RV 416",
+        "start": 378,
+        "end": 384,
+        "label": "SECADDRESS",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "NV22510SC",
+        "start": 390,
+        "end": 399,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      },
+      {
+        "value": "30viria.alatas@gmail.com",
+        "start": 409,
+        "end": 433,
+        "label": "EMAIL",
+        "mapped_label": "EMAIL"
+      },
+      {
+        "value": "United Kingdom",
+        "start": 445,
+        "end": 459,
+        "label": "COUNTRY",
+        "mapped_label": "COUNTRY"
+      }
+    ]
+  },
+  {
+    "id": "40792B",
+    "source_text": "mber: 47\n- Street: Waycock Road\n- City: Barry\n- State: WLS\n- Postcode: CF62 3AA\n- Secondary Address: Flat 653\n\nID: LK32619VX\n- Email: xneagscyc672025@tutanota.com\n- Country: United Kingdom\n- Building Number: 693\n- Street: Rainford Road\n- City: Ormskirk\n- State: ENG\n- Postcode: L39\n- Secondary Address: Basement 517\n\nID: ZA08646VR\n- Email: FDP1979@protonmail.com\n- Country: GB\n- Building Number: 662\n- Street: Kirkby Lane\n- City: Leicester\n- State: ENG\n- Postcode: LE9 9LN",
+    "target_text": "mber: [BUILDING]\n- Street: [STREET]\n- City: [CITY]\n- State: [STATE]\n- Postcode: [POSTCODE]\n- Secondary Address: [SECADDRESS]\n\nID: [IDCARD]\n- Email: [EMAIL]\n- Country: [COUNTRY]\n- Building Number: [BUILDING]\n- Street: [STREET]\n- City: [CITY]\n- State: [STATE]\n- Postcode: [POSTCODE]\n- Secondary Address: [SECADDRESS]\n\nID: [IDCARD]\n- Email: [EMAIL]\n- Country: [COUNTRY]\n- Building Number: [BUILDING]\n- Street: [STREET]\n- City: [CITY]\n- State: [STATE]\n- Postcode: LE9 9LN",
+    "pii": [
+      {
+        "value": "47",
+        "start": 6,
+        "end": 8,
+        "label": "BUILDING",
+        "mapped_label": "BUILDING"
+      },
+      {
+        "value": "Waycock Road",
+        "start": 19,
+        "end": 31,
+        "label": "STREET",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "Barry",
+        "start": 40,
+        "end": 45,
+        "label": "CITY",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "WLS",
+        "start": 55,
+        "end": 58,
+        "label": "STATE",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "CF62 3AA",
+        "start": 71,
+        "end": 79,
+        "label": "POSTCODE",
+        "mapped_label": "POSTCODE"
+      },
+      {
+        "value": "Flat 653",
+        "start": 101,
+        "end": 109,
+        "label": "SECADDRESS",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "LK32619VX",
+        "start": 115,
+        "end": 124,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      },
+      {
+        "value": "xneagscyc672025@tutanota.com",
+        "start": 134,
+        "end": 162,
+        "label": "EMAIL",
+        "mapped_label": "EMAIL"
+      },
+      {
+        "value": "United Kingdom",
+        "start": 174,
+        "end": 188,
+        "label": "COUNTRY",
+        "mapped_label": "COUNTRY"
+      },
+      {
+        "value": "693",
+        "start": 208,
+        "end": 211,
+        "label": "BUILDING",
+        "mapped_label": "BUILDING"
+      },
+      {
+        "value": "Rainford Road",
+        "start": 222,
+        "end": 235,
+        "label": "STREET",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "Ormskirk",
+        "start": 244,
+        "end": 252,
+        "label": "CITY",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "ENG",
+        "start": 262,
+        "end": 265,
+        "label": "STATE",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "L39",
+        "start": 278,
+        "end": 281,
+        "label": "POSTCODE",
+        "mapped_label": "POSTCODE"
+      },
+      {
+        "value": "Basement 517",
+        "start": 303,
+        "end": 315,
+        "label": "SECADDRESS",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "ZA08646VR",
+        "start": 321,
+        "end": 330,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      },
+      {
+        "value": "FDP1979@protonmail.com",
+        "start": 340,
+        "end": 362,
+        "label": "EMAIL",
+        "mapped_label": "EMAIL"
+      },
+      {
+        "value": "GB",
+        "start": 374,
+        "end": 376,
+        "label": "COUNTRY",
+        "mapped_label": "COUNTRY"
+      },
+      {
+        "value": "662",
+        "start": 396,
+        "end": 399,
+        "label": "BUILDING",
+        "mapped_label": "BUILDING"
+      },
+      {
+        "value": "Kirkby Lane",
+        "start": 410,
+        "end": 421,
+        "label": "STREET",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "Leicester",
+        "start": 430,
+        "end": 439,
+        "label": "CITY",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "ENG",
+        "start": 449,
+        "end": 452,
+        "label": "STATE",
+        "mapped_label": "ADDRESS"
+      }
+    ]
+  },
+  {
+    "id": "40794A",
+    "source_text": "Dear [Archduchess Evgeniya Benvenuta], \n\nWe are pleased to present our Waste Management Proposal for the physical plant at your esteemed educational institution. With the unique challenges in waste management faced by educational facilities, our tailored services aim to ensure a sustainable and environmentally friendly solution. \n\nOur comprehensive waste management plan includes regular waste audits, recycling prog",
+    "target_text": "Dear [[TITLE] [GIVENNAME1] [GIVENNAME2]], \n\nWe are pleased to present our Waste Management Proposal for the physical plant at your esteemed educational institution. With the unique challenges in waste management faced by educational facilities, our tailored services aim to ensure a sustainable and environmentally friendly solution. \n\nOur comprehensive waste management plan includes regular waste audits, recycling prog",
+    "pii": [
+      {
+        "value": "Archduchess",
+        "start": 6,
+        "end": 17,
+        "label": "TITLE",
+        "mapped_label": "TITLE"
+      },
+      {
+        "value": "Evgeniya",
+        "start": 18,
+        "end": 26,
+        "label": "GIVENNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Benvenuta",
+        "start": 27,
+        "end": 36,
+        "label": "GIVENNAME2",
+        "mapped_label": "PERSON-NAME"
+      }
+    ]
+  },
+  {
+    "id": "40794C",
+    "source_text": "ions.\n\nWe look forward to the opportunity to discuss our proposal in more detail and tailor our services to meet your specific needs. Please feel free to reach out to us at [+63-74 622 1778] or via email at [axqllhpvzw076].\n\nThank you for considering our Waste Management Proposal. We are committed to providing top-notch services to support your institution's sustainability goals.\n\nKind regards,\n[Evgeniya Benvenuta]",
+    "target_text": "ions.\n\nWe look forward to the opportunity to discuss our proposal in more detail and tailor our services to meet your specific needs. Please feel free to reach out to us at [[TEL]] or via email at [[USERNAME]].\n\nThank you for considering our Waste Management Proposal. We are committed to providing top-notch services to support your institution's sustainability goals.\n\nKind regards,\n[[GIVENNAME1] [GIVENNAME2]]",
+    "pii": [
+      {
+        "value": "+63-74 622 1778",
+        "start": 174,
+        "end": 189,
+        "label": "TEL",
+        "mapped_label": "PHONE"
+      },
+      {
+        "value": "axqllhpvzw076",
+        "start": 208,
+        "end": 221,
+        "label": "USERNAME",
+        "mapped_label": "USERNAME"
+      },
+      {
+        "value": "Evgeniya",
+        "start": 399,
+        "end": 407,
+        "label": "GIVENNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Benvenuta",
+        "start": 408,
+        "end": 417,
+        "label": "GIVENNAME2",
+        "mapped_label": "PERSON-NAME"
+      }
+    ]
+  },
+  {
+    "id": "40796A",
+    "source_text": "{\n\t\"Certifications\": [\n\t\t{\n\t\t\t\"Training Provider\": \"Blion\",\n\t\t\t\"Certification Type\": \"Physical Plant Management Fundamentals\",\n\t\t\t\"Certification Date\": \"2022-08-15\",\n\t\t\t\"Instructor\": \"Prelate\",\n\t\t\t\"Location\": \"Great Britain\",\n\t\t\t\"Certificate Number\": \"BLION7090219600\"\n\t\t},\n\t\t{\n\t\t\t\"Training Provider\": \"Janie\",\n\t\t\t\"Certification Type\": \"Advanced Sustainable Infrastructure Management\",\n\t\t\t\"Certification Date\": \"2022-09-20\",\n\t\t\t\"Instructor\": \"Director\",\n\t\t\t\"Location\": \"G",
+    "target_text": "{\n\t\"Certifications\": [\n\t\t{\n\t\t\t\"Training Provider\": \"[GIVENNAME1]\",\n\t\t\t\"Certification Type\": \"Physical Plant Management Fundamentals\",\n\t\t\t\"Certification Date\": \"2022-08-15\",\n\t\t\t\"Instructor\": \"[TITLE]\",\n\t\t\t\"Location\": \"Great Britain\",\n\t\t\t\"Certificate Number\": \"[DRIVERLICENSE]\"\n\t\t},\n\t\t{\n\t\t\t\"Training Provider\": \"[GIVENNAME1]\",\n\t\t\t\"Certification Type\": \"Advanced Sustainable Infrastructure Management\",\n\t\t\t\"Certification Date\": \"2022-09-20\",\n\t\t\t\"Instructor\": \"[TITLE]\",\n\t\t\t\"Location\": \"G",
+    "pii": [
+      {
+        "value": "Blion",
+        "start": 52,
+        "end": 57,
+        "label": "GIVENNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Prelate",
+        "start": 184,
+        "end": 191,
+        "label": "TITLE",
+        "mapped_label": "TITLE"
+      },
+      {
+        "value": "BLION7090219600",
+        "start": 252,
+        "end": 267,
+        "label": "DRIVERLICENSE",
+        "mapped_label": "DRIVER-LICENSE"
+      },
+      {
+        "value": "Janie",
+        "start": 303,
+        "end": 308,
+        "label": "GIVENNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Director",
+        "start": 443,
+        "end": 451,
+        "label": "TITLE",
+        "mapped_label": "TITLE"
+      }
+    ]
+  },
+  {
+    "id": "40796B",
+    "source_text": "reat Britain\",\n\t\t\t\"Certificate Number\": \"JANIE6061249300\"\n\t\t}\n\t],\n\t\"Training Instances\": [\n\t\t{\n\t\t\t\"Instructor\": \"Blion\",\n\t\t\t\"Trainee\": \"Bardhosh Suriyan\",\n\t\t\t\"Start Date\": \"2022-10-01\",\n\t\t\t\"End Date\": \"2022-10-10\",\n\t\t\t\"Location\": \"Great Britain\",\n\t\t\t\"Trainee ID\": \"855082405\"\n\t\t},\n\t\t{\n\t\t\t\"Instructor\": \"Janie\",\n\t\t\t\"Trainee\": \"Serkay Vinit\",\n\t\t\t\"Start Date\": \"2022-11-05\",\n\t\t\t\"End Date\": \"2022-11-15\",\n\t\t\t\"Location\": \"Great Britain\",\n\t\t\t\"Trainee ID\": \"592506231\"\n\t\t}\n\t]\n}",
+    "target_text": "reat Britain\",\n\t\t\t\"Certificate Number\": \"[DRIVERLICENSE]\"\n\t\t}\n\t],\n\t\"Training Instances\": [\n\t\t{\n\t\t\t\"Instructor\": \"[GIVENNAME1]\",\n\t\t\t\"Trainee\": \"[GIVENNAME1] [GIVENNAME2]\",\n\t\t\t\"Start Date\": \"2022-10-01\",\n\t\t\t\"End Date\": \"2022-10-10\",\n\t\t\t\"Location\": \"Great Britain\",\n\t\t\t\"Trainee ID\": \"[PASSPORT]\"\n\t\t},\n\t\t{\n\t\t\t\"Instructor\": \"[GIVENNAME1]\",\n\t\t\t\"Trainee\": \"[GIVENNAME1] [GIVENNAME2]\",\n\t\t\t\"Start Date\": \"2022-11-05\",\n\t\t\t\"End Date\": \"2022-11-15\",\n\t\t\t\"Location\": \"Great Britain\",\n\t\t\t\"Trainee ID\": \"[PASSPORT]\"\n\t\t}\n\t]\n}",
+    "pii": [
+      {
+        "value": "JANIE6061249300",
+        "start": 41,
+        "end": 56,
+        "label": "DRIVERLICENSE",
+        "mapped_label": "DRIVER-LICENSE"
+      },
+      {
+        "value": "Blion",
+        "start": 113,
+        "end": 118,
+        "label": "GIVENNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Bardhosh",
+        "start": 136,
+        "end": 144,
+        "label": "GIVENNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Suriyan",
+        "start": 145,
+        "end": 152,
+        "label": "GIVENNAME2",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "855082405",
+        "start": 265,
+        "end": 274,
+        "label": "PASSPORT",
+        "mapped_label": "PASSPORT"
+      },
+      {
+        "value": "Janie",
+        "start": 303,
+        "end": 308,
+        "label": "GIVENNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Serkay",
+        "start": 326,
+        "end": 332,
+        "label": "GIVENNAME1",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "Vinit",
+        "start": 333,
+        "end": 338,
+        "label": "GIVENNAME2",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "592506231",
+        "start": 451,
+        "end": 460,
+        "label": "PASSPORT",
+        "mapped_label": "PASSPORT"
+      }
+    ]
+  },
+  {
+    "id": "40797A",
+    "source_text": "Emergency Response Plan - Physical Plant Management\n\n**Team Members:**\n1. **02kscheschinski**\n   - **Email:** dnuqzwxxannkq05517@gmail.com\n   - **ID Card:** ZO31612IA\n   - **Passport:** 582096831\n   - **Telephone:** +32-75 212-8504\n   - **Country:** GB\n   - **Building:** 445\n   - **Street:** Lockwood Road\n   - **City:** Stoke-on-Trent\n   - **State:** ENG\n   - **Postcode:** ST10\n   - **IP Address:** 7.205.223.46\n   - **Last Name 1:** Kscheschinski\n   - **Last Nam",
+    "target_text": "Emergency Response Plan - Physical Plant Management\n\n**Team Members:**\n1. **[USERNAME]**\n   - **Email:** [EMAIL]\n   - **ID Card:** [IDCARD]\n   - **Passport:** [PASSPORT]\n   - **Telephone:** [TEL]\n   - **Country:** [COUNTRY]\n   - **Building:** [BUILDING]\n   - **Street:** [STREET]\n   - **City:** [CITY]\n   - **State:** [STATE]\n   - **Postcode:** [POSTCODE]\n   - **IP Address:** [IP]\n   - **Last Name 1:** [LASTNAME1]\n   - **Last Nam",
+    "pii": [
+      {
+        "value": "02kscheschinski",
+        "start": 76,
+        "end": 91,
+        "label": "USERNAME",
+        "mapped_label": "USERNAME"
+      },
+      {
+        "value": "dnuqzwxxannkq05517@gmail.com",
+        "start": 110,
+        "end": 138,
+        "label": "EMAIL",
+        "mapped_label": "EMAIL"
+      },
+      {
+        "value": "ZO31612IA",
+        "start": 157,
+        "end": 166,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      },
+      {
+        "value": "582096831",
+        "start": 186,
+        "end": 195,
+        "label": "PASSPORT",
+        "mapped_label": "PASSPORT"
+      },
+      {
+        "value": "+32-75 212-8504",
+        "start": 216,
+        "end": 231,
+        "label": "TEL",
+        "mapped_label": "PHONE"
+      },
+      {
+        "value": "GB",
+        "start": 250,
+        "end": 252,
+        "label": "COUNTRY",
+        "mapped_label": "COUNTRY"
+      },
+      {
+        "value": "445",
+        "start": 272,
+        "end": 275,
+        "label": "BUILDING",
+        "mapped_label": "BUILDING"
+      },
+      {
+        "value": "Lockwood Road",
+        "start": 293,
+        "end": 306,
+        "label": "STREET",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "Stoke-on-Trent",
+        "start": 322,
+        "end": 336,
+        "label": "CITY",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "ENG",
+        "start": 353,
+        "end": 356,
+        "label": "STATE",
+        "mapped_label": "ADDRESS"
+      },
+      {
+        "value": "ST10",
+        "start": 376,
+        "end": 380,
+        "label": "POSTCODE",
+        "mapped_label": "POSTCODE"
+      },
+      {
+        "value": "7.205.223.46",
+        "start": 402,
+        "end": 414,
+        "label": "IP",
+        "mapped_label": "IP-ADDRESS"
+      },
+      {
+        "value": "Kscheschinski",
+        "start": 437,
+        "end": 450,
+        "label": "LASTNAME1",
+        "mapped_label": "PERSON-NAME"
+      }
+    ]
+  },
+  {
+    "id": "40797B",
+    "source_text": "e 2:** Zehra\n   \n2. **ZG29440KN**\n   - **Passport:** 553837399\n   - **Telephone:** +20.01.235 4102\n\n3. **RX92048PN**\n   - **Passport:** 462955358\n   - **Telephone:** +5.466.202.1298\n\n4. **G0703583330853**\n   - **Passport:** 82IY82866\n   - **Telephone:** +3349983-1517\n\n5. **CS52694RD**\n   - **Passport:** 479283730\n   - **Telephone:** +72-80413 6637\n\n6. **AJ91307EU**\n   - **Passport:** 881565361\n   - **Telephone:** 0161.773766341\n\n7. **ZR57870ON**\n   - **Passport:",
+    "target_text": "e 2:** [LASTNAME2]\n   \n2. **[IDCARD]**\n   - **Passport:** [PASSPORT]\n   - **Telephone:** [TEL]\n\n3. **[IDCARD]**\n   - **Passport:** [PASSPORT]\n   - **Telephone:** [TEL]\n\n4. **[IDCARD]**\n   - **Passport:** [PASSPORT]\n   - **Telephone:** [TEL]\n\n5. **[IDCARD]**\n   - **Passport:** [PASSPORT]\n   - **Telephone:** [TEL]\n\n6. **[IDCARD]**\n   - **Passport:** [PASSPORT]\n   - **Telephone:** [TEL]\n\n7. **[IDCARD]**\n   - **Passport:",
+    "pii": [
+      {
+        "value": "Zehra",
+        "start": 7,
+        "end": 12,
+        "label": "LASTNAME2",
+        "mapped_label": "PERSON-NAME"
+      },
+      {
+        "value": "ZG29440KN",
+        "start": 22,
+        "end": 31,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      },
+      {
+        "value": "553837399",
+        "start": 53,
+        "end": 62,
+        "label": "PASSPORT",
+        "mapped_label": "PASSPORT"
+      },
+      {
+        "value": "+20.01.235 4102",
+        "start": 83,
+        "end": 98,
+        "label": "TEL",
+        "mapped_label": "PHONE"
+      },
+      {
+        "value": "RX92048PN",
+        "start": 105,
+        "end": 114,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      },
+      {
+        "value": "462955358",
+        "start": 136,
+        "end": 145,
+        "label": "PASSPORT",
+        "mapped_label": "PASSPORT"
+      },
+      {
+        "value": "+5.466.202.1298",
+        "start": 166,
+        "end": 181,
+        "label": "TEL",
+        "mapped_label": "PHONE"
+      },
+      {
+        "value": "G0703583330853",
+        "start": 188,
+        "end": 202,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      },
+      {
+        "value": "82IY82866",
+        "start": 224,
+        "end": 233,
+        "label": "PASSPORT",
+        "mapped_label": "PASSPORT"
+      },
+      {
+        "value": "+3349983-1517",
+        "start": 254,
+        "end": 267,
+        "label": "TEL",
+        "mapped_label": "PHONE"
+      },
+      {
+        "value": "CS52694RD",
+        "start": 274,
+        "end": 283,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      },
+      {
+        "value": "479283730",
+        "start": 305,
+        "end": 314,
+        "label": "PASSPORT",
+        "mapped_label": "PASSPORT"
+      },
+      {
+        "value": "+72-80413 6637",
+        "start": 335,
+        "end": 349,
+        "label": "TEL",
+        "mapped_label": "PHONE"
+      },
+      {
+        "value": "AJ91307EU",
+        "start": 356,
+        "end": 365,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      },
+      {
+        "value": "881565361",
+        "start": 387,
+        "end": 396,
+        "label": "PASSPORT",
+        "mapped_label": "PASSPORT"
+      },
+      {
+        "value": "0161.773766341",
+        "start": 417,
+        "end": 431,
+        "label": "TEL",
+        "mapped_label": "PHONE"
+      },
+      {
+        "value": "ZR57870ON",
+        "start": 438,
+        "end": 447,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      }
+    ]
+  },
+  {
+    "id": "40797C",
+    "source_text": "** 542177342\n   - **Telephone:** 0709-04828636\n\n8. **QU46289HW**\n   - **Passport:** 842844719\n   - **Telephone:** 072.7772-9182\n\n9. **SW90578CS**\n   - **Passport:** 563278822\n   - **Telephone:** 012-041.689-3957\n\n10. **NU00307MI**\n    - **Passport:** 949322413\n    - **Telephone:** 3945.181-0029\n\n11. **CU81880SY**\n    - **Passport:** 780179462\n    - **Telephone:** 00090.77-879 4203\n\n12. **X3386845**\n    - **Passport:** C7435753\n    - **Telephone:** 00 20-73 76-71",
+    "target_text": "** [PASSPORT]\n   - **Telephone:** [TEL]\n\n8. **[IDCARD]**\n   - **Passport:** [PASSPORT]\n   - **Telephone:** [TEL]\n\n9. **[IDCARD]**\n   - **Passport:** [PASSPORT]\n   - **Telephone:** [TEL]\n\n10. **[IDCARD]**\n    - **Passport:** [PASSPORT]\n    - **Telephone:** [TEL]\n\n11. **[IDCARD]**\n    - **Passport:** [PASSPORT]\n    - **Telephone:** [TEL]\n\n12. **[IDCARD]**\n    - **Passport:** [PASSPORT]\n    - **Telephone:** 00 20-73 76-71",
+    "pii": [
+      {
+        "value": "542177342",
+        "start": 3,
+        "end": 12,
+        "label": "PASSPORT",
+        "mapped_label": "PASSPORT"
+      },
+      {
+        "value": "0709-04828636",
+        "start": 33,
+        "end": 46,
+        "label": "TEL",
+        "mapped_label": "PHONE"
+      },
+      {
+        "value": "QU46289HW",
+        "start": 53,
+        "end": 62,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      },
+      {
+        "value": "842844719",
+        "start": 84,
+        "end": 93,
+        "label": "PASSPORT",
+        "mapped_label": "PASSPORT"
+      },
+      {
+        "value": "072.7772-9182",
+        "start": 114,
+        "end": 127,
+        "label": "TEL",
+        "mapped_label": "PHONE"
+      },
+      {
+        "value": "SW90578CS",
+        "start": 134,
+        "end": 143,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      },
+      {
+        "value": "563278822",
+        "start": 165,
+        "end": 174,
+        "label": "PASSPORT",
+        "mapped_label": "PASSPORT"
+      },
+      {
+        "value": "012-041.689-3957",
+        "start": 195,
+        "end": 211,
+        "label": "TEL",
+        "mapped_label": "PHONE"
+      },
+      {
+        "value": "NU00307MI",
+        "start": 219,
+        "end": 228,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      },
+      {
+        "value": "949322413",
+        "start": 251,
+        "end": 260,
+        "label": "PASSPORT",
+        "mapped_label": "PASSPORT"
+      },
+      {
+        "value": "3945.181-0029",
+        "start": 282,
+        "end": 295,
+        "label": "TEL",
+        "mapped_label": "PHONE"
+      },
+      {
+        "value": "CU81880SY",
+        "start": 303,
+        "end": 312,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      },
+      {
+        "value": "780179462",
+        "start": 335,
+        "end": 344,
+        "label": "PASSPORT",
+        "mapped_label": "PASSPORT"
+      },
+      {
+        "value": "00090.77-879 4203",
+        "start": 366,
+        "end": 383,
+        "label": "TEL",
+        "mapped_label": "PHONE"
+      },
+      {
+        "value": "X3386845",
+        "start": 391,
+        "end": 399,
+        "label": "IDCARD",
+        "mapped_label": "ID-CARD"
+      },
+      {
+        "value": "C7435753",
+        "start": 422,
+        "end": 430,
+        "label": "PASSPORT",
+        "mapped_label": "PASSPORT"
+      }
+    ]
+  }
+]

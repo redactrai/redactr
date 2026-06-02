@@ -1,0 +1,249 @@
+/* Redactr Control Plane — utilitarian stylesheet, no framework */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --accent:   #2563eb;
+  --accent-dk:#1d4ed8;
+  --danger:   #dc2626;
+  --danger-dk:#b91c1c;
+  --bg:       #f3f4f6;
+  --surface:  #ffffff;
+  --border:   #d1d5db;
+  --text:     #111827;
+  --muted:    #6b7280;
+  --alert-bg: #fef2f2;
+  --alert-bd: #fca5a5;
+  --row-danger:#fef2f2;
+  --mono-bg:  #f3f4f6;
+  --toast-bg: #1f2937;
+}
+
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  background: var(--bg);
+  color: var(--text);
+}
+
+body { padding-bottom: 3rem; }
+
+/* ── Layout ── */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--accent);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  gap: 1rem;
+}
+
+header h1 { font-size: 1.1rem; font-weight: 600; letter-spacing: 0.01em; }
+
+#whoami { font-size: 0.85rem; opacity: 0.85; }
+
+main {
+  max-width: 960px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+/* ── Card ── */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.07);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.card h2, .card h3 { margin-bottom: 0.75rem; font-size: 1rem; }
+
+/* ── Row ── */
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+  gap: 0.75rem;
+}
+
+.row:last-child { border-bottom: none; }
+
+/* ── Tabs ── */
+.tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 2px solid var(--border);
+  margin-bottom: 1rem;
+}
+
+.tab {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 0.9rem;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  transition: color 0.15s, border-color 0.15s;
+  text-transform: capitalize;
+}
+
+.tab:hover { color: var(--text); }
+.tab.active { color: var(--accent); border-bottom-color: var(--accent); font-weight: 600; }
+
+/* ── Buttons ── */
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.45rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.15s;
+  margin-top: 0.5rem;
+}
+
+.btn:hover { background: var(--accent-dk); }
+.btn:disabled { background: var(--muted); cursor: not-allowed; opacity: 0.65; }
+
+.btn-danger { background: var(--danger); }
+.btn-danger:hover { background: var(--danger-dk); }
+.btn-danger:disabled { background: var(--muted); }
+
+/* ── Table ── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+}
+
+th {
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  background: var(--bg);
+  color: var(--muted);
+  font-weight: 600;
+  border-bottom: 2px solid var(--border);
+}
+
+td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+
+tr:last-child td { border-bottom: none; }
+tr.danger td { background: var(--row-danger); }
+
+/* ── Alert ── */
+.alert {
+  background: var(--alert-bg);
+  border: 1px solid var(--alert-bd);
+  border-radius: 5px;
+  padding: 0.65rem 1rem;
+  margin-bottom: 0.75rem;
+  color: var(--danger-dk);
+  font-size: 0.9rem;
+}
+
+/* ── Empty state ── */
+.empty {
+  color: var(--muted);
+  font-style: italic;
+  padding: 0.5rem 0;
+}
+
+/* ── Error inline ── */
+.err { color: var(--danger); }
+
+/* ── Link ── */
+.link { color: var(--accent); text-decoration: none; }
+.link:hover { text-decoration: underline; }
+
+/* ── Monospace / code ── */
+.mono, code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  background: var(--mono-bg);
+  border-radius: 3px;
+  padding: 0.1em 0.35em;
+  font-size: 0.82em;
+}
+
+code {
+  display: block;
+  white-space: pre-wrap;
+  word-break: break-all;
+  padding: 0.5rem 0.75rem;
+  margin: 0.4rem 0;
+}
+
+/* ── Form inputs ── */
+label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 0.75rem;
+  margin-bottom: 0.2rem;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input:not([type]),
+select,
+textarea {
+  width: 100%;
+  max-width: 480px;
+  padding: 0.45rem 0.65rem;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  font-size: 0.875rem;
+  font-family: inherit;
+  background: var(--surface);
+  color: var(--text);
+  transition: border-color 0.15s;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(37,99,235,.15);
+}
+
+textarea { resize: vertical; }
+
+/* ── Toast ── */
+.toast {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--toast-bg);
+  color: #fff;
+  padding: 0.6rem 1.25rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,.25);
+  z-index: 9999;
+  pointer-events: none;
+  animation: fadeIn 0.15s ease;
+}
+
+.toast.err { background: var(--danger); }
+.hidden { display: none !important; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateX(-50%) translateY(6px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}

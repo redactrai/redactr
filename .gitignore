@@ -1,0 +1,37 @@
+# Binaries
+bin/
+*.exe
+/redactr
+/redactr-server
+/redactr-mcp-wrap
+
+# Server runtime artifacts (signing keys, sqlite db)
+*.db
+/keys/
+
+# Local agent/session state
+.claude/
+
+# Dependencies
+vendor/
+
+# Benchmarks data
+benchmarks/datasets/
+benchmarks/results/
+
+# Superpowers
+.superpowers/
+
+# Worktrees
+.worktrees/
+
+# State
+.redactr/
+
+# Next.js
+web/node_modules/
+web/.next/
+web/out/
+
+# OS
+.DS_Store

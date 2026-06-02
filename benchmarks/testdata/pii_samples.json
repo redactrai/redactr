@@ -1,0 +1,32 @@
+[
+  {
+    "input": "Contact John Smith at john.smith@company.com or call (555) 867-5309. SSN: 123-45-6789",
+    "expected_labels": ["EMAIL", "PHONE", "SSN"],
+    "description": "basic PII in plain text"
+  },
+  {
+    "input": "aws_secret_access_key = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY",
+    "expected_labels": ["AWS-SECRET-KEY"],
+    "description": "AWS secret key"
+  },
+  {
+    "input": "DB_HOST=prod.db.internal\nDB_PASSWORD=SuperSecret123!\nAPI_KEY=sk-proj-abc123def456",
+    "expected_labels": ["GENERIC-SECRET"],
+    "description": "env file content"
+  },
+  {
+    "input": "func main() {\n\tfmt.Println(\"hello world\")\n\tfor i := 0; i < 10; i++ {\n\t\tresult++\n\t}\n}",
+    "expected_labels": [],
+    "description": "clean Go code — should produce no findings"
+  },
+  {
+    "input": "token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIn0.dozjgNryP4J3jVmNHl0w5N_XgL0n3I9PlFUP0THsR8U",
+    "expected_labels": ["JWT"],
+    "description": "JWT token"
+  },
+  {
+    "input": "postgres://admin:password123@db.example.com:5432/production",
+    "expected_labels": ["CONNECTION-STRING"],
+    "description": "database connection string"
+  }
+]

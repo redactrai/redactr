@@ -1,0 +1,4884 @@
+[
+  {
+    "text": "# Welcome to Your Health Journey\n\n## Introduction\nWelcome, Elise Vermeulen, to your personalized health journey. This guide is designed to help you understand your medical record number, 8372154, and how to navigate your healthcare experience. We are committed to providing you with the best care possible.\n\n## Purpose\nThe purpose of this document is to educate you on your healthcare journey. This includes understanding your medical record number, 8372154, and how to access your health information. Your medical record number is a unique identifier that allows healthcare providers to access your medical history, treatments, and other relevant information.\n\n## Instructions\n### Accessing Your Health Information\nTo access your health information, follow these steps:\n\n1. **Login to Your Portal**: Use your email, e.vermeulen@vita-care.be, to log in to your healthcare portal. This will allow you to view your medical records, schedule appointments, and communicate with your healthcare providers.\n2. **View Your Medical Record Number**: Your medical record number, 8372154, will be displayed on your dashboard. This number is unique to you and should be kept confidential.\n3. **Contact Your Healthcare Provider**: If you have any questions or concerns, do not hesitate to contact your healthcare provider. They are here to support you on your health journey.\n\n## Key Points\n- Your medical record number, 8372154, is a unique identifier that allows healthcare providers to access your medical history.\n- You were born on 2003-06-08 and your gender is female. This information is important for your healthcare providers to understand your health needs.\n- You can access your health information using your email, e.vermeulen@vita-care.be. This will allow you to view your medical records, schedule appointments, and communicate with your healthcare providers.\n- Your religious belief, Belgian Catholicism, is an important aspect of your healthcare journey. We will do our best to accommodate your beliefs and provide you with the best care possible.\n\n## Conclusion\nThank you for taking the time to read this guide. We hope it has provided you with valuable information on your healthcare journey. If you have any questions or concerns, please do not hesitate to contact your healthcare provider. We are here to support you every step of the way.",
+    "domain": "Healthcare",
+    "document_type": "Patient Education Materials",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Elise",
+        "start": 59,
+        "end": 64
+      },
+      {
+        "label": "last_name",
+        "value": "Vermeulen",
+        "start": 65,
+        "end": 74
+      },
+      {
+        "label": "medical_record_number",
+        "value": "8372154",
+        "start": 187,
+        "end": 194
+      },
+      {
+        "label": "medical_record_number",
+        "value": "8372154",
+        "start": 450,
+        "end": 457
+      },
+      {
+        "label": "occupation",
+        "value": "healthcare provider",
+        "start": 564,
+        "end": 583
+      },
+      {
+        "label": "email",
+        "value": "e.vermeulen@vita-care.be",
+        "start": 817,
+        "end": 841
+      },
+      {
+        "label": "occupation",
+        "value": "healthcare provider",
+        "start": 979,
+        "end": 998
+      },
+      {
+        "label": "medical_record_number",
+        "value": "8372154",
+        "start": 1069,
+        "end": 1076
+      },
+      {
+        "label": "occupation",
+        "value": "healthcare provider",
+        "start": 1289,
+        "end": 1308
+      },
+      {
+        "label": "medical_record_number",
+        "value": "8372154",
+        "start": 1408,
+        "end": 1415
+      },
+      {
+        "label": "occupation",
+        "value": "healthcare provider",
+        "start": 1452,
+        "end": 1471
+      },
+      {
+        "label": "date_of_birth",
+        "value": "2003-06-08",
+        "start": 1524,
+        "end": 1534
+      },
+      {
+        "label": "gender",
+        "value": "female",
+        "start": 1554,
+        "end": 1560
+      },
+      {
+        "label": "occupation",
+        "value": "healthcare provider",
+        "start": 1601,
+        "end": 1620
+      },
+      {
+        "label": "email",
+        "value": "e.vermeulen@vita-care.be",
+        "start": 1714,
+        "end": 1738
+      },
+      {
+        "label": "occupation",
+        "value": "healthcare provider",
+        "start": 1839,
+        "end": 1858
+      },
+      {
+        "label": "religious_belief",
+        "value": "Belgian Catholicism",
+        "start": 1886,
+        "end": 1905
+      },
+      {
+        "label": "occupation",
+        "value": "healthcare provider",
+        "start": 2276,
+        "end": 2295
+      }
+    ]
+  },
+  {
+    "text": "**Healthcare Provider ATM Card PIN Mailer**\n\n**Header**\n\n[Healthcare Provider Logo]\n\n[Healthcare Provider Name]\n[Healthcare Provider Contact Information]\n\n**Personalized Greeting**\n\nDear Leah,\n\nThank you for choosing [Healthcare Provider Name] for your healthcare needs. We are pleased to inform you that your new ATM card is ready for activation.\n\n**PIN Information**\n\nYour new PIN is: 249458\n\n**Activation Instructions**\n\nTo activate your card, please follow these steps:\n\n1. Insert your ATM card into any ATM machine.\n2. Enter your PIN: 249458\n3. Follow the on-screen instructions to complete the activation process.\n\n**Security Tips**\n\n- Never share your PIN: 249458 with anyone.\n- Memorize your PIN: 249458 and destroy this mailer securely.\n- Regularly monitor your account activity using your email: leah.fife24@hotmail.com\n- If you suspect any unauthorized activity, please contact us immediately at 936-511-5128.\n\n**Disclaimer**\n\nThis PIN mailer is for the attention of the cardholder with medical record number: BH-00078215 only. If you are not the intended recipient, please destroy this mailer securely.\n\n**Footer**\n\nFor any inquiries, please contact our customer support at 936-511-5128 or email us at leah.fife24@hotmail.com.\n\nThank you for your cooperation.\n\n[Healthcare Provider Name]\n\n[Healthcare Provider Contact Information]",
+    "domain": "Healthcare",
+    "document_type": "ATM card PIN mailer",
+    "pii": [
+      {
+        "label": "occupation",
+        "value": "Healthcare Provider",
+        "start": 2,
+        "end": 21
+      },
+      {
+        "label": "occupation",
+        "value": "Healthcare Provider",
+        "start": 58,
+        "end": 77
+      },
+      {
+        "label": "occupation",
+        "value": "Healthcare Provider",
+        "start": 86,
+        "end": 105
+      },
+      {
+        "label": "occupation",
+        "value": "Healthcare Provider",
+        "start": 113,
+        "end": 132
+      },
+      {
+        "label": "first_name",
+        "value": "Leah",
+        "start": 187,
+        "end": 191
+      },
+      {
+        "label": "occupation",
+        "value": "Healthcare Provider",
+        "start": 218,
+        "end": 237
+      },
+      {
+        "label": "pin",
+        "value": "249458",
+        "start": 387,
+        "end": 393
+      },
+      {
+        "label": "pin",
+        "value": "249458",
+        "start": 540,
+        "end": 546
+      },
+      {
+        "label": "pin",
+        "value": "249458",
+        "start": 664,
+        "end": 670
+      },
+      {
+        "label": "pin",
+        "value": "249458",
+        "start": 705,
+        "end": 711
+      },
+      {
+        "label": "email",
+        "value": "leah.fife24@hotmail.com",
+        "start": 806,
+        "end": 829
+      },
+      {
+        "label": "phone_number",
+        "value": "936-511-5128",
+        "start": 907,
+        "end": 919
+      },
+      {
+        "label": "medical_record_number",
+        "value": "BH-00078215",
+        "start": 1021,
+        "end": 1032
+      },
+      {
+        "label": "phone_number",
+        "value": "936-511-5128",
+        "start": 1186,
+        "end": 1198
+      },
+      {
+        "label": "email",
+        "value": "leah.fife24@hotmail.com",
+        "start": 1214,
+        "end": 1237
+      },
+      {
+        "label": "occupation",
+        "value": "Healthcare Provider",
+        "start": 1274,
+        "end": 1293
+      },
+      {
+        "label": "occupation",
+        "value": "Healthcare Provider",
+        "start": 1302,
+        "end": 1321
+      }
+    ]
+  },
+  {
+    "text": "**Healthcare Patient Consent Form**\n\n**Patient Information:**\n\n- **First Name:** Marciea\n- **Date of Birth:** 1954-05-15\n- **Medical Record Number:** 0002958143\n\n**Procedure Information:**\n\nPlease read the following information carefully. This consent form outlines the details of the healthcare procedure or treatment you are about to undergo. If you have any questions, please ask your healthcare provider before signing.\n\n**Risks and Benefits:**\n\nBefore proceeding, it is important to understand the risks and benefits associated with the procedure. Your healthcare provider will discuss these with you in detail.\n\n**Acknowledgement:**\n\nBy signing below, you acknowledge that you have read and understood the information provided, and you consent to the procedure or treatment as outlined.\n\n**Patient Signature:**\n\n_________________________       **Date:**\n\n**Healthcare Provider Signature:**\n\n_________________________       **Date:**",
+    "domain": "Healthcare",
+    "document_type": "Patient Consent Form",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Marciea",
+        "start": 81,
+        "end": 88
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1954-05-15",
+        "start": 110,
+        "end": 120
+      },
+      {
+        "label": "medical_record_number",
+        "value": "0002958143",
+        "start": 150,
+        "end": 160
+      }
+    ]
+  },
+  {
+    "text": "### Understanding Your Medical Record\n\n#### Title\nYour Medical Record: An Overview\n\n#### Introduction\nWelcome to your guide on understanding your medical record. This document will help you navigate through the various sections of your medical record, ensuring you have a clear understanding of your health information.\n\n#### Detailed Content\n\n**Medical Record Number:**\nYour medical record number is 000573816. This number is unique to you and is used to identify your medical records within the healthcare system.\n\n**Personal Information:**\n- **First Name:** Madeline\n- **Last Name:** Hansen\n- **Date of Birth:** 1993-06-28\n- **Gender:** female\n\n**Contact Information:**\n- **Email:** m.hansen@crestwoodmedgroup.com\n\n**Symptoms**\nSymptoms are the subjective changes in body function or sensation that a patient experiences. Common symptoms include pain, fatigue, and nausea. It is important to document any symptoms you experience so that your healthcare provider can accurately diagnose and treat your condition.\n\n**Causes**\nUnderstanding the causes of your symptoms is crucial for effective treatment. Causes can range from infections and injuries to chronic conditions. Your healthcare provider will conduct a thorough examination and may order tests to determine the underlying cause of your symptoms.\n\n**Treatment Options**\nTreatment options vary depending on the cause of your symptoms. Common treatment options include medication, therapy, and lifestyle changes. Your healthcare provider will work with you to develop a treatment plan tailored to your specific needs.\n\n**Prevention Tips**\nPreventing future health issues is an important aspect of healthcare. Some prevention tips include maintaining a healthy diet, regular exercise, and getting regular check-ups. Your healthcare provider can provide additional prevention tips based on your medical history.\n\n#### Visual Aids\n- **Diagram**: A diagram of the human body highlighting common areas of pain and discomfort.\n- **Illustration**: An illustration of a healthy lifestyle, including diet and exercise.\n\n#### Summary\nThis document provides an overview of your medical record, including your personal information, symptoms, causes, treatment options, and prevention tips. If you have any questions or concerns, please contact your healthcare provider.\n\n#### FAQs\n**Q: How do I access my medical record?**\nA: You can access your medical record by contacting your healthcare provider or through the patient portal on the healthcare website.\n\n**Q: What should I do if I notice an error in my medical record?**\nA: If you notice an error in your medical record, contact your healthcare provider immediately to have it corrected.",
+    "domain": "Healthcare",
+    "document_type": "Patient Education Materials",
+    "pii": [
+      {
+        "label": "medical_record_number",
+        "value": "000573816",
+        "start": 401,
+        "end": 410
+      },
+      {
+        "label": "first_name",
+        "value": "Madeline",
+        "start": 561,
+        "end": 569
+      },
+      {
+        "label": "last_name",
+        "value": "Hansen",
+        "start": 587,
+        "end": 593
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1993-06-28",
+        "start": 615,
+        "end": 625
+      },
+      {
+        "label": "gender",
+        "value": "female",
+        "start": 640,
+        "end": 646
+      },
+      {
+        "label": "email",
+        "value": "m.hansen@crestwoodmedgroup.com",
+        "start": 686,
+        "end": 716
+      },
+      {
+        "label": "occupation",
+        "value": "healthcare provider",
+        "start": 945,
+        "end": 964
+      },
+      {
+        "label": "occupation",
+        "value": "healthcare provider",
+        "start": 1179,
+        "end": 1198
+      },
+      {
+        "label": "occupation",
+        "value": "healthcare provider",
+        "start": 1476,
+        "end": 1495
+      },
+      {
+        "label": "occupation",
+        "value": "healthcare provider",
+        "start": 1778,
+        "end": 1797
+      },
+      {
+        "label": "occupation",
+        "value": "healthcare provider",
+        "start": 2295,
+        "end": 2314
+      },
+      {
+        "label": "occupation",
+        "value": "healthcare provider",
+        "start": 2426,
+        "end": 2445
+      },
+      {
+        "label": "occupation",
+        "value": "healthcare provider",
+        "start": 2634,
+        "end": 2653
+      }
+    ]
+  },
+  {
+    "text": "Hi Luis,\n\nYour temporary password for accessing the healthcare portal is Sarah1995. You can use this temporary password to log in with your username Luis.Mahmoudi. Please use the following link to access the healthcare portal: https://myhealthportal.net. Once logged in, you will be prompted to change your password. It is important to update your password to ensure the security of your account. If you have any issues or need further assistance, please contact our support team.\n\nThank you,\nThe Healthcare Portal Team",
+    "domain": "Healthcare",
+    "document_type": "temporary password notification",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Luis",
+        "start": 3,
+        "end": 7
+      },
+      {
+        "label": "password",
+        "value": "Sarah1995",
+        "start": 73,
+        "end": 82
+      },
+      {
+        "label": "user_name",
+        "value": "Luis.Mahmoudi",
+        "start": 149,
+        "end": 162
+      },
+      {
+        "label": "url",
+        "value": "https://myhealthportal.net",
+        "start": 227,
+        "end": 253
+      }
+    ]
+  },
+  {
+    "text": "**Welcome to Our Healthcare Services**\n\nAt our healthcare center, we are committed to providing you with the best care possible. If you have any questions or need assistance, please feel free to reach out to our support team at +7 861 234-5678. You can also email us at yelena@medilinx.ru for any inquiries.\n\nYour health plan beneficiary number is B72-TR4-MK91, please keep this number handy for all your healthcare needs. If you need to fax any documents, our fax number is +7 861 288-4713.\n\nFor your security, your biometric identifier is BIO-5719482689. This identifier is crucial for accessing certain services and ensuring your information remains secure.\n\nWe understand that your political views may influence your healthcare decisions. We respect your stance as a United Russia supporter and are here to support you in all aspects of your healthcare journey.",
+    "domain": "Healthcare",
+    "document_type": "Patient Education Materials",
+    "pii": [
+      {
+        "label": "phone_number",
+        "value": "+7 861 234-5678",
+        "start": 228,
+        "end": 243
+      },
+      {
+        "label": "email",
+        "value": "yelena@medilinx.ru",
+        "start": 270,
+        "end": 288
+      },
+      {
+        "label": "health_plan_beneficiary_number",
+        "value": "B72-TR4-MK91",
+        "start": 348,
+        "end": 360
+      },
+      {
+        "label": "fax_number",
+        "value": "+7 861 288-4713",
+        "start": 475,
+        "end": 490
+      },
+      {
+        "label": "biometric_identifier",
+        "value": "BIO-5719482689",
+        "start": 541,
+        "end": 555
+      },
+      {
+        "label": "political_view",
+        "value": "United Russia supporter",
+        "start": 771,
+        "end": 794
+      }
+    ]
+  },
+  {
+    "text": "**Front Side:**\n\n**Patient Name:** Evan\n\n**Card Number:** 230315-0824\n\n**PIN Code:** 4728\n\n**Expiration Date:** 12/25\n\n**Back Side:**\n\n**Important Contact Information:**\n\n**Issuing Healthcare Provider:**\n\nFor any inquiries or support regarding your card, please contact your healthcare provider.\n\n**Security Notice:**\n\nThis PIN mailer is for your security. Do not share your PIN code with anyone. If you suspect any unauthorized activity, contact your healthcare provider immediately.",
+    "domain": "Healthcare",
+    "document_type": "ATM card PIN mailer",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Evan",
+        "start": 35,
+        "end": 39
+      },
+      {
+        "label": "medical_record_number",
+        "value": "230315-0824",
+        "start": 58,
+        "end": 69
+      },
+      {
+        "label": "pin",
+        "value": "4728",
+        "start": 85,
+        "end": 89
+      },
+      {
+        "label": "date",
+        "value": "12/25",
+        "start": 112,
+        "end": 117
+      }
+    ]
+  },
+  {
+    "text": "Subject: Temporary Password Notification\n\nDear Sandra,\n\nYour temporary password for accessing the healthcare portal has been generated. Please use the following details to log in:\n\n- Username: s.wade\n- Temporary Password: G7m$P9wXb2Lk\n- Expiration Date and Time: 2024-04-22T03:54:01\n\nTo reset your password, please visit the secure portal at the following URL: http://192.168.1.100:8080/healthcare/temp_password_notification\n\nPlease ensure you reset your password within the specified time frame to maintain the security of your account.\n\nThank you,\nHealthcare Portal Support Team",
+    "domain": "Healthcare",
+    "document_type": "temporary password notification",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Sandra",
+        "start": 47,
+        "end": 53
+      },
+      {
+        "label": "user_name",
+        "value": "s.wade",
+        "start": 193,
+        "end": 199
+      },
+      {
+        "label": "password",
+        "value": "G7m$P9wXb2Lk",
+        "start": 222,
+        "end": 234
+      },
+      {
+        "label": "date_time",
+        "value": "2024-04-22T03:54:01",
+        "start": 263,
+        "end": 282
+      },
+      {
+        "label": "url",
+        "value": "http://192.168.1.100:8080/healthcare/temp_password_notification",
+        "start": 361,
+        "end": 424
+      },
+      {
+        "label": "occupation",
+        "value": "Healthcare Portal Support Team",
+        "start": 550,
+        "end": 580
+      }
+    ]
+  },
+  {
+    "text": "Hi Shane Shehow,\n\nYour temporary password for the secure healthcare portal is OceanWave#2025. Your unique ID is d290f19e-83a4-47d5-9a77-545f8c8a7b3e. Please use this password to log in at http://192.168.1.50:8080/healthcare/temp-password-notification and reset your password. This temporary password is valid until 2023-07-12T17:50:53. Your username is shaneshehow.",
+    "domain": "Healthcare",
+    "document_type": "temporary password notification",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Shane",
+        "start": 3,
+        "end": 8
+      },
+      {
+        "label": "last_name",
+        "value": "Shehow",
+        "start": 9,
+        "end": 15
+      },
+      {
+        "label": "password",
+        "value": "OceanWave#2025",
+        "start": 78,
+        "end": 92
+      },
+      {
+        "label": "unique_id",
+        "value": "d290f19e-83a4-47d5-9a77-545f8c8a7b3e",
+        "start": 112,
+        "end": 148
+      },
+      {
+        "label": "url",
+        "value": "http://192.168.1.50:8080/healthcare/temp-password-notification",
+        "start": 188,
+        "end": 250
+      },
+      {
+        "label": "date_time",
+        "value": "2023-07-12T17:50:53",
+        "start": 315,
+        "end": 334
+      },
+      {
+        "label": "user_name",
+        "value": "shaneshehow",
+        "start": 353,
+        "end": 364
+      }
+    ]
+  },
+  {
+    "text": "**Healthcare ATM Card PIN Notification**\n\nDear Yasmine Boucherit,\n\nYour new Healthcare ATM card has been issued. Please find your card details below:\n\n**Card Number:** 4532 7819 2345 6789\n\n**Customer ID:** 8324715690\n\n**PIN:** 906248\n\n**Security Instructions:**\n\n1. Memorize your PIN and destroy this mailer.\n2. Do not share your PIN with anyone.\n3. If you suspect any unauthorized use, contact us immediately.\n\n**Expiration Date:** Not Specified\n\n**Contact Information:**\n\nFor any inquiries or assistance, please contact our customer support.\n\nThank you for choosing our healthcare services.",
+    "domain": "Healthcare",
+    "document_type": "ATM card PIN mailer",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Yasmine",
+        "start": 47,
+        "end": 54
+      },
+      {
+        "label": "last_name",
+        "value": "Boucherit",
+        "start": 55,
+        "end": 64
+      },
+      {
+        "label": "credit_debit_card",
+        "value": "4532 7819 2345 6789",
+        "start": 168,
+        "end": 187
+      },
+      {
+        "label": "customer_id",
+        "value": "8324715690",
+        "start": 206,
+        "end": 216
+      },
+      {
+        "label": "pin",
+        "value": "906248",
+        "start": 227,
+        "end": 233
+      }
+    ]
+  },
+  {
+    "text": "Hi Lukas,\n\nYour temporary password for accessing your healthcare account has been generated. Please use the following password to log in:\n\nPassword: River2025!\n\nThis password is temporary and should be changed upon your first login. To access your account, please visit the following URL:\n\nURL: https://myhealthportal.com/account/temporary-password-notification\n\nIf you have any questions or need further assistance, please contact your healthcare provider.  Remember to keep your health plan beneficiary number 3KL9-XP7-MC45 secure, as it is important for accessing your benefits and services.\n\nBest regards,\n\nYour Healthcare Provider",
+    "domain": "Healthcare",
+    "document_type": "temporary password notification",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Lukas",
+        "start": 3,
+        "end": 8
+      },
+      {
+        "label": "password",
+        "value": "River2025!",
+        "start": 149,
+        "end": 159
+      },
+      {
+        "label": "url",
+        "value": "https://myhealthportal.com/account/temporary-password-notification",
+        "start": 295,
+        "end": 361
+      },
+      {
+        "label": "health_plan_beneficiary_number",
+        "value": "3KL9-XP7-MC45",
+        "start": 512,
+        "end": 525
+      }
+    ]
+  },
+  {
+    "text": "Hi Lukas,\n\nYour temporary password for accessing the healthcare portal is b7K$m9P!r5Y#2xZ. This password is valid for the next 24 hours. Please use this link to reset your password: https://healthcareportal.com/resetpassword.\n\nTo log in, follow these steps:\n\n1. Go to the healthcare portal login page.\n2. Enter your username.\n3. Enter the temporary password: b7K$m9P!r5Y#2xZ.\n4. Click on the link to reset the password.\n\nPlease note that for security reasons, your browser must accept the cookie order_id=hj8k7l2m-4n5o-9pqr-3tuv-2wxyz15678; Path=/order; HttpOnly.\n\nThank you,\nThe Healthcare Portal Team",
+    "domain": "Healthcare",
+    "document_type": "temporary password notification",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Lukas",
+        "start": 3,
+        "end": 8
+      },
+      {
+        "label": "password",
+        "value": "b7K$m9P!r5Y#2xZ",
+        "start": 74,
+        "end": 89
+      },
+      {
+        "label": "password",
+        "value": "b7K$m9P!r5Y#2xZ",
+        "start": 359,
+        "end": 374
+      },
+      {
+        "label": "http_cookie",
+        "value": "order_id=hj8k7l2m-4n5o-9pqr-3tuv-2wxyz15678; Path=/order; HttpOnly",
+        "start": 496,
+        "end": 562
+      }
+    ]
+  },
+  {
+    "text": "**Healthcare Biometric Enrollment Form**\n\n**Patient Information**\n\n- Patient First Name: Robin\n- Patient Last Name: Laskowski\n- Date of Birth: 1969-01-24\n- Phone Number: 838-482-4903\n- Email: robin.laskowski65@icloud.com\n- Biometric Identifier: M87654321904\n\n**Biometric Consent**\n\nI, Robin Laskowski, hereby consent to the collection and storage of my biometric data, specifically the biometric identifier M87654321904, for the purpose of healthcare identification and verification.\n\n**Enrollment Details**\n\n- Enrollment Date: 1969-01-24\n- Enrollment Time: 14:23:59\n\n**Healthcare Provider Information**\n\n- Provider Name:\n- Provider Contact Information:\n\n**Signatures**\n\n- Patient Signature:\n- Healthcare Provider Signature:\n\n- Date of Signature:\n\n- Time of Signature:",
+    "domain": "Healthcare",
+    "document_type": "biometric enrollment form",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Robin",
+        "start": 89,
+        "end": 94
+      },
+      {
+        "label": "last_name",
+        "value": "Laskowski",
+        "start": 116,
+        "end": 125
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1969-01-24",
+        "start": 143,
+        "end": 153
+      },
+      {
+        "label": "phone_number",
+        "value": "838-482-4903",
+        "start": 170,
+        "end": 182
+      },
+      {
+        "label": "email",
+        "value": "robin.laskowski65@icloud.com",
+        "start": 192,
+        "end": 220
+      },
+      {
+        "label": "biometric_identifier",
+        "value": "M87654321904",
+        "start": 245,
+        "end": 257
+      },
+      {
+        "label": "first_name",
+        "value": "Robin",
+        "start": 285,
+        "end": 290
+      },
+      {
+        "label": "last_name",
+        "value": "Laskowski",
+        "start": 291,
+        "end": 300
+      },
+      {
+        "label": "biometric_identifier",
+        "value": "M87654321904",
+        "start": 407,
+        "end": 419
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1969-01-24",
+        "start": 528,
+        "end": 538
+      },
+      {
+        "label": "time",
+        "value": "14:23:59",
+        "start": 558,
+        "end": 566
+      }
+    ]
+  },
+  {
+    "text": "**Healthcare Portal Temporary Password Notification**\n\n**Subject:** Your Temporary Password for Healthcare Portal Access\n\n**Dear PhilipsGhost_43,**\n\nWelcome to our healthcare portal. Your temporary password for accessing the portal is as follows:\n\n**Temporary Password:** **Rainbow@2025**\n\nTo log in for the first time:\n\n1. Go to our healthcare portal login page.\n2. Enter your username: **PhilipsGhost_43**\n3. Enter the temporary password provided above.\n4. After logging in, you will be prompted to change your password. Please follow the instructions to set a new, secure password.\n\n**Important Security Note:** For your security, please do not share your temporary password or any subsequent passwords with anyone. If you have any issues logging in, please contact our support team at philip.edwards@icloud.com.\n\n**Confidentiality and Security Disclaimer**\n\nThis communication and any attachments are confidential and may be privileged. If you are not the intended recipient, please notify the sender immediately and delete this message and any attachments from your system. Unauthorized use, disclosure, or distribution of this communication is prohibited.",
+    "domain": "Healthcare",
+    "document_type": "temporary password notification",
+    "pii": [
+      {
+        "label": "user_name",
+        "value": "PhilipsGhost_43",
+        "start": 129,
+        "end": 144
+      },
+      {
+        "label": "password",
+        "value": "Rainbow@2025",
+        "start": 274,
+        "end": 286
+      },
+      {
+        "label": "user_name",
+        "value": "PhilipsGhost_43",
+        "start": 390,
+        "end": 405
+      },
+      {
+        "label": "email",
+        "value": "philip.edwards@icloud.com",
+        "start": 789,
+        "end": 814
+      }
+    ]
+  },
+  {
+    "text": "**Subject:** Your Temporary Password for Healthcare Portal\n\n**Recipient's Name:** Ashley\n\n**Temporary Password:** Sarah1995\n\n**Expiration Date:** 2023-10-15T10:30:00\n\n**Message:**\nDear Ashley,\n\nYour temporary password for accessing our healthcare portal is Sarah1995. Please note that this password will expire at 2023-10-15T10:30:00. For security reasons, you are required to change your password upon your first login.\n\n**Contact Information:**\nIf you have any issues or need further assistance, please contact our support team at ashley.isel1962@icloud.com.\n\nThank you for your cooperation.\n\nBest regards,\n\nHealthcare Support Team",
+    "domain": "Healthcare",
+    "document_type": "temporary password notification",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Ashley",
+        "start": 82,
+        "end": 88
+      },
+      {
+        "label": "password",
+        "value": "Sarah1995",
+        "start": 114,
+        "end": 123
+      },
+      {
+        "label": "date_time",
+        "value": "2023-10-15T10:30:00",
+        "start": 146,
+        "end": 165
+      },
+      {
+        "label": "first_name",
+        "value": "Ashley",
+        "start": 185,
+        "end": 191
+      },
+      {
+        "label": "password",
+        "value": "Sarah1995",
+        "start": 257,
+        "end": 266
+      },
+      {
+        "label": "date_time",
+        "value": "2023-10-15T10:30:00",
+        "start": 314,
+        "end": 333
+      },
+      {
+        "label": "email",
+        "value": "ashley.isel1962@icloud.com",
+        "start": 533,
+        "end": 559
+      },
+      {
+        "label": "occupation",
+        "value": "Healthcare Support Team",
+        "start": 610,
+        "end": 633
+      }
+    ]
+  },
+  {
+    "text": "---\n\n**Healthcare Patient Consent Form**\n\n**Patient Information**\n\n| Field                | Value                       |\n|----------------------|-----------------------------|\n| First Name           | Chloe                      |\n| Last Name            | Gagnon                     |\n| Medical Record Number| BMC-21-8745                 |\n| Date of Birth        | 1943-12-24                  |\n| Gender               | female                     |\n| Email                | c.gagnon@vitamedhealth.com  |\n\n**Procedure Details**\n\n| Procedure Name | Risks | Benefits |\n|----------------|-------|----------|\n| [Procedure]    | [Risks] | [Benefits] |\n\n**Consent**\n\nI, Chloe Gagnon, born on 1943-12-24, hereby consent to the procedure outlined above. I understand the risks and benefits associated with the procedure.\n\n**Patient Signature**\n\n_________________________\nChloe Gagnon\n\n**Date of Consent**\n\n2024-08-15\n\n**Healthcare Provider Signature**\n\n_________________________\nHealthcare Provider\n\n**Date of Birth of Healthcare Provider**\n\n1944-09-15",
+    "domain": "Healthcare",
+    "document_type": "Patient Consent Form",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Chloe",
+        "start": 202,
+        "end": 207
+      },
+      {
+        "label": "last_name",
+        "value": "Gagnon",
+        "start": 256,
+        "end": 262
+      },
+      {
+        "label": "medical_record_number",
+        "value": "BMC-21-8745",
+        "start": 310,
+        "end": 321
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1943-12-24",
+        "start": 365,
+        "end": 375
+      },
+      {
+        "label": "gender",
+        "value": "female",
+        "start": 420,
+        "end": 426
+      },
+      {
+        "label": "email",
+        "value": "c.gagnon@vitamedhealth.com",
+        "start": 474,
+        "end": 500
+      },
+      {
+        "label": "first_name",
+        "value": "Chloe",
+        "start": 663,
+        "end": 668
+      },
+      {
+        "label": "last_name",
+        "value": "Gagnon",
+        "start": 669,
+        "end": 675
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1943-12-24",
+        "start": 685,
+        "end": 695
+      },
+      {
+        "label": "first_name",
+        "value": "Chloe",
+        "start": 862,
+        "end": 867
+      },
+      {
+        "label": "last_name",
+        "value": "Gagnon",
+        "start": 868,
+        "end": 874
+      },
+      {
+        "label": "date",
+        "value": "2024-08-15",
+        "start": 897,
+        "end": 907
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1944-09-15",
+        "start": 1033,
+        "end": 1043
+      }
+    ]
+  },
+  {
+    "text": "Vaccination Record\n\nYanira Perez, whose medical record number is 1987-32-4652 and date of birth is 1959-01-29, received her vaccination on 2024-06-01. The vaccination was administered at the healthcare provider's office, with the vaccine type and lot number recorded accordingly. The healthcare provider signed off on the record, confirming the administration.",
+    "domain": "Healthcare",
+    "document_type": "Vaccination Record",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Yanira",
+        "start": 20,
+        "end": 26
+      },
+      {
+        "label": "last_name",
+        "value": "Perez",
+        "start": 27,
+        "end": 32
+      },
+      {
+        "label": "medical_record_number",
+        "value": "1987-32-4652",
+        "start": 65,
+        "end": 77
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1959-01-29",
+        "start": 99,
+        "end": 109
+      },
+      {
+        "label": "date",
+        "value": "2024-06-01",
+        "start": 139,
+        "end": 149
+      }
+    ]
+  },
+  {
+    "text": "Dear Patient,\n\nYour new ATM card is ready for activation. Please follow the instructions below to activate your card.\n\nPatient Name: Elijah Hansen\n\nTo activate your card, please call the toll-free number on the back of your card and enter your PIN when prompted. Your PIN is 2076. This PIN is confidential and should not be shared with anyone.\n\nYour card is linked to your healthcare facility account and can be used to access funds at any ATM or for purchases at participating merchants. Please ensure that your blood type, A-, is up-to-date in your medical records for any emergency situations.\n\nIf you have any questions or need assistance, please contact our customer service team. Thank you for choosing our healthcare facility.\n\nSincerely,\n\nYour Healthcare Provider",
+    "domain": "Healthcare",
+    "document_type": "ATM card PIN mailer",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Elijah",
+        "start": 133,
+        "end": 139
+      },
+      {
+        "label": "last_name",
+        "value": "Hansen",
+        "start": 140,
+        "end": 146
+      },
+      {
+        "label": "pin",
+        "value": "2076",
+        "start": 275,
+        "end": 279
+      },
+      {
+        "label": "blood_type",
+        "value": "A-",
+        "start": 525,
+        "end": 527
+      }
+    ]
+  },
+  {
+    "text": "Dear Patient,\n\nThank you for choosing our healthcare services. Your new ATM card PIN is  *****31. For security purposes, please create a new PIN by visiting our website or contacting our support team.\n\nYour medical record number is 0009348756.\n\nIf you have any questions or need assistance, please do not hesitate to contact us at +7 815 234-5678 or email us at yelena.ivanov@medsolmed.ru.\n\nThank you for your cooperation.\n\nBest regards,\nYour Healthcare Provider",
+    "domain": "Healthcare",
+    "document_type": "ATM card PIN mailer",
+    "pii": [
+      {
+        "label": "medical_record_number",
+        "value": "0009348756",
+        "start": 232,
+        "end": 242
+      },
+      {
+        "label": "phone_number",
+        "value": "+7 815 234-5678",
+        "start": 331,
+        "end": 346
+      },
+      {
+        "label": "email",
+        "value": "yelena.ivanov@medsolmed.ru",
+        "start": 362,
+        "end": 388
+      }
+    ]
+  },
+  {
+    "text": "Hi Janette Martel,\n\nYour temporary password for accessing the healthcare platform is K9$fLmP3xT8z!. Please log in at https://myhealthportal.org/patient/temporary-password using the temporary password.  You may change your password upon first use.  Please note that the password expires at 18:35.  If you need assistance, please contact our support team.\n\nThank you,\nYour Healthcare Team",
+    "domain": "Healthcare",
+    "document_type": "temporary password notification",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Janette",
+        "start": 3,
+        "end": 10
+      },
+      {
+        "label": "last_name",
+        "value": "Martel",
+        "start": 11,
+        "end": 17
+      },
+      {
+        "label": "password",
+        "value": "K9$fLmP3xT8z!",
+        "start": 85,
+        "end": 98
+      },
+      {
+        "label": "url",
+        "value": "https://myhealthportal.org/patient/temporary-password",
+        "start": 117,
+        "end": 170
+      },
+      {
+        "label": "time",
+        "value": "18:35",
+        "start": 289,
+        "end": 294
+      }
+    ]
+  },
+  {
+    "text": "Please follow the discharge instructions carefully. Your medical record number is LAC-00098346. Ensure you take all prescribed medications as instructed. Your follow-up appointment is scheduled, so please call 0171 289 3737 to confirm the details. If you have any questions or concerns, you can reach out to your healthcare provider via email at s.chowdhury@dhakamed.bd. In case of an emergency, do not hesitate to contact your healthcare provider.",
+    "domain": "Healthcare",
+    "document_type": "Discharge Checklist",
+    "pii": [
+      {
+        "label": "medical_record_number",
+        "value": "LAC-00098346",
+        "start": 82,
+        "end": 94
+      },
+      {
+        "label": "phone_number",
+        "value": "0171 289 3737",
+        "start": 210,
+        "end": 223
+      },
+      {
+        "label": "email",
+        "value": "s.chowdhury@dhakamed.bd",
+        "start": 346,
+        "end": 369
+      }
+    ]
+  },
+  {
+    "text": "**Vaccination Record**\n\n| Field                     | Value                      |\n|---------------------------|----------------------------|\n| Patient Name              | Billy                      |\n| Medical Record Number     | 83729561                   |\n| Vaccine Type              | Influenza                  |\n| Administration Date       | 10/15/2023                 |\n| Dosage                    | 0.5 mL                    |\n| Lot Number                | A12B34C56                  |\n| Administering Healthcare Provider's Signature |  |\n\n| Vaccine Type              | Administration Date       | Dosage | Lot Number | Administering Healthcare Provider's Signature |\n|---------------------------|----------------------------|--------|------------|-------------------------------------------------|\n| MMR                      | 09/01/2023                 | 0.5 mL | D78E90F12  |  |",
+    "domain": "Healthcare",
+    "document_type": "Vaccination Record",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Billy",
+        "start": 172,
+        "end": 177
+      },
+      {
+        "label": "medical_record_number",
+        "value": "83729561",
+        "start": 231,
+        "end": 239
+      },
+      {
+        "label": "date",
+        "value": "10/15/2023",
+        "start": 349,
+        "end": 359
+      },
+      {
+        "label": "date",
+        "value": "09/01/2023",
+        "start": 837,
+        "end": 847
+      }
+    ]
+  },
+  {
+    "text": "**Subject: Temporary Password Notification**\n\nDear Leena,\n\nYour temporary password for accessing our healthcare portal has been generated. Please use the following credentials for your first login:\n\n- **Temporary Password**: Sarah1995\n- **Expiration Date**: 10/15/2028\n\nPlease change your password upon your first login. If you have any issues, please contact us at leena@alemrathealthcare.ae.\n\nThank you,\n\nHealthcare Support Team",
+    "domain": "Healthcare",
+    "document_type": "temporary password notification",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Leena",
+        "start": 51,
+        "end": 56
+      },
+      {
+        "label": "password",
+        "value": "Sarah1995",
+        "start": 225,
+        "end": 234
+      },
+      {
+        "label": "date",
+        "value": "10/15/2028",
+        "start": 258,
+        "end": 268
+      },
+      {
+        "label": "email",
+        "value": "leena@alemrathealthcare.ae",
+        "start": 366,
+        "end": 392
+      },
+      {
+        "label": "occupation",
+        "value": "Healthcare Support Team",
+        "start": 407,
+        "end": 430
+      }
+    ]
+  },
+  {
+    "text": "Dear Maurice Pereira,\n\nWe are pleased to inform you that your healthcare ATM card has been issued. Your account number is C98726513. To activate your card, please use the following PIN: 881471.\n\nYour card will be ready for use by 19:45 on the date 15/07/2024. You can access your account information and manage your card through your email maurice_pereira56@outlook.com.\n\nPlease keep this PIN confidential and do not share it with anyone. If you have any questions or need assistance, you can contact us using your biometric identifier M94852037165.\n\nThank you for choosing our healthcare services.\n\nSincerely,\n[Healthcare Provider Name]",
+    "domain": "Healthcare",
+    "document_type": "ATM card PIN mailer",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Maurice",
+        "start": 5,
+        "end": 12
+      },
+      {
+        "label": "last_name",
+        "value": "Pereira",
+        "start": 13,
+        "end": 20
+      },
+      {
+        "label": "account_number",
+        "value": "C98726513",
+        "start": 122,
+        "end": 131
+      },
+      {
+        "label": "pin",
+        "value": "881471",
+        "start": 186,
+        "end": 192
+      },
+      {
+        "label": "time",
+        "value": "19:45",
+        "start": 230,
+        "end": 235
+      },
+      {
+        "label": "date",
+        "value": "15/07/2024",
+        "start": 248,
+        "end": 258
+      },
+      {
+        "label": "email",
+        "value": "maurice_pereira56@outlook.com",
+        "start": 340,
+        "end": 369
+      },
+      {
+        "label": "biometric_identifier",
+        "value": "M94852037165",
+        "start": 536,
+        "end": 548
+      }
+    ]
+  },
+  {
+    "text": "**Discharge Checklist**\n\n**Patient Information**\n- Medical Record Number: 000592731\n- First Name: Lerato\n- Last Name: Mokoena\n- Phone Number: 043-789-1234\n- Email: lerato1987@afrimedhealth.co.za\n\n**Discharge Instructions**\n\nPlease ensure that you follow the instructions below for a smooth recovery.\n\n**Medications**\n\nList all medications prescribed at discharge:\n- [ ]\n\n**Follow-Up Appointments**\n\nSchedule your follow-up appointments with the healthcare provider.\n\n**Contact Details**\n\nIn case of any emergencies or questions, please contact your healthcare provider at:\n\n- Phone Number: 043-789-1234\n- Email: lerato1987@afrimedhealth.co.za\n\n**Additional Notes**\n\nAny additional notes or instructions from the healthcare provider will be listed below:\n\n- [ ]",
+    "domain": "Healthcare",
+    "document_type": "Discharge Checklist",
+    "pii": [
+      {
+        "label": "medical_record_number",
+        "value": "000592731",
+        "start": 74,
+        "end": 83
+      },
+      {
+        "label": "first_name",
+        "value": "Lerato",
+        "start": 98,
+        "end": 104
+      },
+      {
+        "label": "last_name",
+        "value": "Mokoena",
+        "start": 118,
+        "end": 125
+      },
+      {
+        "label": "phone_number",
+        "value": "043-789-1234",
+        "start": 142,
+        "end": 154
+      },
+      {
+        "label": "email",
+        "value": "lerato1987@afrimedhealth.co.za",
+        "start": 164,
+        "end": 194
+      },
+      {
+        "label": "phone_number",
+        "value": "043-789-1234",
+        "start": 590,
+        "end": 602
+      },
+      {
+        "label": "email",
+        "value": "lerato1987@afrimedhealth.co.za",
+        "start": 612,
+        "end": 642
+      }
+    ]
+  },
+  {
+    "text": "Hi Shiela,\n\nYour temporary password to access the secure healthcare portal is OceanWave#1995. Please use this password to log in at your earliest convenience. This password will expire on 2023-09-15.\n\nTo log in, please follow these steps:\n1. Go to the healthcare portal login page.\n2. Enter your email shielah@outlook.com.\n3. Enter the temporary password OceanWave#1995.\n4. Follow the prompts to set a new password.",
+    "domain": "Healthcare",
+    "document_type": "temporary password notification",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Shiela",
+        "start": 3,
+        "end": 9
+      },
+      {
+        "label": "password",
+        "value": "OceanWave#1995",
+        "start": 78,
+        "end": 92
+      },
+      {
+        "label": "date",
+        "value": "2023-09-15",
+        "start": 188,
+        "end": 198
+      },
+      {
+        "label": "email",
+        "value": "shielah@outlook.com",
+        "start": 302,
+        "end": 321
+      },
+      {
+        "label": "password",
+        "value": "OceanWave#1995",
+        "start": 355,
+        "end": 369
+      }
+    ]
+  },
+  {
+    "text": "### Understanding and Managing Your Medical Records\n\n#### Introduction\nManaging your medical records is crucial for ensuring continuity of care and accuracy in your healthcare treatment. This guide will walk you through the essentials of accessing, understanding, and maintaining your medical records.\n\n#### Accessing Your Medical Records\nYour medical records are a comprehensive collection of your health information, including diagnoses, treatments, and test results. To access your records, you can:\n\n- **Contact Your Healthcare Provider**: Reach out to your healthcare provider's office and request a copy of your medical records. Be sure to have your medical record number, B1273945, ready for verification.\n- **Online Portals**: Many healthcare providers offer online portals where you can access your records securely. If you have a password like Whispering!Pines34, you can log in to view your records at your convenience.\n- **Written Request**: Send a written request to your healthcare provider, including your medical record number, B1273945.\n\n#### Understanding Your Medical Records\nYour medical records contain detailed information about your health. Key sections include:\n\n- **Personal Information**: This includes your date of birth, sexuality, and other identifying details.\n- **Medical History**: A chronological record of your health issues, treatments, and hospitalizations.\n- **Diagnoses**: A list of conditions you have been diagnosed with.\n- **Treatments**: Details of medications, therapies, and procedures you have undergone.\n- **Test Results**: Results from laboratory tests, imaging studies, and other diagnostic procedures.\n\n#### Managing Your Medical Records\nEffective management of your medical records ensures that your healthcare providers have the most accurate and up-to-date information. Here are some tips:\n\n- **Regular Updates**: Ensure your records are updated regularly, especially after significant medical events or changes in your health status.\n- **Security**: Protect your medical records by keeping your medical record number, B1273945, and any passwords, such as Whispering!Pines34, confidential.\n- **Review**: Periodically review your records to ensure accuracy and completeness. If you notice any discrepancies, contact your healthcare provider immediately.\n\n#### Conclusion\nBy understanding and managing your medical records, you can play an active role in your healthcare. Keep your records organized and accessible, and always ensure that your information is accurate and up-to-date. If you have any questions or need assistance, do not hesitate to contact your healthcare provider.\n\n#### Visuals\nRefer to the diagrams and charts below for a visual representation of how to manage your medical records effectively. For example, a sample medical records access log might look like this:\n\n| Date       | Time    | Action                | Medical Record Number |\n|------------|---------|-----------------------|-----------------------|\n| 07/15/2026 | 7:30 AM | Accessed Records      | B1273945              |",
+    "domain": "Healthcare",
+    "document_type": "Patient Education Materials",
+    "pii": [
+      {
+        "label": "medical_record_number",
+        "value": "B1273945",
+        "start": 679,
+        "end": 687
+      },
+      {
+        "label": "password",
+        "value": "Whispering!Pines34",
+        "start": 854,
+        "end": 872
+      },
+      {
+        "label": "medical_record_number",
+        "value": "B1273945",
+        "start": 1044,
+        "end": 1052
+      },
+      {
+        "label": "medical_record_number",
+        "value": "B1273945",
+        "start": 2071,
+        "end": 2079
+      },
+      {
+        "label": "password",
+        "value": "Whispering!Pines34",
+        "start": 2108,
+        "end": 2126
+      },
+      {
+        "label": "date",
+        "value": "07/15/2026",
+        "start": 2985,
+        "end": 2995
+      },
+      {
+        "label": "time",
+        "value": "7:30 AM",
+        "start": 2998,
+        "end": 3005
+      },
+      {
+        "label": "medical_record_number",
+        "value": "B1273945",
+        "start": 3032,
+        "end": 3040
+      }
+    ]
+  },
+  {
+    "text": "**Vaccination Record**\n\n- **Patient Name**: Joanne\n- **Date of Birth**: 1971-08-14\n- **Medical Record Number**: CHI-1429385\n- **Vaccine Type**: Influenza\n- **Dose Number**: 1\n- **Administration Date**: 2023-10-01\n- **Lot Number**: FLU-23456\n- **Healthcare Provider's Signature**: _______________________\n\n- **Vaccine Type**: COVID-19\n- **Dose Number**: 2\n- **Administration Date**: 2023-11-15\n- **Lot Number**: COVID-12345\n- **Healthcare Provider's Signature**: _______________________",
+    "domain": "Healthcare",
+    "document_type": "Vaccination Record",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Joanne",
+        "start": 44,
+        "end": 50
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1971-08-14",
+        "start": 72,
+        "end": 82
+      },
+      {
+        "label": "medical_record_number",
+        "value": "CHI-1429385",
+        "start": 112,
+        "end": 123
+      },
+      {
+        "label": "date",
+        "value": "2023-10-01",
+        "start": 202,
+        "end": 212
+      },
+      {
+        "label": "date",
+        "value": "2023-11-15",
+        "start": 382,
+        "end": 392
+      }
+    ]
+  },
+  {
+    "text": "**Understanding Your Medical Records**\n\nWelcome to your guide on understanding your medical records. Your medical record number is MRN-475298, which is essential for accessing your health information. Madison Parker, you can use this number to communicate with your healthcare providers and ensure that your medical history is accurately documented.\n\nOn 07/15/2024, you will receive an email at madison87@medicushealthservices.com with important updates regarding your medical records. This email will include details about your recent appointments, test results, and any follow-up care instructions. It is important to keep your email address up-to-date to receive these crucial communications.\n\nYour date of birth, 1980-12-03, is a key piece of information used to verify your identity and ensure that your medical records are accurate. This date helps your healthcare providers track your health history and provide personalized care.\n\nIf you have any questions or concerns about your medical records, please do not hesitate to contact your healthcare provider. They are there to support you and ensure that you receive the best possible care.",
+    "domain": "Healthcare",
+    "document_type": "Patient Education Materials",
+    "pii": [
+      {
+        "label": "medical_record_number",
+        "value": "MRN-475298",
+        "start": 131,
+        "end": 141
+      },
+      {
+        "label": "first_name",
+        "value": "Madison",
+        "start": 201,
+        "end": 208
+      },
+      {
+        "label": "last_name",
+        "value": "Parker",
+        "start": 209,
+        "end": 215
+      },
+      {
+        "label": "occupation",
+        "value": "healthcare provider",
+        "start": 266,
+        "end": 285
+      },
+      {
+        "label": "date",
+        "value": "07/15/2024",
+        "start": 354,
+        "end": 364
+      },
+      {
+        "label": "email",
+        "value": "madison87@medicushealthservices.com",
+        "start": 395,
+        "end": 430
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1980-12-03",
+        "start": 717,
+        "end": 727
+      },
+      {
+        "label": "occupation",
+        "value": "healthcare provider",
+        "start": 860,
+        "end": 879
+      },
+      {
+        "label": "occupation",
+        "value": "healthcare provider",
+        "start": 1044,
+        "end": 1063
+      }
+    ]
+  },
+  {
+    "text": "Tina, whose medical record number is 2022-3475-128, has been prescribed medication on 15 March 2024. Please take the medication as directed by your healthcare provider.",
+    "domain": "Healthcare",
+    "document_type": "Prescription",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Tina",
+        "start": 0,
+        "end": 4
+      },
+      {
+        "label": "medical_record_number",
+        "value": "2022-3475-128",
+        "start": 37,
+        "end": 50
+      },
+      {
+        "label": "date",
+        "value": "15 March 2024",
+        "start": 86,
+        "end": 99
+      }
+    ]
+  },
+  {
+    "text": "Shirley has provided her biometric identifier, BIO-6745928310, for enrollment in the healthcare system. She has also given her consent for the use of this biometric identifier in her medical records. The healthcare plan beneficiary number is 1KL8-TF2-MA61.",
+    "domain": "Healthcare",
+    "document_type": "biometric enrollment form",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Shirley",
+        "start": 0,
+        "end": 7
+      },
+      {
+        "label": "biometric_identifier",
+        "value": "BIO-6745928310",
+        "start": 47,
+        "end": 61
+      },
+      {
+        "label": "health_plan_beneficiary_number",
+        "value": "1KL8-TF2-MA61",
+        "start": 242,
+        "end": 255
+      }
+    ]
+  },
+  {
+    "text": "Dear oksana.kovalenko@medisana.ua,\n\nYour temporary password for accessing the healthcare portal is K9$fLmP3xT8z!. Please use this password to log in with your user name oksana.kovalenko at https://myhealthportal.org/login. Oksana Kovalenko, we strongly recommend that you change your password upon your first login for security purposes.\n\nThank you for using our healthcare services.",
+    "domain": "Healthcare",
+    "document_type": "temporary password notification",
+    "pii": [
+      {
+        "label": "email",
+        "value": "oksana.kovalenko@medisana.ua",
+        "start": 5,
+        "end": 33
+      },
+      {
+        "label": "password",
+        "value": "K9$fLmP3xT8z!",
+        "start": 99,
+        "end": 112
+      },
+      {
+        "label": "user_name",
+        "value": "oksana.kovalenko",
+        "start": 169,
+        "end": 185
+      },
+      {
+        "label": "url",
+        "value": "https://myhealthportal.org/login",
+        "start": 189,
+        "end": 221
+      },
+      {
+        "label": "first_name",
+        "value": "Oksana",
+        "start": 223,
+        "end": 229
+      },
+      {
+        "label": "last_name",
+        "value": "Kovalenko",
+        "start": 230,
+        "end": 239
+      }
+    ]
+  },
+  {
+    "text": "Subject: Temporary Password Notification\n\nDear Harry,\n\nYour temporary password for accessing the healthcare portal is provided below. Please use this password to log in within the specified time frame.\n\n**Temporary Password:** n4P@y2R#t9zX7\n\n**Expiration Date and Time:** 2023-12-19T20:21:17\n\n**Instructions for Logging In:**\n1. Open your web browser and navigate to the healthcare portal using the following link: ftp://files.hospitalnetwork.com/patient_notifications/temp_password_alert.txt.\n2. Enter your email, harryhughes52@gmail.com, in the username field.\n3. Enter the temporary password provided above in the password field.\n4. Follow the prompts to change your password to a new, secure password.\n\nPlease ensure that you change your password immediately after logging in to maintain the security of your account. If you encounter any issues, please contact our support team for assistance.\n\nThank you for your attention to this matter.\n\nBest regards,\n\nHealthcare Portal Support Team",
+    "domain": "Healthcare",
+    "document_type": "temporary password notification",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Harry",
+        "start": 47,
+        "end": 52
+      },
+      {
+        "label": "password",
+        "value": "n4P@y2R#t9zX7",
+        "start": 227,
+        "end": 240
+      },
+      {
+        "label": "date_time",
+        "value": "2023-12-19T20:21:17",
+        "start": 272,
+        "end": 291
+      },
+      {
+        "label": "url",
+        "value": "ftp://files.hospitalnetwork.com/patient_notifications/temp_password_alert.txt",
+        "start": 415,
+        "end": 492
+      },
+      {
+        "label": "email",
+        "value": "harryhughes52@gmail.com",
+        "start": 515,
+        "end": 538
+      }
+    ]
+  },
+  {
+    "text": "**Discharge Checklist**\n\n**Patient Information**\n\n- Full Name: Jazmin\n- Medical Record Number: 000592731\n- Email: jazmin.vargas97@gmail.com\n- Phone Number: 563-644-2077\n\n**Health Plan Information**\n\n- Health Plan Beneficiary Number: BCBS-7654-3210-98\n\n**Medications**\n\n- [ ] Medication 1: ______________________________\n- [ ] Medication 2: ______________________________\n- [ ] Medication 3: ______________________________\n\n**Follow-Up Appointments**\n\n- [ ] Appointment 1: Date: ________________________ Time: ________________________\n- [ ] Appointment 2: Date: ________________________ Time: ________________________\n- [ ] Appointment 3: Date: ________________________ Time: ________________________\n\n**Discharge Instructions**\n\n- Please follow the instructions provided by your healthcare provider.\n- Contact your healthcare provider if you have any questions or concerns.\n\n**Contact Details**\n\n- Healthcare Provider: ______________________________\n- Phone Number: ______________________________\n- Email: ______________________________\n- Swift Bic: GHTYUS45ZXF",
+    "domain": "Healthcare",
+    "document_type": "Discharge Checklist",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Jazmin",
+        "start": 63,
+        "end": 69
+      },
+      {
+        "label": "medical_record_number",
+        "value": "000592731",
+        "start": 95,
+        "end": 104
+      },
+      {
+        "label": "email",
+        "value": "jazmin.vargas97@gmail.com",
+        "start": 114,
+        "end": 139
+      },
+      {
+        "label": "phone_number",
+        "value": "563-644-2077",
+        "start": 156,
+        "end": 168
+      },
+      {
+        "label": "health_plan_beneficiary_number",
+        "value": "BCBS-7654-3210-98",
+        "start": 233,
+        "end": 250
+      },
+      {
+        "label": "swift_bic",
+        "value": "GHTYUS45ZXF",
+        "start": 1050,
+        "end": 1061
+      }
+    ]
+  },
+  {
+    "text": "**Vaccination Record**\n\n| Patient Name | Date of Birth | Vaccination Date | Vaccine Type | Lot Number | Administration Site | Healthcare Provider Signature |\n|--------------|---------------|------------------|--------------|------------|----------------------|--------------------------------|\n| Ece Kaya     | 1960-10-19    | 11/15/2024       | Flu Vaccine  | A1B2C3     | Left Arm             |                                |",
+    "domain": "Healthcare",
+    "document_type": "Vaccination Record",
+    "pii": [
+      {
+        "label": "occupation",
+        "value": "Healthcare Provider",
+        "start": 126,
+        "end": 145
+      },
+      {
+        "label": "first_name",
+        "value": "Ece",
+        "start": 296,
+        "end": 299
+      },
+      {
+        "label": "last_name",
+        "value": "Kaya",
+        "start": 300,
+        "end": 304
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1960-10-19",
+        "start": 311,
+        "end": 321
+      },
+      {
+        "label": "date",
+        "value": "11/15/2024",
+        "start": 327,
+        "end": 337
+      }
+    ]
+  },
+  {
+    "text": "Subject: Your Temporary Password for the Healthcare Portal\n\nDear Mathis,\n\nYour temporary password for accessing the healthcare portal is R4s#9pZtY1mW. This password will expire on 2023-06-17T18:39:16. Please use the following credentials to log in:\n\n- **Username**: mathis.lefevre\n- **Temporary Password**: R4s#9pZtY1mW\n- **Email**: mathis.lefevre@clinique-saint-michel.fr\n\nTo log into the healthcare portal, visit https://myhealthportal.com. If you need to reset your password, please use the unique link provided in the email sent to mathis.lefevre@clinique-saint-michel.fr.\n\nPlease note that your session will be protected by the http cookie: user_session=hg7k2jxm9p; Path=/; HttpOnly; Secure; SameSite=Lax.\n\nThank you for your attention to this matter. If you have any questions or need further assistance, please do not hesitate to contact our support team.\n\nBest regards,\n\nHealthcare Portal Support Team",
+    "domain": "Healthcare",
+    "document_type": "temporary password notification",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Mathis",
+        "start": 65,
+        "end": 71
+      },
+      {
+        "label": "password",
+        "value": "R4s#9pZtY1mW",
+        "start": 137,
+        "end": 149
+      },
+      {
+        "label": "date_time",
+        "value": "2023-06-17T18:39:16",
+        "start": 180,
+        "end": 199
+      },
+      {
+        "label": "user_name",
+        "value": "mathis.lefevre",
+        "start": 266,
+        "end": 280
+      },
+      {
+        "label": "password",
+        "value": "R4s#9pZtY1mW",
+        "start": 307,
+        "end": 319
+      },
+      {
+        "label": "email",
+        "value": "mathis.lefevre@clinique-saint-michel.fr",
+        "start": 333,
+        "end": 372
+      },
+      {
+        "label": "url",
+        "value": "https://myhealthportal.com",
+        "start": 415,
+        "end": 441
+      },
+      {
+        "label": "email",
+        "value": "mathis.lefevre@clinique-saint-michel.fr",
+        "start": 536,
+        "end": 575
+      },
+      {
+        "label": "http_cookie",
+        "value": "user_session=hg7k2jxm9p; Path=/; HttpOnly; Secure; SameSite=Lax",
+        "start": 646,
+        "end": 709
+      }
+    ]
+  },
+  {
+    "text": "**Vaccination Record**\n\n| Field | Value |\n|-------|-------|\n| Patient Name | Rania |\n| Medical Record Number | M-24-001627 |\n| Date of Birth | 1968-06-04 |\n| Vaccine Type | Influenza |\n| Dose Number | 1 |\n| Administration Date | 2023-10-05 |\n| Lot Number | A1B2C3D4 |\n| Administering Healthcare Provider's Signature |  |\n\n| Field | Value |\n|-------|-------|\n| Vaccine Type | COVID-19 (Pfizer-BioNTech) |\n| Dose Number | 2 |\n| Administration Date | 2023-11-15 |\n| Lot Number | E5F6G7H8 |\n| Administering Healthcare Provider's Signature |  |",
+    "domain": "Healthcare",
+    "document_type": "Vaccination Record",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Rania",
+        "start": 77,
+        "end": 82
+      },
+      {
+        "label": "medical_record_number",
+        "value": "M-24-001627",
+        "start": 111,
+        "end": 122
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1968-06-04",
+        "start": 143,
+        "end": 153
+      },
+      {
+        "label": "date",
+        "value": "2023-10-05",
+        "start": 229,
+        "end": 239
+      },
+      {
+        "label": "date",
+        "value": "2023-11-15",
+        "start": 448,
+        "end": 458
+      }
+    ]
+  },
+  {
+    "text": "Hi Connor,\n\nYour temporary password for accessing the healthcare portal is: H4$mP@ssw0rd. This password was generated on 2023-10-21T07:50:02.\n\nTo log in, please use your email address: connorroewe58@gmail.com, and the temporary password provided above. Once logged in, you will be prompted to change your password to a more secure one.\n\nPlease click on the following link to access the healthcare portal: https://account.healthnet.com/password-reset\n\nIf you have any issues or need further assistance, please contact our support team.",
+    "domain": "Healthcare",
+    "document_type": "temporary password notification",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Connor",
+        "start": 3,
+        "end": 9
+      },
+      {
+        "label": "password",
+        "value": "H4$mP@ssw0rd",
+        "start": 76,
+        "end": 88
+      },
+      {
+        "label": "date_time",
+        "value": "2023-10-21T07:50:02",
+        "start": 121,
+        "end": 140
+      },
+      {
+        "label": "email",
+        "value": "connorroewe58@gmail.com",
+        "start": 185,
+        "end": 208
+      },
+      {
+        "label": "url",
+        "value": "https://account.healthnet.com/password-reset",
+        "start": 405,
+        "end": 449
+      }
+    ]
+  },
+  {
+    "text": "### Understanding Your Healthcare Benefits\n\nCarmen, as a childcare worker with a high school education, it's important to understand your healthcare benefits. Your health plan beneficiary number is B72-TR4-MK91. This number is crucial for accessing your benefits and medical services. Keep it handy, as you may need it when visiting healthcare providers or dealing with insurance matters.\n\nIf you need to access your medical records, you can use your medical record number, which is 000742986. This number ensures that your medical information is accurate and up-to-date. It is essential for tracking your health history and ensuring continuity of care.",
+    "domain": "Healthcare",
+    "document_type": "Patient Education Materials",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Carmen",
+        "start": 44,
+        "end": 50
+      },
+      {
+        "label": "occupation",
+        "value": "childcare worker",
+        "start": 57,
+        "end": 73
+      },
+      {
+        "label": "education_level",
+        "value": "high school",
+        "start": 81,
+        "end": 92
+      },
+      {
+        "label": "health_plan_beneficiary_number",
+        "value": "B72-TR4-MK91",
+        "start": 198,
+        "end": 210
+      },
+      {
+        "label": "medical_record_number",
+        "value": "000742986",
+        "start": 483,
+        "end": 492
+      }
+    ]
+  },
+  {
+    "text": "**IMPORTANT INFORMATION**\n\nDear Susan Lyles,\n\nYour new healthcare ATM card is ready for activation. Please find your card details below:\n\n- **Card Number**: 4920 3718 4921 9743\n- **PIN**: 369821\n- **CVV**: 898\n- **Medical Record Number**: 0009738123\n\nTo activate your card, please follow these steps:\n\n1. Visit any ATM machine.\n2. Insert your card and enter your PIN 369821 when prompted.\n3. Follow the on-screen instructions to complete the activation process.\n\n**Security Measures:**\n\n- Keep your PIN 369821 confidential and do not share it with anyone.\n- Do not write your PIN 369821 on your card.\n- Memorize your PIN 369821 and destroy any written records of it.\n- Report any suspicious activity or loss of your card immediately to your healthcare provider.\n\nIf you have any questions or need further assistance, please contact your healthcare provider using your medical record number 0009738123.\n\nThank you for choosing our healthcare services.",
+    "domain": "Healthcare",
+    "document_type": "ATM card PIN mailer",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Susan",
+        "start": 32,
+        "end": 37
+      },
+      {
+        "label": "last_name",
+        "value": "Lyles",
+        "start": 38,
+        "end": 43
+      },
+      {
+        "label": "credit_debit_card",
+        "value": "4920 3718 4921 9743",
+        "start": 157,
+        "end": 176
+      },
+      {
+        "label": "pin",
+        "value": "369821",
+        "start": 188,
+        "end": 194
+      },
+      {
+        "label": "cvv",
+        "value": "898",
+        "start": 206,
+        "end": 209
+      },
+      {
+        "label": "medical_record_number",
+        "value": "0009738123",
+        "start": 239,
+        "end": 249
+      },
+      {
+        "label": "pin",
+        "value": "369821",
+        "start": 367,
+        "end": 373
+      },
+      {
+        "label": "pin",
+        "value": "369821",
+        "start": 503,
+        "end": 509
+      },
+      {
+        "label": "pin",
+        "value": "369821",
+        "start": 580,
+        "end": 586
+      },
+      {
+        "label": "pin",
+        "value": "369821",
+        "start": 621,
+        "end": 627
+      },
+      {
+        "label": "medical_record_number",
+        "value": "0009738123",
+        "start": 890,
+        "end": 900
+      }
+    ]
+  },
+  {
+    "text": "Lab Specimen Label\n\nPatient Name: Noura\nDate of Birth: 1966-03-08\nUnique Identifier: e65f02b8972164e9d63f479c3b579c0f7d1e09c8a9c5c96a9d9f9a16d71b0f3c\nSpecimen Type: Blood\nCollection Date and Time: 08/15/2023 09:30 AM\nHealthcare Provider: Dr. Ali\nBiometric Identifier: C98347526123",
+    "domain": "Healthcare",
+    "document_type": "lab specimen label",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Noura",
+        "start": 34,
+        "end": 39
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1966-03-08",
+        "start": 55,
+        "end": 65
+      },
+      {
+        "label": "unique_id",
+        "value": "e65f02b8972164e9d63f479c3b579c0f7d1e09c8a9c5c96a9d9f9a16d71b0f3c",
+        "start": 85,
+        "end": 149
+      },
+      {
+        "label": "occupation",
+        "value": "Healthcare Provider",
+        "start": 217,
+        "end": 236
+      },
+      {
+        "label": "first_name",
+        "value": "Ali",
+        "start": 242,
+        "end": 245
+      },
+      {
+        "label": "biometric_identifier",
+        "value": "C98347526123",
+        "start": 268,
+        "end": 280
+      }
+    ]
+  },
+  {
+    "text": "**Subject:** Your Temporary Password for Healthcare Portal\n\n**Greeting:**\n\nHola,\n\nThank you for registering with our healthcare portal. Here are your temporary login details:\n\n**Temporary Password:**\n**River2023$**\n\n**Instructions for Logging In:**\n1. Visit our healthcare portal login page.\n2. Enter your email address: diana.hinojosa3@yahoo.com\n3. Enter the temporary password: River2023$\n4. Click on \"Login.\"\n\n**Changing Your Password:**\n- After logging in, you will be prompted to change your password. Please follow the instructions to set a new password.\n\n**Expiration Date:**\nYour temporary password will expire at 2025-11-16T22:09:25. Please ensure you change your password before this date and time.\n\n**Support:**\nIf you encounter any issues or need assistance, please contact our customer service representative who speaks Spanish.",
+    "domain": "Healthcare",
+    "document_type": "temporary password notification",
+    "pii": [
+      {
+        "label": "password",
+        "value": "River2023$",
+        "start": 202,
+        "end": 212
+      },
+      {
+        "label": "email",
+        "value": "diana.hinojosa3@yahoo.com",
+        "start": 321,
+        "end": 346
+      },
+      {
+        "label": "password",
+        "value": "River2023$",
+        "start": 380,
+        "end": 390
+      },
+      {
+        "label": "date_time",
+        "value": "2025-11-16T22:09:25",
+        "start": 622,
+        "end": 641
+      },
+      {
+        "label": "occupation",
+        "value": "customer service representative",
+        "start": 790,
+        "end": 821
+      },
+      {
+        "label": "language",
+        "value": "Spanish",
+        "start": 833,
+        "end": 840
+      }
+    ]
+  },
+  {
+    "text": "**Lifeline Healthcare ATM Card Activation Notice**\n\nDear **Amina Okoro**,\n\nYour new Lifeline Healthcare ATM card is ready for activation. Please find your Personal Identification Number (PIN) below:\n\n**PIN**: 736891\n\n**Expiration Date**: 12/31/2025\n\n**Security Message**: For your security, do not share your PIN with anyone. Memorize it and destroy this mailer.\n\n**Instructions for First-Time Use**:\n1. Insert your ATM card into any Lifeline Healthcare ATM.\n2. Enter your PIN when prompted.\n3. Follow the on-screen instructions to complete the activation process.\n\n**Contact Information for Support**:\nIf you have any issues or need assistance, please contact us at **amina.okoro@lifelinehealthcare.com.ng**.",
+    "domain": "Healthcare",
+    "document_type": "ATM card PIN mailer",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Amina",
+        "start": 59,
+        "end": 64
+      },
+      {
+        "label": "last_name",
+        "value": "Okoro",
+        "start": 65,
+        "end": 70
+      },
+      {
+        "label": "pin",
+        "value": "736891",
+        "start": 209,
+        "end": 215
+      },
+      {
+        "label": "date",
+        "value": "12/31/2025",
+        "start": 238,
+        "end": 248
+      },
+      {
+        "label": "email",
+        "value": "amina.okoro@lifelinehealthcare.com.ng",
+        "start": 669,
+        "end": 706
+      }
+    ]
+  },
+  {
+    "text": "---\n\n**Secure Healthcare ATM Card PIN Mailer**\n\n**Recipient:**\nRoxann Soelter\n\n**Health Plan Beneficiary Number:**\n1A2-9J3-4K15\n\n**Medical Record Number:**\nBID-00083729\n\n**Card Number:**\n4532-9062-4815-7623\n\n**PIN:**\n906248\n\n**Expiration Date:**\n12/31/2025\n\n**Security Instructions:**\n\n1. Keep your PIN secure and do not share it with anyone.\n2. Memorize your PIN and destroy this mailer immediately after use.\n3. If you suspect any unauthorized use of your card, contact us immediately.\n\n**Contact Information:**\n\nFor any issues or questions regarding your healthcare ATM card, please contact our customer service at:\n\nHealthcare Customer Service\n\n**Note:**\nThis mailer is for the exclusive use of Roxann Soelter, the beneficiary. If you are not Roxann Soelter, please discard this mailer securely.",
+    "domain": "Healthcare",
+    "document_type": "ATM card PIN mailer",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Roxann",
+        "start": 63,
+        "end": 69
+      },
+      {
+        "label": "last_name",
+        "value": "Soelter",
+        "start": 70,
+        "end": 77
+      },
+      {
+        "label": "health_plan_beneficiary_number",
+        "value": "1A2-9J3-4K15",
+        "start": 115,
+        "end": 127
+      },
+      {
+        "label": "medical_record_number",
+        "value": "BID-00083729",
+        "start": 156,
+        "end": 168
+      },
+      {
+        "label": "pin",
+        "value": "906248",
+        "start": 217,
+        "end": 223
+      },
+      {
+        "label": "date",
+        "value": "12/31/2025",
+        "start": 246,
+        "end": 256
+      },
+      {
+        "label": "first_name",
+        "value": "Roxann",
+        "start": 699,
+        "end": 705
+      },
+      {
+        "label": "last_name",
+        "value": "Soelter",
+        "start": 706,
+        "end": 713
+      },
+      {
+        "label": "first_name",
+        "value": "Roxann",
+        "start": 747,
+        "end": 753
+      },
+      {
+        "label": "last_name",
+        "value": "Soelter",
+        "start": 754,
+        "end": 761
+      }
+    ]
+  },
+  {
+    "text": "**Temporary Password Notification**\n\n**Recipient Name:** Gerald Nolan\n\n**Temporary Password:** 1q2w3e4r5t6y7u\n\n**Expiration Time:** 24 hours from 2025-09-07T21:37:50\n\n**Instructions:**\nYour temporary password for accessing the healthcare portal has been set to 1q2w3e4r5t6y7u. This password will expire 24 hours from 2025-09-07T21:37:50. Please use this temporary password to log in to the healthcare portal at your earliest convenience and reset your password to ensure the security of your account. Your email address for this account is nolang93@yahoo.com.",
+    "domain": "Healthcare",
+    "document_type": "temporary password notification",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Gerald",
+        "start": 57,
+        "end": 63
+      },
+      {
+        "label": "last_name",
+        "value": "Nolan",
+        "start": 64,
+        "end": 69
+      },
+      {
+        "label": "password",
+        "value": "1q2w3e4r5t6y7u",
+        "start": 95,
+        "end": 109
+      },
+      {
+        "label": "date_time",
+        "value": "2025-09-07T21:37:50",
+        "start": 146,
+        "end": 165
+      },
+      {
+        "label": "password",
+        "value": "1q2w3e4r5t6y7u",
+        "start": 261,
+        "end": 275
+      },
+      {
+        "label": "date_time",
+        "value": "2025-09-07T21:37:50",
+        "start": 317,
+        "end": 336
+      },
+      {
+        "label": "email",
+        "value": "nolang93@yahoo.com",
+        "start": 540,
+        "end": 558
+      }
+    ]
+  },
+  {
+    "text": "Dear Yamile Perez,\n\nThank you for choosing our healthcare services. Your new ATM card is now ready for use. Please find your card number below:\n\nCard Number: 1234567890123456\n\nTo activate your card, please use the following PIN:\n\nPIN: 472381\n\nFor security purposes, please keep your PIN confidential and do not share it with anyone. If you have any questions or need assistance, please contact our customer service.\n\nThank you for your trust in our services.\n\nSincerely,\n\nYour Healthcare Provider",
+    "domain": "Healthcare",
+    "document_type": "ATM card PIN mailer",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Yamile",
+        "start": 5,
+        "end": 11
+      },
+      {
+        "label": "last_name",
+        "value": "Perez",
+        "start": 12,
+        "end": 17
+      },
+      {
+        "label": "pin",
+        "value": "472381",
+        "start": 235,
+        "end": 241
+      }
+    ]
+  },
+  {
+    "text": "**Understanding Your Medical Record**\n\nWelcome to your patient education guide. Your medical record, identified by CHI-00158937, is a comprehensive document that outlines your health history, treatments, and other relevant information. This document is crucial for ensuring continuity of care and accurate diagnosis. Your health plan beneficiary number, AET-7895-3210-64, is also included in your medical record for billing and insurance purposes.\n\n**Symptoms and Diagnosis**\n\nWhen you visit your healthcare provider, they will record your symptoms and perform a diagnosis. For example, if you experience chest pain at 19:30:45+01:00, this will be noted in your record. Your biometric identifier, BIO-6743829150, will be used to ensure the accuracy of your diagnosis and treatment.\n\n**Treatment Options**\n\nTreatment options will be outlined in your medical record, including medications, therapies, and follow-up appointments. If you reside in Washoe County, your healthcare provider will ensure that local resources and specialists are considered in your treatment plan.\n\n**Prevention Tips**\n\nPreventive care is essential for maintaining good health. Regular check-ups, screenings, and vaccinations are key components of preventive care. Your medical record will include information about your preventive care visits and any recommendations from your healthcare provider.\n\n**References**\n\nFor further information, refer to your medical record and consult with your healthcare provider. If you have any questions or concerns about your medical record or treatment plan, do not hesitate to reach out to your healthcare team.",
+    "domain": "Healthcare",
+    "document_type": "Patient Education Materials",
+    "pii": [
+      {
+        "label": "medical_record_number",
+        "value": "CHI-00158937",
+        "start": 115,
+        "end": 127
+      },
+      {
+        "label": "health_plan_beneficiary_number",
+        "value": "AET-7895-3210-64",
+        "start": 354,
+        "end": 370
+      },
+      {
+        "label": "time",
+        "value": "19:30:45+01:00",
+        "start": 619,
+        "end": 633
+      },
+      {
+        "label": "biometric_identifier",
+        "value": "BIO-6743829150",
+        "start": 697,
+        "end": 711
+      },
+      {
+        "label": "county",
+        "value": "Washoe County",
+        "start": 944,
+        "end": 957
+      }
+    ]
+  },
+  {
+    "text": "**Viva Health Solutions Patient Consent Form**\n\n**Patient Information**\n\n**First Name:** Vikas\n\n**Date of Birth:** 1954-05-15\n\n**Email:** v.patil@vivahealthsolutions.in\n\n**Health Plan Beneficiary Number:** WA-0003294667\n\n**Procedure/ Treatment Information**\n\n**Procedure/Treatment Details:**\n[Description of the procedure or treatment will be provided here.]\n\n**Risks and Benefits:**\n[Detailed explanation of the risks and benefits associated with the procedure or treatment will be provided here.]\n\n**Consent:**\n\nI, Vikas, born on 1954-05-15, hereby acknowledge that I have read and understood the information provided regarding the proposed procedure or treatment, including the risks and benefits. I consent to the procedure or treatment and understand that I have the right to withdraw my consent at any time.\n\n**Patient Signature:**\n\n__________________________    __________\nPatient's Full Name (Print)   Date\n\n**Healthcare Provider Information**\n\n**Healthcare Provider Signature:**\n\n__________________________    __________\nHealthcare Provider's Name (Print)   Date\n\n**Contact Information for Questions:**\n\nFor any questions or concerns, please contact us at v.patil@vivahealthsolutions.in",
+    "domain": "Healthcare",
+    "document_type": "Patient Consent Form",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Vikas",
+        "start": 89,
+        "end": 94
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1954-05-15",
+        "start": 115,
+        "end": 125
+      },
+      {
+        "label": "email",
+        "value": "v.patil@vivahealthsolutions.in",
+        "start": 138,
+        "end": 168
+      },
+      {
+        "label": "health_plan_beneficiary_number",
+        "value": "WA-0003294667",
+        "start": 206,
+        "end": 219
+      },
+      {
+        "label": "first_name",
+        "value": "Vikas",
+        "start": 517,
+        "end": 522
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1954-05-15",
+        "start": 532,
+        "end": 542
+      },
+      {
+        "label": "email",
+        "value": "v.patil@vivahealthsolutions.in",
+        "start": 1165,
+        "end": 1195
+      }
+    ]
+  },
+  {
+    "text": "The immunization schedule for Jeffrey Mcbride, medical record number 0004372598, is as follows. Please note that this schedule is subject to change based on healthcare provider recommendations. On 15-11-2026, Jeffrey will receive the following vaccinations: MMR, Varicella, and Hepatitis A. Booster shots for Tdap and Meningococcal will be administered on 15-11-2026 as well. The healthcare provider has noted that Jeffrey's password Sarah1995 has been updated in the system for access to his immunization records.",
+    "domain": "Healthcare",
+    "document_type": "Immunization Schedule",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Jeffrey",
+        "start": 30,
+        "end": 37
+      },
+      {
+        "label": "last_name",
+        "value": "Mcbride",
+        "start": 38,
+        "end": 45
+      },
+      {
+        "label": "medical_record_number",
+        "value": "0004372598",
+        "start": 69,
+        "end": 79
+      },
+      {
+        "label": "date",
+        "value": "15-11-2026",
+        "start": 197,
+        "end": 207
+      },
+      {
+        "label": "first_name",
+        "value": "Jeffrey",
+        "start": 209,
+        "end": 216
+      },
+      {
+        "label": "date",
+        "value": "15-11-2026",
+        "start": 356,
+        "end": 366
+      },
+      {
+        "label": "first_name",
+        "value": "Jeffrey",
+        "start": 415,
+        "end": 422
+      },
+      {
+        "label": "password",
+        "value": "Sarah1995",
+        "start": 434,
+        "end": 443
+      }
+    ]
+  },
+  {
+    "text": "**Subject:** Your Temporary Password for MyHealthPortal\n\n**Dear** Earl,\n\n**Your temporary password** is: R4s#9pZtY1mW. This password will expire on 2023-06-17T18:39:16. Please use it to log into the healthcare portal at https://myhealthportal.com using your username: Earl.Dehbozorgi.\n\n**Instructions:**\n1. Visit the healthcare portal at https://myhealthportal.com.\n2. Enter your username: Earl.Dehbozorgi.\n3. Enter your temporary password: R4s#9pZtY1mW.\n4. Follow the prompts to set a new password.\n\n**Important Note:**\n- Your temporary password is valid until 2023-06-17T18:39:16.\n- For security reasons, please change your password immediately after logging in.\n- If you encounter any issues, please use the unique link provided in this email to reset your password.\n\nThank you for using our healthcare portal.\n\nBest regards,\n\nThe MyHealthPortal Team",
+    "domain": "Healthcare",
+    "document_type": "temporary password notification",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Earl",
+        "start": 66,
+        "end": 70
+      },
+      {
+        "label": "password",
+        "value": "R4s#9pZtY1mW",
+        "start": 105,
+        "end": 117
+      },
+      {
+        "label": "date_time",
+        "value": "2023-06-17T18:39:16",
+        "start": 148,
+        "end": 167
+      },
+      {
+        "label": "url",
+        "value": "https://myhealthportal.com",
+        "start": 220,
+        "end": 246
+      },
+      {
+        "label": "user_name",
+        "value": "Earl.Dehbozorgi",
+        "start": 268,
+        "end": 283
+      },
+      {
+        "label": "url",
+        "value": "https://myhealthportal.com",
+        "start": 338,
+        "end": 364
+      },
+      {
+        "label": "user_name",
+        "value": "Earl.Dehbozorgi",
+        "start": 390,
+        "end": 405
+      },
+      {
+        "label": "password",
+        "value": "R4s#9pZtY1mW",
+        "start": 441,
+        "end": 453
+      },
+      {
+        "label": "date_time",
+        "value": "2023-06-17T18:39:16",
+        "start": 562,
+        "end": 581
+      }
+    ]
+  },
+  {
+    "text": "Dear Nadia Mendiola,\n\nYour temporary password for accessing the secure healthcare portal has been generated. Here are the details:\n\n- Username: nadia.mendiola99\n- Temporary Password: River34$\n\nTo log in, use your username and the temporary password provided above. Once logged in, you can reset your password by visiting the following link:\n\nurl: https://myhealthportal.com/account/resetpassword\n\nPlease ensure that you change your password upon your first login to maintain the security of your account.\n\nThank you for your attention to this matter.\n\nBest regards,\n\nThe Healthcare Portal Team",
+    "domain": "Healthcare",
+    "document_type": "temporary password notification",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Nadia",
+        "start": 5,
+        "end": 10
+      },
+      {
+        "label": "last_name",
+        "value": "Mendiola",
+        "start": 11,
+        "end": 19
+      },
+      {
+        "label": "user_name",
+        "value": "nadia.mendiola99",
+        "start": 144,
+        "end": 160
+      },
+      {
+        "label": "password",
+        "value": "River34$",
+        "start": 183,
+        "end": 191
+      },
+      {
+        "label": "url",
+        "value": "https://myhealthportal.com/account/resetpassword",
+        "start": 347,
+        "end": 395
+      }
+    ]
+  },
+  {
+    "text": "Vaccination Record\n\nOmar, born on 1961-06-11, received his latest vaccination on 03/15/2023. The vaccine type was Pfizer-BioNTech, with the lot number 123456. The administering healthcare provider's signature is on file.",
+    "domain": "Healthcare",
+    "document_type": "Vaccination Record",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Omar",
+        "start": 20,
+        "end": 24
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1961-06-11",
+        "start": 34,
+        "end": 44
+      },
+      {
+        "label": "date",
+        "value": "03/15/2023",
+        "start": 81,
+        "end": 91
+      }
+    ]
+  },
+  {
+    "text": "Hi Nikita Ivanov,\n\nYou have been issued a temporary password for accessing the Medtechnova healthcare portal. Please use the following credentials to log in:\n\nUsername: nikita1995\nTemporary Password: qwertyuiop123456qwertyuiop\n\nTo log in, go to the Medtechnova healthcare portal and enter your username and temporary password. Please note that this is a temporary password and will expire after the first login. You will be prompted to create a new password upon your first login.\n\nIf you have any issues or need further assistance, please contact support at nikita.ivanov@medtechnova.ru.\n\nThank you,\nMedtechnova Support Team",
+    "domain": "Healthcare",
+    "document_type": "temporary password notification",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Nikita",
+        "start": 3,
+        "end": 9
+      },
+      {
+        "label": "last_name",
+        "value": "Ivanov",
+        "start": 10,
+        "end": 16
+      },
+      {
+        "label": "user_name",
+        "value": "nikita1995",
+        "start": 169,
+        "end": 179
+      },
+      {
+        "label": "password",
+        "value": "qwertyuiop123456qwertyuiop",
+        "start": 200,
+        "end": 226
+      },
+      {
+        "label": "email",
+        "value": "nikita.ivanov@medtechnova.ru",
+        "start": 559,
+        "end": 587
+      },
+      {
+        "label": "occupation",
+        "value": "Support Team",
+        "start": 613,
+        "end": 625
+      }
+    ]
+  },
+  {
+    "text": "Dear Clara Negron,\n\nThank you for choosing our healthcare services. Your new ATM card is ready for use. Your card number is 1234567890123456 and your unique PIN is 472381. For security purposes, please keep your PIN confidential and do not share it with anyone. Your PIN is printed on the tear-off portion of this letter. Please detach it carefully and store it securely.\n\nIf you have any questions or need assistance, please contact our customer support team.\n\nBest regards,\n\nHealthcare Services Team",
+    "domain": "Healthcare",
+    "document_type": "ATM card PIN mailer",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Clara",
+        "start": 5,
+        "end": 10
+      },
+      {
+        "label": "last_name",
+        "value": "Negron",
+        "start": 11,
+        "end": 17
+      },
+      {
+        "label": "pin",
+        "value": "472381",
+        "start": 164,
+        "end": 170
+      }
+    ]
+  },
+  {
+    "text": "Dear Betty Hamilton,\n\nYour healthcare ATM card is now ready for activation. Your medical record number is 000729461. To activate your card, please follow these instructions:\n\n1. Insert your card into any ATM machine in Wake County.\n2. Enter your PIN, which is 147357.\n3. Follow the on-screen prompts to complete the activation process.\n\nYour health plan beneficiary number is AET-7892-1234-65 and your account number is 1538-75921438. Please keep these details secure and do not share them with anyone.\n\nFor security reasons, please ensure that you change your PIN at the next available opportunity.\n\nThank you for choosing our healthcare services. If you have any questions or need further assistance, please contact our customer support.\n\nBest regards,\n\nHealthcare Services Team",
+    "domain": "Healthcare",
+    "document_type": "ATM card PIN mailer",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Betty",
+        "start": 5,
+        "end": 10
+      },
+      {
+        "label": "last_name",
+        "value": "Hamilton",
+        "start": 11,
+        "end": 19
+      },
+      {
+        "label": "medical_record_number",
+        "value": "000729461",
+        "start": 106,
+        "end": 115
+      },
+      {
+        "label": "county",
+        "value": "Wake County",
+        "start": 219,
+        "end": 230
+      },
+      {
+        "label": "pin",
+        "value": "147357",
+        "start": 260,
+        "end": 266
+      },
+      {
+        "label": "health_plan_beneficiary_number",
+        "value": "AET-7892-1234-65",
+        "start": 376,
+        "end": 392
+      },
+      {
+        "label": "account_number",
+        "value": "1538-75921438",
+        "start": 420,
+        "end": 433
+      }
+    ]
+  },
+  {
+    "text": "**Biometric Enrollment Form**\n\nPatient Name: Hina\n\nDate of Birth: 1993-11-18\n\nBiometric Identifier: C79283145608\n\nRace/Ethnicity: Pashtun\n\nFax Number: +92 91 548-3721\n\nBiometric Data Collection Consent:\n\nI, Hina, hereby consent to the collection of my biometric data, including fingerprint and iris scans, for the purpose of identification and verification in healthcare services. I understand that my biometric identifier is C79283145608.\n\nPhotograph Upload:\n\nPlease upload a recent photograph of Hina.\n\nSignature:\n\nPatient Signature: __________________________________\n\nHealthcare Provider Signature: __________________________________",
+    "domain": "Healthcare",
+    "document_type": "biometric enrollment form",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Hina",
+        "start": 45,
+        "end": 49
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1993-11-18",
+        "start": 66,
+        "end": 76
+      },
+      {
+        "label": "biometric_identifier",
+        "value": "C79283145608",
+        "start": 100,
+        "end": 112
+      },
+      {
+        "label": "race_ethnicity",
+        "value": "Pashtun",
+        "start": 130,
+        "end": 137
+      },
+      {
+        "label": "fax_number",
+        "value": "+92 91 548-3721",
+        "start": 151,
+        "end": 166
+      },
+      {
+        "label": "first_name",
+        "value": "Hina",
+        "start": 207,
+        "end": 211
+      },
+      {
+        "label": "biometric_identifier",
+        "value": "C79283145608",
+        "start": 426,
+        "end": 438
+      },
+      {
+        "label": "first_name",
+        "value": "Hina",
+        "start": 498,
+        "end": 502
+      },
+      {
+        "label": "occupation",
+        "value": "Healthcare Provider",
+        "start": 572,
+        "end": 591
+      }
+    ]
+  },
+  {
+    "text": "**Healthcare Biometric Enrollment Form**\n\n**Patient Information**\n\n- First Name: Scott\n- Date of Birth: 1993-11-18\n- Health Plan Beneficiary Number: CA-1237495678\n\n**Biometric Data Consent**\n\nI, Scott, hereby consent to the collection and storage of my biometric data for identification and verification purposes.\n\n**Biometric Data**\n\n- Biometric Identifier: C79283145608\n\n**Photograph**\n\nPlease upload a recent photograph of yourself for identification purposes.\n\n**Signatures**\n\n- Patient Signature:\n- Healthcare Provider Signature:",
+    "domain": "Healthcare",
+    "document_type": "biometric enrollment form",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Scott",
+        "start": 81,
+        "end": 86
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1993-11-18",
+        "start": 104,
+        "end": 114
+      },
+      {
+        "label": "health_plan_beneficiary_number",
+        "value": "CA-1237495678",
+        "start": 149,
+        "end": 162
+      },
+      {
+        "label": "first_name",
+        "value": "Scott",
+        "start": 195,
+        "end": 200
+      },
+      {
+        "label": "biometric_identifier",
+        "value": "C79283145608",
+        "start": 359,
+        "end": 371
+      }
+    ]
+  },
+  {
+    "text": "**Subject:** Your Temporary Password for Healthcare Portal Access\n\n**Dear James,**\n\nYour request to access the healthcare portal has been processed. Please find your temporary login credentials below:\n\n- **Username:** james_brinson_1992\n- **Temporary Password:** qwerty\n- **Expiration Date and Time:** 2025-03-10T16:37:52\n\n**Instructions:**\n\n1. Go to the healthcare portal login page.\n2. Enter your username as james_brinson_1992.\n3. Enter your temporary password as qwerty.\n4. Upon successful login, you will be prompted to change your password. Please follow the instructions to set a new password.\n5. Ensure your new password is secure and not the same as the temporary password.\n\n**Important Note:** This temporary password will expire at 2025-03-10T16:37:52. If you do not change your password by this date and time, you will need to request a new temporary password.\n\nIf you have any issues or need further assistance, please contact our support team at jamesbrinson@icloud.com.",
+    "domain": "Healthcare",
+    "document_type": "temporary password notification",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "James",
+        "start": 74,
+        "end": 79
+      },
+      {
+        "label": "user_name",
+        "value": "james_brinson_1992",
+        "start": 218,
+        "end": 236
+      },
+      {
+        "label": "password",
+        "value": "qwerty",
+        "start": 263,
+        "end": 269
+      },
+      {
+        "label": "date_time",
+        "value": "2025-03-10T16:37:52",
+        "start": 302,
+        "end": 321
+      },
+      {
+        "label": "user_name",
+        "value": "james_brinson_1992",
+        "start": 411,
+        "end": 429
+      },
+      {
+        "label": "password",
+        "value": "qwerty",
+        "start": 467,
+        "end": 473
+      },
+      {
+        "label": "date_time",
+        "value": "2025-03-10T16:37:52",
+        "start": 743,
+        "end": 762
+      },
+      {
+        "label": "email",
+        "value": "jamesbrinson@icloud.com",
+        "start": 960,
+        "end": 983
+      }
+    ]
+  },
+  {
+    "text": "Biometric Enrollment Form\n\nPlease ensure all information is accurate and complete. Your biometric identifier is P74932856123. This will be used to verify your identity in our healthcare system.\n\nPatient Name: Elizabeth Cocco\nDate of Birth: 1948-09-30\n\nYour medical record number is MRN-345672. This number is crucial for accessing your medical history and ensuring accurate treatment.\n\nPlease provide your consent for the collection and storage of your biometric data, including fingerprint scans. Your cooperation is essential for maintaining the security and integrity of your healthcare records.",
+    "domain": "Healthcare",
+    "document_type": "biometric enrollment form",
+    "pii": [
+      {
+        "label": "biometric_identifier",
+        "value": "P74932856123",
+        "start": 112,
+        "end": 124
+      },
+      {
+        "label": "first_name",
+        "value": "Elizabeth",
+        "start": 209,
+        "end": 218
+      },
+      {
+        "label": "last_name",
+        "value": "Cocco",
+        "start": 219,
+        "end": 224
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1948-09-30",
+        "start": 240,
+        "end": 250
+      },
+      {
+        "label": "medical_record_number",
+        "value": "MRN-345672",
+        "start": 282,
+        "end": 292
+      }
+    ]
+  },
+  {
+    "text": "**Medical Certificate**\n\n**Issuing Healthcare Provider:**\n[Healthcare Provider's Information]\n\n**Patient Details:**\n- **First Name:** Heidi\n- **Date of Birth:** 1967-11-15\n- **Medical Record Number:** 230612-2845\n\n**Date of Examination:** 2028-07-15\n\n**Diagnosis or Medical Condition:**\n[Diagnosis or medical condition]\n\n**Treatment or Recommendations:**\n[Treatment or recommendations]\n\n**Duration of Illness or Leave:**\n[Duration of illness or leave]\n\n**Issuing Physician:**\n[Issuing Physician's Name]\n\n**Certificate License Number:** IL-2023-005234\n\n**Signature:**\n\n[Issuing Physician's Signature]",
+    "domain": "Healthcare",
+    "document_type": "Medical Certificate",
+    "pii": [
+      {
+        "label": "occupation",
+        "value": "Issuing Healthcare Provider",
+        "start": 27,
+        "end": 54
+      },
+      {
+        "label": "first_name",
+        "value": "Heidi",
+        "start": 134,
+        "end": 139
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1967-11-15",
+        "start": 161,
+        "end": 171
+      },
+      {
+        "label": "medical_record_number",
+        "value": "230612-2845",
+        "start": 201,
+        "end": 212
+      },
+      {
+        "label": "date",
+        "value": "2028-07-15",
+        "start": 239,
+        "end": 249
+      },
+      {
+        "label": "occupation",
+        "value": "Issuing Physician",
+        "start": 455,
+        "end": 472
+      },
+      {
+        "label": "occupation",
+        "value": "Issuing Physician",
+        "start": 477,
+        "end": 494
+      },
+      {
+        "label": "certificate_license_number",
+        "value": "IL-2023-005234",
+        "start": 536,
+        "end": 550
+      },
+      {
+        "label": "occupation",
+        "value": "Issuing Physician",
+        "start": 569,
+        "end": 586
+      }
+    ]
+  },
+  {
+    "text": "**Discharge Summary**\n\n**Patient Demographics:**\n- Medical Record Number: 0009285712\n- Health Plan Beneficiary Number: G987531245-02\n\n**Admitting Diagnosis:**\n- Hypertension\n\n**Discharging Diagnosis:**\n- Controlled Hypertension\n\n**Procedures Performed:**\n- None\n\n**Medications on Discharge:**\n- Lisinopril 10mg PO daily\n\n**Follow-Up Instructions:**\n- Follow up with primary care physician within 2 weeks. Contact the healthcare provider at 351-279-7131 for any concerns.\n\n**Healthcare Provider Signatures:**\n- Dr. [Signature]\n- Dr. [Signature]",
+    "domain": "Healthcare",
+    "document_type": "Discharge Summary",
+    "pii": [
+      {
+        "label": "medical_record_number",
+        "value": "0009285712",
+        "start": 74,
+        "end": 84
+      },
+      {
+        "label": "health_plan_beneficiary_number",
+        "value": "G987531245-02",
+        "start": 119,
+        "end": 132
+      },
+      {
+        "label": "occupation",
+        "value": "primary care physician",
+        "start": 366,
+        "end": 388
+      },
+      {
+        "label": "time",
+        "value": "2 weeks",
+        "start": 396,
+        "end": 403
+      },
+      {
+        "label": "fax_number",
+        "value": "351-279-7131",
+        "start": 440,
+        "end": 452
+      }
+    ]
+  },
+  {
+    "text": "**Congratulations Lela Mcneill! Your new ATM card is ready for activation.**\n\nYour healthcare facility has issued you an ATM card to access your healthcare savings account. Please follow the instructions below to activate your card.\n\n**Card Details:**\n- **Card Number:** 1234-5678-9012-3456\n- **PIN:** 2076\n- **Expiration Date:** 12/31/2025\n\n**Activation Instructions:**\n1. Insert your card into any ATM machine.\n2. Enter your **PIN:** 2076.\n3. Follow the prompts to complete the activation process.\n\n**Important Notes:**\n- Keep your **PIN:** 2076 secure and do not share it with anyone.\n- If you encounter any issues, please contact the customer service number on the back of your card.\n- Your ATM card can be used at any healthcare facility in Osceola County.\n- You must have a bachelor's degree to qualify for this card.\n\nPlease ensure that you keep your card and **PIN:** 2076 in a secure place, especially if your employment status is part-time.",
+    "domain": "Healthcare",
+    "document_type": "ATM card PIN mailer",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Lela",
+        "start": 18,
+        "end": 22
+      },
+      {
+        "label": "last_name",
+        "value": "Mcneill",
+        "start": 23,
+        "end": 30
+      },
+      {
+        "label": "pin",
+        "value": "2076",
+        "start": 302,
+        "end": 306
+      },
+      {
+        "label": "pin",
+        "value": "2076",
+        "start": 436,
+        "end": 440
+      },
+      {
+        "label": "pin",
+        "value": "2076",
+        "start": 543,
+        "end": 547
+      },
+      {
+        "label": "county",
+        "value": "Osceola County",
+        "start": 746,
+        "end": 760
+      },
+      {
+        "label": "education_level",
+        "value": "bachelor's degree",
+        "start": 780,
+        "end": 797
+      },
+      {
+        "label": "pin",
+        "value": "2076",
+        "start": 876,
+        "end": 880
+      },
+      {
+        "label": "employment_status",
+        "value": "part-time",
+        "start": 940,
+        "end": 949
+      }
+    ]
+  },
+  {
+    "text": "---\n\n**Heart Disease Patient Education Materials**\n\n**Document Title:** Understanding Heart Disease\n\n**Date:** Thu, 15 Aug 2024\n\n**Medical Record Number:** 1234-56-7890\n\n**Health Plan Beneficiary Number:** AET-7890-1234-65\n\n---\n\n**Introduction**\n\nWelcome to our patient education materials on heart disease. This guide will help you understand the symptoms, diagnosis, treatment options, and self-care instructions related to heart disease.\n\n**Symptoms**\n\n- Chest pain or discomfort\n- Shortness of breath\n- Fatigue\n- Lightheadedness or dizziness\n\n**Diagnosis**\n\nYour healthcare provider will use various tests to diagnose heart disease. These may include:\n\n- Electrocardiogram (ECG)\n- Echocardiogram\n- Stress test\n- Blood tests\n\n**Treatment Options**\n\nTreatment for heart disease may include:\n\n- Medications\n- Lifestyle changes\n- Surgery or procedures\n\nFor more information, visit https://mayoclinic.org/patient-education/heart-disease\n\n**Self-Care Instructions**\n\n- Maintain a healthy diet\n- Exercise regularly\n- Avoid smoking\n- Manage stress\n\nPlease contact your healthcare provider if you have any questions or concerns. You can reach us at tumur342@mongolianhealthsolutions.mn.\n\n**Patient Information**\n\n- **Date of Birth:** 2004-01-10\n\n---\n\n**Note:** This document is for educational purposes only and should not replace medical advice from your healthcare provider.",
+    "domain": "Healthcare",
+    "document_type": "Patient Education Materials",
+    "pii": [
+      {
+        "label": "education_level",
+        "value": "Patient Education",
+        "start": 21,
+        "end": 38
+      },
+      {
+        "label": "date",
+        "value": "Thu, 15 Aug 2024",
+        "start": 111,
+        "end": 127
+      },
+      {
+        "label": "medical_record_number",
+        "value": "1234-56-7890",
+        "start": 156,
+        "end": 168
+      },
+      {
+        "label": "health_plan_beneficiary_number",
+        "value": "AET-7890-1234-65",
+        "start": 206,
+        "end": 222
+      },
+      {
+        "label": "occupation",
+        "value": "healthcare provider",
+        "start": 567,
+        "end": 586
+      },
+      {
+        "label": "url",
+        "value": "https://mayoclinic.org/patient-education/heart-disease",
+        "start": 881,
+        "end": 935
+      },
+      {
+        "label": "occupation",
+        "value": "healthcare provider",
+        "start": 1065,
+        "end": 1084
+      },
+      {
+        "label": "email",
+        "value": "tumur342@mongolianhealthsolutions.mn",
+        "start": 1144,
+        "end": 1180
+      },
+      {
+        "label": "date_of_birth",
+        "value": "2004-01-10",
+        "start": 1229,
+        "end": 1239
+      },
+      {
+        "label": "occupation",
+        "value": "healthcare provider",
+        "start": 1351,
+        "end": 1370
+      }
+    ]
+  },
+  {
+    "text": "**Healthcare Biometric Enrollment Form**\n\n**Patient Information**\n\n- First Name: Gwendolyn\n- Last Name: Kaleita\n- Date of Birth: 1929-11-28\n- Gender: female\n- Medical Record Number: PT-971234-C\n- Phone Number: 363-341-0605\n- Blood Type: A positive\n\n**Biometric Data Collection Consent**\n\nI, Gwendolyn Kaleita, born on 1929-11-28, hereby consent to the collection of my biometric data for the purpose of identification and verification in healthcare services. My biometric identifier is BIO-5732981648.\n\n**Biometric Data**\n\n- Biometric Identifier: BIO-5732981648\n- Fingerprint Scan: ___________________________\n- Iris Scan: ___________________________\n- Photograph: ___________________________\n\n**Signatures**\n\n- Patient Signature: ___________________________\n- Healthcare Provider Signature: ___________________________",
+    "domain": "Healthcare",
+    "document_type": "biometric enrollment form",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Gwendolyn",
+        "start": 81,
+        "end": 90
+      },
+      {
+        "label": "last_name",
+        "value": "Kaleita",
+        "start": 104,
+        "end": 111
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1929-11-28",
+        "start": 129,
+        "end": 139
+      },
+      {
+        "label": "gender",
+        "value": "female",
+        "start": 150,
+        "end": 156
+      },
+      {
+        "label": "medical_record_number",
+        "value": "PT-971234-C",
+        "start": 182,
+        "end": 193
+      },
+      {
+        "label": "phone_number",
+        "value": "363-341-0605",
+        "start": 210,
+        "end": 222
+      },
+      {
+        "label": "blood_type",
+        "value": "A positive",
+        "start": 237,
+        "end": 247
+      },
+      {
+        "label": "first_name",
+        "value": "Gwendolyn",
+        "start": 291,
+        "end": 300
+      },
+      {
+        "label": "last_name",
+        "value": "Kaleita",
+        "start": 301,
+        "end": 308
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1929-11-28",
+        "start": 318,
+        "end": 328
+      },
+      {
+        "label": "biometric_identifier",
+        "value": "BIO-5732981648",
+        "start": 486,
+        "end": 500
+      },
+      {
+        "label": "biometric_identifier",
+        "value": "BIO-5732981648",
+        "start": 547,
+        "end": 561
+      }
+    ]
+  },
+  {
+    "text": "Evan Fox, medical record number 1234-56-7890, born on 1968-12-07, received a vaccination on 2025-03-14T15:00:00. The administering healthcare provider signed the vaccination record.",
+    "domain": "Healthcare",
+    "document_type": "Vaccination Record",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Evan",
+        "start": 0,
+        "end": 4
+      },
+      {
+        "label": "last_name",
+        "value": "Fox",
+        "start": 5,
+        "end": 8
+      },
+      {
+        "label": "medical_record_number",
+        "value": "1234-56-7890",
+        "start": 32,
+        "end": 44
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1968-12-07",
+        "start": 54,
+        "end": 64
+      },
+      {
+        "label": "date_time",
+        "value": "2025-03-14T15:00:00",
+        "start": 92,
+        "end": 111
+      }
+    ]
+  },
+  {
+    "text": "**Patient Consent Form**\n\nI, Steven Angelica, born on 1982-11-27, hereby consent to undergo the medical procedure as outlined by my healthcare provider. I understand the risks and benefits associated with this procedure. My political view is Republican.\n\nThis consent is given on 2023-07-15 and will remain valid until further notice. I acknowledge that my race ethnicity is Mexican.\n\nBy signing below, I confirm my understanding and agreement to the terms stated above.\n\n_________________________          _________________________\nPatient Signature (Steven Angelica)       Date\n\n_________________________          _________________________\nHealthcare Provider Signature        Date",
+    "domain": "Healthcare",
+    "document_type": "Patient Consent Form",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Steven",
+        "start": 29,
+        "end": 35
+      },
+      {
+        "label": "last_name",
+        "value": "Angelica",
+        "start": 36,
+        "end": 44
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1982-11-27",
+        "start": 54,
+        "end": 64
+      },
+      {
+        "label": "political_view",
+        "value": "Republican",
+        "start": 242,
+        "end": 252
+      },
+      {
+        "label": "date",
+        "value": "2023-07-15",
+        "start": 280,
+        "end": 290
+      },
+      {
+        "label": "race_ethnicity",
+        "value": "mexican",
+        "start": 375,
+        "end": 382
+      },
+      {
+        "label": "first_name",
+        "value": "Steven",
+        "start": 552,
+        "end": 558
+      },
+      {
+        "label": "last_name",
+        "value": "Angelica",
+        "start": 559,
+        "end": 567
+      }
+    ]
+  },
+  {
+    "text": "Welcome to our patient education materials. Understanding your health is crucial, and we are here to guide you through various aspects of your well-being. If you have any questions, please don't hesitate to reach out to us at ralphwilliams@icloud.com. Your medical record number, 230922-8923, will be essential for any communications or appointments.\n\n### Introduction\nIn today's fast-paced world, maintaining good health is more important than ever. Whether you're dealing with a chronic condition or just looking to stay healthy, we have the information you need. Our goal is to empower you with knowledge so you can make informed decisions about your health. We provide a range of educational content to help you navigate through various health topics, from symptoms to treatment options and prevention tips.\n\n### Symptoms\nRecognizing the symptoms of a health issue is the first step in seeking appropriate care. Some common symptoms include fatigue, pain, and changes in appetite or sleep patterns. If you notice any unusual symptoms, it's important to consult with your healthcare provider. Your blood type, B+, may also play a role in how your body responds to certain conditions, so make sure to share this information with your healthcare team.\n\n### Treatment Options\nTreatment options vary depending on the condition. For some, lifestyle changes such as diet and exercise may be sufficient. Others may require medication or even surgery. Your healthcare provider will work with you to develop a treatment plan tailored to your specific needs. If you are non-religious, you may wish to discuss any end-of-life care options with your healthcare team.\n\n### Prevention Tips\nPrevention is always better than cure. Regular check-ups, a balanced diet, and regular exercise can go a long way in keeping you healthy. Avoiding harmful habits like smoking and excessive alcohol consumption is also crucial. If you live in Clark County, you may have access to local health programs and resources that can support your wellness journey.\n\n### FAQs\nQ: How can I access my medical records?\nA: You can request your medical records by contacting our office and providing your medical record number, 230922-8923.\n\nQ: What should I do if I experience severe symptoms?\nA: If you experience severe symptoms, seek immediate medical attention. Call your healthcare provider or go to the nearest emergency room.\n\nQ: How can I stay informed about my health?\nA: Staying informed about your health involves regular check-ups, reading educational materials, and communicating openly with your healthcare team. Your email, ralphwilliams@icloud.com, can be a useful tool for staying connected with your healthcare providers.",
+    "domain": "Healthcare",
+    "document_type": "Patient Education Materials",
+    "pii": [
+      {
+        "label": "email",
+        "value": "ralphwilliams@icloud.com",
+        "start": 226,
+        "end": 250
+      },
+      {
+        "label": "medical_record_number",
+        "value": "230922-8923",
+        "start": 280,
+        "end": 291
+      },
+      {
+        "label": "blood_type",
+        "value": "B+",
+        "start": 1113,
+        "end": 1115
+      },
+      {
+        "label": "religious_belief",
+        "value": "non-religious",
+        "start": 1563,
+        "end": 1576
+      },
+      {
+        "label": "county",
+        "value": "Clark County",
+        "start": 1920,
+        "end": 1932
+      },
+      {
+        "label": "medical_record_number",
+        "value": "230922-8923",
+        "start": 2190,
+        "end": 2201
+      },
+      {
+        "label": "email",
+        "value": "ralphwilliams@icloud.com",
+        "start": 2602,
+        "end": 2626
+      }
+    ]
+  },
+  {
+    "text": "Dear Jisoo Lee,\n\nThank you for choosing Hanmed Healthcare. Your new ATM card PIN is: 478529. Please keep this code confidential and do not share it with anyone. Your medical record number is: 789032461. You can use this PIN to access your account until 15/07/2024.\n\nIf you have any questions or need further assistance, please contact us at 054-876-5321 or email us at jisoolee@hanmed.co.kr.\n\nWe appreciate your trust in our services.\n\nBest regards,\nHanmed Healthcare Team",
+    "domain": "Healthcare",
+    "document_type": "ATM card PIN mailer",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Jisoo",
+        "start": 5,
+        "end": 10
+      },
+      {
+        "label": "last_name",
+        "value": "Lee",
+        "start": 11,
+        "end": 14
+      },
+      {
+        "label": "pin",
+        "value": "478529",
+        "start": 85,
+        "end": 91
+      },
+      {
+        "label": "medical_record_number",
+        "value": "789032461",
+        "start": 192,
+        "end": 201
+      },
+      {
+        "label": "date",
+        "value": "15/07/2024",
+        "start": 253,
+        "end": 263
+      },
+      {
+        "label": "phone_number",
+        "value": "054-876-5321",
+        "start": 341,
+        "end": 353
+      },
+      {
+        "label": "email",
+        "value": "jisoolee@hanmed.co.kr",
+        "start": 369,
+        "end": 390
+      }
+    ]
+  },
+  {
+    "text": "**Healthcare Admission Checklist**\n\n**Patient Demographics:**\n- First Name: Louise\n- Medical Record Number: 220712-2985\n- Date of Birth: 1985-05-17\n\n**Insurance Information:**\n- Health Plan Beneficiary Number: IL-193458762\n\n**Medical History:**\n- List of Current Medications: (To be filled by patient or caregiver)\n- Known Allergies: (To be filled by patient or caregiver)\n\n**Pre-Admission Testing:**\n- Results: (To be filled by healthcare provider)\n\n**Consent Forms:**\n- Patient Consent: (To be filled by patient or legal guardian)\n\n**Additional Information:**\n- Any additional notes or comments can be added here.",
+    "domain": "Healthcare",
+    "document_type": "Admission Checklist",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Louise",
+        "start": 76,
+        "end": 82
+      },
+      {
+        "label": "medical_record_number",
+        "value": "220712-2985",
+        "start": 108,
+        "end": 119
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1985-05-17",
+        "start": 137,
+        "end": 147
+      },
+      {
+        "label": "health_plan_beneficiary_number",
+        "value": "IL-193458762",
+        "start": 210,
+        "end": 222
+      }
+    ]
+  },
+  {
+    "text": "**Healthcare Discharge Checklist**\n\n**Patient Information:**\n- First Name: Katalin\n- Last Name: Nagy\n- Medical Record Number: LAC-00023456\n- Health Plan Beneficiary Number: 1FJ8-ZP3-MK94\n- Date of Birth: 1984-07-03\n- Blood Type: B positive\n- Race Ethnicity: Hungarian\n- Language: Hungarian\n- Phone Number: +36 20 456-7891\n- Email: nagy@budapesthealthcare.hu\n\n**Medication List:**\n- [Insert Medication List Here]\n\n**Follow-Up Appointments:**\n- [Insert Follow-Up Appointments Here]\n\n**Discharge Instructions:**\n- [Insert Discharge Instructions Here]\n\n**Contact Information for Healthcare Providers:**\n- [Insert Contact Information Here]",
+    "domain": "Healthcare",
+    "document_type": "Discharge Checklist",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Katalin",
+        "start": 75,
+        "end": 82
+      },
+      {
+        "label": "last_name",
+        "value": "Nagy",
+        "start": 96,
+        "end": 100
+      },
+      {
+        "label": "medical_record_number",
+        "value": "LAC-00023456",
+        "start": 126,
+        "end": 138
+      },
+      {
+        "label": "health_plan_beneficiary_number",
+        "value": "1FJ8-ZP3-MK94",
+        "start": 173,
+        "end": 186
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1984-07-03",
+        "start": 204,
+        "end": 214
+      },
+      {
+        "label": "blood_type",
+        "value": "B positive",
+        "start": 229,
+        "end": 239
+      },
+      {
+        "label": "race_ethnicity",
+        "value": "Hungarian",
+        "start": 258,
+        "end": 267
+      },
+      {
+        "label": "language",
+        "value": "Language",
+        "start": 270,
+        "end": 278
+      },
+      {
+        "label": "race_ethnicity",
+        "value": "Hungarian",
+        "start": 280,
+        "end": 289
+      },
+      {
+        "label": "phone_number",
+        "value": "+36 20 456-7891",
+        "start": 306,
+        "end": 321
+      },
+      {
+        "label": "email",
+        "value": "nagy@budapesthealthcare.hu",
+        "start": 331,
+        "end": 357
+      },
+      {
+        "label": "occupation",
+        "value": "Healthcare Providers",
+        "start": 575,
+        "end": 595
+      }
+    ]
+  },
+  {
+    "text": "**Healthcare Billing Statement**\n\nRyan Vanburen, your medical record number is 19MAR28-00087, you are billed for services rendered on R04/08/15. Your health plan beneficiary number is AET-7892-1234-65. Please review the charges, payments, and adjustments detailed below.\n\n**Services Rendered:**\n- Procedure Code: 99214 - Office visit, new patient\n- Date: R04/08/15\n- Charge: $250.00\n\n**Payments and Adjustments:**\n- Payment Received: $150.00\n- Adjustment: -$50.00\n\n**Balance Due:** $50.00\n\nPlease ensure that your payment is made to the healthcare provider within 30 days of receiving this statement. If you have any questions or need further assistance, please contact our billing department.",
+    "domain": "Healthcare",
+    "document_type": "Billing Statement",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Ryan",
+        "start": 34,
+        "end": 38
+      },
+      {
+        "label": "last_name",
+        "value": "Vanburen",
+        "start": 39,
+        "end": 47
+      },
+      {
+        "label": "medical_record_number",
+        "value": "19MAR28-00087",
+        "start": 79,
+        "end": 92
+      },
+      {
+        "label": "date",
+        "value": "R04/08/15",
+        "start": 134,
+        "end": 143
+      },
+      {
+        "label": "health_plan_beneficiary_number",
+        "value": "AET-7892-1234-65",
+        "start": 184,
+        "end": 200
+      },
+      {
+        "label": "date",
+        "value": "R04/08/15",
+        "start": 355,
+        "end": 364
+      }
+    ]
+  },
+  {
+    "text": "---\n\n**Patient Consent Form**\n\n**Patient Information**\n\n- **First Name**: Yasmine\n- **Last Name**: Boualem\n- **Date of Birth**: 1980-02-23\n- **Gender**: female\n- **Medical Record Number**: 180315-3452\n- **Phone Number**: 049 62 57 49 15\n- **Email**: yasmin@saharacare.dz\n\n**Procedure Details**\n\n- **Procedure Name**: [Insert Procedure Name]\n- **Date**: 2028-07-15\n\n**Risks and Benefits**\n\n- **Risks**: [Insert Risks]\n- **Benefits**: [Insert Benefits]\n\n**Consent**\n\nI, Yasmine Boualem, hereby consent to the procedure outlined above. I understand the risks and benefits associated with the procedure and have had the opportunity to ask questions and receive answers.\n\n**Patient Signature**: ___________________________\n\n**Date**: ___________________________\n\n**Healthcare Provider Information**\n\n- **Healthcare Provider Name**: [Insert Healthcare Provider Name]\n- **Signature**: ___________________________\n\n**Witness Information**\n\n- **Witness Name**: [Insert Witness Name]\n- **Signature**: ___________________________\n\n---\n\n**Note**: Blood type and education level are not required fields in this structured document.",
+    "domain": "Healthcare",
+    "document_type": "Patient Consent Form",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Yasmine",
+        "start": 74,
+        "end": 81
+      },
+      {
+        "label": "last_name",
+        "value": "Boualem",
+        "start": 99,
+        "end": 106
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1980-02-23",
+        "start": 128,
+        "end": 138
+      },
+      {
+        "label": "gender",
+        "value": "female",
+        "start": 153,
+        "end": 159
+      },
+      {
+        "label": "medical_record_number",
+        "value": "180315-3452",
+        "start": 189,
+        "end": 200
+      },
+      {
+        "label": "phone_number",
+        "value": "049 62 57 49 15",
+        "start": 221,
+        "end": 236
+      },
+      {
+        "label": "email",
+        "value": "yasmin@saharacare.dz",
+        "start": 250,
+        "end": 270
+      },
+      {
+        "label": "date",
+        "value": "2028-07-15",
+        "start": 353,
+        "end": 363
+      },
+      {
+        "label": "first_name",
+        "value": "Yasmine",
+        "start": 468,
+        "end": 475
+      },
+      {
+        "label": "last_name",
+        "value": "Boualem",
+        "start": 476,
+        "end": 483
+      }
+    ]
+  },
+  {
+    "text": "**Meridian Healthcare Systems**\n\nInsurance Claim Form\n\n**Patient Information**\n\n**First Name:** Annmarie\n\n**Last Name:** Wright\n\n**Date of Birth:** 1997-12-19\n\n**Medical Record Number:** 1234-56-7890\n\n**Health Plan Beneficiary Number:** FL123456789\n\n**Date of Service:** 03/15/2026\n\n**Provider Information**\n\n**Certificate License Number:** CERT-853014\n\n**City:** Sykesville\n\nPlease ensure that all information provided is accurate and complete. Any discrepancies may result in delays in processing your claim. If you have any questions or need further assistance, please contact Meridian Healthcare Systems directly.",
+    "domain": "Healthcare",
+    "document_type": "Insurance Claim Form",
+    "pii": [
+      {
+        "label": "company_name",
+        "value": "Meridian Healthcare Systems",
+        "start": 2,
+        "end": 29
+      },
+      {
+        "label": "first_name",
+        "value": "Annmarie",
+        "start": 96,
+        "end": 104
+      },
+      {
+        "label": "last_name",
+        "value": "Wright",
+        "start": 121,
+        "end": 127
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1997-12-19",
+        "start": 148,
+        "end": 158
+      },
+      {
+        "label": "medical_record_number",
+        "value": "1234-56-7890",
+        "start": 187,
+        "end": 199
+      },
+      {
+        "label": "health_plan_beneficiary_number",
+        "value": "FL123456789",
+        "start": 237,
+        "end": 248
+      },
+      {
+        "label": "date",
+        "value": "03/15/2026",
+        "start": 271,
+        "end": 281
+      },
+      {
+        "label": "certificate_license_number",
+        "value": "CERT-853014",
+        "start": 341,
+        "end": 352
+      },
+      {
+        "label": "city",
+        "value": "Sykesville",
+        "start": 364,
+        "end": 374
+      },
+      {
+        "label": "company_name",
+        "value": "Meridian Healthcare Systems",
+        "start": 580,
+        "end": 607
+      }
+    ]
+  },
+  {
+    "text": "Dear Yanira Perez,\n\nThank you for choosing Mayo Clinic as your healthcare provider. Enclosed is your new ATM card for accessing your healthcare benefits.\n\nYour PIN is 705309. Please keep this information secure and do not share it with anyone. For more details on PIN security, please visit https://mayoclinic.org/billing/pin-mailer#security.\n\nIf you have any questions or need further assistance, feel free to contact our support team.\n\nThank you for your trust in Mayo Clinic.",
+    "domain": "Healthcare",
+    "document_type": "ATM card PIN mailer",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Yanira",
+        "start": 5,
+        "end": 11
+      },
+      {
+        "label": "last_name",
+        "value": "Perez",
+        "start": 12,
+        "end": 17
+      },
+      {
+        "label": "pin",
+        "value": "705309",
+        "start": 167,
+        "end": 173
+      },
+      {
+        "label": "url",
+        "value": "https://mayoclinic.org/billing/pin-mailer#security",
+        "start": 291,
+        "end": 341
+      }
+    ]
+  },
+  {
+    "text": "Vaccination Record\n\nName: Mara Huber\n\nMedical Record Number: 87364921\n\nDate of Birth: 1968-07-04\n\nVaccination Log:\n\n1. **MMR Vaccine**\n   - Date: 2023-03-15\n   - Lot Number: MMR12345\n   - Administration Site: Left Arm\n   - Healthcare Provider Signature: Dr. Jane Doe\n\n2. **DPT Vaccine**\n   - Date: 2023-04-20\n   - Lot Number: DPT67890\n   - Administration Site: Right Arm\n   - Healthcare Provider Signature: Dr. John Smith",
+    "domain": "Healthcare",
+    "document_type": "Vaccination Record",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Mara",
+        "start": 26,
+        "end": 30
+      },
+      {
+        "label": "last_name",
+        "value": "Huber",
+        "start": 31,
+        "end": 36
+      },
+      {
+        "label": "medical_record_number",
+        "value": "87364921",
+        "start": 61,
+        "end": 69
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1968-07-04",
+        "start": 86,
+        "end": 96
+      },
+      {
+        "label": "date",
+        "value": "2023-03-15",
+        "start": 146,
+        "end": 156
+      },
+      {
+        "label": "first_name",
+        "value": "Jane",
+        "start": 258,
+        "end": 262
+      },
+      {
+        "label": "last_name",
+        "value": "Doe",
+        "start": 263,
+        "end": 266
+      },
+      {
+        "label": "date",
+        "value": "2023-04-20",
+        "start": 298,
+        "end": 308
+      },
+      {
+        "label": "first_name",
+        "value": "John",
+        "start": 411,
+        "end": 415
+      },
+      {
+        "label": "last_name",
+        "value": "Smith",
+        "start": 416,
+        "end": 421
+      }
+    ]
+  },
+  {
+    "text": "**Patient Consent Form**\n\n**Patient Information**\n\n- Patient Name: Elijah Reyes\n- Date of Birth: 1992-06-01\n- County: Monroe County\n- Health Plan Beneficiary Number: IL456789234\n\n**Procedure/Treatment Details**\n\n- Description of Procedure/Treatment:\n- Risks and Benefits:\n- Alternative Treatments:\n\n**Consent**\n\nI, Elijah Reyes, hereby give my consent to the above-described procedure/treatment.\n\n**Patient Signature:**\n\n_____________________________   _______________\n\nPatient Name (Print)                         Date\n\n**Healthcare Provider Signature:**\n\n_____________________________   _______________\n\nHealthcare Provider Name (Print)          Date",
+    "domain": "Healthcare",
+    "document_type": "Patient Consent Form",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Elijah",
+        "start": 67,
+        "end": 73
+      },
+      {
+        "label": "last_name",
+        "value": "Reyes",
+        "start": 74,
+        "end": 79
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1992-06-01",
+        "start": 97,
+        "end": 107
+      },
+      {
+        "label": "county",
+        "value": "Monroe County",
+        "start": 118,
+        "end": 131
+      },
+      {
+        "label": "health_plan_beneficiary_number",
+        "value": "IL456789234",
+        "start": 166,
+        "end": 177
+      },
+      {
+        "label": "first_name",
+        "value": "Elijah",
+        "start": 315,
+        "end": 321
+      },
+      {
+        "label": "last_name",
+        "value": "Reyes",
+        "start": 322,
+        "end": 327
+      }
+    ]
+  },
+  {
+    "text": "Dear Ki Chin,\n\nThank you for choosing our healthcare services. Your new ATM card is ready for use. Please keep your PIN number confidential to ensure the security of your account. Your PIN is 70607603.\n\nYour account number is 230915-783214. If you have any questions or need assistance, please contact us at 872-351-8777 or email us at ki.chin@icloud.com.\n\nYour medical record number is 0008573921 and your certificate license number is 0008573921. Please keep these numbers handy for future reference. We are here to assist you with any healthcare needs you may have.\n\nRemember, your employment status as a contractor does not affect your access to our services. If you need to reach us outside of regular business hours, feel free to call us a quarter to six.\n\nThank you for being a valued member of our healthcare community.",
+    "domain": "Healthcare",
+    "document_type": "ATM card PIN mailer",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Ki",
+        "start": 5,
+        "end": 7
+      },
+      {
+        "label": "last_name",
+        "value": "Chin",
+        "start": 8,
+        "end": 12
+      },
+      {
+        "label": "pin",
+        "value": "70607603",
+        "start": 192,
+        "end": 200
+      },
+      {
+        "label": "account_number",
+        "value": "230915-783214",
+        "start": 226,
+        "end": 239
+      },
+      {
+        "label": "phone_number",
+        "value": "872-351-8777",
+        "start": 308,
+        "end": 320
+      },
+      {
+        "label": "email",
+        "value": "ki.chin@icloud.com",
+        "start": 336,
+        "end": 354
+      },
+      {
+        "label": "medical_record_number",
+        "value": "0008573921",
+        "start": 387,
+        "end": 397
+      },
+      {
+        "label": "medical_record_number",
+        "value": "0008573921",
+        "start": 437,
+        "end": 447
+      },
+      {
+        "label": "employment_status",
+        "value": "contractor",
+        "start": 608,
+        "end": 618
+      },
+      {
+        "label": "time",
+        "value": "a quarter to six",
+        "start": 744,
+        "end": 760
+      }
+    ]
+  },
+  {
+    "text": "Dear Elena Guzman,\n\nThank you for choosing our healthcare services. Your new ATM card is now ready for activation. Please find your ATM card number: 1892753640 and your PIN code: 825638. Your medical record number is: 0004927815.  To activate your card, please visit our website and log in using your email: elenag@icloud.com. If you have any questions or need further assistance, feel free to reach out.\n\nBest regards,\n\nYour Healthcare Provider",
+    "domain": "Healthcare",
+    "document_type": "ATM card PIN mailer",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Elena",
+        "start": 5,
+        "end": 10
+      },
+      {
+        "label": "last_name",
+        "value": "Guzman",
+        "start": 11,
+        "end": 17
+      },
+      {
+        "label": "account_number",
+        "value": "1892753640",
+        "start": 149,
+        "end": 159
+      },
+      {
+        "label": "pin",
+        "value": "825638",
+        "start": 179,
+        "end": 185
+      },
+      {
+        "label": "medical_record_number",
+        "value": "0004927815",
+        "start": 218,
+        "end": 228
+      },
+      {
+        "label": "email",
+        "value": "elenag@icloud.com",
+        "start": 308,
+        "end": 325
+      }
+    ]
+  },
+  {
+    "text": "**Vaccination Record**\n\n**Patient Information**\n\n- **Patient Name**: Yanira\n- **Date of Birth**: 1981-04-09\n\n**Vaccination History**\n\n| Vaccination Date | Vaccine Type | Lot Number | Administration Site | Healthcare Provider |\n|------------------|--------------|------------|---------------------|---------------------|\n| 2023-01-15       | COVID-19     | ABC123     | Left Arm            | Dr. Smith           |\n| 2023-07-20       | Flu          | XYZ789     | Right Arm           | Nurse Johnson       |",
+    "domain": "Healthcare",
+    "document_type": "Vaccination Record",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Yanira",
+        "start": 69,
+        "end": 75
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1981-04-09",
+        "start": 97,
+        "end": 107
+      },
+      {
+        "label": "occupation",
+        "value": "Healthcare Provider",
+        "start": 205,
+        "end": 224
+      },
+      {
+        "label": "date",
+        "value": "2023-01-15",
+        "start": 322,
+        "end": 332
+      },
+      {
+        "label": "last_name",
+        "value": "Smith",
+        "start": 395,
+        "end": 400
+      },
+      {
+        "label": "date",
+        "value": "2023-07-20",
+        "start": 415,
+        "end": 425
+      },
+      {
+        "label": "occupation",
+        "value": "Nurse",
+        "start": 484,
+        "end": 489
+      },
+      {
+        "label": "last_name",
+        "value": "Johnson",
+        "start": 490,
+        "end": 497
+      }
+    ]
+  },
+  {
+    "text": "Dear Patient,\n\nYour new ATM card is ready for use. Please find your PIN number below. Do not share your PIN number with anyone.\n\nFirst name: Anastasiya\n\nLast name: Kovalenko\n\nAccount number: 57829341\n\nPIN number: 692814\n\nYou can use your new ATM card at any of our healthcare facilities. For any inquiries, please contact us at anastasiya579@medisanahealthsolutions.ua.\n\nRemember to keep your PIN number secure. If you suspect any unauthorized activity on your account, please contact us immediately.\n\nThank you for choosing our services.\n\nBest regards,\n\nYour Healthcare Provider",
+    "domain": "Healthcare",
+    "document_type": "ATM card PIN mailer",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Anastasiya",
+        "start": 141,
+        "end": 151
+      },
+      {
+        "label": "last_name",
+        "value": "Kovalenko",
+        "start": 164,
+        "end": 173
+      },
+      {
+        "label": "account_number",
+        "value": "57829341",
+        "start": 191,
+        "end": 199
+      },
+      {
+        "label": "pin",
+        "value": "692814",
+        "start": 213,
+        "end": 219
+      },
+      {
+        "label": "email",
+        "value": "anastasiya579@medisanahealthsolutions.ua",
+        "start": 328,
+        "end": 368
+      }
+    ]
+  },
+  {
+    "text": "### Understanding Your Medical Records\n\n#### Introduction\nWelcome to our guide on understanding your medical records. This document will help you navigate your medical record number and health plan beneficiary number, ensuring you have access to the information you need.\n\n#### Accessing Your Medical Records\n\n- **Medical Record Number**: Your medical record number is a unique identifier used to access your health information. Please keep your medical record number, BMC-14-76321, safe and confidential.\n- **Health Plan Beneficiary Number**: Your health plan beneficiary number, G12734589-02, is essential for verifying your coverage and accessing benefits.\n\n#### Online Resources\n\nFor additional resources and educational materials, visit our online portal at ftp://education.materials.healthcare.gov/patient-resources/.\n\n#### Conclusion\n\nUnderstanding and managing your medical records is crucial for your healthcare journey. Always keep your medical record number, BMC-14-76321, and health plan beneficiary number, G12734589-02, secure and readily available. For further assistance, visit ftp://education.materials.healthcare.gov/patient-resources/.",
+    "domain": "Healthcare",
+    "document_type": "Patient Education Materials",
+    "pii": [
+      {
+        "label": "medical_record_number",
+        "value": "BMC-14-76321",
+        "start": 469,
+        "end": 481
+      },
+      {
+        "label": "health_plan_beneficiary_number",
+        "value": "G12734589-02",
+        "start": 581,
+        "end": 593
+      },
+      {
+        "label": "url",
+        "value": "ftp://education.materials.healthcare.gov/patient-resources/",
+        "start": 763,
+        "end": 822
+      },
+      {
+        "label": "medical_record_number",
+        "value": "BMC-14-76321",
+        "start": 970,
+        "end": 982
+      },
+      {
+        "label": "health_plan_beneficiary_number",
+        "value": "G12734589-02",
+        "start": 1020,
+        "end": 1032
+      },
+      {
+        "label": "url",
+        "value": "ftp://education.materials.healthcare.gov/patient-resources/",
+        "start": 1094,
+        "end": 1153
+      }
+    ]
+  },
+  {
+    "text": "**Healthcare Patient Consent Form**\n\n**Patient Information**\n\n| Field | Value |\n| --- | --- |\n| First Name | Christian |\n| Last Name | Snowden |\n| Date of Birth | 1944-12-24 |\n| Gender | female |\n| Medical Record Number | BMC-21-87352 |\n\n**Procedure Details**\n\n| Procedure Name | Date |\n| --- | --- |\n| [Procedure Name] | 2024-08-15 |\n\n**Risks and Benefits**\n\nPlease read the following risks and benefits associated with the procedure:\n\n- Risks:\n  - [List of Risks]\n- Benefits:\n  - [List of Benefits]\n\n**Consent**\n\nI, Christian Snowden, born on 1944-12-24, hereby give my consent for the procedure to be performed on 2024-08-15. I understand the risks and benefits associated with the procedure and have had the opportunity to ask questions.\n\n**Patient Signature**\n\n_____________________________\nChristian Snowden\n2024-08-15\n\n**Healthcare Provider Signature**\n\n_____________________________\n[Healthcare Provider Name]\n2024-08-15\n\n**Medical Record Number**: BMC-21-87352",
+    "domain": "Healthcare",
+    "document_type": "Patient Consent Form",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Christian",
+        "start": 109,
+        "end": 118
+      },
+      {
+        "label": "last_name",
+        "value": "Snowden",
+        "start": 135,
+        "end": 142
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1944-12-24",
+        "start": 163,
+        "end": 173
+      },
+      {
+        "label": "gender",
+        "value": "female",
+        "start": 187,
+        "end": 193
+      },
+      {
+        "label": "medical_record_number",
+        "value": "BMC-21-87352",
+        "start": 222,
+        "end": 234
+      },
+      {
+        "label": "date",
+        "value": "2024-08-15",
+        "start": 322,
+        "end": 332
+      },
+      {
+        "label": "first_name",
+        "value": "Christian",
+        "start": 518,
+        "end": 527
+      },
+      {
+        "label": "last_name",
+        "value": "Snowden",
+        "start": 528,
+        "end": 535
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1944-12-24",
+        "start": 545,
+        "end": 555
+      },
+      {
+        "label": "date",
+        "value": "2024-08-15",
+        "start": 617,
+        "end": 627
+      },
+      {
+        "label": "first_name",
+        "value": "Christian",
+        "start": 796,
+        "end": 805
+      },
+      {
+        "label": "last_name",
+        "value": "Snowden",
+        "start": 806,
+        "end": 813
+      },
+      {
+        "label": "date",
+        "value": "2024-08-15",
+        "start": 814,
+        "end": 824
+      },
+      {
+        "label": "date",
+        "value": "2024-08-15",
+        "start": 918,
+        "end": 928
+      },
+      {
+        "label": "medical_record_number",
+        "value": "BMC-21-87352",
+        "start": 957,
+        "end": 969
+      }
+    ]
+  },
+  {
+    "text": "**Vaccination Record**\n\n**Patient Information**\n\n- **Patient Name**: Lukas Schmidt\n- **Date of Birth**: 1971-08-14\n\n**Vaccination History**\n\n| Vaccine Type | Dose Number | Administration Date | Lot Number | Healthcare Provider's Signature |\n|--------------|-------------|---------------------|------------|--------------------------------|\n| Influenza    | 1           | 2023-10-05          | A1B2C3D4   |                              |\n| Tdap         | 1           | 2023-10-05          | E5F6G7H8   |                              |",
+    "domain": "Healthcare",
+    "document_type": "Vaccination Record",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Lukas",
+        "start": 69,
+        "end": 74
+      },
+      {
+        "label": "last_name",
+        "value": "Schmidt",
+        "start": 75,
+        "end": 82
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1971-08-14",
+        "start": 104,
+        "end": 114
+      },
+      {
+        "label": "date",
+        "value": "2023-10-05",
+        "start": 371,
+        "end": 381
+      },
+      {
+        "label": "date",
+        "value": "2023-10-05",
+        "start": 468,
+        "end": 478
+      }
+    ]
+  },
+  {
+    "text": "Upon discharge, please ensure you have the following information at hand. Your medical record number is 230915-2387. You can reach your healthcare provider at 009 786 4857 or via email at jad@healthyheartlebanon.com. If you need to fax any documents, use the fax number +961 8 555669.",
+    "domain": "Healthcare",
+    "document_type": "Discharge Checklist",
+    "pii": [
+      {
+        "label": "medical_record_number",
+        "value": "230915-2387",
+        "start": 104,
+        "end": 115
+      },
+      {
+        "label": "phone_number",
+        "value": "009 786 4857",
+        "start": 159,
+        "end": 171
+      },
+      {
+        "label": "email",
+        "value": "jad@healthyheartlebanon.com",
+        "start": 188,
+        "end": 215
+      },
+      {
+        "label": "fax_number",
+        "value": "+961 8 555669",
+        "start": 270,
+        "end": 283
+      }
+    ]
+  },
+  {
+    "text": "**Patient Consent Form**\n\n**Patient Information**\n\n- **First Name**: Bruce\n- **Last Name**: Gautreaux\n- **Date of Birth**: 1975-05-23\n- **Medical Record Number**: CHI-00021345\n- **Health Plan Beneficiary Number**: CA-0004289671\n- **Email**: brucedawson93@icloud.com\n\n**Procedure Information**\n\n- **Patient's Date of Birth**: 1975-02-15\n\n**Risks and Benefits**\n\n- Please review the risks and benefits of the procedure with your healthcare provider.\n- **Signature**: ___________________________\n- **Date**: ___________________________\n\n**Healthcare Provider Information**\n\n- **Signature**: ___________________________\n- **Date**: ___________________________\n\n**Witness Information**\n\n- **Signature**: ___________________________\n- **Date**: ___________________________",
+    "domain": "Healthcare",
+    "document_type": "Patient Consent Form",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Bruce",
+        "start": 69,
+        "end": 74
+      },
+      {
+        "label": "last_name",
+        "value": "Gautreaux",
+        "start": 92,
+        "end": 101
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1975-05-23",
+        "start": 123,
+        "end": 133
+      },
+      {
+        "label": "medical_record_number",
+        "value": "CHI-00021345",
+        "start": 163,
+        "end": 175
+      },
+      {
+        "label": "health_plan_beneficiary_number",
+        "value": "CA-0004289671",
+        "start": 214,
+        "end": 227
+      },
+      {
+        "label": "email",
+        "value": "brucedawson93@icloud.com",
+        "start": 241,
+        "end": 265
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1975-02-15",
+        "start": 325,
+        "end": 335
+      }
+    ]
+  },
+  {
+    "text": "**Healthcare Biometric Enrollment Form**\n\n**Personal Information**\n\nFirst Name: Jorge\n\nLast Name: Chikwemba\n\nDate of Birth: 1964-03-04\n\n**Biometric Data**\n\nBiometric Identifier: BIO-5729416830\n\n**Consent**\n\nI, Jorge Chikwemba, born on 1964-03-04, hereby consent to the collection and use of my biometric data identified as BIO-5729416830 for healthcare purposes.",
+    "domain": "Healthcare",
+    "document_type": "biometric enrollment form",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Jorge",
+        "start": 80,
+        "end": 85
+      },
+      {
+        "label": "last_name",
+        "value": "Chikwemba",
+        "start": 98,
+        "end": 107
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1964-03-04",
+        "start": 124,
+        "end": 134
+      },
+      {
+        "label": "biometric_identifier",
+        "value": "BIO-5729416830",
+        "start": 178,
+        "end": 192
+      },
+      {
+        "label": "first_name",
+        "value": "Jorge",
+        "start": 210,
+        "end": 215
+      },
+      {
+        "label": "last_name",
+        "value": "Chikwemba",
+        "start": 216,
+        "end": 225
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1964-03-04",
+        "start": 235,
+        "end": 245
+      },
+      {
+        "label": "biometric_identifier",
+        "value": "BIO-5729416830",
+        "start": 323,
+        "end": 337
+      }
+    ]
+  },
+  {
+    "text": "**Customer Blood Type Profile**\n\n| Field                  | Value                       |\n|------------------------|-----------------------------|\n| Patient ID             | SFO-5823719                  |\n| Date of Birth          | 2007-01-01                  |\n| Blood Type             | B+                          |\n| Rh Factor              | Positive                     |\n| Date of Last Blood Test|                               |\n| Healthcare Provider's Signature |                        |",
+    "domain": "Healthcare",
+    "document_type": "Customer Blood Type Profile",
+    "pii": [
+      {
+        "label": "customer_id",
+        "value": "SFO-5823719",
+        "start": 174,
+        "end": 185
+      },
+      {
+        "label": "date_of_birth",
+        "value": "2007-01-01",
+        "start": 232,
+        "end": 242
+      },
+      {
+        "label": "blood_type",
+        "value": "B+",
+        "start": 289,
+        "end": 291
+      }
+    ]
+  },
+  {
+    "text": "**Title: Understanding and Managing Work-Related Injuries**\n\n**Date:** 07/15/2024\n\n**Medical Record Number:** LAC-00019283\n\n**Purpose:**\n\nThis brochure provides essential information for individuals with occupations such as tree trimmer or pruner, focusing on preventive care tips and treatment options for work-related injuries. It is designed to help you understand your condition and the steps you can take to manage it effectively.\n\n**Condition Explanation:**\n\nWork-related injuries can vary widely depending on the nature of your job. For individuals with occupations such as tree trimmer or pruner, injuries often involve the upper body, including the arms, shoulders, and back. These injuries can be caused by repetitive motions, falls, or contact with equipment.\n\n**Treatment Options:**\n\nIf you experience a work-related injury, it is crucial to seek medical attention promptly. Your healthcare provider will assess your condition and develop a treatment plan tailored to your needs. This may include medication, physical therapy, or other interventions.\n\n**Medication Instructions:**\n\nFollow your healthcare provider's instructions carefully when taking any prescribed medication. It is important to complete the full course of treatment as directed. If you have any questions or concerns about your medication, do not hesitate to contact your healthcare provider.\n\n**Preventive Care Tips:**\n\nPreventive care is essential for individuals with occupations such as tree trimmer or pruner. Here are some tips to help you stay safe and healthy:\n\n1. **Wear Appropriate Protective Gear:** Always use safety harnesses, helmets, and other protective equipment designed for your job.\n2. **Stay Hydrated:** Drink plenty of water throughout the day to stay hydrated, especially during hot weather.\n3. **Take Regular Breaks:** Avoid over exertion by taking regular breaks to rest and stretch.\n4. **Maintain Proper Posture:** Use proper lifting techniques and maintain good posture to reduce the risk of back injuries.\n5. **Regular Check-ups:** Schedule regular check-ups with your healthcare provider to monitor your health and address any concerns early.\n\n**Additional Information:**\n\nFor more information or to schedule an appointment, please contact your healthcare provider. If you have any questions about your medical record number LAC-00019283, or need assistance with your bank routing number 113000567, please reach out to the appropriate department.\n\n**Note:**\n\nThis brochure is intended for educational purposes only and should not be used as a substitute for professional medical advice. Always consult your healthcare provider for personalized guidance.\n\n**Disclaimer:**\n\nThe information provided in this brochure is based on general guidelines and may not apply to every individual. It is important to consult with your healthcare provider to determine the best course of treatment for your specific condition.",
+    "domain": "Healthcare",
+    "document_type": "Patient Education Materials",
+    "pii": [
+      {
+        "label": "date",
+        "value": "07/15/2024",
+        "start": 71,
+        "end": 81
+      },
+      {
+        "label": "medical_record_number",
+        "value": "LAC-00019283",
+        "start": 110,
+        "end": 122
+      },
+      {
+        "label": "occupation",
+        "value": "individuals with occupations",
+        "start": 187,
+        "end": 215
+      },
+      {
+        "label": "occupation",
+        "value": "tree trimmer or pruner",
+        "start": 224,
+        "end": 246
+      },
+      {
+        "label": "occupation",
+        "value": "individuals with occupations",
+        "start": 544,
+        "end": 572
+      },
+      {
+        "label": "occupation",
+        "value": "tree trimmer or pruner",
+        "start": 581,
+        "end": 603
+      },
+      {
+        "label": "occupation",
+        "value": "individuals with occupations",
+        "start": 1435,
+        "end": 1463
+      },
+      {
+        "label": "occupation",
+        "value": "tree trimmer or pruner",
+        "start": 1472,
+        "end": 1494
+      },
+      {
+        "label": "medical_record_number",
+        "value": "LAC-00019283",
+        "start": 2335,
+        "end": 2347
+      },
+      {
+        "label": "bank_routing_number",
+        "value": "113000567",
+        "start": 2398,
+        "end": 2407
+      }
+    ]
+  },
+  {
+    "text": "**Welcome to CairoMed Healthcare Services**\n\n**Dear Customer,**\n\n**Your ATM Card PIN Information**\n\n**Recipient Name**: Omar El-Sayed\n\n**Account Number**: C97362154\n\n**New PIN**: 1673\n\n**Expiration Date**: 15-08-2024\n\n**Security Instructions**\n\n- Never share your new PIN, 1673, with anyone.\n- Do not write down your PIN where it can be easily found.\n- Change your PIN regularly to enhance security.\n- If you suspect any unauthorized activity, contact our support team immediately at 012-374-2386 or email us at o.el-sayed@cairomedhealthcare.eg.\n- Ensure your card, with the number 4916 3875 2749 8356, is kept in a secure location when not in use.\n\n**Thank you for choosing CairoMed Healthcare Services.**\n\n**Sincerely,**\n\n**CairoMed Healthcare Services Team**",
+    "domain": "Healthcare",
+    "document_type": "ATM card PIN mailer",
+    "pii": [
+      {
+        "label": "city",
+        "value": "Cairo",
+        "start": 13,
+        "end": 18
+      },
+      {
+        "label": "first_name",
+        "value": "Omar",
+        "start": 120,
+        "end": 124
+      },
+      {
+        "label": "last_name",
+        "value": "El-Sayed",
+        "start": 125,
+        "end": 133
+      },
+      {
+        "label": "account_number",
+        "value": "C97362154",
+        "start": 155,
+        "end": 164
+      },
+      {
+        "label": "pin",
+        "value": "1673",
+        "start": 179,
+        "end": 183
+      },
+      {
+        "label": "date",
+        "value": "15-08-2024",
+        "start": 206,
+        "end": 216
+      },
+      {
+        "label": "pin",
+        "value": "1673",
+        "start": 273,
+        "end": 277
+      },
+      {
+        "label": "phone_number",
+        "value": "012-374-2386",
+        "start": 484,
+        "end": 496
+      },
+      {
+        "label": "email",
+        "value": "o.el-sayed@cairomedhealthcare.eg",
+        "start": 512,
+        "end": 544
+      },
+      {
+        "label": "credit_debit_card",
+        "value": "4916 3875 2749 8356",
+        "start": 582,
+        "end": 601
+      },
+      {
+        "label": "city",
+        "value": "Cairo",
+        "start": 675,
+        "end": 680
+      },
+      {
+        "label": "city",
+        "value": "Cairo",
+        "start": 726,
+        "end": 731
+      }
+    ]
+  },
+  {
+    "text": "**Vaccination Record**\n\n**Patient Information:**\n- **First Name:** Alex\n- **Last Name:** Alvarado\n- **Date of Birth:** 1976-03-28\n- **Medical Record Number:** 1536-56-27-18\n\n**Vaccination History:**\n\n| Date         | Vaccine Type | Lot Number | Administering Healthcare Provider | Adverse Reactions |\n|--------------|--------------|------------|-----------------------------------|-------------------|\n| Thu, 15 Aug 2024 | Influenza   | A1B2C3D4   | Dr. Maria Rodriguez               | None              |\n\n**Ethnicity:** Ng\u00e4be-Bugl\u00e9",
+    "domain": "Healthcare",
+    "document_type": "Vaccination Record",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Alex",
+        "start": 67,
+        "end": 71
+      },
+      {
+        "label": "last_name",
+        "value": "Alvarado",
+        "start": 89,
+        "end": 97
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1976-03-28",
+        "start": 119,
+        "end": 129
+      },
+      {
+        "label": "medical_record_number",
+        "value": "1536-56-27-18",
+        "start": 159,
+        "end": 172
+      },
+      {
+        "label": "occupation",
+        "value": "Healthcare Provider",
+        "start": 259,
+        "end": 278
+      },
+      {
+        "label": "date",
+        "value": "Thu, 15 Aug 2024",
+        "start": 404,
+        "end": 420
+      },
+      {
+        "label": "first_name",
+        "value": "Maria",
+        "start": 454,
+        "end": 459
+      },
+      {
+        "label": "last_name",
+        "value": "Rodriguez",
+        "start": 460,
+        "end": 469
+      }
+    ]
+  },
+  {
+    "text": "### Vaccination Record\n\n**Patient Information:**\n- **Name:** Lieu\n- **Date of Birth:** 1976-03-28\n- **Medical Record Number:** 1536-56-27-18\n- **Health Plan Beneficiary Number:** BCBS-78394561\n\n**Vaccination History:**\n\n| Vaccination Date        | Vaccine Type | Lot Number | Administering Healthcare Provider | Adverse Reactions |\n|-------------------------|--------------|------------|-----------------------------------|-------------------|\n| 2025-10-18T20:52:12     | Flu          | 123456     | Dr. Smith                      | None              |",
+    "domain": "Healthcare",
+    "document_type": "Vaccination Record",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Lieu",
+        "start": 61,
+        "end": 65
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1976-03-28",
+        "start": 87,
+        "end": 97
+      },
+      {
+        "label": "medical_record_number",
+        "value": "1536-56-27-18",
+        "start": 127,
+        "end": 140
+      },
+      {
+        "label": "health_plan_beneficiary_number",
+        "value": "BCBS-78394561",
+        "start": 179,
+        "end": 192
+      },
+      {
+        "label": "occupation",
+        "value": "Administering Healthcare Provider",
+        "start": 276,
+        "end": 309
+      },
+      {
+        "label": "date_time",
+        "value": "2025-10-18T20:52:12",
+        "start": 446,
+        "end": 465
+      },
+      {
+        "label": "last_name",
+        "value": "Smith",
+        "start": 504,
+        "end": 509
+      }
+    ]
+  },
+  {
+    "text": "**Vaccination Record**\n\n**Patient Information:**\n\n| Field                | Value                  |\n|----------------------|------------------------|\n| Medical Record Number| M-489231               |\n| Last Name            | Johnson                |\n| First Name           | Kayla                  |\n| Date of Birth        | 1979-11-02             |\n| Gender               | non-binary             |\n\n**Vaccination Details:**\n\n| Vaccine Type | Administration Date | Lot Number | Administering Healthcare Provider's Signature |\n|--------------|---------------------|------------|------------------------------------------------|\n| Flu Shot     | 2024-07-15          | 123456     |                                           |\n\n**Time of Administration:** a quarter to four",
+    "domain": "Healthcare",
+    "document_type": "Vaccination Record",
+    "pii": [
+      {
+        "label": "medical_record_number",
+        "value": "M-489231",
+        "start": 175,
+        "end": 183
+      },
+      {
+        "label": "last_name",
+        "value": "Johnson",
+        "start": 225,
+        "end": 232
+      },
+      {
+        "label": "first_name",
+        "value": "Kayla",
+        "start": 275,
+        "end": 280
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1979-11-02",
+        "start": 325,
+        "end": 335
+      },
+      {
+        "label": "gender",
+        "value": "non-binary",
+        "start": 375,
+        "end": 385
+      },
+      {
+        "label": "occupation",
+        "value": "Administering Healthcare Provider's Signature",
+        "start": 479,
+        "end": 524
+      },
+      {
+        "label": "date",
+        "value": "2024-07-15",
+        "start": 645,
+        "end": 655
+      },
+      {
+        "label": "time",
+        "value": "a quarter to four",
+        "start": 753,
+        "end": 770
+      }
+    ]
+  },
+  {
+    "text": "### Diabetes Management Guide\n\n#### Introduction\n\nWelcome to your comprehensive guide on diabetes management. This document will provide you with essential information to help you understand, manage, and prevent complications associated with diabetes.\n\n#### Condition Overview\n\nDiabetes is a chronic condition that affects how your body turns food into energy. It is crucial to manage your diabetes effectively to maintain your overall health and well-being. For more detailed information, please visit https://mayoclinic.org/patient-education/diabetes-management.\n\n#### Symptoms\n\nCommon symptoms of diabetes include:\n\n- Increased thirst and frequent urination\n- Increased hunger\n- Fatigue\n- Blurred vision\n- Slow-healing sores or frequent infections\n- Tingling, pain, or numbness in the hands/feet\n\n#### Diagnosis\n\nIf you experience any of the symptoms mentioned above, it is essential to consult a healthcare provider. Your medical record number will be M-24-000583. Your healthcare provider will perform diagnostic tests, including blood tests, to determine if you have diabetes.\n\n#### Treatment Options\n\nTreatment options for diabetes may include:\n\n- Lifestyle changes: Diet, exercise, and weight management\n- Oral medications: Such as metformin\n- Insulin therapy: For those who require it\n- Regular monitoring: Of blood sugar levels\n\n#### Prevention Tips\n\nPreventing diabetes involves maintaining a healthy lifestyle. Here are some tips:\n\n- Maintain a healthy weight\n- Engage in regular physical activity\n- Eat a balanced diet\n- Limit sugary beverages and processed foods\n- Regularly monitor your blood sugar levels\n\n#### FAQs\n\n**Q: How often should I monitor my blood sugar levels?**\n\nA: The frequency of blood sugar monitoring depends on your treatment plan. Consult your healthcare provider for personalized advice.\n\n**Q: What should I do if I experience symptoms of low blood sugar?**\n\nA: If you experience symptoms of low blood sugar, such as dizziness or confusion, consume a fast-acting carbohydrate like glucose tablets or juice.\n\n**Q: What is the best way to manage my diabetes?**\n\nA: Effective diabetes management involves a combination of lifestyle changes, medication, and regular monitoring. Your healthcare provider will provide a personalized management plan.\n\n#### Patient Information\n\n- **Name**: Isabella Hargreaves\n- **Date of Birth**: 1986-01-31\n- **Email**: isabella.hargreaves@harleyandsonshealthcare.co.uk\n\n#### References\n\nFor further information on diabetes management, please refer to the following resources:\n\n- **Mayo Clinic**: https://mayoclinic.org/patient-education/diabetes-management\n\nThis guide is designed to help you manage your diabetes effectively. If you have any questions or concerns, please contact your healthcare provider.",
+    "domain": "Healthcare",
+    "document_type": "Patient Education Materials",
+    "pii": [
+      {
+        "label": "url",
+        "value": "https://mayoclinic.org/patient-education/diabetes-management",
+        "start": 503,
+        "end": 563
+      },
+      {
+        "label": "occupation",
+        "value": "healthcare provider",
+        "start": 900,
+        "end": 919
+      },
+      {
+        "label": "medical_record_number",
+        "value": "M-24-000583",
+        "start": 956,
+        "end": 967
+      },
+      {
+        "label": "occupation",
+        "value": "healthcare provider",
+        "start": 974,
+        "end": 993
+      },
+      {
+        "label": "occupation",
+        "value": "healthcare provider",
+        "start": 1779,
+        "end": 1798
+      },
+      {
+        "label": "occupation",
+        "value": "healthcare provider",
+        "start": 2215,
+        "end": 2234
+      },
+      {
+        "label": "first_name",
+        "value": "Isabella",
+        "start": 2319,
+        "end": 2327
+      },
+      {
+        "label": "last_name",
+        "value": "Hargreaves",
+        "start": 2328,
+        "end": 2338
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1986-01-31",
+        "start": 2360,
+        "end": 2370
+      },
+      {
+        "label": "email",
+        "value": "isabella.hargreaves@harleyandsonshealthcare.co.uk",
+        "start": 2384,
+        "end": 2433
+      },
+      {
+        "label": "url",
+        "value": "https://mayoclinic.org/patient-education/diabetes-management",
+        "start": 2561,
+        "end": 2621
+      },
+      {
+        "label": "occupation",
+        "value": "healthcare provider",
+        "start": 2751,
+        "end": 2770
+      }
+    ]
+  },
+  {
+    "text": "**Healthcare and Rehabilitation Plan**\n\n**Patient Demographics:**\n- First Name: Leslie\n- Medical Record Number: LAC-00037295\n- Email: bigbiel@gmail.com\n\n**Medical History:**\n- Religious Belief: Catholic\n\n**Diagnosis:**\n- Biometric Identifier: BIO-5927863410\n\n**Treatment Goals:**\n- Improve mobility and functionality.\n\n**Specific Rehabilitation Interventions:**\n- Physical therapy sessions three times a week.\n- Occupational therapy sessions twice a week.\n\n**Expected Outcomes:**\n- Enhanced physical strength and independence in daily activities.\n\n**Timeline for Care:**\n- Initial assessment and plan development.\n- Ongoing therapy sessions over the next six months.\n- Regular progress reviews.\n\n**Signatures:**\n- Healthcare Provider:\n- Patient:",
+    "domain": "Healthcare",
+    "document_type": "Rehabilitation Plan",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Leslie",
+        "start": 80,
+        "end": 86
+      },
+      {
+        "label": "medical_record_number",
+        "value": "LAC-00037295",
+        "start": 112,
+        "end": 124
+      },
+      {
+        "label": "email",
+        "value": "bigbiel@gmail.com",
+        "start": 134,
+        "end": 151
+      },
+      {
+        "label": "religious_belief",
+        "value": "Catholic",
+        "start": 194,
+        "end": 202
+      },
+      {
+        "label": "biometric_identifier",
+        "value": "BIO-5927863410",
+        "start": 243,
+        "end": 257
+      },
+      {
+        "label": "time",
+        "value": "three times a week",
+        "start": 390,
+        "end": 408
+      },
+      {
+        "label": "time",
+        "value": "twice a week",
+        "start": 442,
+        "end": 454
+      },
+      {
+        "label": "time",
+        "value": "six months",
+        "start": 655,
+        "end": 665
+      },
+      {
+        "label": "occupation",
+        "value": "Healthcare Provider",
+        "start": 714,
+        "end": 733
+      }
+    ]
+  },
+  {
+    "text": "If you have any questions about your health plan or need to manage your health plan beneficiary number: G98327654-M2, feel free to reach out to our healthcare providers. You can contact us at the phone number: +7 348 715-6982 or email us at anya@medservicegroup.ru. Our healthcare providers are available a quarter to five, Monday through Friday, to assist you with any inquiries or concerns you may have. For more detailed information, you can visit our resources page at https://resources.mayoclinic.org/patient-education. We are committed to providing you with the best possible care and support, regardless of your education level: bachelor's degree.",
+    "domain": "Healthcare",
+    "document_type": "Patient Education Materials",
+    "pii": [
+      {
+        "label": "health_plan_beneficiary_number",
+        "value": "G98327654-M2",
+        "start": 104,
+        "end": 116
+      },
+      {
+        "label": "phone_number",
+        "value": "+7 348 715-6982",
+        "start": 210,
+        "end": 225
+      },
+      {
+        "label": "email",
+        "value": "anya@medservicegroup.ru",
+        "start": 241,
+        "end": 264
+      },
+      {
+        "label": "time",
+        "value": "a quarter to five",
+        "start": 305,
+        "end": 322
+      },
+      {
+        "label": "url",
+        "value": "https://resources.mayoclinic.org/patient-education",
+        "start": 473,
+        "end": 523
+      },
+      {
+        "label": "education_level",
+        "value": "bachelor's degree",
+        "start": 636,
+        "end": 653
+      }
+    ]
+  },
+  {
+    "text": "Subject: Your Temporary Password for Almjd Healthcare Portal\n\nDear Ali,\n\nYour temporary password for accessing the Almjd Healthcare Portal has been generated. Please use the following credentials to log in:\n\n- Temporary Password: SunsetRover!Moon\n- Email: ali.a@almjdhealthcare.iq\n\nPlease note that this temporary password will expire on 08/15/2023 at 18:22. To ensure the security of your account, you must change your password immediately upon your first login.\n\nInstructions to change your password:\n\n1. Click on the following link to access the secure portal: [Secure Portal Link]\n2. Enter your email address (ali.a@almjdhealthcare.iq) and the temporary password (SunsetRover!Moon).\n3. Follow the prompts to set a new password.\n\nIf you have any issues or need further assistance, please contact our support team.\n\nThank you for your cooperation.\n\nBest regards,\n\nAlmjd Healthcare Support Team",
+    "domain": "Healthcare",
+    "document_type": "temporary password notification",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Ali",
+        "start": 67,
+        "end": 70
+      },
+      {
+        "label": "password",
+        "value": "SunsetRover!Moon",
+        "start": 230,
+        "end": 246
+      },
+      {
+        "label": "email",
+        "value": "ali.a@almjdhealthcare.iq",
+        "start": 256,
+        "end": 280
+      },
+      {
+        "label": "date",
+        "value": "08/15/2023",
+        "start": 338,
+        "end": 348
+      },
+      {
+        "label": "time",
+        "value": "18:22",
+        "start": 352,
+        "end": 357
+      },
+      {
+        "label": "email",
+        "value": "ali.a@almjdhealthcare.iq",
+        "start": 614,
+        "end": 638
+      },
+      {
+        "label": "password",
+        "value": "SunsetRover!Moon",
+        "start": 668,
+        "end": 684
+      },
+      {
+        "label": "occupation",
+        "value": "Support Team",
+        "start": 883,
+        "end": 895
+      }
+    ]
+  },
+  {
+    "text": "**Customer Blood Type Profile**\n\n**Patient ID:** 0007293846\n\n**Full Name:** Aryan\n\n**Date of Birth:** 1983-07-02\n\n**Blood Type:** A positive\n\n**Rh Factor:** Positive\n\n**Date of Last Test:** N/A\n\n**Healthcare Provider's Signature:** N/A",
+    "domain": "Healthcare",
+    "document_type": "Customer Blood Type Profile",
+    "pii": [
+      {
+        "label": "medical_record_number",
+        "value": "0007293846",
+        "start": 49,
+        "end": 59
+      },
+      {
+        "label": "first_name",
+        "value": "Aryan",
+        "start": 76,
+        "end": 81
+      },
+      {
+        "label": "date_of_birth",
+        "value": "1983-07-02",
+        "start": 102,
+        "end": 112
+      },
+      {
+        "label": "blood_type",
+        "value": "A positive",
+        "start": 130,
+        "end": 140
+      }
+    ]
+  },
+  {
+    "text": "**Vaccination Record**\n\n**Patient Information**\n- **Medical Record Number:** 000782365\n- **First Name:** Charles\n\n**Vaccination History**\n\n| Vaccination Date | Vaccine Type | Lot Number | Administration Site | Healthcare Provider Signature |\n|------------------|--------------|------------|---------------------|--------------------------------|\n| 01/15/2023       | COVID-19     | 123456     | Left Arm            |  |\n| 02/15/2023       | Flu          | 654321     | Right Arm           |  |",
+    "domain": "Healthcare",
+    "document_type": "Vaccination Record",
+    "pii": [
+      {
+        "label": "medical_record_number",
+        "value": "000782365",
+        "start": 77,
+        "end": 86
+      },
+      {
+        "label": "first_name",
+        "value": "Charles",
+        "start": 105,
+        "end": 112
+      },
+      {
+        "label": "date",
+        "value": "01/15/2023",
+        "start": 348,
+        "end": 358
+      },
+      {
+        "label": "date",
+        "value": "02/15/2023",
+        "start": 422,
+        "end": 432
+      }
+    ]
+  },
+  {
+    "text": "**Welcome Letter**\n\nDear Audrey Bucher,\n\nThank you for choosing our healthcare services. Your new ATM card is enclosed with this letter. Please keep this information secure and confidential.\n\n**Card Details:**\n\nPatient Name: Audrey Bucher\nCard Number: 98731265\nPIN: 1994\nExpiration Date: 12/31/2025\n\n**Security Tips:**\n\n1. Memorize your PIN: 1994 and destroy this letter securely.\n2. Never share your card number: 98731265 or PIN: 1994 with anyone.\n3. Keep your card in a safe place.\n\n**Important Information:**\n\nYour medical record number: 98731265 is linked to your ATM card for easy access to your healthcare benefits.\n\nIf you have any questions, please contact our customer service.\n\nThank you for your trust in our services.\n\nSincerely,\n\n[Healthcare Provider Name]\n\n**Instruction Sheet**\n\n1. Locate your PIN card enclosed with this letter.\n2. Activate your card by calling the number on the back of the card and entering your PIN: 1994.\n3. Use your card number: 98731265 and PIN: 1994 to access your healthcare benefits.\n4. Keep your medical record number: 98731265 confidential and secure.",
+    "domain": "Healthcare",
+    "document_type": "ATM card PIN mailer",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Audrey",
+        "start": 25,
+        "end": 31
+      },
+      {
+        "label": "last_name",
+        "value": "Bucher",
+        "start": 32,
+        "end": 38
+      },
+      {
+        "label": "first_name",
+        "value": "Audrey",
+        "start": 225,
+        "end": 231
+      },
+      {
+        "label": "last_name",
+        "value": "Bucher",
+        "start": 232,
+        "end": 238
+      },
+      {
+        "label": "medical_record_number",
+        "value": "98731265",
+        "start": 252,
+        "end": 260
+      },
+      {
+        "label": "pin",
+        "value": "1994",
+        "start": 266,
+        "end": 270
+      },
+      {
+        "label": "date",
+        "value": "12/31/2025",
+        "start": 288,
+        "end": 298
+      },
+      {
+        "label": "pin",
+        "value": "1994",
+        "start": 342,
+        "end": 346
+      },
+      {
+        "label": "medical_record_number",
+        "value": "98731265",
+        "start": 414,
+        "end": 422
+      },
+      {
+        "label": "pin",
+        "value": "1994",
+        "start": 431,
+        "end": 435
+      },
+      {
+        "label": "medical_record_number",
+        "value": "98731265",
+        "start": 541,
+        "end": 549
+      },
+      {
+        "label": "pin",
+        "value": "1994",
+        "start": 936,
+        "end": 940
+      },
+      {
+        "label": "medical_record_number",
+        "value": "98731265",
+        "start": 967,
+        "end": 975
+      },
+      {
+        "label": "pin",
+        "value": "1994",
+        "start": 985,
+        "end": 989
+      },
+      {
+        "label": "medical_record_number",
+        "value": "98731265",
+        "start": 1062,
+        "end": 1070
+      }
+    ]
+  },
+  {
+    "text": "Dear Elena,\n\nWe received your request for a new ATM card PIN. Your new PIN is 532299. Please ensure to keep this PIN secure and do not share it with anyone.\n\nIf you have any questions or need further assistance, please contact us at elena87@gesundheitsschmiede.de\n\nThank you for using our services.\n\nBest regards,\nYour Healthcare Provider Support Team",
+    "domain": "Healthcare",
+    "document_type": "ATM card PIN mailer",
+    "pii": [
+      {
+        "label": "first_name",
+        "value": "Elena",
+        "start": 5,
+        "end": 10
+      },
+      {
+        "label": "pin",
+        "value": "532299",
+        "start": 78,
+        "end": 84
+      },
+      {
+        "label": "email",
+        "value": "elena87@gesundheitsschmiede.de",
+        "start": 233,
+        "end": 263
+      },
+      {
+        "label": "occupation",
+        "value": "Healthcare Provider Support Team",
+        "start": 319,
+        "end": 351
+      }
+    ]
+  }
+]
