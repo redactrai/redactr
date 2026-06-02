@@ -3,7 +3,7 @@
 // the systray glue lives in tray_systray.go.
 package tray
 
-import "github.com/rakeshguha/redactr/internal/control"
+import "github.com/redactrai/redactr/internal/control"
 
 // View is the rendered tray state.
 type View struct {

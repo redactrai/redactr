@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/rakeshguha/redactr/internal/server/store"
+	"github.com/redactrai/redactr/internal/server/store"
 )
 
 func TestRequireDevice(t *testing.T) {

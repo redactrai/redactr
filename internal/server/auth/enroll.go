@@ -5,7 +5,7 @@ import (
 	"encoding/hex"
 	"time"
 
-	"github.com/rakeshguha/redactr/internal/server/store"
+	"github.com/redactrai/redactr/internal/server/store"
 )
 
 // HashToken returns the hex SHA-256 of a raw enrollment token (what the DB stores).

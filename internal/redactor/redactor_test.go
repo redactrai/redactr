@@ -3,7 +3,7 @@ package redactor
 import (
 	"testing"
 
-	"github.com/rakeshguha/redactr/internal/scanner"
+	"github.com/redactrai/redactr/internal/scanner"
 )
 
 func TestRedactSingleFinding(t *testing.T) {

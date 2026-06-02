@@ -13,7 +13,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/rakeshguha/redactr/internal/sessions"
+	"github.com/redactrai/redactr/internal/sessions"
 )
 
 // RunShell executes the `redactr shell` subcommand. It exports proxy and CA

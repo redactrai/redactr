@@ -12,11 +12,11 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/rakeshguha/redactr/internal/server/auth"
-	"github.com/rakeshguha/redactr/internal/server/httpapi"
-	"github.com/rakeshguha/redactr/internal/server/imagebuild"
-	"github.com/rakeshguha/redactr/internal/server/keys"
-	"github.com/rakeshguha/redactr/internal/server/store"
+	"github.com/redactrai/redactr/internal/server/auth"
+	"github.com/redactrai/redactr/internal/server/httpapi"
+	"github.com/redactrai/redactr/internal/server/imagebuild"
+	"github.com/redactrai/redactr/internal/server/keys"
+	"github.com/redactrai/redactr/internal/server/store"
 )
 
 func env(k, def string) string {

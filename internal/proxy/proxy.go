@@ -16,10 +16,10 @@ import (
 	"time"
 
 	"github.com/elazarl/goproxy"
-	"github.com/rakeshguha/redactr/internal/admin"
-	"github.com/rakeshguha/redactr/internal/certgen"
-	"github.com/rakeshguha/redactr/internal/domain"
-	"github.com/rakeshguha/redactr/internal/store"
+	"github.com/redactrai/redactr/internal/admin"
+	"github.com/redactrai/redactr/internal/certgen"
+	"github.com/redactrai/redactr/internal/domain"
+	"github.com/redactrai/redactr/internal/store"
 )
 
 type OnScanFunc func(report *store.ScanReport)

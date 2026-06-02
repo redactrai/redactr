@@ -4,7 +4,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/rakeshguha/redactr/internal/config"
+	"github.com/redactrai/redactr/internal/config"
 )
 
 type BypassMatcher struct {

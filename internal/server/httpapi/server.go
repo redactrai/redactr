@@ -11,10 +11,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/rakeshguha/redactr/internal/control"
-	"github.com/rakeshguha/redactr/internal/server/auth"
-	"github.com/rakeshguha/redactr/internal/server/imagebuild"
-	"github.com/rakeshguha/redactr/internal/server/store"
+	"github.com/redactrai/redactr/internal/control"
+	"github.com/redactrai/redactr/internal/server/auth"
+	"github.com/redactrai/redactr/internal/server/imagebuild"
+	"github.com/redactrai/redactr/internal/server/store"
 )
 
 type Server struct {

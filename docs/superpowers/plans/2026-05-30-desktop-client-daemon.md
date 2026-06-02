@@ -6,7 +6,7 @@
 
 **Architecture:** The daemon owns all v1 components plus a policy cache and a UDS HTTP control socket. Two thin clients front it — the `redactr` CLI (TTY owner; launches containers via subsystem C after a socket preflight) and a `redactr tray` menubar (polls `/status`). Wire DTOs live in a neutral leaf package `internal/control` to avoid import cycles; the persisted policy lives in `internal/policy`.
 
-**Tech Stack:** Go 1.26 (`github.com/rakeshguha/redactr`), `net.Listen("unix", …)` + `net/http`, subsystem C (`internal/sandbox`, already on `main`), `fyne.io/systray` (macOS CGo — added only at Task B6).
+**Tech Stack:** Go 1.26 (`github.com/redactrai/redactr`), `net.Listen("unix", …)` + `net/http`, subsystem C (`internal/sandbox`, already on `main`), `fyne.io/systray` (macOS CGo — added only at Task B6).
 
 **Reuse / seams:**
 - All v1 components are reused unchanged; B2 only **moves** their wiring out of `main()`.
@@ -278,20 +278,20 @@ import (
 	"log/slog"
 	"net/http"
 
-	"github.com/rakeshguha/redactr/internal/admin"
-	"github.com/rakeshguha/redactr/internal/api"
-	"github.com/rakeshguha/redactr/internal/certgen"
-	"github.com/rakeshguha/redactr/internal/config"
-	"github.com/rakeshguha/redactr/internal/coordinator"
-	"github.com/rakeshguha/redactr/internal/domain"
-	"github.com/rakeshguha/redactr/internal/firewall"
-	"github.com/rakeshguha/redactr/internal/lifecycle"
-	"github.com/rakeshguha/redactr/internal/licensing"
-	"github.com/rakeshguha/redactr/internal/proxy"
-	"github.com/rakeshguha/redactr/internal/scanner"
-	"github.com/rakeshguha/redactr/internal/scanner/gliner"
-	"github.com/rakeshguha/redactr/internal/sidecar"
-	"github.com/rakeshguha/redactr/internal/store"
+	"github.com/redactrai/redactr/internal/admin"
+	"github.com/redactrai/redactr/internal/api"
+	"github.com/redactrai/redactr/internal/certgen"
+	"github.com/redactrai/redactr/internal/config"
+	"github.com/redactrai/redactr/internal/coordinator"
+	"github.com/redactrai/redactr/internal/domain"
+	"github.com/redactrai/redactr/internal/firewall"
+	"github.com/redactrai/redactr/internal/lifecycle"
+	"github.com/redactrai/redactr/internal/licensing"
+	"github.com/redactrai/redactr/internal/proxy"
+	"github.com/redactrai/redactr/internal/scanner"
+	"github.com/redactrai/redactr/internal/scanner/gliner"
+	"github.com/redactrai/redactr/internal/sidecar"
+	"github.com/redactrai/redactr/internal/store"
 )
 
 // Options parameterizes Build. Ephemeral is set by tests to bind the admin +
@@ -494,8 +494,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/rakeshguha/redactr/internal/control"
-	"github.com/rakeshguha/redactr/internal/policy"
+	"github.com/redactrai/redactr/internal/control"
+	"github.com/redactrai/redactr/internal/policy"
 )
 
 func (d *Daemon) socketPath() string {
@@ -641,7 +641,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/rakeshguha/redactr/internal/control"
+	"github.com/redactrai/redactr/internal/control"
 )
 
 // serveFakeSocket spins up a UDS server returning canned control responses.
@@ -733,7 +733,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/rakeshguha/redactr/internal/control"
+	"github.com/redactrai/redactr/internal/control"
 )
 
 // Client talks to the daemon's control socket at <sockDir>/redactr.sock.
@@ -898,8 +898,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/rakeshguha/redactr/internal/control"
-	"github.com/rakeshguha/redactr/internal/sandbox"
+	"github.com/redactrai/redactr/internal/control"
+	"github.com/redactrai/redactr/internal/sandbox"
 )
 
 type launchInfo = control.LaunchInfo
@@ -996,7 +996,7 @@ package tray
 import (
 	"testing"
 
-	"github.com/rakeshguha/redactr/internal/control"
+	"github.com/redactrai/redactr/internal/control"
 )
 
 func TestTrayStateGreenWhenProxyLive(t *testing.T) {
@@ -1043,8 +1043,8 @@ import (
 
 	"fyne.io/systray"
 
-	"github.com/rakeshguha/redactr/internal/cli"
-	"github.com/rakeshguha/redactr/internal/control"
+	"github.com/redactrai/redactr/internal/cli"
+	"github.com/redactrai/redactr/internal/control"
 )
 
 // View is the rendered tray state.
@@ -1128,7 +1128,7 @@ In the `switch os.Args[1]` block, add (after the agent case):
 			return
 ```
 
-Add `"github.com/rakeshguha/redactr/internal/tray"` to the imports.
+Add `"github.com/redactrai/redactr/internal/tray"` to the imports.
 
 - [ ] **Step 6: Run tests + build**
 

@@ -7,7 +7,7 @@ import (
 
 	"fyne.io/systray"
 
-	"github.com/rakeshguha/redactr/internal/cli"
+	"github.com/redactrai/redactr/internal/cli"
 )
 
 // Run starts the menubar/notification-area event loop. It blocks (systray.Run

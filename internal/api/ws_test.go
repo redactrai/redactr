@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/gorilla/websocket"
-	"github.com/rakeshguha/redactr/internal/store"
+	"github.com/redactrai/redactr/internal/store"
 )
 
 func TestWebSocketBroadcast(t *testing.T) {

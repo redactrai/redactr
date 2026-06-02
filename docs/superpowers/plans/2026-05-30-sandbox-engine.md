@@ -6,7 +6,7 @@
 
 **Architecture:** A new `internal/sandbox` package exposes `Engine.Launch(Spec)` over a pluggable container `Runtime` (Docker — which also covers Colima — and Podman, selected by `Detect`). The Spec is assembled from pure functions (hardening flags, CA/mount/env injection, proxy-address discovery) so the bulk is unit-testable without Docker. A thin CLI entrypoint (`redactr claude`) builds an ephemeral-tty Spec and launches. The container reaches the host proxy via `host.docker.internal`; first by `HTTPS_PROXY` env (Task 6 end-to-end), then hardened with an in-container transparent redirect + egress drop (Task 10). The proxy, scanner, and `internal/domain` denylist are reused unchanged from v1.
 
-**Tech Stack:** Go 1.26 (`github.com/rakeshguha/redactr`), Docker/Podman/Colima CLIs, `iptables` (inside the base image), standard `os/exec`, Go `testing` (unit tests pure; integration tests behind `-tags=integration`, matching `test/integration/`).
+**Tech Stack:** Go 1.26 (`github.com/redactrai/redactr`), Docker/Podman/Colima CLIs, `iptables` (inside the base image), standard `os/exec`, Go `testing` (unit tests pure; integration tests behind `-tags=integration`, matching `test/integration/`).
 
 **Scope / seams (deferred to later subsystem specs):**
 - Only **ephemeral-tty** mode is built. `stdio-attached` (MCP) and `workspace-remote` (Dev Container) are left as explicit `Mode` enum values with a `not implemented` error and a `// SEAM:` comment.
@@ -863,7 +863,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/rakeshguha/redactr/internal/sandbox"
+	"github.com/redactrai/redactr/internal/sandbox"
 )
 
 // knownAgents maps a subcommand to the in-container entrypoint binary.
@@ -971,7 +971,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/rakeshguha/redactr/internal/sandbox"
+	"github.com/redactrai/redactr/internal/sandbox"
 )
 
 // TestSandboxReachesProxyAlias verifies a container launched by the engine can

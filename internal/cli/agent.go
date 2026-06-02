@@ -6,8 +6,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/rakeshguha/redactr/internal/control"
-	"github.com/rakeshguha/redactr/internal/sandbox"
+	"github.com/redactrai/redactr/internal/control"
+	"github.com/redactrai/redactr/internal/sandbox"
 )
 
 // knownAgents maps a subcommand to the in-container entrypoint binary.

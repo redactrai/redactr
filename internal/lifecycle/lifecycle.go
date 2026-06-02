@@ -17,7 +17,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/rakeshguha/redactr/internal/firewall"
+	"github.com/redactrai/redactr/internal/firewall"
 )
 
 const (

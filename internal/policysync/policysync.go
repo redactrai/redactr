@@ -13,10 +13,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/rakeshguha/redactr/internal/control"
-	"github.com/rakeshguha/redactr/internal/enrollment"
-	"github.com/rakeshguha/redactr/internal/policy"
-	"github.com/rakeshguha/redactr/internal/signing"
+	"github.com/redactrai/redactr/internal/control"
+	"github.com/redactrai/redactr/internal/enrollment"
+	"github.com/redactrai/redactr/internal/policy"
+	"github.com/redactrai/redactr/internal/signing"
 )
 
 func etagPath(baseDir string) string { return filepath.Join(baseDir, "cache", "policy.etag") }

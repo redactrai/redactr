@@ -3,7 +3,7 @@ package presidio
 import (
 	"testing"
 
-	"github.com/rakeshguha/redactr/internal/scanner"
+	"github.com/redactrai/redactr/internal/scanner"
 )
 
 func hasFinding(findings []scanner.Finding, label string) bool {

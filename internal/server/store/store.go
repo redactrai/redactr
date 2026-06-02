@@ -12,7 +12,7 @@ import (
 
 	_ "modernc.org/sqlite"
 
-	"github.com/rakeshguha/redactr/internal/control"
+	"github.com/redactrai/redactr/internal/control"
 )
 
 //go:embed schema.sql

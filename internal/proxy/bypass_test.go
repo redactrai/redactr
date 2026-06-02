@@ -3,7 +3,7 @@ package proxy
 import (
 	"testing"
 
-	"github.com/rakeshguha/redactr/internal/config"
+	"github.com/redactrai/redactr/internal/config"
 )
 
 func TestBypassMatcher(t *testing.T) {

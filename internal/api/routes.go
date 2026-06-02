@@ -10,9 +10,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/rakeshguha/redactr/internal/config"
-	"github.com/rakeshguha/redactr/internal/sessions"
-	"github.com/rakeshguha/redactr/internal/store"
+	"github.com/redactrai/redactr/internal/config"
+	"github.com/redactrai/redactr/internal/sessions"
+	"github.com/redactrai/redactr/internal/store"
 )
 
 // stateDir returns the directory where redactr writes runtime state files.

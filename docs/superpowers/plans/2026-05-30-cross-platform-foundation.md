@@ -6,7 +6,7 @@
 
 **Architecture:** Three of five changes are tiny build/platform fixes (firewall interface completion, daemon-spawn build-tag split, runtime-aware container host alias). The fourth makes the tray render a green/red icon natively on Windows (`SetIcon`) as well as macOS. The fifth updates the architecture spec. No host-level traffic redirect — the container self-redirects via the in-container `iptables` entrypoint from subsystem C.
 
-**Tech Stack:** Go 1.26 (`github.com/rakeshguha/redactr`), `fyne.io/systray` (CGo; already a dep), stdlib `image`/`image/png`/`encoding/binary` for programmatic icons.
+**Tech Stack:** Go 1.26 (`github.com/redactrai/redactr`), `fyne.io/systray` (CGo; already a dep), stdlib `image`/`image/png`/`encoding/binary` for programmatic icons.
 
 **Verification reality (developed on macOS, no Windows box, no mingw):**
 - `systray` is CGo, so packages that import it (`internal/tray`, `cmd/redactr`) **cannot** cross-compile to Windows from macOS. Their Windows build + runtime smoke are **deferred to a Windows machine**.
@@ -440,7 +440,7 @@ import (
 
 	"fyne.io/systray"
 
-	"github.com/rakeshguha/redactr/internal/cli"
+	"github.com/redactrai/redactr/internal/cli"
 )
 
 // Run starts the menubar/notification-area event loop. It blocks (systray.Run

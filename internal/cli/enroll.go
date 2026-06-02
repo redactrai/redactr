@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/rakeshguha/redactr/internal/enrollment"
+	"github.com/redactrai/redactr/internal/enrollment"
 )
 
 // RunEnroll enrolls this device with the control-plane server and stores the

@@ -9,8 +9,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/rakeshguha/redactr/internal/control"
-	"github.com/rakeshguha/redactr/internal/policy"
+	"github.com/redactrai/redactr/internal/control"
+	"github.com/redactrai/redactr/internal/policy"
 )
 
 func (d *Daemon) socketPath() string {

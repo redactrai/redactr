@@ -8,10 +8,10 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/rakeshguha/redactr/internal/cli"
-	"github.com/rakeshguha/redactr/internal/daemon"
-	"github.com/rakeshguha/redactr/internal/firewall"
-	"github.com/rakeshguha/redactr/internal/tray"
+	"github.com/redactrai/redactr/internal/cli"
+	"github.com/redactrai/redactr/internal/daemon"
+	"github.com/redactrai/redactr/internal/firewall"
+	"github.com/redactrai/redactr/internal/tray"
 )
 
 func main() {

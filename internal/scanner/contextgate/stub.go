@@ -1,7 +1,7 @@
 package contextgate
 
 import (
-	"github.com/rakeshguha/redactr/internal/scanner"
+	"github.com/redactrai/redactr/internal/scanner"
 )
 
 type Stub struct{}

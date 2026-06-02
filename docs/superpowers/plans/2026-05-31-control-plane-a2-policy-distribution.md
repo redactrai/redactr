@@ -182,7 +182,7 @@ type SignedPolicy struct {
 }
 ```
 
-- [ ] **Step 4: add methods to `internal/server/auth/token.go`** (append; add import `"github.com/rakeshguha/redactr/internal/signing"`)
+- [ ] **Step 4: add methods to `internal/server/auth/token.go`** (append; add import `"github.com/redactrai/redactr/internal/signing"`)
 ```go
 // SignDetached signs an arbitrary payload with the server key (for policy bundles).
 func (s *Signer) SignDetached(payload []byte) (string, error) {
@@ -379,7 +379,7 @@ func TestPolicyDistribution(t *testing.T) {
 	}
 }
 ```
-(Add imports `"encoding/base64"`, `"bytes"`, and `"github.com/rakeshguha/redactr/internal/signing"` to the test file.)
+(Add imports `"encoding/base64"`, `"bytes"`, and `"github.com/redactrai/redactr/internal/signing"` to the test file.)
 
 - [ ] **Step 2: extend `internal/server/httpapi/server.go`**
 
@@ -392,7 +392,7 @@ Add routes in `New` (after the whoami line / among existing):
 ```
 (Remove the `// SEAM A2:` comment line.)
 
-Add handlers + extend enroll. Add imports `"encoding/base64"`, `"fmt"`, `"github.com/rakeshguha/redactr/internal/control"`.
+Add handlers + extend enroll. Add imports `"encoding/base64"`, `"fmt"`, `"github.com/redactrai/redactr/internal/control"`.
 ```go
 func (s *Server) handleServerKey(w http.ResponseWriter, r *http.Request) {
 	pem, err := s.signer.PublicKeyPEM()
@@ -596,7 +596,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/rakeshguha/redactr/internal/enrollment"
+	"github.com/redactrai/redactr/internal/enrollment"
 )
 
 func TestRunEnrollStoresEnrollment(t *testing.T) {
@@ -637,7 +637,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/rakeshguha/redactr/internal/enrollment"
+	"github.com/redactrai/redactr/internal/enrollment"
 )
 
 // RunEnroll enrolls this device with the control-plane server and stores the
@@ -735,10 +735,10 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/rakeshguha/redactr/internal/control"
-	"github.com/rakeshguha/redactr/internal/enrollment"
-	"github.com/rakeshguha/redactr/internal/policy"
-	"github.com/rakeshguha/redactr/internal/signing"
+	"github.com/redactrai/redactr/internal/control"
+	"github.com/redactrai/redactr/internal/enrollment"
+	"github.com/redactrai/redactr/internal/policy"
+	"github.com/redactrai/redactr/internal/signing"
 )
 
 func TestSyncVerifiesAndWritesPolicy(t *testing.T) {
@@ -824,10 +824,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/rakeshguha/redactr/internal/control"
-	"github.com/rakeshguha/redactr/internal/enrollment"
-	"github.com/rakeshguha/redactr/internal/policy"
-	"github.com/rakeshguha/redactr/internal/signing"
+	"github.com/redactrai/redactr/internal/control"
+	"github.com/redactrai/redactr/internal/enrollment"
+	"github.com/redactrai/redactr/internal/policy"
+	"github.com/redactrai/redactr/internal/signing"
 )
 
 func etagPath(baseDir string) string { return filepath.Join(baseDir, "cache", "policy.etag") }
@@ -919,7 +919,7 @@ Run `go test ./internal/daemon/ -run TestPolicySyncGate -v` → FAIL (undefined:
 
 - [ ] **Step 2: implement in `internal/daemon/daemon.go`**
 
-Add the import `"github.com/rakeshguha/redactr/internal/enrollment"` and `"github.com/rakeshguha/redactr/internal/policysync"` and `"time"`/`"context"` (already imported). Add a helper + a sync loop started in `Start` (gated on `!Ephemeral` and enrollment), cancelled in `Stop`.
+Add the import `"github.com/redactrai/redactr/internal/enrollment"` and `"github.com/redactrai/redactr/internal/policysync"` and `"time"`/`"context"` (already imported). Add a helper + a sync loop started in `Start` (gated on `!Ephemeral` and enrollment), cancelled in `Stop`.
 ```go
 // shouldSyncPolicy reports whether this daemon should run the policy-sync loop.
 func shouldSyncPolicy(baseDir string) bool {

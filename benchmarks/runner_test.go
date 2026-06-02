@@ -5,12 +5,12 @@ import (
 	"os"
 	"testing"
 
-	"github.com/rakeshguha/redactr/internal/coordinator"
-	"github.com/rakeshguha/redactr/internal/fileblock"
-	"github.com/rakeshguha/redactr/internal/scanner"
-	"github.com/rakeshguha/redactr/internal/scanner/contextgate"
-	"github.com/rakeshguha/redactr/internal/scanner/entropy"
-	"github.com/rakeshguha/redactr/internal/scanner/regex"
+	"github.com/redactrai/redactr/internal/coordinator"
+	"github.com/redactrai/redactr/internal/fileblock"
+	"github.com/redactrai/redactr/internal/scanner"
+	"github.com/redactrai/redactr/internal/scanner/contextgate"
+	"github.com/redactrai/redactr/internal/scanner/entropy"
+	"github.com/redactrai/redactr/internal/scanner/regex"
 )
 
 type sample struct {

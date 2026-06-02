@@ -9,9 +9,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/rakeshguha/redactr/internal/certgen"
-	"github.com/rakeshguha/redactr/internal/domain"
-	"github.com/rakeshguha/redactr/internal/scanner"
+	"github.com/redactrai/redactr/internal/certgen"
+	"github.com/redactrai/redactr/internal/domain"
+	"github.com/redactrai/redactr/internal/scanner"
 )
 
 type noopPipeline struct{}

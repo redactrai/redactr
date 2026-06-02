@@ -6,7 +6,7 @@ import (
 	"os/exec"
 	"path/filepath"
 
-	"github.com/rakeshguha/redactr/internal/devcontainer"
+	"github.com/redactrai/redactr/internal/devcontainer"
 )
 
 type cmdRunner func(name string, args ...string) error

@@ -6,10 +6,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/rakeshguha/redactr/internal/fileblock"
-	"github.com/rakeshguha/redactr/internal/scanner/entropy"
-	"github.com/rakeshguha/redactr/internal/scanner/gliner"
-	"github.com/rakeshguha/redactr/internal/scanner/presidio"
+	"github.com/redactrai/redactr/internal/fileblock"
+	"github.com/redactrai/redactr/internal/scanner/entropy"
+	"github.com/redactrai/redactr/internal/scanner/gliner"
+	"github.com/redactrai/redactr/internal/scanner/presidio"
 )
 
 // TestPresidioConcurrentScanReconfigure exercises the production scenario

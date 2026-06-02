@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/rakeshguha/redactr/internal/sandbox"
+	"github.com/redactrai/redactr/internal/sandbox"
 )
 
 // TestSandboxReachesProxyAlias verifies a container launched by the engine can

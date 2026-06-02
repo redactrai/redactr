@@ -72,9 +72,9 @@ func TestEventsInsertListCount(t *testing.T) {
 	}
 }
 ```
-(Ensure `"github.com/rakeshguha/redactr/internal/control"` is imported in the test.)
+(Ensure `"github.com/redactrai/redactr/internal/control"` is imported in the test.)
 
-- [ ] **Step 4: implement (append to `internal/server/store/store.go`)** — add `"github.com/rakeshguha/redactr/internal/control"` import.
+- [ ] **Step 4: implement (append to `internal/server/store/store.go`)** — add `"github.com/redactrai/redactr/internal/control"` import.
 ```go
 // Event is a stored monitoring event (metadata only).
 type Event struct {
@@ -305,8 +305,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/rakeshguha/redactr/internal/enrollment"
-	"github.com/rakeshguha/redactr/internal/sessions"
+	"github.com/redactrai/redactr/internal/enrollment"
+	"github.com/redactrai/redactr/internal/sessions"
 )
 
 func TestCollectScrubsMetadata(t *testing.T) {
@@ -362,7 +362,7 @@ func TestReportNoEnrollmentIsNoop(t *testing.T) {
 	}
 }
 ```
-> The test imports `"github.com/rakeshguha/redactr/internal/control"` (for the `MonitorEvent` literals) in addition to enrollment/sessions/net-http/json/strings/testing.
+> The test imports `"github.com/redactrai/redactr/internal/control"` (for the `MonitorEvent` literals) in addition to enrollment/sessions/net-http/json/strings/testing.
 
 Run `go test ./internal/monitor/ -v` → FAIL.
 
@@ -381,9 +381,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/rakeshguha/redactr/internal/control"
-	"github.com/rakeshguha/redactr/internal/enrollment"
-	"github.com/rakeshguha/redactr/internal/sessions"
+	"github.com/redactrai/redactr/internal/control"
+	"github.com/redactrai/redactr/internal/enrollment"
+	"github.com/redactrai/redactr/internal/sessions"
 )
 
 // Collect maps classified sessions to scrubbed monitoring events.
@@ -452,7 +452,7 @@ func TestMonitorGate(t *testing.T) {
 Run → FAIL (undefined: shouldReport).
 
 - [ ] **Step 2: implement in `internal/daemon/daemon.go`**
-1. Imports: add `"github.com/rakeshguha/redactr/internal/monitor"`. (`sessions`, `enrollment`, `context`, `time`, `slog` already present.)
+1. Imports: add `"github.com/redactrai/redactr/internal/monitor"`. (`sessions`, `enrollment`, `context`, `time`, `slog` already present.)
 2. Confirm the daemon holds a `sessions.Lister`. In `Build`, the lister is created (`sessLister := sessions.New(os.Getpid())`) and passed to `apiServer.SetSessions`. Promote it to a struct field `sessLister *sessions.Lister` set in `Build` (replace the local with `d.sessLister = sessions.New(os.Getpid())` and pass `d.sessLister`). Also add a `monitorCancel context.CancelFunc` field.
 3. Gate helper:
 ```go

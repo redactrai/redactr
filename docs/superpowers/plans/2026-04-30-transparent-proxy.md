@@ -789,7 +789,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/rakeshguha/redactr/internal/firewall"
+	"github.com/redactrai/redactr/internal/firewall"
 )
 
 func main() {
@@ -1651,7 +1651,7 @@ git commit -m "feat(firewall): Controller orchestrating Manager + DNS reconcile"
 In `internal/api/server.go`, add to imports:
 
 ```go
-	"github.com/rakeshguha/redactr/internal/firewall"
+	"github.com/redactrai/redactr/internal/firewall"
 ```
 
 Add fields and a setter:
@@ -1800,7 +1800,7 @@ Add imports if missing:
 ```go
 	"context"
 
-	"github.com/rakeshguha/redactr/internal/firewall"
+	"github.com/redactrai/redactr/internal/firewall"
 ```
 
 - [ ] **Step 5: Build + test**

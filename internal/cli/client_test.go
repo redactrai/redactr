@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/rakeshguha/redactr/internal/control"
+	"github.com/redactrai/redactr/internal/control"
 )
 
 // serveFakeSocket spins up a UDS server returning canned control responses.

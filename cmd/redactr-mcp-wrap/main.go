@@ -13,8 +13,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/rakeshguha/redactr/internal/mcpwrap"
-	"github.com/rakeshguha/redactr/internal/sandbox"
+	"github.com/redactrai/redactr/internal/mcpwrap"
+	"github.com/redactrai/redactr/internal/sandbox"
 )
 
 type apiScanner struct {

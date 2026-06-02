@@ -326,12 +326,12 @@ func TestImageBuildSetsPolicy(t *testing.T) {
 > 	return ts, srv
 > }
 > ```
-> and import `"context"` + `"github.com/rakeshguha/redactr/internal/server/imagebuild"` in the test.
+> and import `"context"` + `"github.com/redactrai/redactr/internal/server/imagebuild"` in the test.
 
 Run `go test ./internal/server/httpapi/ -run TestImageBuild -v` → FAIL.
 
 - [ ] **Step 2: extend `internal/server/httpapi/server.go`**
-Add fields + setter + routes + handlers. Add imports `"github.com/rakeshguha/redactr/internal/server/imagebuild"`, `"encoding/json"` (present), `"github.com/rakeshguha/redactr/internal/control"` (present).
+Add fields + setter + routes + handlers. Add imports `"github.com/redactrai/redactr/internal/server/imagebuild"`, `"encoding/json"` (present), `"github.com/redactrai/redactr/internal/control"` (present).
 ```go
 // In the Server struct, add:
 //   builder  imagebuild.Builder
@@ -423,7 +423,7 @@ After `srv := httpapi.New(...)` (it's currently inline in the `&http.Server{Hand
 	}
 	srv := &http.Server{Addr: addr, Handler: handler}
 ```
-Add imports `"github.com/rakeshguha/redactr/internal/server/imagebuild"`.
+Add imports `"github.com/redactrai/redactr/internal/server/imagebuild"`.
 
 - [ ] **Step 4: verify + commit**
 Run: `go test ./internal/server/httpapi/ -v && go build ./... && go vet ./internal/server/... && CGO_ENABLED=0 GOOS=linux go build ./cmd/redactr-server/`

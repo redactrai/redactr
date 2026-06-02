@@ -3,8 +3,8 @@ package coordinator
 import (
 	"testing"
 
-	"github.com/rakeshguha/redactr/internal/fileblock"
-	"github.com/rakeshguha/redactr/internal/scanner"
+	"github.com/redactrai/redactr/internal/fileblock"
+	"github.com/redactrai/redactr/internal/scanner"
 )
 
 type mockLayer struct {

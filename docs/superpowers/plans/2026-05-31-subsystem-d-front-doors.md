@@ -73,7 +73,7 @@ import (
 	"encoding/json"
 	"strings"
 
-	"github.com/rakeshguha/redactr/internal/sandbox"
+	"github.com/redactrai/redactr/internal/sandbox"
 )
 
 // GenerateInput is the resolved launch policy needed to render a devcontainer.
@@ -191,7 +191,7 @@ import (
 	"os/exec"
 	"path/filepath"
 
-	"github.com/rakeshguha/redactr/internal/devcontainer"
+	"github.com/redactrai/redactr/internal/devcontainer"
 )
 
 type cmdRunner func(name string, args ...string) error
@@ -449,7 +449,7 @@ with a resolve step that builds the container argv from the sandbox engine + dae
 	}
 	cmd := exec.Command(childArgv[0], childArgv[1:]...)
 ```
-Add imports `"path/filepath"` and `"github.com/rakeshguha/redactr/internal/sandbox"`. (The MITM loop below — `mcpwrap.ScanMessage` over stdin/stdout — is unchanged.)
+Add imports `"path/filepath"` and `"github.com/redactrai/redactr/internal/sandbox"`. (The MITM loop below — `mcpwrap.ScanMessage` over stdin/stdout — is unchanged.)
 
 - [ ] **Step 4: verify + commit**
 Run: `go test ./cmd/redactr-mcp-wrap/ -v && go build ./... && go vet ./cmd/redactr-mcp-wrap/ && go test ./internal/... 2>&1 | grep -v "no test files"`

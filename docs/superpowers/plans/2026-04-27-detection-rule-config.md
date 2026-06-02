@@ -838,7 +838,7 @@ Add a new file `internal/config/migrate.go`:
 ```go
 package config
 
-import "github.com/rakeshguha/redactr/internal/rules"
+import "github.com/redactrai/redactr/internal/rules"
 
 // MigrateLegacyLayerFlags converts the deprecated boolean layer flags
 // (RegexEnabled / EntropyEnabled / GLiNEREnabled) into individual rule
@@ -955,7 +955,7 @@ type scannerFinding = struct {
 Adjust the test to use `scanner.Finding` directly if simpler:
 
 ```go
-import "github.com/rakeshguha/redactr/internal/scanner"
+import "github.com/redactrai/redactr/internal/scanner"
 // then change scannerFinding -> scanner.Finding throughout
 ```
 
@@ -1581,8 +1581,8 @@ git commit -m "feat(scanner): add Reconfigurable interface and pipeline fan-out"
 // add to internal/coordinator/coordinator_test.go
 
 import (
-    "github.com/rakeshguha/redactr/internal/fileblock"
-    "github.com/rakeshguha/redactr/internal/scanner"
+    "github.com/redactrai/redactr/internal/fileblock"
+    "github.com/redactrai/redactr/internal/scanner"
 )
 
 func TestCoordinatorReconfigureInvalidatesCache(t *testing.T) {
@@ -1667,8 +1667,8 @@ import (
     "net/http/httptest"
     "testing"
 
-    "github.com/rakeshguha/redactr/internal/config"
-    "github.com/rakeshguha/redactr/internal/store"
+    "github.com/redactrai/redactr/internal/config"
+    "github.com/redactrai/redactr/internal/store"
 )
 
 func TestGetRulesReturnsCatalogue(t *testing.T) {
@@ -1763,7 +1763,7 @@ import (
     "encoding/json"
     "net/http"
 
-    "github.com/rakeshguha/redactr/internal/rules"
+    "github.com/redactrai/redactr/internal/rules"
 )
 
 type rulesResponseTier struct {
@@ -2033,7 +2033,7 @@ eff := rules.Effective(cfg.Scanning.Rules)
 ruleEnabled := func(id string) bool { return eff[id] }
 ```
 
-(Add the import: `"github.com/rakeshguha/redactr/internal/rules"`.)
+(Add the import: `"github.com/redactrai/redactr/internal/rules"`.)
 
 Replace the `presidioScanner := presidio.New()` line with:
 
@@ -2911,7 +2911,7 @@ import (
     "os"
 
     "gopkg.in/yaml.v3"
-    "github.com/rakeshguha/redactr/internal/rules"
+    "github.com/redactrai/redactr/internal/rules"
 )
 
 type legacyScan struct {

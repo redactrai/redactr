@@ -3,9 +3,9 @@ package coordinator
 import (
 	"strings"
 
-	"github.com/rakeshguha/redactr/internal/fileblock"
-	"github.com/rakeshguha/redactr/internal/redactor"
-	"github.com/rakeshguha/redactr/internal/scanner"
+	"github.com/redactrai/redactr/internal/fileblock"
+	"github.com/redactrai/redactr/internal/redactor"
+	"github.com/redactrai/redactr/internal/scanner"
 )
 
 type Coordinator struct {

@@ -6,7 +6,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/rakeshguha/redactr/internal/enrollment"
+	"github.com/redactrai/redactr/internal/enrollment"
 )
 
 func TestRunEnrollStoresEnrollment(t *testing.T) {

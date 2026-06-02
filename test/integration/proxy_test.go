@@ -14,16 +14,16 @@ import (
 	"testing"
 	"time"
 
-	"github.com/rakeshguha/redactr/internal/certgen"
-	"github.com/rakeshguha/redactr/internal/coordinator"
-	"github.com/rakeshguha/redactr/internal/domain"
-	"github.com/rakeshguha/redactr/internal/fileblock"
-	"github.com/rakeshguha/redactr/internal/proxy"
-	"github.com/rakeshguha/redactr/internal/scanner"
-	"github.com/rakeshguha/redactr/internal/scanner/contextgate"
-	"github.com/rakeshguha/redactr/internal/scanner/entropy"
-	"github.com/rakeshguha/redactr/internal/scanner/regex"
-	"github.com/rakeshguha/redactr/internal/store"
+	"github.com/redactrai/redactr/internal/certgen"
+	"github.com/redactrai/redactr/internal/coordinator"
+	"github.com/redactrai/redactr/internal/domain"
+	"github.com/redactrai/redactr/internal/fileblock"
+	"github.com/redactrai/redactr/internal/proxy"
+	"github.com/redactrai/redactr/internal/scanner"
+	"github.com/redactrai/redactr/internal/scanner/contextgate"
+	"github.com/redactrai/redactr/internal/scanner/entropy"
+	"github.com/redactrai/redactr/internal/scanner/regex"
+	"github.com/redactrai/redactr/internal/store"
 )
 
 func TestFullPipelineViaProxy(t *testing.T) {

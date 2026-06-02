@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/rakeshguha/redactr/internal/server/store"
+	"github.com/redactrai/redactr/internal/server/store"
 )
 
 type ctxKey int

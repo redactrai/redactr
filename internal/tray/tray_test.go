@@ -3,7 +3,7 @@ package tray
 import (
 	"testing"
 
-	"github.com/rakeshguha/redactr/internal/control"
+	"github.com/redactrai/redactr/internal/control"
 )
 
 func TestTrayStateGreenWhenProxyLive(t *testing.T) {

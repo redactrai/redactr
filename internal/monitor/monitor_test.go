@@ -7,9 +7,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/rakeshguha/redactr/internal/control"
-	"github.com/rakeshguha/redactr/internal/enrollment"
-	"github.com/rakeshguha/redactr/internal/sessions"
+	"github.com/redactrai/redactr/internal/control"
+	"github.com/redactrai/redactr/internal/enrollment"
+	"github.com/redactrai/redactr/internal/sessions"
 )
 
 func TestCollectScrubsMetadata(t *testing.T) {

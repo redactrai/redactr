@@ -12,7 +12,7 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/rakeshguha/redactr/internal/signing"
+	"github.com/redactrai/redactr/internal/signing"
 )
 
 var (

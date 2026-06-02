@@ -24,7 +24,8 @@ Redactr is a local HTTPS proxy that redacts emails, SSNs, API keys, and other se
 - [How it works](#how-it-works)
 - [Getting started](#getting-started)
   - [Prerequisites](#prerequisites)
-  - [Build](#build)
+  - [Install](#install)
+  - [Build from source](#build-from-source)
   - [Run it locally end-to-end](#run-it-locally-end-to-end)
 - [Front doors](#front-doors-how-each-tool-gets-protected)
 - [Dashboards](#dashboards)
@@ -99,13 +100,26 @@ Redactr sits in the middle and scans every outbound request through a four-layer
 - **Python 3** (optional) — for the GLiNER ML layer (names/addresses). The proxy works without it using the regex + entropy layers.
 - `curl` and `jq` for the walkthrough below (`jq` is just for pretty output).
 
-### Build
+### Install
+
+```bash
+# Install the binaries directly with the Go toolchain
+go install github.com/redactrai/redactr/cmd/redactr@latest
+go install github.com/redactrai/redactr/cmd/redactr-server@latest
+go install github.com/redactrai/redactr/cmd/redactr-mcp-wrap@latest
+```
+
+> `@latest` resolves once a release is tagged; until then use `@main` for the tip of the default branch.
+
+### Build from source
 
 ```bash
 git clone https://github.com/redactrai/redactr.git
 cd redactr
 make build      # → bin/redactr, bin/redactr-mcp-wrap, bin/redactr-server
 ```
+
+The walkthrough below uses the `./bin/...` paths from a source build; if you installed via `go install`, drop the `./bin/` prefix.
 
 ### Run it locally end-to-end
 

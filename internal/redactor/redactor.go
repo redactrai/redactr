@@ -5,7 +5,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/rakeshguha/redactr/internal/scanner"
+	"github.com/redactrai/redactr/internal/scanner"
 )
 
 type RedactionResult struct {

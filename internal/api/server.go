@@ -6,12 +6,12 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/rakeshguha/redactr/internal/config"
-	"github.com/rakeshguha/redactr/internal/coordinator"
-	"github.com/rakeshguha/redactr/internal/firewall"
-	"github.com/rakeshguha/redactr/internal/licensing"
-	"github.com/rakeshguha/redactr/internal/sessions"
-	"github.com/rakeshguha/redactr/internal/store"
+	"github.com/redactrai/redactr/internal/config"
+	"github.com/redactrai/redactr/internal/coordinator"
+	"github.com/redactrai/redactr/internal/firewall"
+	"github.com/redactrai/redactr/internal/licensing"
+	"github.com/redactrai/redactr/internal/sessions"
+	"github.com/redactrai/redactr/internal/store"
 )
 
 type ProxyController interface {

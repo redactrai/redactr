@@ -4,7 +4,7 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/rakeshguha/redactr/internal/scanner"
+	"github.com/redactrai/redactr/internal/scanner"
 )
 
 type PatternDef struct {

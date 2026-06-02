@@ -10,7 +10,7 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/rakeshguha/redactr/internal/control"
+	"github.com/redactrai/redactr/internal/control"
 )
 
 // Client talks to the daemon's control socket at <sockDir>/redactr.sock.

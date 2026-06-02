@@ -159,7 +159,7 @@ Core infrastructure: config, certs, basic proxy, BoltDB storage. After this phas
 
 ```bash
 cd /Users/rakeshguha/Desktop/Code/clearPass
-go mod init github.com/rakeshguha/redactr
+go mod init github.com/redactrai/redactr
 ```
 
 - [ ] **Step 2: Create `.gitignore`**
@@ -1816,7 +1816,7 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/rakeshguha/redactr/internal/scanner"
+	"github.com/redactrai/redactr/internal/scanner"
 )
 
 type PatternDef struct {
@@ -2031,7 +2031,7 @@ import (
 	"time"
 	"unicode"
 
-	"github.com/rakeshguha/redactr/internal/scanner"
+	"github.com/redactrai/redactr/internal/scanner"
 )
 
 type Scanner struct {
@@ -2280,7 +2280,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/rakeshguha/redactr/internal/scanner"
+	"github.com/redactrai/redactr/internal/scanner"
 )
 
 type DetectRequest struct {
@@ -2416,7 +2416,7 @@ Create `internal/scanner/contextgate/stub.go`:
 package contextgate
 
 import (
-	"github.com/rakeshguha/redactr/internal/scanner"
+	"github.com/redactrai/redactr/internal/scanner"
 )
 
 type Stub struct{}
@@ -2439,7 +2439,7 @@ package redactor
 import (
 	"testing"
 
-	"github.com/rakeshguha/redactr/internal/scanner"
+	"github.com/redactrai/redactr/internal/scanner"
 )
 
 func TestRedactSingleFinding(t *testing.T) {
@@ -2537,7 +2537,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/rakeshguha/redactr/internal/scanner"
+	"github.com/redactrai/redactr/internal/scanner"
 )
 
 type RedactionResult struct {
@@ -3327,9 +3327,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/rakeshguha/redactr/internal/certgen"
-	"github.com/rakeshguha/redactr/internal/domain"
-	"github.com/rakeshguha/redactr/internal/scanner"
+	"github.com/redactrai/redactr/internal/certgen"
+	"github.com/redactrai/redactr/internal/domain"
+	"github.com/redactrai/redactr/internal/scanner"
 )
 
 type noopPipeline struct{}
@@ -3417,7 +3417,7 @@ Create `internal/proxy/rewrite.go`:
 package proxy
 
 import (
-	"github.com/rakeshguha/redactr/internal/scanner"
+	"github.com/redactrai/redactr/internal/scanner"
 )
 
 type ScanPipeline interface {
@@ -3441,9 +3441,9 @@ import (
 	"time"
 
 	"github.com/elazarl/goproxy"
-	"github.com/rakeshguha/redactr/internal/certgen"
-	"github.com/rakeshguha/redactr/internal/domain"
-	"github.com/rakeshguha/redactr/internal/store"
+	"github.com/redactrai/redactr/internal/certgen"
+	"github.com/redactrai/redactr/internal/domain"
+	"github.com/redactrai/redactr/internal/store"
 )
 
 type OnScanFunc func(report *store.ScanReport)
@@ -3643,9 +3643,9 @@ import (
 	"time"
 
 	"github.com/elazarl/goproxy"
-	"github.com/rakeshguha/redactr/internal/certgen"
-	"github.com/rakeshguha/redactr/internal/domain"
-	"github.com/rakeshguha/redactr/internal/store"
+	"github.com/redactrai/redactr/internal/certgen"
+	"github.com/redactrai/redactr/internal/domain"
+	"github.com/redactrai/redactr/internal/store"
 )
 
 // ... (all code above unchanged, except certPEM and keyPEM become):
@@ -3698,8 +3698,8 @@ package scanner
 import (
 	"testing"
 
-	"github.com/rakeshguha/redactr/internal/fileblock"
-	"github.com/rakeshguha/redactr/internal/redactor"
+	"github.com/redactrai/redactr/internal/fileblock"
+	"github.com/redactrai/redactr/internal/redactor"
 )
 
 func TestCoordinatorScanAndRedact(t *testing.T) {
@@ -3797,8 +3797,8 @@ Create `internal/scanner/coordinator.go`:
 package scanner
 
 import (
-	"github.com/rakeshguha/redactr/internal/fileblock"
-	"github.com/rakeshguha/redactr/internal/redactor"
+	"github.com/redactrai/redactr/internal/fileblock"
+	"github.com/redactrai/redactr/internal/redactor"
 )
 
 type Coordinator struct {
@@ -3887,8 +3887,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/rakeshguha/redactr/internal/config"
-	"github.com/rakeshguha/redactr/internal/store"
+	"github.com/redactrai/redactr/internal/config"
+	"github.com/redactrai/redactr/internal/store"
 )
 
 func setupTestAPI(t *testing.T) (*Server, *config.Manager, *store.Store) {
@@ -4026,9 +4026,9 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/rakeshguha/redactr/internal/config"
-	"github.com/rakeshguha/redactr/internal/scanner"
-	"github.com/rakeshguha/redactr/internal/store"
+	"github.com/redactrai/redactr/internal/config"
+	"github.com/redactrai/redactr/internal/scanner"
+	"github.com/redactrai/redactr/internal/store"
 )
 
 type ProxyController interface {
@@ -4093,8 +4093,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/rakeshguha/redactr/internal/config"
-	"github.com/rakeshguha/redactr/internal/store"
+	"github.com/redactrai/redactr/internal/config"
+	"github.com/redactrai/redactr/internal/store"
 )
 
 func (s *Server) registerRoutes() {
@@ -4253,7 +4253,7 @@ import (
 	"time"
 
 	"github.com/gorilla/websocket"
-	"github.com/rakeshguha/redactr/internal/store"
+	"github.com/redactrai/redactr/internal/store"
 )
 
 func TestWebSocketBroadcast(t *testing.T) {
@@ -5733,7 +5733,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/rakeshguha/redactr/internal/mcpwrap"
+	"github.com/redactrai/redactr/internal/mcpwrap"
 )
 
 type apiScanner struct {
@@ -6367,20 +6367,20 @@ import (
 	"path/filepath"
 	"syscall"
 
-	"github.com/rakeshguha/redactr/internal/api"
-	"github.com/rakeshguha/redactr/internal/certgen"
-	"github.com/rakeshguha/redactr/internal/config"
-	"github.com/rakeshguha/redactr/internal/domain"
-	"github.com/rakeshguha/redactr/internal/fileblock"
-	"github.com/rakeshguha/redactr/internal/firewall"
-	"github.com/rakeshguha/redactr/internal/proxy"
-	"github.com/rakeshguha/redactr/internal/scanner"
-	"github.com/rakeshguha/redactr/internal/scanner/contextgate"
-	"github.com/rakeshguha/redactr/internal/scanner/entropy"
-	"github.com/rakeshguha/redactr/internal/scanner/gliner"
-	"github.com/rakeshguha/redactr/internal/scanner/regex"
-	"github.com/rakeshguha/redactr/internal/sidecar"
-	"github.com/rakeshguha/redactr/internal/store"
+	"github.com/redactrai/redactr/internal/api"
+	"github.com/redactrai/redactr/internal/certgen"
+	"github.com/redactrai/redactr/internal/config"
+	"github.com/redactrai/redactr/internal/domain"
+	"github.com/redactrai/redactr/internal/fileblock"
+	"github.com/redactrai/redactr/internal/firewall"
+	"github.com/redactrai/redactr/internal/proxy"
+	"github.com/redactrai/redactr/internal/scanner"
+	"github.com/redactrai/redactr/internal/scanner/contextgate"
+	"github.com/redactrai/redactr/internal/scanner/entropy"
+	"github.com/redactrai/redactr/internal/scanner/gliner"
+	"github.com/redactrai/redactr/internal/scanner/regex"
+	"github.com/redactrai/redactr/internal/sidecar"
+	"github.com/redactrai/redactr/internal/store"
 )
 
 func main() {
@@ -6679,16 +6679,16 @@ import (
 	"testing"
 	"time"
 
-	"github.com/rakeshguha/redactr/internal/certgen"
-	"github.com/rakeshguha/redactr/internal/config"
-	"github.com/rakeshguha/redactr/internal/domain"
-	"github.com/rakeshguha/redactr/internal/fileblock"
-	"github.com/rakeshguha/redactr/internal/proxy"
-	"github.com/rakeshguha/redactr/internal/scanner"
-	"github.com/rakeshguha/redactr/internal/scanner/contextgate"
-	"github.com/rakeshguha/redactr/internal/scanner/entropy"
-	"github.com/rakeshguha/redactr/internal/scanner/regex"
-	"github.com/rakeshguha/redactr/internal/store"
+	"github.com/redactrai/redactr/internal/certgen"
+	"github.com/redactrai/redactr/internal/config"
+	"github.com/redactrai/redactr/internal/domain"
+	"github.com/redactrai/redactr/internal/fileblock"
+	"github.com/redactrai/redactr/internal/proxy"
+	"github.com/redactrai/redactr/internal/scanner"
+	"github.com/redactrai/redactr/internal/scanner/contextgate"
+	"github.com/redactrai/redactr/internal/scanner/entropy"
+	"github.com/redactrai/redactr/internal/scanner/regex"
+	"github.com/redactrai/redactr/internal/store"
 
 	"net/http/httptest"
 )
@@ -6838,11 +6838,11 @@ import (
 	"os"
 	"testing"
 
-	"github.com/rakeshguha/redactr/internal/fileblock"
-	"github.com/rakeshguha/redactr/internal/scanner"
-	"github.com/rakeshguha/redactr/internal/scanner/contextgate"
-	"github.com/rakeshguha/redactr/internal/scanner/entropy"
-	"github.com/rakeshguha/redactr/internal/scanner/regex"
+	"github.com/redactrai/redactr/internal/fileblock"
+	"github.com/redactrai/redactr/internal/scanner"
+	"github.com/redactrai/redactr/internal/scanner/contextgate"
+	"github.com/redactrai/redactr/internal/scanner/entropy"
+	"github.com/redactrai/redactr/internal/scanner/regex"
 )
 
 type sample struct {

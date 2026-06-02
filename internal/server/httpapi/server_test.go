@@ -15,10 +15,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/rakeshguha/redactr/internal/server/auth"
-	"github.com/rakeshguha/redactr/internal/server/imagebuild"
-	"github.com/rakeshguha/redactr/internal/server/store"
-	"github.com/rakeshguha/redactr/internal/signing"
+	"github.com/redactrai/redactr/internal/server/auth"
+	"github.com/redactrai/redactr/internal/server/imagebuild"
+	"github.com/redactrai/redactr/internal/server/store"
+	"github.com/redactrai/redactr/internal/signing"
 )
 
 func newTestServer(t *testing.T) *httptest.Server {

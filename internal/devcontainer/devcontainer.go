@@ -6,7 +6,7 @@ package devcontainer
 import (
 	"encoding/json"
 
-	"github.com/rakeshguha/redactr/internal/sandbox"
+	"github.com/redactrai/redactr/internal/sandbox"
 )
 
 // GenerateInput is the resolved launch policy needed to render a devcontainer.

@@ -10,10 +10,10 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/rakeshguha/redactr/internal/control"
-	"github.com/rakeshguha/redactr/internal/enrollment"
-	"github.com/rakeshguha/redactr/internal/policy"
-	"github.com/rakeshguha/redactr/internal/signing"
+	"github.com/redactrai/redactr/internal/control"
+	"github.com/redactrai/redactr/internal/enrollment"
+	"github.com/redactrai/redactr/internal/policy"
+	"github.com/redactrai/redactr/internal/signing"
 )
 
 func TestSyncVerifiesAndWritesPolicy(t *testing.T) {

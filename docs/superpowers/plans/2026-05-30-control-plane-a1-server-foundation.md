@@ -658,7 +658,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/rakeshguha/redactr/internal/server/store"
+	"github.com/redactrai/redactr/internal/server/store"
 )
 
 func TestEnrollIssuesVerifiableToken(t *testing.T) {
@@ -707,7 +707,7 @@ import (
 	"encoding/hex"
 	"time"
 
-	"github.com/rakeshguha/redactr/internal/server/store"
+	"github.com/redactrai/redactr/internal/server/store"
 )
 
 // HashToken returns the hex SHA-256 of a raw enrollment token (what the DB stores).
@@ -774,7 +774,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/rakeshguha/redactr/internal/server/store"
+	"github.com/redactrai/redactr/internal/server/store"
 )
 
 func TestRequireDevice(t *testing.T) {
@@ -853,7 +853,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/rakeshguha/redactr/internal/server/store"
+	"github.com/redactrai/redactr/internal/server/store"
 )
 
 type ctxKey int
@@ -944,8 +944,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/rakeshguha/redactr/internal/server/auth"
-	"github.com/rakeshguha/redactr/internal/server/store"
+	"github.com/redactrai/redactr/internal/server/auth"
+	"github.com/redactrai/redactr/internal/server/store"
 )
 
 func newTestServer(t *testing.T) *httptest.Server {
@@ -1057,8 +1057,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/rakeshguha/redactr/internal/server/auth"
-	"github.com/rakeshguha/redactr/internal/server/store"
+	"github.com/redactrai/redactr/internal/server/auth"
+	"github.com/redactrai/redactr/internal/server/store"
 )
 
 type Server struct {
@@ -1225,10 +1225,10 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/rakeshguha/redactr/internal/server/auth"
-	"github.com/rakeshguha/redactr/internal/server/httpapi"
-	"github.com/rakeshguha/redactr/internal/server/keys"
-	"github.com/rakeshguha/redactr/internal/server/store"
+	"github.com/redactrai/redactr/internal/server/auth"
+	"github.com/redactrai/redactr/internal/server/httpapi"
+	"github.com/redactrai/redactr/internal/server/keys"
+	"github.com/redactrai/redactr/internal/server/store"
 )
 
 func env(k, def string) string {

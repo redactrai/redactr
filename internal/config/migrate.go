@@ -3,7 +3,7 @@ package config
 import (
 	"os"
 
-	"github.com/rakeshguha/redactr/internal/rules"
+	"github.com/redactrai/redactr/internal/rules"
 	"gopkg.in/yaml.v3"
 )
 

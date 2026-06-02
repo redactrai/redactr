@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/rakeshguha/redactr/internal/config"
-	"github.com/rakeshguha/redactr/internal/rules"
+	"github.com/redactrai/redactr/internal/config"
+	"github.com/redactrai/redactr/internal/rules"
 )
 
 type rulesResponseTier struct {

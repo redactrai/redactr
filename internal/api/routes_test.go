@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/rakeshguha/redactr/internal/config"
-	"github.com/rakeshguha/redactr/internal/store"
+	"github.com/redactrai/redactr/internal/config"
+	"github.com/redactrai/redactr/internal/store"
 )
 
 func setupTestAPI(t *testing.T) (*Server, *config.Manager, *store.Store) {
