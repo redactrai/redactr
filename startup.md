@@ -164,15 +164,35 @@ If a non-redactr process happens to hold the pidfile PID (PID reuse), startup re
 ## Subcommands
 
 ```bash
-# Start the proxy (default)
+# Start the daemon: proxy + dashboard (:9080) + admin/metrics (:9090) (default)
 redactr
 
-# Interactive shell with proxy pre-configured
+# Interactive shell with proxy + CA env pre-configured (host-bound, no container)
 redactr shell
+
+# Launch an AI agent inside a hardened container, egress force-routed to the proxy
+# (requires a container runtime — Docker/Podman/Colima — and, for the policy image,
+#  enrollment with a control plane; see README team mode)
+redactr claude [args]
+redactr codex [args]
+redactr copilot [args]
+
+# Generate/open a VS Code Dev Container for a project (the Copilot gate)
+redactr code <project> [--force]
+
+# Enroll this device with a control-plane server
+redactr enroll --server <url> --token <enrollment-token>
+
+# System-tray client with a green/red proxy on/off indicator
+redactr tray
 
 # Clean up firewall rules left from a crash
 redactr cleanup
 ```
+
+> The container/enrollment subcommands (`claude`, `code`, `enroll`, `tray`) are
+> the v2 team-mode surface — see [README.md](README.md). `redactr`, `shell`, and
+> `cleanup` are the standalone-daemon commands this guide focuses on.
 
 ## Troubleshooting
 
