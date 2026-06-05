@@ -10,6 +10,7 @@ import (
 )
 
 var reportsBucket = []byte("reports")
+var outboxBucket = []byte("outbox")
 
 type ScanReport struct {
 	ID         string        `json:"id"`
@@ -63,7 +64,10 @@ func New(path string) (*Store, error) {
 		return nil, err
 	}
 	err = db.Update(func(tx *bolt.Tx) error {
-		_, err := tx.CreateBucketIfNotExists(reportsBucket)
+		if _, err := tx.CreateBucketIfNotExists(reportsBucket); err != nil {
+			return err
+		}
+		_, err := tx.CreateBucketIfNotExists(outboxBucket)
 		return err
 	})
 	if err != nil {
