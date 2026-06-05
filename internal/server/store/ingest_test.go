@@ -85,3 +85,29 @@ func TestMigrationAddsUUIDToLegacyEvents(t *testing.T) {
 		t.Fatalf("events=%d want 1", n)
 	}
 }
+
+func TestIngestRecordsSkipsUnknownKind(t *testing.T) {
+	st, err := Open(filepath.Join(t.TempDir(), "s.db"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	defer st.Close()
+	batch := []control.IngestRecord{
+		recMon("m1", "a"),
+		{UUID: "x1", Kind: "bogus"},
+		recAudit("a1", "email"),
+	}
+	acc, err := st.IngestRecords("org1", "dev1", batch, time.Now().UTC())
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(acc) != 2 {
+		t.Fatalf("accepted=%d want 2 (unknown kind skipped)", len(acc))
+	}
+	if n, _ := st.CountEvents("org1"); n != 1 {
+		t.Fatalf("events=%d want 1", n)
+	}
+	if n, _ := st.CountAuditRecords("org1"); n != 1 {
+		t.Fatalf("audit=%d want 1", n)
+	}
+}

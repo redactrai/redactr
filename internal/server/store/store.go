@@ -247,7 +247,9 @@ type Event struct {
 	ReceivedAt      time.Time `json:"received_at"`
 }
 
-// InsertEvents writes a batch of monitoring events for a device in one tx.
+// InsertEvents is the pre-F1 fire-and-forget path (no dedup uuid; writes NULL).
+// Deprecated: use IngestRecords, which provides idempotent ingest via
+// ON CONFLICT(uuid). Retained only for the legacy POST /v1/events handler.
 func (s *Store) InsertEvents(orgID, deviceID string, evs []control.MonitorEvent, receivedAt time.Time) error {
 	tx, err := s.db.Begin()
 	if err != nil {

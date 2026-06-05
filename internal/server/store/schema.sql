@@ -49,7 +49,7 @@ CREATE INDEX IF NOT EXISTS idx_events_org ON events(org_id, received_at);
 
 CREATE TABLE IF NOT EXISTS audit_records (
   uuid        TEXT PRIMARY KEY,
-  org_id      TEXT NOT NULL,
+  org_id      TEXT NOT NULL REFERENCES orgs(id),
   device_id   TEXT NOT NULL,
   provider    TEXT NOT NULL,
   source      TEXT NOT NULL,
