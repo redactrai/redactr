@@ -12,6 +12,7 @@ import (
 	"os"
 	"os/signal"
 	"path/filepath"
+	"sync/atomic"
 	"syscall"
 	"time"
 
@@ -83,7 +84,11 @@ type Daemon struct {
 	policyCancel    context.CancelFunc
 	monitorCancel   context.CancelFunc
 	shipperCancel   context.CancelFunc
-	sock            *http.Server // B3: control socket lives here
+	// shipEnabled is true exactly while the shipper goroutine is running (set in
+	// Start when enrolled + non-ephemeral). onScan checks it so audit records are
+	// only enqueued when there is a shipper to drain them.
+	shipEnabled atomic.Bool
+	sock        *http.Server // B3: control socket lives here
 }
 
 // Build wires up all daemon components without starting any listeners. It is
@@ -184,11 +189,10 @@ func Build(opts Options) (*Daemon, error) {
 	go hub.Run()
 	d.hub = hub
 
-	enrolled := enrollment.Exists(baseDir)
 	onScan := func(report *store.ScanReport) {
 		logStore.SaveReport(report)
 		hub.Broadcast(report)
-		if enrolled {
+		if d.shipEnabled.Load() {
 			for _, a := range auditRecordsFromReport(report) {
 				if err := logStore.EnqueueAudit(a); err != nil {
 					slog.Warn("audit enqueue failed", "error", err)
@@ -380,22 +384,19 @@ func (d *Daemon) Start() error {
 	}
 
 	if !d.opts.Ephemeral && isEnrolled(d.opts.BaseDir) {
-		ctx, cancel := context.WithCancel(context.Background())
-		d.policyCancel = cancel
-		go d.policySyncLoop(ctx)
-	}
+		policyCtx, policyCancel := context.WithCancel(context.Background())
+		d.policyCancel = policyCancel
+		go d.policySyncLoop(policyCtx)
 
-	if !d.opts.Ephemeral && isEnrolled(d.opts.BaseDir) {
-		ctx, cancel := context.WithCancel(context.Background())
-		d.monitorCancel = cancel
-		go d.monitorLoop(ctx)
-	}
+		monitorCtx, monitorCancel := context.WithCancel(context.Background())
+		d.monitorCancel = monitorCancel
+		go d.monitorLoop(monitorCtx)
 
-	if !d.opts.Ephemeral && isEnrolled(d.opts.BaseDir) {
-		ctx, cancel := context.WithCancel(context.Background())
-		d.shipperCancel = cancel
+		shipperCtx, shipperCancel := context.WithCancel(context.Background())
+		d.shipperCancel = shipperCancel
+		d.shipEnabled.Store(true)
 		sh := shipper.New(d.store, shipper.NewHTTPPoster(d.opts.BaseDir))
-		go sh.Run(ctx)
+		go sh.Run(shipperCtx)
 	}
 
 	return nil
@@ -464,7 +465,7 @@ func (d *Daemon) Stop() error {
 }
 
 // isEnrolled reports whether this daemon has device enrollment and so should
-// run the control-plane background loops (policy sync + monitor report).
+// run the control-plane background loops (policy sync, monitor telemetry, shipper).
 func isEnrolled(baseDir string) bool {
 	return enrollment.Exists(baseDir)
 }
@@ -488,7 +489,7 @@ func (d *Daemon) policySyncLoop(ctx context.Context) {
 	}
 }
 
-// monitorLoop runs an initial scan+report then ticks every 60 seconds. It exits
+// monitorLoop runs an initial scan+enqueue then ticks every 60 seconds. It exits
 // when ctx is cancelled (i.e. when Stop is called). Errors are logged but do
 // not terminate the loop — fail-open means the batch is silently dropped.
 func (d *Daemon) monitorLoop(ctx context.Context) {
