@@ -413,6 +413,7 @@ func (d *Daemon) Stop() error {
 	if d.monitorCancel != nil {
 		d.monitorCancel()
 	}
+	d.shipEnabled.Store(false)
 	if d.shipperCancel != nil {
 		d.shipperCancel()
 	}

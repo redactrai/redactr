@@ -1,6 +1,9 @@
 package store
 
-import "database/sql"
+import (
+	"database/sql"
+	"strings"
+)
 
 // migrate applies additive, idempotent schema changes that CREATE TABLE IF NOT
 // EXISTS cannot express (e.g. adding a column to a pre-existing table). It runs
@@ -9,10 +12,12 @@ import "database/sql"
 // numbered steps once there are more than ~3 migrations; the PRAGMA-probe
 // pattern becomes unwieldy beyond that.
 func migrate(db *sql.DB) error {
-	if !columnExists(db, "events", "uuid") {
-		if _, err := db.Exec(`ALTER TABLE events ADD COLUMN uuid TEXT`); err != nil {
-			return err
-		}
+	if columnExists(db, "events", "uuid") {
+		return nil
+	}
+	if _, err := db.Exec(`ALTER TABLE events ADD COLUMN uuid TEXT`); err != nil &&
+		!strings.Contains(err.Error(), "duplicate column name") {
+		return err
 	}
 	return nil
 }
@@ -24,6 +29,7 @@ func columnExists(db *sql.DB, table, col string) bool {
 		return false
 	}
 	defer rows.Close()
+	found := false
 	for rows.Next() {
 		var cid, notnull, pk int
 		var name, ctype string
@@ -32,8 +38,11 @@ func columnExists(db *sql.DB, table, col string) bool {
 			return false
 		}
 		if name == col {
-			return true
+			found = true
 		}
 	}
-	return false
+	if rows.Err() != nil {
+		return false
+	}
+	return found
 }

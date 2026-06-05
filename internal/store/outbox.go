@@ -125,6 +125,11 @@ func (s *Store) Trim(maxItems int) (int, error) {
 	if maxItems <= 0 {
 		return 0, nil // no limit configured; never wipe the outbox
 	}
+	// Read-only pre-check: avoid taking the exclusive write lock on every shipper
+	// cycle when the outbox is under capacity. The Update below re-checks under lock.
+	if s.OutboxCount() <= maxItems {
+		return 0, nil
+	}
 	dropped := 0
 	err := s.db.Update(func(tx *bolt.Tx) error {
 		b := tx.Bucket(outboxBucket)

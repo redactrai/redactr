@@ -124,3 +124,78 @@ func TestEndToEndEffectivelyOnce(t *testing.T) {
 		t.Fatalf("after one new + one dup, events=%d want 4", n)
 	}
 }
+
+// TestOutboxResumesAfterRestart proves the durability guarantee end to end:
+// records enqueued before a "crash" (store close) survive, and a fresh Shipper
+// on the reopened DB drains them to the server exactly once.
+func TestOutboxResumesAfterRestart(t *testing.T) {
+	st, err := srvstore.Open(filepath.Join(t.TempDir(), "s.db"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	t.Cleanup(func() { st.Close() })
+	priv, err := ecdsa.GenerateKey(elliptic.P256(), rand.Reader)
+	if err != nil {
+		t.Fatal(err)
+	}
+	ts := httptest.NewServer(httpapi.New(st, auth.NewSigner(priv), "admin-key"))
+	defer ts.Close()
+
+	org, err := st.CreateOrg("Acme")
+	if err != nil {
+		t.Fatal(err)
+	}
+	raw := httpapi.NewRawToken()
+	if err := st.CreateEnrollmentToken(auth.HashToken(raw), org.ID, time.Now().Add(time.Hour), 1, time.Now().UTC()); err != nil {
+		t.Fatal(err)
+	}
+	enrRes, err := auth.Enroll(st, auth.NewSigner(priv), auth.EnrollInput{EnrollmentToken: raw, DeviceName: "laptop", Platform: "darwin"}, time.Now().UTC())
+	if err != nil {
+		t.Fatal(err)
+	}
+
+	base := t.TempDir()
+	if err := enrollment.Save(base, enrollment.Enrollment{ServerURL: ts.URL, DeviceToken: enrRes.Token, OrgID: org.ID, DeviceID: enrRes.DeviceID, ServerPublicKey: "x"}); err != nil {
+		t.Fatal(err)
+	}
+	if err := os.MkdirAll(filepath.Join(base, "data"), 0o755); err != nil {
+		t.Fatal(err)
+	}
+	dbPath := filepath.Join(base, "data", "logs.db")
+
+	// Phase 1: enqueue, then simulate a crash by closing the store before any delivery.
+	cs1, err := clistore.New(dbPath)
+	if err != nil {
+		t.Fatal(err)
+	}
+	for i := 0; i < 3; i++ {
+		if err := cs1.EnqueueMonitor(control.MonitorEvent{Tool: "Claude Code", Verdict: "runaway", DirectConnCount: i, ObservedAt: time.Unix(int64(i), 0).UTC()}); err != nil {
+			t.Fatal(err)
+		}
+	}
+	if n := cs1.OutboxCount(); n != 3 {
+		t.Fatalf("pre-crash outbox=%d want 3", n)
+	}
+	cs1.Close()
+
+	// Phase 2: restart — reopen the SAME db and ship.
+	cs2, err := clistore.New(dbPath)
+	if err != nil {
+		t.Fatal(err)
+	}
+	t.Cleanup(func() { cs2.Close() })
+	if n := cs2.OutboxCount(); n != 3 {
+		t.Fatalf("records did not survive restart: outbox=%d want 3", n)
+	}
+	sh := New(cs2, NewHTTPPoster(base))
+	ctx := context.Background()
+	for i := 0; i < 20 && cs2.OutboxCount() > 0; i++ {
+		sh.runOnce(ctx)
+	}
+	if n := cs2.OutboxCount(); n != 0 {
+		t.Fatalf("outbox not drained after restart: %d", n)
+	}
+	if n, _ := st.CountEvents(org.ID); n != 3 {
+		t.Fatalf("server events=%d want 3", n)
+	}
+}
