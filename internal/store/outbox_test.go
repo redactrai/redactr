@@ -6,6 +6,7 @@ import (
 	"time"
 
 	"github.com/redactrai/redactr/internal/control"
+	bolt "go.etcd.io/bbolt"
 )
 
 func openTemp(t *testing.T) *Store {
@@ -98,5 +99,42 @@ func TestTrimDropsOldest(t *testing.T) {
 	}
 	if recs[0].Monitor.DirectConnCount != 2 {
 		t.Fatalf("trim dropped wrong end: first survivor=%d", recs[0].Monitor.DirectConnCount)
+	}
+}
+
+func TestDrainRespectsMax(t *testing.T) {
+	s := openTemp(t)
+	for i := 0; i < 3; i++ {
+		_ = s.EnqueueMonitor(control.MonitorEvent{Tool: "t"})
+	}
+	recs, keys, err := s.Drain(2)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(recs) != 2 || len(keys) != 2 {
+		t.Fatalf("Drain(2) returned %d recs / %d keys, want 2/2", len(recs), len(keys))
+	}
+}
+
+func TestDrainDropsCorruptEntry(t *testing.T) {
+	s := openTemp(t)
+	_ = s.EnqueueMonitor(control.MonitorEvent{Tool: "good"})
+	// Inject a corrupt (non-JSON) entry directly into the bucket.
+	if err := s.db.Update(func(tx *bolt.Tx) error {
+		b := tx.Bucket(outboxBucket)
+		seq, _ := b.NextSequence()
+		return b.Put(itob(seq), []byte("not json"))
+	}); err != nil {
+		t.Fatal(err)
+	}
+	recs, _, err := s.Drain(10)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(recs) != 1 || recs[0].Monitor.Tool != "good" {
+		t.Fatalf("expected 1 good record, got %+v", recs)
+	}
+	if n := s.OutboxCount(); n != 1 {
+		t.Fatalf("corrupt entry not self-healed, count=%d want 1", n)
 	}
 }

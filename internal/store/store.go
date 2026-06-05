@@ -10,7 +10,6 @@ import (
 )
 
 var reportsBucket = []byte("reports")
-var outboxBucket = []byte("outbox")
 
 type ScanReport struct {
 	ID         string        `json:"id"`
