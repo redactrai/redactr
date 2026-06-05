@@ -38,6 +38,7 @@ import (
 	"github.com/redactrai/redactr/internal/scanner/gliner"
 	"github.com/redactrai/redactr/internal/scanner/presidio"
 	"github.com/redactrai/redactr/internal/sessions"
+	"github.com/redactrai/redactr/internal/shipper"
 	"github.com/redactrai/redactr/internal/sidecar"
 	"github.com/redactrai/redactr/internal/store"
 )
@@ -81,6 +82,7 @@ type Daemon struct {
 	reconcileCancel context.CancelFunc
 	policyCancel    context.CancelFunc
 	monitorCancel   context.CancelFunc
+	shipperCancel   context.CancelFunc
 	sock            *http.Server // B3: control socket lives here
 }
 
@@ -182,9 +184,17 @@ func Build(opts Options) (*Daemon, error) {
 	go hub.Run()
 	d.hub = hub
 
+	enrolled := enrollment.Exists(baseDir)
 	onScan := func(report *store.ScanReport) {
 		logStore.SaveReport(report)
 		hub.Broadcast(report)
+		if enrolled {
+			for _, a := range auditRecordsFromReport(report) {
+				if err := logStore.EnqueueAudit(a); err != nil {
+					slog.Warn("audit enqueue failed", "error", err)
+				}
+			}
+		}
 	}
 
 	bypassMatcher := proxy.NewBypassMatcher(cfg.Scanning.Bypass)
@@ -381,6 +391,13 @@ func (d *Daemon) Start() error {
 		go d.monitorLoop(ctx)
 	}
 
+	if !d.opts.Ephemeral && isEnrolled(d.opts.BaseDir) {
+		ctx, cancel := context.WithCancel(context.Background())
+		d.shipperCancel = cancel
+		sh := shipper.New(d.store, shipper.NewHTTPPoster(d.opts.BaseDir))
+		go sh.Run(ctx)
+	}
+
 	return nil
 }
 
@@ -394,6 +411,9 @@ func (d *Daemon) Stop() error {
 	d.stopControlSocket()
 	if d.monitorCancel != nil {
 		d.monitorCancel()
+	}
+	if d.shipperCancel != nil {
+		d.shipperCancel()
 	}
 	if d.policyCancel != nil {
 		d.policyCancel()
@@ -478,8 +498,10 @@ func (d *Daemon) monitorLoop(ctx context.Context) {
 			slog.Warn("session scan failed", "error", err)
 			return
 		}
-		if err := monitor.Report(d.opts.BaseDir, monitor.Collect(list)); err != nil {
-			slog.Warn("monitor report failed", "error", err)
+		for _, ev := range monitor.Collect(list) {
+			if err := d.store.EnqueueMonitor(ev); err != nil {
+				slog.Warn("monitor enqueue failed", "error", err)
+			}
 		}
 	}
 	report()
