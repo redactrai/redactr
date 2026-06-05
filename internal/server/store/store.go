@@ -18,6 +18,10 @@ import (
 //go:embed schema.sql
 var schema string
 
+// indexesSQL holds indexes that depend on columns added by migrate(); it runs
+// after the base schema and after migration so the columns exist.
+const indexesSQL = `CREATE UNIQUE INDEX IF NOT EXISTS idx_events_uuid ON events(uuid);`
+
 // ErrEnrollment is returned when an enrollment token is invalid (unknown,
 // expired, revoked, or exhausted). Deliberately generic — no oracle on which.
 var ErrEnrollment = errors.New("enrollment failed")
@@ -55,6 +59,14 @@ func Open(path string) (*Store, error) {
 		return nil, err
 	}
 	if _, err := db.Exec(schema); err != nil {
+		db.Close()
+		return nil, err
+	}
+	if err := migrate(db); err != nil {
+		db.Close()
+		return nil, err
+	}
+	if _, err := db.Exec(indexesSQL); err != nil {
 		db.Close()
 		return nil, err
 	}

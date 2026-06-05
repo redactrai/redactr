@@ -42,9 +42,25 @@ CREATE TABLE IF NOT EXISTS events (
   reason            TEXT NOT NULL,
   direct_conn_count INTEGER NOT NULL,
   observed_at       TIMESTAMP NOT NULL,
-  received_at       TIMESTAMP NOT NULL
+  received_at       TIMESTAMP NOT NULL,
+  uuid              TEXT
 );
 CREATE INDEX IF NOT EXISTS idx_events_org ON events(org_id, received_at);
+
+CREATE TABLE IF NOT EXISTS audit_records (
+  uuid        TEXT PRIMARY KEY,
+  org_id      TEXT NOT NULL,
+  device_id   TEXT NOT NULL,
+  provider    TEXT NOT NULL,
+  source      TEXT NOT NULL,
+  detector    TEXT NOT NULL,
+  category    TEXT NOT NULL,
+  action      TEXT NOT NULL,
+  latency_ms  INTEGER NOT NULL,
+  observed_at TIMESTAMP NOT NULL,
+  received_at TIMESTAMP NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_audit_org ON audit_records(org_id, received_at);
 
 CREATE TABLE IF NOT EXISTS images (
   id          TEXT PRIMARY KEY,
