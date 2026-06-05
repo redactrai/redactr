@@ -46,11 +46,13 @@ func New(store Drainer, poster Poster) *Shipper {
 	}
 }
 
-// runOnce performs a single trim+drain+deliver cycle. It returns true when
-// there was nothing to send or the send succeeded, and false when delivery
-// failed (so the caller backs off). Records are acked only after a successful
-// Post; on failure they remain in the outbox and are retried unchanged.
-func (s *Shipper) runOnce(ctx context.Context) bool {
+// runOnce performs a single trim+drain+deliver cycle. It returns ok=true when
+// there was nothing to send or the send (and ack) succeeded, and ok=false when
+// any step failed (drain error, post error, or ack error) so the caller backs
+// off. more=true means a full batch was delivered and the outbox likely holds
+// more, so the caller should continue promptly instead of idling. Records are
+// acked only after a successful Post; on failure they remain and are retried.
+func (s *Shipper) runOnce(ctx context.Context) (ok bool, more bool) {
 	if dropped, err := s.store.Trim(s.maxItems); err != nil {
 		slog.Warn("outbox trim failed", "error", err)
 	} else if dropped > 0 {
@@ -59,30 +61,38 @@ func (s *Shipper) runOnce(ctx context.Context) bool {
 	recs, keys, err := s.store.Drain(s.batch)
 	if err != nil {
 		slog.Warn("outbox drain failed", "error", err)
-		return false
+		return false, false
 	}
 	if len(recs) == 0 {
-		return true
+		return true, false
 	}
 	if err := s.poster.Post(ctx, recs); err != nil {
 		slog.Warn("ingest post failed", "event", "ingest_retry", "error", err, "batch", len(recs))
-		return false
+		return false, false
 	}
 	if err := s.store.Ack(keys); err != nil {
 		slog.Warn("outbox ack failed", "error", err)
+		return false, false
 	}
-	return true
+	return true, len(recs) == s.batch
 }
 
-// Run loops runOnce until ctx is cancelled, sleeping `idle` between successful
-// cycles and backing off exponentially (capped) after failures.
+// Run loops runOnce until ctx is cancelled. After a successful cycle it idles,
+// unless a full batch was delivered (more), in which case it continues
+// immediately to catch up a backlog. After a failure it backs off
+// exponentially, capped at backoffMax.
 func (s *Shipper) Run(ctx context.Context) {
 	backoff := time.Second
 	for {
+		ok, more := s.runOnce(ctx)
 		var wait time.Duration
-		if s.runOnce(ctx) {
-			wait = s.idle
+		if ok {
 			backoff = time.Second
+			if more {
+				wait = 0
+			} else {
+				wait = s.idle
+			}
 		} else {
 			wait = backoff
 			backoff = min(backoff*2, s.backoffMax)

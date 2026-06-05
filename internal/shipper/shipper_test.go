@@ -4,22 +4,28 @@ import (
 	"context"
 	"errors"
 	"testing"
+	"time"
 
 	"github.com/redactrai/redactr/internal/control"
 )
 
 type fakeStore struct {
-	recs  []control.IngestRecord
-	keys  [][]byte
-	acked [][]byte
-	trims int
+	recs        []control.IngestRecord
+	keys        [][]byte
+	acked       [][]byte
+	trims       int
+	drainErr    error
+	trimDropped int
 }
 
 func (f *fakeStore) Drain(max int) ([]control.IngestRecord, [][]byte, error) {
+	if f.drainErr != nil {
+		return nil, nil, f.drainErr
+	}
 	return f.recs, f.keys, nil
 }
 func (f *fakeStore) Ack(keys [][]byte) error { f.acked = keys; f.recs = nil; f.keys = nil; return nil }
-func (f *fakeStore) Trim(maxItems int) (int, error) { f.trims++; return 0, nil }
+func (f *fakeStore) Trim(maxItems int) (int, error) { f.trims++; return f.trimDropped, nil }
 
 type flakyPoster struct {
 	failFirst int
@@ -44,14 +50,14 @@ func TestRunOnceRetriesThenAcks(t *testing.T) {
 	poster := &flakyPoster{failFirst: 1}
 	s := New(store, poster)
 
-	if ok := s.runOnce(context.Background()); ok {
+	if ok, _ := s.runOnce(context.Background()); ok {
 		t.Fatal("first runOnce should fail (poster errored) and not ack")
 	}
 	if store.acked != nil {
 		t.Fatal("must not ack on failed post")
 	}
 
-	if ok := s.runOnce(context.Background()); !ok {
+	if ok, _ := s.runOnce(context.Background()); !ok {
 		t.Fatal("second runOnce should succeed")
 	}
 	if len(store.acked) != 1 {
@@ -64,7 +70,27 @@ func TestRunOnceRetriesThenAcks(t *testing.T) {
 
 func TestRunOnceEmptyIsOk(t *testing.T) {
 	s := New(&fakeStore{}, &flakyPoster{})
-	if ok := s.runOnce(context.Background()); !ok {
+	if ok, _ := s.runOnce(context.Background()); !ok {
 		t.Fatal("empty drain should report ok")
+	}
+}
+
+func TestRunOnceDrainErrorIsFailure(t *testing.T) {
+	s := New(&fakeStore{drainErr: errors.New("db")}, &flakyPoster{})
+	if ok, _ := s.runOnce(context.Background()); ok {
+		t.Fatal("drain error should yield ok=false")
+	}
+}
+
+func TestRunExitsOnContextCancel(t *testing.T) {
+	s := New(&fakeStore{}, &flakyPoster{})
+	ctx, cancel := context.WithCancel(context.Background())
+	done := make(chan struct{})
+	go func() { s.Run(ctx); close(done) }()
+	cancel()
+	select {
+	case <-done:
+	case <-time.After(2 * time.Second):
+		t.Fatal("Run did not exit on context cancel")
 	}
 }
