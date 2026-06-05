@@ -15,6 +15,7 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/redactrai/redactr/internal/control"
 	"github.com/redactrai/redactr/internal/server/auth"
 	"github.com/redactrai/redactr/internal/server/imagebuild"
 	"github.com/redactrai/redactr/internal/server/store"
@@ -321,5 +322,60 @@ func TestImageBuildSetsPolicy(t *testing.T) {
 	pr.Body.Close()
 	if pol["image"] != "reg/acme/tools@sha256:cafe" {
 		t.Fatalf("policy image = %v", pol["image"])
+	}
+}
+
+func TestIngestEndpointDedup(t *testing.T) {
+	ts := newTestServer(t)
+
+	resp := postJSON(t, ts, "/admin/orgs", "admin-key", map[string]string{"name": "Acme"})
+	var org struct{ ID string `json:"id"` }
+	json.NewDecoder(resp.Body).Decode(&org)
+	resp.Body.Close()
+
+	resp = postJSON(t, ts, "/admin/orgs/"+org.ID+"/enrollment-tokens", "admin-key",
+		map[string]int{"expires_in_hours": 1, "max_uses": 1})
+	var mint struct{ Token string `json:"token"` }
+	json.NewDecoder(resp.Body).Decode(&mint)
+	resp.Body.Close()
+
+	resp = postJSON(t, ts, "/v1/enroll", "",
+		map[string]string{"enrollment_token": mint.Token, "device_name": "laptop", "platform": "darwin"})
+	var enr map[string]string
+	json.NewDecoder(resp.Body).Decode(&enr)
+	resp.Body.Close()
+	token := enr["token"]
+
+	body := control.IngestRequest{Records: []control.IngestRecord{
+		{UUID: "m1", Kind: control.KindMonitor, Monitor: &control.MonitorEvent{Tool: "Claude Code", Verdict: "runaway", Reason: "x"}},
+		{UUID: "a1", Kind: control.KindAudit, Audit: &control.AuditRecord{Provider: "anthropic", Source: "proxy", Detector: "regex", Category: "aws_key", Action: "blocked"}},
+	}}
+	b, _ := json.Marshal(body)
+
+	post := func() int {
+		req, _ := http.NewRequest("POST", ts.URL+"/v1/ingest", bytes.NewReader(b))
+		req.Header.Set("Authorization", "Bearer "+token)
+		r, err := http.DefaultClient.Do(req)
+		if err != nil {
+			t.Fatal(err)
+		}
+		defer r.Body.Close()
+		return r.StatusCode
+	}
+	if code := post(); code != 200 {
+		t.Fatalf("first ingest code=%d", code)
+	}
+	if code := post(); code != 200 {
+		t.Fatalf("second ingest code=%d", code)
+	}
+
+	req, _ := http.NewRequest("GET", ts.URL+"/admin/orgs/"+org.ID+"/events", nil)
+	req.Header.Set("X-Admin-Key", "admin-key")
+	r, _ := http.DefaultClient.Do(req)
+	var evs []map[string]any
+	json.NewDecoder(r.Body).Decode(&evs)
+	r.Body.Close()
+	if len(evs) != 1 {
+		t.Fatalf("events after dedup=%d want 1", len(evs))
 	}
 }

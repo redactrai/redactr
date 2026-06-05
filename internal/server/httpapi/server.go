@@ -40,6 +40,7 @@ func New(st *store.Store, signer *auth.Signer, adminKey string) *Server {
 	s.mux.Handle("PUT /admin/orgs/{id}/policy", admin(http.HandlerFunc(s.handlePutPolicy)))
 	s.mux.Handle("GET /admin/orgs/{id}/policy", admin(http.HandlerFunc(s.handleGetAdminPolicy)))
 	s.mux.Handle("POST /v1/events", dev(http.HandlerFunc(s.handlePostEvents)))
+	s.mux.Handle("POST /v1/ingest", dev(http.HandlerFunc(s.handleIngest)))
 	s.mux.Handle("GET /admin/orgs/{id}/events", admin(http.HandlerFunc(s.handleAdminEvents)))
 	s.mux.Handle("GET /admin/orgs/{id}/event-stats", admin(http.HandlerFunc(s.handleAdminEventStats)))
 
@@ -296,6 +297,28 @@ func (s *Server) handlePostEvents(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	writeJSON(w, 200, map[string]int{"accepted": len(in.Events)})
+}
+
+func (s *Server) handleIngest(w http.ResponseWriter, r *http.Request) {
+	var in control.IngestRequest
+	if err := json.NewDecoder(r.Body).Decode(&in); err != nil {
+		http.Error(w, "bad request", http.StatusBadRequest)
+		return
+	}
+	if len(in.Records) > maxEventBatch {
+		http.Error(w, "batch too large", http.StatusBadRequest)
+		return
+	}
+	if len(in.Records) == 0 {
+		writeJSON(w, 200, control.IngestResponse{Accepted: []string{}})
+		return
+	}
+	accepted, err := s.store.IngestRecords(auth.OrgID(r.Context()), auth.DeviceID(r.Context()), in.Records, time.Now().UTC())
+	if err != nil {
+		http.Error(w, "server error", http.StatusInternalServerError)
+		return
+	}
+	writeJSON(w, 200, control.IngestResponse{Accepted: accepted})
 }
 
 func (s *Server) handleAdminEvents(w http.ResponseWriter, r *http.Request) {
