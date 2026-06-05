@@ -5,6 +5,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"io"
 	"net/http"
 	"strings"
 	"time"
@@ -47,6 +48,7 @@ func (p *HTTPPoster) Post(ctx context.Context, records []control.IngestRecord) e
 	}
 	defer resp.Body.Close()
 	if resp.StatusCode != http.StatusOK {
+		_, _ = io.Copy(io.Discard, io.LimitReader(resp.Body, 4096))
 		return fmt.Errorf("ingest failed: %d", resp.StatusCode)
 	}
 	return nil
