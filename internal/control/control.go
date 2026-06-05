@@ -1,5 +1,6 @@
-// Package control holds the wire DTOs exchanged over the daemon's local
-// control socket, shared by the daemon (server) and the CLI/tray (clients).
+// Package control holds the shared wire DTOs used for both the daemon's local
+// control socket (CLI/tray <-> daemon) and the hosted control-plane API
+// (device <-> server).
 package control
 
 import "time"

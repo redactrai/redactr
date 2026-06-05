@@ -23,7 +23,7 @@ func TestIngestRecordMonitorOmitsAudit(t *testing.T) {
 	if err := json.Unmarshal(blob, &back); err != nil {
 		t.Fatal(err)
 	}
-	if back.Kind != KindMonitor || back.Monitor == nil || back.Audit != nil || back.UUID != "u1" {
+	if back.Kind != KindMonitor || back.Monitor == nil || back.Audit != nil || back.UUID != "u1" || back.Seq != 7 {
 		t.Fatalf("round-trip mismatch: %+v", back)
 	}
 }
