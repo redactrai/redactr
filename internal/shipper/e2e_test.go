@@ -42,7 +42,10 @@ func TestEndToEndEffectivelyOnce(t *testing.T) {
 		t.Fatal(err)
 	}
 	t.Cleanup(func() { st.Close() })
-	priv, _ := ecdsa.GenerateKey(elliptic.P256(), rand.Reader)
+	priv, err := ecdsa.GenerateKey(elliptic.P256(), rand.Reader)
+	if err != nil {
+		t.Fatal(err)
+	}
 	ts := httptest.NewServer(httpapi.New(st, auth.NewSigner(priv), "admin-key"))
 	defer ts.Close()
 
