@@ -4,17 +4,13 @@ import (
 	"context"
 	"crypto/subtle"
 	"errors"
+	"log/slog"
 	"net/http"
+	"time"
 
 	"golang.org/x/crypto/bcrypt"
 
 	"github.com/redactrai/redactr/internal/server/store"
-)
-
-// ctxSession keys for subject and role injected by RequireSession.
-const (
-	ctxSessionSubject ctxKey = iota + 2
-	ctxSessionRole
 )
 
 // SessionSubject returns the authenticated subject from the request context.
@@ -47,9 +43,8 @@ func RequireSession(role string, lookup SessionLookup) func(http.Handler) http.H
 			}
 			sess, err := lookup(cookie.Value)
 			if err != nil {
-				if errors.Is(err, store.ErrSessionNotFound) || errors.Is(err, store.ErrSessionExpired) {
-					http.Error(w, "unauthorized", http.StatusUnauthorized)
-					return
+				if !errors.Is(err, store.ErrSessionNotFound) && !errors.Is(err, store.ErrSessionExpired) {
+					slog.Error("session lookup failed", "err", err)
 				}
 				http.Error(w, "unauthorized", http.StatusUnauthorized)
 				return
@@ -77,7 +72,9 @@ func RequireSession(role string, lookup SessionLookup) func(http.Handler) http.H
 }
 
 // SetSessionCookie writes the redactr_admin session cookie.
-func SetSessionCookie(w http.ResponseWriter, id string, secure bool) {
+// maxAge should match the server-side session TTL so the browser drops the
+// cookie when the session expires.
+func SetSessionCookie(w http.ResponseWriter, id string, secure bool, maxAge time.Duration) {
 	http.SetCookie(w, &http.Cookie{
 		Name:     "redactr_admin",
 		Value:    id,
@@ -85,6 +82,7 @@ func SetSessionCookie(w http.ResponseWriter, id string, secure bool) {
 		HttpOnly: true,
 		Secure:   secure,
 		SameSite: http.SameSiteLaxMode,
+		MaxAge:   int(maxAge.Seconds()),
 	})
 }
 
@@ -99,10 +97,15 @@ func ClearSessionCookie(w http.ResponseWriter) {
 	})
 }
 
-// VerifySuperadmin returns true if gotUser matches wantUser (constant-time)
-// and gotPass matches the bcrypt hash.
+// VerifySuperadmin returns true if gotUser matches wantUser and gotPass matches
+// bcryptHash. Both checks always run — bcrypt.CompareHashAndPassword is never
+// short-circuited — so response time does not reveal whether the username is
+// valid. Production hashes must use bcrypt cost >= 12.
 func VerifySuperadmin(gotUser, gotPass, wantUser, bcryptHash string) bool {
-	userMatch := subtle.ConstantTimeCompare([]byte(gotUser), []byte(wantUser)) == 1
-	passMatch := bcrypt.CompareHashAndPassword([]byte(bcryptHash), []byte(gotPass)) == nil
-	return userMatch && passMatch
+	userOK := subtle.ConstantTimeCompare([]byte(gotUser), []byte(wantUser)) // 1 if equal
+	passOK := 0
+	if bcrypt.CompareHashAndPassword([]byte(bcryptHash), []byte(gotPass)) == nil {
+		passOK = 1
+	}
+	return subtle.ConstantTimeEq(int32(userOK+passOK), 2) == 1
 }

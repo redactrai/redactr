@@ -40,6 +40,10 @@ type Device struct {
 }
 
 // Open opens (creating if needed) the SQLite database at path and applies the schema.
+// WARNING: Do NOT add _time_format or _time_integer_format params to the DSN.
+// Timestamp columns (e.g. expires_at) are stored as text in RFC 3339 format;
+// changing the time representation would break the "expires_at <= ?" comparisons
+// in LookupSession and SweepExpiredSessions.
 func Open(path string) (*Store, error) {
 	db, err := sql.Open("sqlite", path)
 	if err != nil {

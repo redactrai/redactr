@@ -82,6 +82,29 @@ func TestExpiredSessionRejectedAndSwept(t *testing.T) {
 	}
 }
 
+func TestExpiredSessionExactBoundary(t *testing.T) {
+	s := openTest(t)
+
+	// Fix the clock to a known time.
+	base := time.Unix(1_700_000_000, 0).UTC()
+	ttl := time.Hour
+	s.now = func() time.Time { return base }
+
+	sess, err := s.CreateSession("carol@example.com", "admin", ttl)
+	if err != nil {
+		t.Fatalf("CreateSession: %v", err)
+	}
+
+	// Advance clock to exactly expires_at (== CreatedAt + ttl).
+	// Semantics are: "not after" == expired, so this should return ErrSessionExpired.
+	s.now = func() time.Time { return sess.ExpiresAt }
+
+	_, err = s.LookupSession(sess.ID)
+	if !errors.Is(err, ErrSessionExpired) {
+		t.Errorf("LookupSession at exact expiry boundary: got %v, want ErrSessionExpired", err)
+	}
+}
+
 func TestAdminAllowlist(t *testing.T) {
 	s := openTest(t)
 

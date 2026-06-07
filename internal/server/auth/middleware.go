@@ -15,6 +15,8 @@ type ctxKey int
 const (
 	ctxOrgID ctxKey = iota
 	ctxDeviceID
+	ctxSessionSubject
+	ctxSessionRole
 )
 
 // OrgID / DeviceID read the authenticated identity from the request context.
