@@ -135,6 +135,41 @@ func TestRunCycleBacksUpAndPrunes(t *testing.T) {
 	}
 }
 
+// TestRunCycleSweepsExpiredSessions verifies that a RunCycle pass deletes
+// expired session rows. The session is created with a 1ns TTL so its
+// expires_at is already in the past relative to SweepExpiredSessions' clock
+// (store.now == real wall clock), making the assertion deterministic.
+func TestRunCycleSweepsExpiredSessions(t *testing.T) {
+	st := openTestStore(t)
+	backupDir := t.TempDir()
+
+	// Create a session that is effectively already expired.
+	if _, err := st.CreateSession("admin@example.com", "admin", time.Nanosecond); err != nil {
+		t.Fatalf("CreateSession: %v", err)
+	}
+
+	fixedNow := time.Date(2026, 6, 7, 12, 0, 0, 0, time.UTC)
+	cfg := maint.Config{
+		BackupDir:       backupDir,
+		BackupRetain:    10,
+		AuditRetainDays: 365,
+		Interval:        24 * time.Hour,
+	}
+
+	if err := maint.RunCycle(st, cfg, discardLogger(), func() time.Time { return fixedNow }); err != nil {
+		t.Fatalf("RunCycle: %v", err)
+	}
+
+	// After the cycle swept the expired session, a second sweep must find none.
+	n, err := st.SweepExpiredSessions()
+	if err != nil {
+		t.Fatalf("SweepExpiredSessions: %v", err)
+	}
+	if n != 0 {
+		t.Errorf("expected 0 expired sessions remaining after RunCycle, got %d", n)
+	}
+}
+
 // TestBackupRetentionKeepsNewestN pre-creates 5 fake backup files and verifies
 // that PruneBackups(dir, 2) deletes the 3 oldest and keeps the 2 newest.
 func TestBackupRetentionKeepsNewestN(t *testing.T) {

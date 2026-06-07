@@ -74,7 +74,7 @@ func New(st *store.Store, signer *auth.Signer, cfg AuthConfig, oidc *auth.OIDC) 
 
 	// Unauthenticated auth-establishing routes.
 	s.mux.HandleFunc("GET /admin/login", s.handleLoginForm)
-	s.mux.HandleFunc("POST /admin/login", s.handleLogin)
+	s.mux.HandleFunc("POST /admin/login", s.limitBody(s.handleLogin))
 	s.mux.HandleFunc("POST /admin/logout", s.handleLogout)
 	s.mux.HandleFunc("GET /admin/oidc/start", s.handleOIDCStart)
 	s.mux.HandleFunc("GET /admin/oidc/callback", s.handleOIDCCallback)

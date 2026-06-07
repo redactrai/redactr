@@ -62,6 +62,7 @@ func RunCycle(st *store.Store, cfg Config, logger *slog.Logger, now func() time.
 //  3. Prune old backup FILES to keep the newest BackupRetain (file-prune
 //     errors are logged but do not abort step 4).
 //  4. Prune old DB rows via PruneOlderThan.
+//  5. Sweep expired session rows via SweepExpiredSessions.
 func runCycle(st *store.Store, cfg Config, logger *slog.Logger, now func() time.Time) error {
 	t := now()
 
@@ -96,19 +97,31 @@ func runCycle(st *store.Store, cfg Config, logger *slog.Logger, now func() time.
 		logger.Error("maint: row prune failed", "err", rowErr)
 	}
 
+	// 5. Sweep expired session rows (unbounded growth otherwise).
+	sessionsSwept, sessErr := st.SweepExpiredSessions()
+	if sessErr != nil {
+		logger.Error("maint: session sweep failed", "err", sessErr)
+	} else {
+		logger.Info("maint: swept expired sessions", "count", sessionsSwept)
+	}
+
 	logger.Info("maint: cycle complete",
 		"backup", backupPath,
 		"files_pruned", filesPruned,
 		"rows_pruned", rowsPruned,
+		"sessions_swept", sessionsSwept,
 		"cutoff", cutoff.Format(time.RFC3339),
 	)
 
-	// Return the first hard error (backup or row prune). File-prune errors are
-	// non-fatal (best effort) and only logged.
+	// Return the first hard error (backup, row prune, or session sweep).
+	// File-prune errors are non-fatal (best effort) and only logged.
 	if backupErr != nil {
 		return backupErr
 	}
-	return rowErr
+	if rowErr != nil {
+		return rowErr
+	}
+	return sessErr
 }
 
 // PruneBackups removes all but the newest `retain` backup files
