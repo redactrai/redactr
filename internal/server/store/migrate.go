@@ -25,7 +25,7 @@ func RunMigrations(db *sql.DB) error {
 	})
 }
 
-// runMigrations is the injectable-clock variant used by tests via RunMigrations.
+// runMigrations is the injectable-clock variant; tests exercise it indirectly via Open.
 func runMigrations(db *sql.DB, now func() string) error {
 	// 1. Ensure the tracking table exists.
 	if _, err := db.Exec(`
@@ -63,6 +63,7 @@ func runMigrations(db *sql.DB, now func() string) error {
 		}
 		migrations = append(migrations, migration{version: v, name: e.Name(), sql: string(body)})
 	}
+	// Prefixes are unique integers, so sort stability is irrelevant.
 	sort.Slice(migrations, func(i, j int) bool { return migrations[i].version < migrations[j].version })
 
 	// 3. Baseline a legacy DB that predates the migration runner.
@@ -172,7 +173,8 @@ func tableExists(db *sql.DB, table string) bool {
 }
 
 // columnExists reports whether the named column exists in the named table.
-// Both arguments must always be hardcoded literals.
+// The table name must be a compile-time constant because PRAGMA does not
+// accept bind parameters. Both arguments must always be hardcoded literals.
 func columnExists(db *sql.DB, table, col string) bool {
 	rows, err := db.Query(`PRAGMA table_info(` + table + `)`)
 	if err != nil {
@@ -189,6 +191,7 @@ func columnExists(db *sql.DB, table, col string) bool {
 		}
 		if name == col {
 			found = true
+			break
 		}
 	}
 	if rows.Err() != nil {

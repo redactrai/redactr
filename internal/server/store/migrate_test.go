@@ -30,45 +30,6 @@ func appliedVersions(t *testing.T, db *sql.DB) []int {
 	return versions
 }
 
-// tableExistsTest returns true if the named table is present in the DB.
-func tableExistsTest(t *testing.T, db *sql.DB, table string) bool {
-	t.Helper()
-	var name string
-	err := db.QueryRow(
-		`SELECT name FROM sqlite_master WHERE type='table' AND name=?`, table,
-	).Scan(&name)
-	if err == sql.ErrNoRows {
-		return false
-	}
-	if err != nil {
-		t.Fatalf("tableExistsTest(%q): %v", table, err)
-	}
-	return true
-}
-
-// columnExists returns true if the named column exists in the named table.
-func columnExistsTest(t *testing.T, db *sql.DB, table, col string) bool {
-	t.Helper()
-	// PRAGMA table_info returns one row per column.
-	rows, err := db.Query(`PRAGMA table_info(` + table + `)`)
-	if err != nil {
-		t.Fatalf("columnExistsTest(%q,%q): %v", table, col, err)
-	}
-	defer rows.Close()
-	for rows.Next() {
-		var cid, notnull, pk int
-		var name, ctype string
-		var dflt sql.NullString
-		if err := rows.Scan(&cid, &name, &ctype, &notnull, &dflt, &pk); err != nil {
-			t.Fatalf("columnExistsTest scan: %v", err)
-		}
-		if name == col {
-			return true
-		}
-	}
-	return false
-}
-
 // countRows returns the number of rows in the named table.
 func countRows(t *testing.T, db *sql.DB, table string) int {
 	t.Helper()
@@ -92,84 +53,11 @@ func openRaw(t *testing.T, path string) *sql.DB {
 	return db
 }
 
-// ---- Tests ----
-
-// TestMigrationsFreshDBAppliesAllInOrder opens a brand-new DB and verifies that
-// all three migrations are applied and recorded in the correct order.
-func TestMigrationsFreshDBAppliesAllInOrder(t *testing.T) {
-	path := filepath.Join(t.TempDir(), "fresh.db")
-	st, err := Open(path)
-	if err != nil {
-		t.Fatalf("Open: %v", err)
-	}
-	defer st.Close()
-
-	versions := appliedVersions(t, st.db)
-	want := []int{1, 2, 3}
-	if len(versions) != len(want) {
-		t.Fatalf("versions = %v, want %v", versions, want)
-	}
-	for i, v := range versions {
-		if v != want[i] {
-			t.Errorf("versions[%d] = %d, want %d", i, v, want[i])
-		}
-	}
-
-	// Spot-check that all expected tables exist.
-	for _, tbl := range []string{"orgs", "events", "admins", "sessions", "schema_migrations"} {
-		if !tableExistsTest(t, st.db, tbl) {
-			t.Errorf("table %q missing after fresh open", tbl)
-		}
-	}
-	if !columnExistsTest(t, st.db, "events", "uuid") {
-		t.Error("events.uuid column missing after fresh open")
-	}
-}
-
-// TestMigrationsReopenIsNoOp opens a DB, closes it, re-opens it, and verifies
-// that schema_migrations still has the same versions and no error occurred.
-func TestMigrationsReopenIsNoOp(t *testing.T) {
-	path := filepath.Join(t.TempDir(), "reopen.db")
-
-	st, err := Open(path)
-	if err != nil {
-		t.Fatalf("first Open: %v", err)
-	}
-	st.Close()
-
-	st2, err := Open(path)
-	if err != nil {
-		t.Fatalf("second Open: %v", err)
-	}
-	defer st2.Close()
-
-	versions := appliedVersions(t, st2.db)
-	want := []int{1, 2, 3}
-	if len(versions) != len(want) {
-		t.Fatalf("versions after reopen = %v, want %v", versions, want)
-	}
-	for i, v := range versions {
-		if v != want[i] {
-			t.Errorf("versions[%d] = %d, want %d", i, v, want[i])
-		}
-	}
-	if !tableExistsTest(t, st2.db, "admins") {
-		t.Error("admins table missing after reopen")
-	}
-}
-
-// TestMigrationsUpgradeFromA1Schema simulates an existing A1 database that has
-// the 0001 tables (including orgs) but WITHOUT the events.uuid column and WITHOUT
-// a schema_migrations table. Open must baseline versions 1 (not 2) and then apply
-// 0002 and 0003, preserving existing data.
-func TestMigrationsUpgradeFromA1Schema(t *testing.T) {
-	path := filepath.Join(t.TempDir(), "a1legacy.db")
-
-	// Build a legacy A1-shaped DB: the 0001_init tables (orgs, events without uuid,
-	// etc.) but NO schema_migrations table and NO events.uuid column.
-	raw := openRaw(t, path)
-
-	_, err := raw.Exec(`
+// seedA1Schema creates the legacy A1-shaped schema (0001_init tables, no uuid
+// column on events, no schema_migrations) on the given raw connection.
+func seedA1Schema(t *testing.T, db *sql.DB) {
+	t.Helper()
+	_, err := db.Exec(`
 		CREATE TABLE orgs (
 		  id         TEXT PRIMARY KEY,
 		  name       TEXT NOT NULL,
@@ -238,11 +126,90 @@ func TestMigrationsUpgradeFromA1Schema(t *testing.T) {
 		CREATE INDEX IF NOT EXISTS idx_images_org ON images(org_id, created_at);
 	`)
 	if err != nil {
-		t.Fatalf("setup legacy schema: %v", err)
+		t.Fatalf("seedA1Schema: %v", err)
+	}
+}
+
+// ---- Tests ----
+
+// TestMigrationsFreshDBAppliesAllInOrder opens a brand-new DB and verifies that
+// all three migrations are applied and recorded in the correct order.
+func TestMigrationsFreshDBAppliesAllInOrder(t *testing.T) {
+	path := filepath.Join(t.TempDir(), "fresh.db")
+	st, err := Open(path)
+	if err != nil {
+		t.Fatalf("Open: %v", err)
+	}
+	defer st.Close()
+
+	versions := appliedVersions(t, st.db)
+	want := []int{1, 2, 3}
+	if len(versions) != len(want) {
+		t.Fatalf("versions = %v, want %v", versions, want)
+	}
+	for i, v := range versions {
+		if v != want[i] {
+			t.Errorf("versions[%d] = %d, want %d", i, v, want[i])
+		}
 	}
 
+	// Spot-check that all expected tables exist.
+	for _, tbl := range []string{"orgs", "events", "admins", "sessions", "schema_migrations"} {
+		if !tableExists(st.db, tbl) {
+			t.Errorf("table %q missing after fresh open", tbl)
+		}
+	}
+	if !columnExists(st.db, "events", "uuid") {
+		t.Error("events.uuid column missing after fresh open")
+	}
+}
+
+// TestMigrationsReopenIsNoOp opens a DB, closes it, re-opens it, and verifies
+// that schema_migrations still has the same versions and no error occurred.
+func TestMigrationsReopenIsNoOp(t *testing.T) {
+	path := filepath.Join(t.TempDir(), "reopen.db")
+
+	st, err := Open(path)
+	if err != nil {
+		t.Fatalf("first Open: %v", err)
+	}
+	st.Close()
+
+	st2, err := Open(path)
+	if err != nil {
+		t.Fatalf("second Open: %v", err)
+	}
+	defer st2.Close()
+
+	versions := appliedVersions(t, st2.db)
+	want := []int{1, 2, 3}
+	if len(versions) != len(want) {
+		t.Fatalf("versions after reopen = %v, want %v", versions, want)
+	}
+	for i, v := range versions {
+		if v != want[i] {
+			t.Errorf("versions[%d] = %d, want %d", i, v, want[i])
+		}
+	}
+	if !tableExists(st2.db, "admins") {
+		t.Error("admins table missing after reopen")
+	}
+}
+
+// TestMigrationsUpgradeFromA1Schema simulates an existing A1 database that has
+// the 0001 tables (including orgs) but WITHOUT the events.uuid column and WITHOUT
+// a schema_migrations table. Open must baseline versions 1 (not 2) and then apply
+// 0002 and 0003, preserving existing data.
+func TestMigrationsUpgradeFromA1Schema(t *testing.T) {
+	path := filepath.Join(t.TempDir(), "a1legacy.db")
+
+	// Build a legacy A1-shaped DB: the 0001_init tables (orgs, events without uuid,
+	// etc.) but NO schema_migrations table and NO events.uuid column.
+	raw := openRaw(t, path)
+	seedA1Schema(t, raw)
+
 	// Seed one events row to verify data survival.
-	_, err = raw.Exec(`
+	_, err := raw.Exec(`
 		INSERT INTO events(id,org_id,device_id,tool,verdict,reason,direct_conn_count,observed_at,received_at)
 		VALUES('ev1','org1','dev1','Claude Code','protected','x',0,'2024-01-01T00:00:00Z','2024-01-01T00:00:00Z')
 	`)
@@ -264,13 +231,13 @@ func TestMigrationsUpgradeFromA1Schema(t *testing.T) {
 	}
 
 	// events.uuid column must now exist (applied by migration 0002).
-	if !columnExistsTest(t, st.db, "events", "uuid") {
+	if !columnExists(st.db, "events", "uuid") {
 		t.Error("events.uuid column missing after upgrade")
 	}
 
 	// F3 auth tables must exist (applied by migration 0003).
 	for _, tbl := range []string{"admins", "sessions"} {
-		if !tableExistsTest(t, st.db, tbl) {
+		if !tableExists(st.db, tbl) {
 			t.Errorf("table %q missing after upgrade", tbl)
 		}
 	}
@@ -284,6 +251,71 @@ func TestMigrationsUpgradeFromA1Schema(t *testing.T) {
 	for i, v := range versions {
 		if v != want[i] {
 			t.Errorf("versions[%d] = %d, want %d", i, v, want[i])
+		}
+	}
+}
+
+// TestMigrationsUpgradeFromF1Schema simulates an existing F1 database that has
+// the 0001 tables AND the events.uuid column + idx_events_uuid already present,
+// but NO schema_migrations table. Open must baseline versions 1 and 2 (since uuid
+// already exists) and then apply only migration 0003, preserving existing data.
+// This exercises the baselineLegacy branch that records version 2.
+func TestMigrationsUpgradeFromF1Schema(t *testing.T) {
+	path := filepath.Join(t.TempDir(), "f1legacy.db")
+
+	// Build an F1-shaped DB: A1 tables plus the events.uuid column and its index,
+	// but NO schema_migrations table.
+	raw := openRaw(t, path)
+	seedA1Schema(t, raw)
+
+	// Add the uuid column and index that 0002_events_uuid.sql would have added.
+	_, err := raw.Exec(`
+		ALTER TABLE events ADD COLUMN uuid TEXT;
+		CREATE INDEX IF NOT EXISTS idx_events_uuid ON events(uuid);
+	`)
+	if err != nil {
+		t.Fatalf("add uuid column/index: %v", err)
+	}
+
+	// Seed one events row (with a uuid value) to verify data survival.
+	_, err = raw.Exec(`
+		INSERT INTO events(id,org_id,device_id,tool,verdict,reason,direct_conn_count,observed_at,received_at,uuid)
+		VALUES('ev1','org1','dev1','Claude Code','protected','x',0,'2024-01-01T00:00:00Z','2024-01-01T00:00:00Z','uuid-aaa-111')
+	`)
+	if err != nil {
+		t.Fatalf("seed events row: %v", err)
+	}
+	raw.Close()
+
+	// Now open via the store — this exercises the baselineLegacy path that
+	// records both version 1 and version 2 because uuid already exists.
+	st, err := Open(path)
+	if err != nil {
+		t.Fatalf("Open F1 legacy DB: %v", err)
+	}
+	defer st.Close()
+
+	// Seeded row must survive.
+	if n := countRows(t, st.db, "events"); n != 1 {
+		t.Errorf("events rows = %d, want 1 (row must survive upgrade)", n)
+	}
+
+	// schema_migrations must contain exactly versions [1, 2, 3].
+	versions := appliedVersions(t, st.db)
+	want := []int{1, 2, 3}
+	if len(versions) != len(want) {
+		t.Fatalf("versions after F1 upgrade = %v, want %v", versions, want)
+	}
+	for i, v := range versions {
+		if v != want[i] {
+			t.Errorf("versions[%d] = %d, want %d", i, v, want[i])
+		}
+	}
+
+	// F3 auth tables must exist (applied by migration 0003).
+	for _, tbl := range []string{"admins", "sessions"} {
+		if !tableExists(st.db, tbl) {
+			t.Errorf("table %q missing after F1 upgrade", tbl)
 		}
 	}
 }
