@@ -42,8 +42,7 @@ CREATE TABLE IF NOT EXISTS events (
   reason            TEXT NOT NULL,
   direct_conn_count INTEGER NOT NULL,
   observed_at       TIMESTAMP NOT NULL,
-  received_at       TIMESTAMP NOT NULL,
-  uuid              TEXT
+  received_at       TIMESTAMP NOT NULL
 );
 CREATE INDEX IF NOT EXISTS idx_events_org ON events(org_id, received_at);
 
