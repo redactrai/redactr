@@ -2,6 +2,7 @@ package httpapi
 
 import (
 	"encoding/json"
+	"errors"
 	"net/http"
 
 	"github.com/redactrai/redactr/internal/server/auth"
@@ -60,7 +61,7 @@ func (s *Server) handleLogin(w http.ResponseWriter, r *http.Request) {
 // handleLogout deletes the current session (best-effort), clears the cookie,
 // and redirects to the login form.
 func (s *Server) handleLogout(w http.ResponseWriter, r *http.Request) {
-	if c, err := r.Cookie("redactr_admin"); err == nil {
+	if c, err := r.Cookie(auth.SessionCookieName); err == nil {
 		_ = s.store.DeleteSession(c.Value)
 	}
 	auth.ClearSessionCookie(w)
@@ -157,7 +158,7 @@ func (s *Server) handleListAdmins(w http.ResponseWriter, r *http.Request) {
 	if admins == nil {
 		admins = []string{}
 	}
-	writeJSON(w, 200, admins)
+	writeJSON(w, http.StatusOK, admins)
 }
 
 // handleAddAdmin adds an email to the admin allowlist (superadmin only).
@@ -165,7 +166,16 @@ func (s *Server) handleAddAdmin(w http.ResponseWriter, r *http.Request) {
 	var in struct {
 		Email string `json:"email"`
 	}
-	if err := json.NewDecoder(r.Body).Decode(&in); err != nil || in.Email == "" {
+	if err := json.NewDecoder(r.Body).Decode(&in); err != nil {
+		var mbe *http.MaxBytesError
+		if errors.As(err, &mbe) {
+			http.Error(w, "request body too large", http.StatusRequestEntityTooLarge)
+			return
+		}
+		http.Error(w, "bad request", http.StatusBadRequest)
+		return
+	}
+	if in.Email == "" {
 		http.Error(w, "bad request", http.StatusBadRequest)
 		return
 	}

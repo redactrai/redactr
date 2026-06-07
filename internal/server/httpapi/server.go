@@ -53,23 +53,23 @@ func New(st *store.Store, signer *auth.Signer, cfg AuthConfig, oidc *auth.OIDC) 
 	s.mux.Handle("GET /v1/whoami", dev(http.HandlerFunc(s.handleWhoami)))
 	s.mux.Handle("GET /v1/policy", dev(http.HandlerFunc(s.handleGetPolicy)))
 	s.mux.HandleFunc("GET /v1/server-key", s.handleServerKey)
-	s.mux.Handle("PUT /admin/orgs/{id}/policy", admin(http.HandlerFunc(s.handlePutPolicy)))
+	s.mux.Handle("PUT /admin/orgs/{id}/policy", admin(http.HandlerFunc(s.limitBody(s.handlePutPolicy))))
 	s.mux.Handle("GET /admin/orgs/{id}/policy", admin(http.HandlerFunc(s.handleGetAdminPolicy)))
 	s.mux.Handle("POST /v1/events", dev(http.HandlerFunc(s.limitBody(s.handlePostEvents))))
 	s.mux.Handle("POST /v1/ingest", dev(http.HandlerFunc(s.limitBody(s.handleIngest))))
 	s.mux.Handle("GET /admin/orgs/{id}/events", admin(http.HandlerFunc(s.handleAdminEvents)))
 	s.mux.Handle("GET /admin/orgs/{id}/event-stats", admin(http.HandlerFunc(s.handleAdminEventStats)))
 
-	s.mux.Handle("POST /admin/orgs", admin(http.HandlerFunc(s.handleCreateOrg)))
+	s.mux.Handle("POST /admin/orgs", admin(http.HandlerFunc(s.limitBody(s.handleCreateOrg))))
 	s.mux.Handle("GET /admin/orgs", admin(http.HandlerFunc(s.handleListOrgs)))
 	// Enrollment-token minting accepts EITHER a valid admin session OR, when
 	// configured, the X-Machine-Key header (for CI/automation). This is the
 	// ONLY endpoint that honors the machine key.
 	s.mux.Handle("POST /admin/orgs/{id}/enrollment-tokens",
-		s.machineKeyOr("admin", lookup)(http.HandlerFunc(s.handleMintToken)))
+		s.limitBody(s.machineKeyOr("admin", lookup)(http.HandlerFunc(s.handleMintToken)).ServeHTTP))
 	s.mux.Handle("GET /admin/devices", admin(http.HandlerFunc(s.handleListDevices)))
 	s.mux.Handle("POST /admin/devices/{id}/revoke", admin(http.HandlerFunc(s.handleRevokeDevice)))
-	s.mux.Handle("POST /admin/orgs/{id}/images", admin(http.HandlerFunc(s.handleBuildImage)))
+	s.mux.Handle("POST /admin/orgs/{id}/images", admin(http.HandlerFunc(s.limitBody(s.handleBuildImage))))
 	s.mux.Handle("GET /admin/orgs/{id}/images", admin(http.HandlerFunc(s.handleListImages)))
 
 	// Unauthenticated auth-establishing routes.
@@ -84,7 +84,7 @@ func New(st *store.Store, signer *auth.Signer, cfg AuthConfig, oidc *auth.OIDC) 
 
 	// Admin allowlist management (superadmin only).
 	s.mux.Handle("GET /admin/admins", superadmin(http.HandlerFunc(s.handleListAdmins)))
-	s.mux.Handle("POST /admin/admins", superadmin(http.HandlerFunc(s.handleAddAdmin)))
+	s.mux.Handle("POST /admin/admins", superadmin(http.HandlerFunc(s.limitBody(s.handleAddAdmin))))
 	s.mux.Handle("DELETE /admin/admins/{email}", superadmin(http.HandlerFunc(s.handleDeleteAdmin)))
 
 	s.mux.Handle("GET /", dashboardHandler())
@@ -218,7 +218,16 @@ func (s *Server) handleCreateOrg(w http.ResponseWriter, r *http.Request) {
 	var in struct {
 		Name string `json:"name"`
 	}
-	if err := json.NewDecoder(r.Body).Decode(&in); err != nil || in.Name == "" {
+	if err := json.NewDecoder(r.Body).Decode(&in); err != nil {
+		var mbe *http.MaxBytesError
+		if errors.As(err, &mbe) {
+			http.Error(w, "request body too large", http.StatusRequestEntityTooLarge)
+			return
+		}
+		http.Error(w, "bad request", http.StatusBadRequest)
+		return
+	}
+	if in.Name == "" {
 		http.Error(w, "bad request", http.StatusBadRequest)
 		return
 	}
@@ -227,7 +236,7 @@ func (s *Server) handleCreateOrg(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "server error", http.StatusInternalServerError)
 		return
 	}
-	writeJSON(w, 200, map[string]string{"id": org.ID, "name": org.Name})
+	writeJSON(w, http.StatusOK, map[string]string{"id": org.ID, "name": org.Name})
 }
 
 func (s *Server) handleListOrgs(w http.ResponseWriter, r *http.Request) {
@@ -248,7 +257,14 @@ func (s *Server) handleMintToken(w http.ResponseWriter, r *http.Request) {
 		ExpiresInHours int `json:"expires_in_hours"`
 		MaxUses        int `json:"max_uses"`
 	}
-	_ = json.NewDecoder(r.Body).Decode(&in)
+	if err := json.NewDecoder(r.Body).Decode(&in); err != nil {
+		var mbe *http.MaxBytesError
+		if errors.As(err, &mbe) {
+			http.Error(w, "request body too large", http.StatusRequestEntityTooLarge)
+			return
+		}
+		// Body is optional; decode errors (empty body, EOF) are silently ignored.
+	}
 	if in.ExpiresInHours <= 0 {
 		in.ExpiresInHours = 24
 	}
@@ -259,7 +275,7 @@ func (s *Server) handleMintToken(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "server error", http.StatusInternalServerError)
 		return
 	}
-	writeJSON(w, 200, map[string]any{"token": rawToken, "expires_at": expires})
+	writeJSON(w, http.StatusOK, map[string]any{"token": rawToken, "expires_at": expires})
 }
 
 func (s *Server) handleListDevices(w http.ResponseWriter, r *http.Request) {
@@ -294,7 +310,16 @@ func (s *Server) handlePutPolicy(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	var b control.PolicyBundle
-	if err := json.NewDecoder(r.Body).Decode(&b); err != nil || b.Image == "" || b.MountMode == "" {
+	if err := json.NewDecoder(r.Body).Decode(&b); err != nil {
+		var mbe *http.MaxBytesError
+		if errors.As(err, &mbe) {
+			http.Error(w, "request body too large", http.StatusRequestEntityTooLarge)
+			return
+		}
+		http.Error(w, "bad request", http.StatusBadRequest)
+		return
+	}
+	if b.Image == "" || b.MountMode == "" {
 		http.Error(w, "bad request", http.StatusBadRequest)
 		return
 	}
@@ -303,7 +328,7 @@ func (s *Server) handlePutPolicy(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "server error", http.StatusInternalServerError)
 		return
 	}
-	writeJSON(w, 200, map[string]int{"version": version})
+	writeJSON(w, http.StatusOK, map[string]int{"version": version})
 }
 
 func (s *Server) handleGetAdminPolicy(w http.ResponseWriter, r *http.Request) {
@@ -461,7 +486,16 @@ func (s *Server) handleBuildImage(w http.ResponseWriter, r *http.Request) {
 		Dockerfile string `json:"dockerfile"`
 		Tag        string `json:"tag"`
 	}
-	if err := json.NewDecoder(r.Body).Decode(&in); err != nil || in.Dockerfile == "" || in.Tag == "" {
+	if err := json.NewDecoder(r.Body).Decode(&in); err != nil {
+		var mbe *http.MaxBytesError
+		if errors.As(err, &mbe) {
+			http.Error(w, "request body too large", http.StatusRequestEntityTooLarge)
+			return
+		}
+		http.Error(w, "bad request", http.StatusBadRequest)
+		return
+	}
+	if in.Dockerfile == "" || in.Tag == "" {
 		http.Error(w, "bad request", http.StatusBadRequest)
 		return
 	}
@@ -496,7 +530,7 @@ func (s *Server) handleBuildImage(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "image built but policy pin failed", http.StatusInternalServerError)
 		return
 	}
-	writeJSON(w, 200, map[string]any{"image": pinned, "policy_version": version})
+	writeJSON(w, http.StatusOK, map[string]any{"image": pinned, "policy_version": version})
 }
 
 // bundleWithVersion injects the authoritative version into the stored bundle JSON.

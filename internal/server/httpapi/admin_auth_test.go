@@ -2,14 +2,22 @@ package httpapi
 
 import (
 	"bytes"
+	"crypto/ecdsa"
+	"crypto/elliptic"
+	"crypto/rand"
 	"encoding/json"
 	"net/http"
+	"net/http/httptest"
 	"net/url"
+	"path/filepath"
 	"strings"
 	"testing"
 	"time"
 
 	"golang.org/x/crypto/bcrypt"
+
+	"github.com/redactrai/redactr/internal/server/auth"
+	"github.com/redactrai/redactr/internal/server/store"
 )
 
 // decodeJSON decodes resp.Body into v and closes it.
@@ -293,6 +301,46 @@ func TestMachineKeyMintsToken(t *testing.T) {
 	bad.Body.Close()
 	if bad.StatusCode != http.StatusUnauthorized {
 		t.Fatalf("wrong machine-key mint code = %d, want 401", bad.StatusCode)
+	}
+}
+
+func TestAdminBuildImageBodyCapReturns413(t *testing.T) {
+	// Build a server with a small body cap and a fake image builder.
+	st, err := store.Open(filepath.Join(t.TempDir(), "cap.db"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	t.Cleanup(func() { st.Close() })
+	priv, _ := ecdsa.GenerateKey(elliptic.P256(), rand.Reader)
+	srv := New(st, auth.NewSigner(priv), AuthConfig{SessionTTL: time.Hour, MaxBodyBytes: 256}, nil)
+	srv.SetBuilder(fakeBuilder{ref: "reg/acme/tools", digest: "sha256:dead"}, "reg")
+	ts := httptest.NewServer(srv)
+	testStores[ts] = st
+	t.Cleanup(func() { ts.Close(); delete(testStores, ts) })
+
+	// Create an org via superadmin session (body fits within cap).
+	r := postJSON(t, ts, "/admin/orgs", adminCookie, map[string]string{"name": "Acme"})
+	var org struct {
+		ID string `json:"id"`
+	}
+	decodeJSON(t, r, &org)
+	if org.ID == "" {
+		t.Fatal("no org id")
+	}
+
+	// POST a Dockerfile body larger than the 256-byte cap → 413.
+	bigDockerfile := strings.Repeat("x", 600)
+	body := `{"dockerfile":"` + bigDockerfile + `","tag":"tools"}`
+	req, _ := http.NewRequest("POST", ts.URL+"/admin/orgs/"+org.ID+"/images",
+		bytes.NewReader([]byte(body)))
+	req.AddCookie(adminSessionCookie(t, ts))
+	resp, err := http.DefaultClient.Do(req)
+	if err != nil {
+		t.Fatal(err)
+	}
+	resp.Body.Close()
+	if resp.StatusCode != http.StatusRequestEntityTooLarge {
+		t.Fatalf("oversized build image body code = %d, want 413", resp.StatusCode)
 	}
 }
 
