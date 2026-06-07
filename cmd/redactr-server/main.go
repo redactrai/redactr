@@ -13,60 +13,50 @@ import (
 	"time"
 
 	"github.com/redactrai/redactr/internal/server/auth"
+	"github.com/redactrai/redactr/internal/server/config"
 	"github.com/redactrai/redactr/internal/server/httpapi"
 	"github.com/redactrai/redactr/internal/server/imagebuild"
 	"github.com/redactrai/redactr/internal/server/keys"
+	"github.com/redactrai/redactr/internal/server/maint"
 	"github.com/redactrai/redactr/internal/server/store"
 )
 
-func env(k, def string) string {
-	if v := os.Getenv(k); v != "" {
-		return v
-	}
-	return def
-}
-
 func main() {
-	addr := env("REDACTR_SERVER_ADDR", ":8080")
-	dbPath := env("REDACTR_SERVER_DB", "./redactr-server.db")
-	keyDir := env("REDACTR_SERVER_KEY_DIR", "./keys")
+	cfg, err := config.Load(os.Getenv)
+	if err != nil {
+		log.Fatalf("config: %v", err)
+	}
 
-	st, err := store.Open(dbPath)
+	st, err := store.Open(cfg.DBPath)
 	if err != nil {
 		log.Fatalf("store: %v", err)
 	}
 	defer st.Close()
 
-	priv, err := keys.LoadOrCreate(keyDir)
+	priv, err := keys.LoadOrCreate(cfg.KeyDir)
 	if err != nil {
 		log.Fatalf("keys: %v", err)
 	}
 
-	sessionTTL := 12 * time.Hour
-	if v := os.Getenv("REDACTR_SESSION_TTL"); v != "" {
-		if d, derr := time.ParseDuration(v); derr == nil {
-			sessionTTL = d
-		}
-	}
 	authCfg := httpapi.AuthConfig{
-		SuperadminUser: env("REDACTR_SUPERADMIN_USER", "admin"),
-		SuperadminHash: os.Getenv("REDACTR_SUPERADMIN_HASH"), // bcrypt hash; empty disables password login
-		Secure:         os.Getenv("REDACTR_COOKIE_SECURE") != "",
-		SessionTTL:     sessionTTL,
-		MachineKey:     os.Getenv("REDACTR_MACHINE_KEY"), // optional; enables X-Machine-Key on enrollment-token minting
-		MaxBodyBytes:   1 << 20,
+		SuperadminUser: cfg.SuperadminUser,
+		SuperadminHash: cfg.SuperadminHash,
+		Secure:         cfg.Secure,
+		SessionTTL:     cfg.SessionTTL,
+		MachineKey:     cfg.MachineKey,
+		MaxBodyBytes:   cfg.MaxBodyBytes,
 	}
-	if authCfg.SuperadminHash == "" && os.Getenv("REDACTR_OIDC_ISSUER") == "" {
-		slog.Warn("no REDACTR_SUPERADMIN_HASH and no OIDC configured — admin login is disabled")
+	if cfg.SuperadminHash == "" && cfg.OIDC == nil {
+		slog.Warn("no superadmin hash and no OIDC configured — admin login is disabled")
 	}
 
 	var oidcRP *auth.OIDC
-	if issuer := os.Getenv("REDACTR_OIDC_ISSUER"); issuer != "" {
+	if cfg.OIDC != nil {
 		oidcRP, err = auth.NewOIDC(context.Background(), auth.OIDCConfig{
-			Issuer:       issuer,
-			ClientID:     os.Getenv("REDACTR_OIDC_CLIENT_ID"),
-			ClientSecret: os.Getenv("REDACTR_OIDC_CLIENT_SECRET"),
-			RedirectURL:  os.Getenv("REDACTR_OIDC_REDIRECT_URL"),
+			Issuer:       cfg.OIDC.Issuer,
+			ClientID:     cfg.OIDC.ClientID,
+			ClientSecret: cfg.OIDC.ClientSecret,
+			RedirectURL:  cfg.OIDC.RedirectURL,
 		})
 		if err != nil {
 			log.Fatalf("oidc: %v", err)
@@ -74,22 +64,35 @@ func main() {
 	}
 
 	handler := httpapi.New(st, auth.NewSigner(priv), authCfg, oidcRP)
-	if reg := os.Getenv("REDACTR_REGISTRY"); reg != "" {
-		handler.SetBuilder(imagebuild.NewShellBuilder(env("REDACTR_COSIGN_KEY", "./keys/cosign.key")), reg)
+	if cfg.Registry != "" {
+		handler.SetBuilder(imagebuild.NewShellBuilder(cfg.CosignKey), cfg.Registry)
 	}
-	srv := &http.Server{Addr: addr, Handler: handler}
+
+	// Cancel ctx on SIGINT/SIGTERM; drives both the maintenance loop and
+	// graceful HTTP shutdown.
+	ctx, cancel := signal.NotifyContext(context.Background(), syscall.SIGINT, syscall.SIGTERM)
+	defer cancel()
+
+	go maint.Loop(ctx, st, maint.Config{
+		BackupDir:       cfg.BackupDir,
+		BackupRetain:    cfg.BackupRetain,
+		AuditRetainDays: cfg.AuditRetainDays,
+		Interval:        24 * time.Hour,
+	}, slog.Default(), time.Now)
+
+	// TLS is terminated by the reverse proxy; we serve plain HTTP here.
+	srv := &http.Server{Addr: cfg.Addr, Handler: handler}
 
 	go func() {
-		slog.Info("redactr-server listening", "addr", addr)
+		slog.Info("redactr-server listening", "addr", cfg.Addr, "dev_mode", cfg.DevMode)
 		if err := srv.ListenAndServe(); err != nil && !errors.Is(err, http.ErrServerClosed) {
 			log.Fatalf("serve: %v", err)
 		}
 	}()
 
-	sig := make(chan os.Signal, 1)
-	signal.Notify(sig, syscall.SIGINT, syscall.SIGTERM)
-	<-sig
-	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
-	defer cancel()
-	_ = srv.Shutdown(ctx)
+	<-ctx.Done()
+	slog.Info("shutdown signal received; draining")
+	shutdownCtx, shutdownCancel := context.WithTimeout(context.Background(), 5*time.Second)
+	defer shutdownCancel()
+	_ = srv.Shutdown(shutdownCtx)
 }
