@@ -46,7 +46,7 @@ func TestEndToEndEffectivelyOnce(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	ts := httptest.NewServer(httpapi.New(st, auth.NewSigner(priv), "admin-key"))
+	ts := httptest.NewServer(httpapi.New(st, auth.NewSigner(priv), httpapi.AuthConfig{SessionTTL: time.Hour, MaxBodyBytes: 1 << 20}, nil))
 	defer ts.Close()
 
 	// --- enroll a device to get a bearer token ---
@@ -138,7 +138,7 @@ func TestOutboxResumesAfterRestart(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	ts := httptest.NewServer(httpapi.New(st, auth.NewSigner(priv), "admin-key"))
+	ts := httptest.NewServer(httpapi.New(st, auth.NewSigner(priv), httpapi.AuthConfig{SessionTTL: time.Hour, MaxBodyBytes: 1 << 20}, nil))
 	defer ts.Close()
 
 	org, err := st.CreateOrg("Acme")

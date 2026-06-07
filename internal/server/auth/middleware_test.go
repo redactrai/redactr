@@ -48,31 +48,3 @@ func TestRequireDevice(t *testing.T) {
 		t.Errorf("revoked code = %d, want 401", rec.Code)
 	}
 }
-
-func TestRequireAdmin(t *testing.T) {
-	h := RequireAdmin("sekret")(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) { w.WriteHeader(200) }))
-	rec := httptest.NewRecorder()
-	req := httptest.NewRequest("POST", "/admin/x", nil)
-	req.Header.Set("X-Admin-Key", "sekret")
-	h.ServeHTTP(rec, req)
-	if rec.Code != 200 {
-		t.Errorf("good key code = %d", rec.Code)
-	}
-	rec = httptest.NewRecorder()
-	h.ServeHTTP(rec, httptest.NewRequest("POST", "/admin/x", nil))
-	if rec.Code != 401 {
-		t.Errorf("missing key code = %d, want 401", rec.Code)
-	}
-}
-
-func TestRequireAdminEmptyKeyFailsClosed(t *testing.T) {
-	h := RequireAdmin("")(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) { w.WriteHeader(200) }))
-	// Even presenting an empty key must be rejected.
-	req := httptest.NewRequest("POST", "/admin/x", nil)
-	req.Header.Set("X-Admin-Key", "")
-	rec := httptest.NewRecorder()
-	h.ServeHTTP(rec, req)
-	if rec.Code != 401 {
-		t.Errorf("empty configured admin key code = %d, want 401", rec.Code)
-	}
-}

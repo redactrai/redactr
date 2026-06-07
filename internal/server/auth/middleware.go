@@ -2,7 +2,6 @@ package auth
 
 import (
 	"context"
-	"crypto/subtle"
 	"net/http"
 	"strings"
 	"time"
@@ -47,20 +46,6 @@ func RequireDevice(st *store.Store, signer *Signer) func(http.Handler) http.Hand
 			ctx := context.WithValue(r.Context(), ctxOrgID, dev.OrgID)
 			ctx = context.WithValue(ctx, ctxDeviceID, dev.ID)
 			next.ServeHTTP(w, r.WithContext(ctx))
-		})
-	}
-}
-
-// RequireAdmin gates a handler behind the X-Admin-Key header (constant-time compare).
-func RequireAdmin(adminKey string) func(http.Handler) http.Handler {
-	return func(next http.Handler) http.Handler {
-		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-			got := r.Header.Get("X-Admin-Key")
-			if adminKey == "" || subtle.ConstantTimeCompare([]byte(got), []byte(adminKey)) != 1 {
-				http.Error(w, "unauthorized", http.StatusUnauthorized)
-				return
-			}
-			next.ServeHTTP(w, r)
 		})
 	}
 }

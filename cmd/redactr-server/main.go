@@ -31,12 +31,6 @@ func main() {
 	dbPath := env("REDACTR_SERVER_DB", "./redactr-server.db")
 	keyDir := env("REDACTR_SERVER_KEY_DIR", "./keys")
 
-	adminKey := os.Getenv("REDACTR_ADMIN_KEY")
-	if adminKey == "" {
-		adminKey = httpapi.NewRawToken()
-		slog.Warn("no REDACTR_ADMIN_KEY set — generated one (set it to persist across restarts)", "admin_key", adminKey)
-	}
-
 	st, err := store.Open(dbPath)
 	if err != nil {
 		log.Fatalf("store: %v", err)
@@ -48,7 +42,38 @@ func main() {
 		log.Fatalf("keys: %v", err)
 	}
 
-	handler := httpapi.New(st, auth.NewSigner(priv), adminKey)
+	sessionTTL := 12 * time.Hour
+	if v := os.Getenv("REDACTR_SESSION_TTL"); v != "" {
+		if d, derr := time.ParseDuration(v); derr == nil {
+			sessionTTL = d
+		}
+	}
+	authCfg := httpapi.AuthConfig{
+		SuperadminUser: env("REDACTR_SUPERADMIN_USER", "admin"),
+		SuperadminHash: os.Getenv("REDACTR_SUPERADMIN_HASH"), // bcrypt hash; empty disables password login
+		Secure:         os.Getenv("REDACTR_COOKIE_SECURE") != "",
+		SessionTTL:     sessionTTL,
+		MachineKey:     os.Getenv("REDACTR_MACHINE_KEY"), // optional; enables X-Machine-Key on enrollment-token minting
+		MaxBodyBytes:   1 << 20,
+	}
+	if authCfg.SuperadminHash == "" && os.Getenv("REDACTR_OIDC_ISSUER") == "" {
+		slog.Warn("no REDACTR_SUPERADMIN_HASH and no OIDC configured — admin login is disabled")
+	}
+
+	var oidcRP *auth.OIDC
+	if issuer := os.Getenv("REDACTR_OIDC_ISSUER"); issuer != "" {
+		oidcRP, err = auth.NewOIDC(context.Background(), auth.OIDCConfig{
+			Issuer:       issuer,
+			ClientID:     os.Getenv("REDACTR_OIDC_CLIENT_ID"),
+			ClientSecret: os.Getenv("REDACTR_OIDC_CLIENT_SECRET"),
+			RedirectURL:  os.Getenv("REDACTR_OIDC_REDIRECT_URL"),
+		})
+		if err != nil {
+			log.Fatalf("oidc: %v", err)
+		}
+	}
+
+	handler := httpapi.New(st, auth.NewSigner(priv), authCfg, oidcRP)
 	if reg := os.Getenv("REDACTR_REGISTRY"); reg != "" {
 		handler.SetBuilder(imagebuild.NewShellBuilder(env("REDACTR_COSIGN_KEY", "./keys/cosign.key")), reg)
 	}

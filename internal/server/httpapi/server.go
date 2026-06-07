@@ -3,8 +3,10 @@ package httpapi
 
 import (
 	"crypto/rand"
+	"crypto/subtle"
 	"encoding/base64"
 	"encoding/json"
+	"errors"
 	"fmt"
 	"net/http"
 	"strconv"
@@ -17,42 +19,105 @@ import (
 	"github.com/redactrai/redactr/internal/server/store"
 )
 
+// AuthConfig configures the admin authentication surface (session-based login,
+// optional super-admin password, optional OIDC, optional automation key).
+type AuthConfig struct {
+	SuperadminUser string
+	SuperadminHash string        // bcrypt hash; empty = super-admin disabled
+	Secure         bool          // set Secure flag on cookies (true in prod/https)
+	SessionTTL     time.Duration // e.g. 12h
+	MachineKey     string        // optional; empty = machine-key path disabled
+	MaxBodyBytes   int64         // e.g. 1<<20
+}
+
 type Server struct {
 	store    *store.Store
 	signer   *auth.Signer
-	adminKey string
+	cfg      AuthConfig
+	oidc     *auth.OIDC // may be nil
 	mux      *http.ServeMux
 	builder  imagebuild.Builder
 	registry string
 }
 
-// New builds the control-plane HTTP handler.
-func New(st *store.Store, signer *auth.Signer, adminKey string) *Server {
-	s := &Server{store: st, signer: signer, adminKey: adminKey, mux: http.NewServeMux()}
+// New builds the control-plane HTTP handler. oidc may be nil (SSO disabled).
+func New(st *store.Store, signer *auth.Signer, cfg AuthConfig, oidc *auth.OIDC) *Server {
+	s := &Server{store: st, signer: signer, cfg: cfg, oidc: oidc, mux: http.NewServeMux()}
 	dev := auth.RequireDevice(st, signer)
-	admin := auth.RequireAdmin(adminKey)
+	lookup := auth.SessionLookup(st.LookupSession)
+	admin := auth.RequireSession("admin", lookup)
+	superadmin := auth.RequireSession("superadmin", lookup)
 
 	s.mux.HandleFunc("GET /healthz", s.handleHealth)
-	s.mux.HandleFunc("POST /v1/enroll", s.handleEnroll)
+	s.mux.HandleFunc("POST /v1/enroll", s.limitBody(s.handleEnroll))
 	s.mux.Handle("GET /v1/whoami", dev(http.HandlerFunc(s.handleWhoami)))
 	s.mux.Handle("GET /v1/policy", dev(http.HandlerFunc(s.handleGetPolicy)))
 	s.mux.HandleFunc("GET /v1/server-key", s.handleServerKey)
 	s.mux.Handle("PUT /admin/orgs/{id}/policy", admin(http.HandlerFunc(s.handlePutPolicy)))
 	s.mux.Handle("GET /admin/orgs/{id}/policy", admin(http.HandlerFunc(s.handleGetAdminPolicy)))
-	s.mux.Handle("POST /v1/events", dev(http.HandlerFunc(s.handlePostEvents)))
-	s.mux.Handle("POST /v1/ingest", dev(http.HandlerFunc(s.handleIngest)))
+	s.mux.Handle("POST /v1/events", dev(http.HandlerFunc(s.limitBody(s.handlePostEvents))))
+	s.mux.Handle("POST /v1/ingest", dev(http.HandlerFunc(s.limitBody(s.handleIngest))))
 	s.mux.Handle("GET /admin/orgs/{id}/events", admin(http.HandlerFunc(s.handleAdminEvents)))
 	s.mux.Handle("GET /admin/orgs/{id}/event-stats", admin(http.HandlerFunc(s.handleAdminEventStats)))
 
 	s.mux.Handle("POST /admin/orgs", admin(http.HandlerFunc(s.handleCreateOrg)))
 	s.mux.Handle("GET /admin/orgs", admin(http.HandlerFunc(s.handleListOrgs)))
-	s.mux.Handle("POST /admin/orgs/{id}/enrollment-tokens", admin(http.HandlerFunc(s.handleMintToken)))
+	// Enrollment-token minting accepts EITHER a valid admin session OR, when
+	// configured, the X-Machine-Key header (for CI/automation). This is the
+	// ONLY endpoint that honors the machine key.
+	s.mux.Handle("POST /admin/orgs/{id}/enrollment-tokens",
+		s.machineKeyOr("admin", lookup)(http.HandlerFunc(s.handleMintToken)))
 	s.mux.Handle("GET /admin/devices", admin(http.HandlerFunc(s.handleListDevices)))
 	s.mux.Handle("POST /admin/devices/{id}/revoke", admin(http.HandlerFunc(s.handleRevokeDevice)))
 	s.mux.Handle("POST /admin/orgs/{id}/images", admin(http.HandlerFunc(s.handleBuildImage)))
 	s.mux.Handle("GET /admin/orgs/{id}/images", admin(http.HandlerFunc(s.handleListImages)))
+
+	// Unauthenticated auth-establishing routes.
+	s.mux.HandleFunc("GET /admin/login", s.handleLoginForm)
+	s.mux.HandleFunc("POST /admin/login", s.handleLogin)
+	s.mux.HandleFunc("POST /admin/logout", s.handleLogout)
+	s.mux.HandleFunc("GET /admin/oidc/start", s.handleOIDCStart)
+	s.mux.HandleFunc("GET /admin/oidc/callback", s.handleOIDCCallback)
+
+	// Admin allowlist management (superadmin only).
+	s.mux.Handle("GET /admin/admins", superadmin(http.HandlerFunc(s.handleListAdmins)))
+	s.mux.Handle("POST /admin/admins", superadmin(http.HandlerFunc(s.handleAddAdmin)))
+	s.mux.Handle("DELETE /admin/admins/{email}", superadmin(http.HandlerFunc(s.handleDeleteAdmin)))
+
 	s.mux.Handle("GET /", dashboardHandler())
 	return s
+}
+
+// limitBody wraps a handler so the request body is capped at cfg.MaxBodyBytes.
+// Reads past the cap surface as *http.MaxBytesError, which the wrapped handler's
+// decode path maps to 413.
+func (s *Server) limitBody(next http.HandlerFunc) http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+		if s.cfg.MaxBodyBytes > 0 {
+			r.Body = http.MaxBytesReader(w, r.Body, s.cfg.MaxBodyBytes)
+		}
+		next(w, r)
+	}
+}
+
+// machineKeyOr returns middleware that accepts EITHER a valid X-Machine-Key
+// header (constant-time compare, only when cfg.MachineKey != "") OR a valid
+// session of the given role. Used to allow CI/automation to mint enrollment
+// tokens without a browser session.
+func (s *Server) machineKeyOr(role string, lookup auth.SessionLookup) func(http.Handler) http.Handler {
+	session := auth.RequireSession(role, lookup)
+	return func(next http.Handler) http.Handler {
+		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+			if s.cfg.MachineKey != "" {
+				got := r.Header.Get("X-Machine-Key")
+				if got != "" && subtle.ConstantTimeCompare([]byte(got), []byte(s.cfg.MachineKey)) == 1 {
+					next.ServeHTTP(w, r)
+					return
+				}
+			}
+			session(next).ServeHTTP(w, r)
+		})
+	}
 }
 
 // SetBuilder configures the image builder + registry base.
@@ -113,6 +178,11 @@ func (s *Server) handleEnroll(w http.ResponseWriter, r *http.Request) {
 		Platform        string `json:"platform"`
 	}
 	if err := json.NewDecoder(r.Body).Decode(&in); err != nil {
+		var mbe *http.MaxBytesError
+		if errors.As(err, &mbe) {
+			http.Error(w, "request body too large", http.StatusRequestEntityTooLarge)
+			return
+		}
 		http.Error(w, "bad request", http.StatusBadRequest)
 		return
 	}
@@ -281,6 +351,11 @@ func (s *Server) handlePostEvents(w http.ResponseWriter, r *http.Request) {
 		Events []control.MonitorEvent `json:"events"`
 	}
 	if err := json.NewDecoder(r.Body).Decode(&in); err != nil {
+		var mbe *http.MaxBytesError
+		if errors.As(err, &mbe) {
+			http.Error(w, "request body too large", http.StatusRequestEntityTooLarge)
+			return
+		}
 		http.Error(w, "bad request", http.StatusBadRequest)
 		return
 	}
@@ -302,6 +377,11 @@ func (s *Server) handlePostEvents(w http.ResponseWriter, r *http.Request) {
 func (s *Server) handleIngest(w http.ResponseWriter, r *http.Request) {
 	var in control.IngestRequest
 	if err := json.NewDecoder(r.Body).Decode(&in); err != nil {
+		var mbe *http.MaxBytesError
+		if errors.As(err, &mbe) {
+			http.Error(w, "request body too large", http.StatusRequestEntityTooLarge)
+			return
+		}
 		http.Error(w, "bad request", http.StatusBadRequest)
 		return
 	}
