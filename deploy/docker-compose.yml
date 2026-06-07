@@ -1,0 +1,49 @@
+# Production deployment: Caddy (TLS termination + ACME) in front of
+# redactr-server. Copy .env.example to .env and fill it in before running
+# `docker compose up -d`.
+
+services:
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    environment:
+      REDACTR_DOMAIN: ${REDACTR_DOMAIN}
+    depends_on:
+      - redactr-server
+
+  redactr-server:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    restart: unless-stopped
+    expose:
+      - "8080"
+    env_file:
+      - .env
+    environment:
+      # External base URL; must match the Caddy domain (https).
+      REDACTR_PUBLIC_URL: https://${REDACTR_DOMAIN}
+      # Bind inside the container; Caddy proxies to this.
+      REDACTR_SERVER_ADDR: ":8080"
+      # State paths live on named volumes for durability.
+      REDACTR_SERVER_DB: /data/db/redactr-server.db
+      REDACTR_SERVER_KEY_DIR: /data/keys
+      REDACTR_BACKUP_DIR: /data/backups
+    volumes:
+      - redactr_db:/data/db
+      - redactr_keys:/data/keys
+      - redactr_backups:/data/backups
+
+volumes:
+  caddy_data:
+  caddy_config:
+  redactr_db:
+  redactr_keys:
+  redactr_backups:

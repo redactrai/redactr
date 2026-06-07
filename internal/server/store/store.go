@@ -5,7 +5,6 @@ package store
 import (
 	"crypto/rand"
 	"database/sql"
-	_ "embed"
 	"encoding/hex"
 	"errors"
 	"time"
@@ -15,14 +14,14 @@ import (
 	"github.com/redactrai/redactr/internal/control"
 )
 
-//go:embed schema.sql
-var schema string
-
 // ErrEnrollment is returned when an enrollment token is invalid (unknown,
 // expired, revoked, or exhausted). Deliberately generic — no oracle on which.
 var ErrEnrollment = errors.New("enrollment failed")
 
-type Store struct{ db *sql.DB }
+type Store struct {
+	db  *sql.DB
+	now func() time.Time
+}
 
 type Org struct {
 	ID        string    `json:"id"`
@@ -41,6 +40,10 @@ type Device struct {
 }
 
 // Open opens (creating if needed) the SQLite database at path and applies the schema.
+// WARNING: Do NOT add _time_format or _time_integer_format params to the DSN.
+// Timestamp columns (e.g. expires_at) are stored as text in RFC 3339 format;
+// changing the time representation would break the "expires_at <= ?" comparisons
+// in LookupSession and SweepExpiredSessions.
 func Open(path string) (*Store, error) {
 	db, err := sql.Open("sqlite", path)
 	if err != nil {
@@ -54,11 +57,11 @@ func Open(path string) (*Store, error) {
 		db.Close()
 		return nil, err
 	}
-	if _, err := db.Exec(schema); err != nil {
+	if err := RunMigrations(db); err != nil {
 		db.Close()
 		return nil, err
 	}
-	return &Store{db: db}, nil
+	return &Store{db: db, now: func() time.Time { return time.Now().UTC() }}, nil
 }
 
 func (s *Store) Close() error { return s.db.Close() }
@@ -235,7 +238,9 @@ type Event struct {
 	ReceivedAt      time.Time `json:"received_at"`
 }
 
-// InsertEvents writes a batch of monitoring events for a device in one tx.
+// InsertEvents is the pre-F1 fire-and-forget path (no dedup uuid; writes NULL).
+// Deprecated: use IngestRecords, which provides idempotent ingest via
+// ON CONFLICT(uuid). Retained only for the legacy POST /v1/events handler.
 func (s *Store) InsertEvents(orgID, deviceID string, evs []control.MonitorEvent, receivedAt time.Time) error {
 	tx, err := s.db.Begin()
 	if err != nil {

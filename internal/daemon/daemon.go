@@ -12,6 +12,7 @@ import (
 	"os"
 	"os/signal"
 	"path/filepath"
+	"sync/atomic"
 	"syscall"
 	"time"
 
@@ -38,6 +39,7 @@ import (
 	"github.com/redactrai/redactr/internal/scanner/gliner"
 	"github.com/redactrai/redactr/internal/scanner/presidio"
 	"github.com/redactrai/redactr/internal/sessions"
+	"github.com/redactrai/redactr/internal/shipper"
 	"github.com/redactrai/redactr/internal/sidecar"
 	"github.com/redactrai/redactr/internal/store"
 )
@@ -81,7 +83,12 @@ type Daemon struct {
 	reconcileCancel context.CancelFunc
 	policyCancel    context.CancelFunc
 	monitorCancel   context.CancelFunc
-	sock            *http.Server // B3: control socket lives here
+	shipperCancel   context.CancelFunc
+	// shipEnabled is true exactly while the shipper goroutine is running (set in
+	// Start when enrolled + non-ephemeral). onScan checks it so audit records are
+	// only enqueued when there is a shipper to drain them.
+	shipEnabled atomic.Bool
+	sock        *http.Server // B3: control socket lives here
 }
 
 // Build wires up all daemon components without starting any listeners. It is
@@ -185,6 +192,13 @@ func Build(opts Options) (*Daemon, error) {
 	onScan := func(report *store.ScanReport) {
 		logStore.SaveReport(report)
 		hub.Broadcast(report)
+		if d.shipEnabled.Load() {
+			for _, a := range auditRecordsFromReport(report) {
+				if err := logStore.EnqueueAudit(a); err != nil {
+					slog.Warn("audit enqueue failed", "error", err)
+				}
+			}
+		}
 	}
 
 	bypassMatcher := proxy.NewBypassMatcher(cfg.Scanning.Bypass)
@@ -370,15 +384,19 @@ func (d *Daemon) Start() error {
 	}
 
 	if !d.opts.Ephemeral && isEnrolled(d.opts.BaseDir) {
-		ctx, cancel := context.WithCancel(context.Background())
-		d.policyCancel = cancel
-		go d.policySyncLoop(ctx)
-	}
+		policyCtx, policyCancel := context.WithCancel(context.Background())
+		d.policyCancel = policyCancel
+		go d.policySyncLoop(policyCtx)
 
-	if !d.opts.Ephemeral && isEnrolled(d.opts.BaseDir) {
-		ctx, cancel := context.WithCancel(context.Background())
-		d.monitorCancel = cancel
-		go d.monitorLoop(ctx)
+		monitorCtx, monitorCancel := context.WithCancel(context.Background())
+		d.monitorCancel = monitorCancel
+		go d.monitorLoop(monitorCtx)
+
+		shipperCtx, shipperCancel := context.WithCancel(context.Background())
+		d.shipperCancel = shipperCancel
+		d.shipEnabled.Store(true)
+		sh := shipper.New(d.store, shipper.NewHTTPPoster(d.opts.BaseDir))
+		go sh.Run(shipperCtx)
 	}
 
 	return nil
@@ -394,6 +412,10 @@ func (d *Daemon) Stop() error {
 	d.stopControlSocket()
 	if d.monitorCancel != nil {
 		d.monitorCancel()
+	}
+	d.shipEnabled.Store(false)
+	if d.shipperCancel != nil {
+		d.shipperCancel()
 	}
 	if d.policyCancel != nil {
 		d.policyCancel()
@@ -444,7 +466,7 @@ func (d *Daemon) Stop() error {
 }
 
 // isEnrolled reports whether this daemon has device enrollment and so should
-// run the control-plane background loops (policy sync + monitor report).
+// run the control-plane background loops (policy sync, monitor telemetry, shipper).
 func isEnrolled(baseDir string) bool {
 	return enrollment.Exists(baseDir)
 }
@@ -468,7 +490,7 @@ func (d *Daemon) policySyncLoop(ctx context.Context) {
 	}
 }
 
-// monitorLoop runs an initial scan+report then ticks every 60 seconds. It exits
+// monitorLoop runs an initial scan+enqueue then ticks every 60 seconds. It exits
 // when ctx is cancelled (i.e. when Stop is called). Errors are logged but do
 // not terminate the loop — fail-open means the batch is silently dropped.
 func (d *Daemon) monitorLoop(ctx context.Context) {
@@ -478,8 +500,10 @@ func (d *Daemon) monitorLoop(ctx context.Context) {
 			slog.Warn("session scan failed", "error", err)
 			return
 		}
-		if err := monitor.Report(d.opts.BaseDir, monitor.Collect(list)); err != nil {
-			slog.Warn("monitor report failed", "error", err)
+		for _, ev := range monitor.Collect(list) {
+			if err := d.store.EnqueueMonitor(ev); err != nil {
+				slog.Warn("monitor enqueue failed", "error", err)
+			}
 		}
 	}
 	report()

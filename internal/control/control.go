@@ -1,5 +1,6 @@
-// Package control holds the wire DTOs exchanged over the daemon's local
-// control socket, shared by the daemon (server) and the CLI/tray (clients).
+// Package control holds the shared wire DTOs used for both the daemon's local
+// control socket (CLI/tray <-> daemon) and the hosted control-plane API
+// (device <-> server).
 package control
 
 import "time"
@@ -50,4 +51,44 @@ type MonitorEvent struct {
 	Reason          string    `json:"reason"`
 	DirectConnCount int       `json:"direct_conn_count"`
 	ObservedAt      time.Time `json:"observed_at"`
+}
+
+// Kinds of telemetry carried in an IngestRecord.
+const (
+	KindMonitor = "monitor"
+	KindAudit   = "audit"
+)
+
+// AuditRecord is a single redaction-finding observation derived from a local
+// ScanReport. It carries the detector and category of what was redacted, never
+// the raw or redacted value and never any request/response body.
+type AuditRecord struct {
+	Provider   string    `json:"provider"`
+	Source     string    `json:"source"`
+	Detector   string    `json:"detector"`
+	Category   string    `json:"category"`
+	Action     string    `json:"action"` // "blocked" | "allowed"
+	LatencyMs  int64     `json:"latency_ms"`
+	ObservedAt time.Time `json:"observed_at"`
+}
+
+// IngestRecord is one durable, idempotent telemetry item. Exactly one of
+// Monitor/Audit is set, selected by Kind. UUID is the client-generated
+// idempotency key; Seq is the client's monotonic per-device sequence.
+type IngestRecord struct {
+	UUID    string        `json:"uuid"`
+	Seq     uint64        `json:"seq"`
+	Kind    string        `json:"kind"`
+	Monitor *MonitorEvent `json:"monitor,omitempty"`
+	Audit   *AuditRecord  `json:"audit,omitempty"`
+}
+
+// IngestRequest is the POST /v1/ingest body.
+type IngestRequest struct {
+	Records []IngestRecord `json:"records"`
+}
+
+// IngestResponse lists the UUIDs the server has durably stored (new or already-present).
+type IngestResponse struct {
+	Accepted []string `json:"accepted"`
 }

@@ -128,25 +128,35 @@ This brings up **both the control-plane server and a client** on your machine an
 **1 · Start the control plane** *(terminal 1)*
 
 ```bash
-REDACTR_ADMIN_KEY=dev-admin-key ./bin/redactr-server
+REDACTR_DEV_MODE=1 \
+  REDACTR_SUPERADMIN_PASSWORD=dev-password \
+  REDACTR_MACHINE_KEY=dev-machine-key \
+  ./bin/redactr-server
 # → listening on :8080  ·  admin dashboard at http://localhost:8080/
 ```
 
-Open <http://localhost:8080/> and sign in with `dev-admin-key`. (Omit `REDACTR_ADMIN_KEY` and the server generates one and prints it in the log.)
+Open <http://localhost:8080/> and sign in at the **login page** (`/admin/login`) as
+`admin` / `dev-password`. That sets a session cookie the dashboard uses for all
+admin actions. (In production you set `REDACTR_SUPERADMIN_PASSWORD_HASH` to a
+bcrypt hash instead of a plaintext password, and/or wire up OIDC SSO — see
+[deploy/README.md](deploy/README.md).)
 
 **2 · Create an org and an enrollment token** *(terminal 2)*
 
-You can click through the dashboard, or use the admin API:
+Admin actions (creating orgs, editing policy, …) are gated by a **session
+cookie**, so the easy path is to click through the dashboard: create *Acme Corp*
+and mint an enrollment token from the UI.
+
+If you prefer the API, note that the only admin endpoint reachable without a
+browser session is enrollment-token minting, which also accepts the
+`X-Machine-Key` header (set above via `REDACTR_MACHINE_KEY`). Create the org in
+the dashboard, copy its ID, then:
 
 ```bash
-ADMIN=dev-admin-key
-
-ORG_ID=$(curl -s -X POST localhost:8080/admin/orgs \
-  -H "X-Admin-Key: $ADMIN" -H 'Content-Type: application/json' \
-  -d '{"name":"Acme Corp"}' | jq -r .id)
+ORG_ID=<paste-org-id-from-dashboard>
 
 TOKEN=$(curl -s -X POST localhost:8080/admin/orgs/$ORG_ID/enrollment-tokens \
-  -H "X-Admin-Key: $ADMIN" -H 'Content-Type: application/json' \
+  -H "X-Machine-Key: dev-machine-key" -H 'Content-Type: application/json' \
   -d '{"expires_in_hours":24,"max_uses":0}' | jq -r .token)
 
 echo "Org:   $ORG_ID"
@@ -197,7 +207,7 @@ make sandbox-image            # build redactr-base:local (requires Docker)
 ## Dashboards
 
 - **Client dashboard** (`http://localhost:9080`): proxy toggle, redaction metrics, 24-hour trend, intercepted tools, safety recommendations, per-entry redaction logs (which layer caught what and why), and live config editing.
-- **Server admin dashboard** (`http://<host>:8080/`, gated by `X-Admin-Key`): orgs, device registry, enrollment-token minting, policy editor (denylist + image pinning), fleet monitoring events, and the Dockerfile build/sign image pipeline.
+- **Server admin dashboard** (`http://<host>:8080/`, gated by session-cookie login at `/admin/login` or OIDC SSO): orgs, device registry, enrollment-token minting, policy editor (denylist + image pinning), fleet monitoring events, and the Dockerfile build/sign image pipeline.
 
 ## Configuration
 
@@ -244,9 +254,17 @@ Detection layers are managed per-rule under `scanning.rules` and are most easily
 | `REDACTR_SERVER_ADDR` | `:8080` | Listen address |
 | `REDACTR_SERVER_DB` | `./redactr-server.db` | Embedded SQLite path |
 | `REDACTR_SERVER_KEY_DIR` | `./keys` | ECDSA signing keypair location |
-| `REDACTR_ADMIN_KEY` | _generated + logged_ | Admin API / dashboard key (set it to persist across restarts) |
+| `REDACTR_SUPERADMIN_USER` | `admin` | Super-admin login username |
+| `REDACTR_SUPERADMIN_PASSWORD_HASH` | _unset_ | bcrypt hash for super-admin login (or set `REDACTR_SUPERADMIN_PASSWORD` plaintext to have it hashed at startup) |
+| `REDACTR_MACHINE_KEY` | _unset_ | Automation key accepted via `X-Machine-Key`, only on `POST /admin/orgs/{id}/enrollment-tokens` |
 | `REDACTR_REGISTRY` | _unset_ | Enables the image pipeline; registry base for built images |
 | `REDACTR_COSIGN_KEY` | `./keys/cosign.key` | cosign key for image signing |
+
+Admin auth uses session-cookie login (`/admin/login`) and/or OIDC SSO. See
+[deploy/README.md](deploy/README.md) for the full production setup (Docker,
+Caddy, TLS, OIDC, super-admin hashing). At least one auth method
+(`REDACTR_SUPERADMIN_PASSWORD_HASH`/`_PASSWORD` or OIDC) is required outside dev
+mode.
 
 The image build pipeline (`REDACTR_REGISTRY` set) additionally requires `docker` and `cosign` on the server host.
 

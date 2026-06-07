@@ -18,7 +18,7 @@ func TestEnrolledGate(t *testing.T) {
 // throwaway baseDir, and shuts down cleanly. No Docker / no GLiNER required
 // (both degrade gracefully).
 func TestBuildStartStop(t *testing.T) {
-	base := t.TempDir()
+	base := socketTempDir(t)
 	// Ephemeral binds admin+dashboard on OS-assigned ports so the test never
 	// collides with a real daemon.
 	d, err := Build(Options{BaseDir: base, Ephemeral: true})

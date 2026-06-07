@@ -14,14 +14,25 @@ import (
 	"path/filepath"
 	"strings"
 	"testing"
+	"time"
 
+	"github.com/redactrai/redactr/internal/control"
 	"github.com/redactrai/redactr/internal/server/auth"
 	"github.com/redactrai/redactr/internal/server/imagebuild"
 	"github.com/redactrai/redactr/internal/server/store"
 	"github.com/redactrai/redactr/internal/signing"
 )
 
-func newTestServer(t *testing.T) *httptest.Server {
+// adminCookie sentinel: tests pass this as the "adminKey" arg to postJSON to
+// request a valid admin (superadmin) session cookie be attached. An empty
+// string means no auth.
+const adminCookie = "use-admin-cookie"
+
+// testStores maps an httptest.Server to its backing store so test helpers can
+// mint sessions for cookie auth.
+var testStores = map[*httptest.Server]*store.Store{}
+
+func newTestServerCfg(t *testing.T, cfg AuthConfig) *httptest.Server {
 	t.Helper()
 	st, err := store.Open(filepath.Join(t.TempDir(), "s.db"))
 	if err != nil {
@@ -29,18 +40,39 @@ func newTestServer(t *testing.T) *httptest.Server {
 	}
 	t.Cleanup(func() { st.Close() })
 	priv, _ := ecdsa.GenerateKey(elliptic.P256(), rand.Reader)
-	srv := New(st, auth.NewSigner(priv), "admin-key")
+	srv := New(st, auth.NewSigner(priv), cfg, nil)
 	ts := httptest.NewServer(srv)
-	t.Cleanup(ts.Close)
+	testStores[ts] = st
+	t.Cleanup(func() { ts.Close(); delete(testStores, ts) })
 	return ts
+}
+
+func newTestServer(t *testing.T) *httptest.Server {
+	t.Helper()
+	return newTestServerCfg(t, AuthConfig{SessionTTL: time.Hour, MaxBodyBytes: 1 << 20})
+}
+
+// adminSessionCookie creates a superadmin session in ts's store and returns the
+// cookie to attach to admin requests.
+func adminSessionCookie(t *testing.T, ts *httptest.Server) *http.Cookie {
+	t.Helper()
+	st := testStores[ts]
+	if st == nil {
+		t.Fatal("no store registered for test server")
+	}
+	sess, err := st.CreateSession("root", "superadmin", time.Hour)
+	if err != nil {
+		t.Fatal(err)
+	}
+	return &http.Cookie{Name: "redactr_admin", Value: sess.ID}
 }
 
 func postJSON(t *testing.T, ts *httptest.Server, path, adminKey string, body any) *http.Response {
 	t.Helper()
 	b, _ := json.Marshal(body)
 	req, _ := http.NewRequest("POST", ts.URL+path, bytes.NewReader(b))
-	if adminKey != "" {
-		req.Header.Set("X-Admin-Key", adminKey)
+	if adminKey == adminCookie {
+		req.AddCookie(adminSessionCookie(t, ts))
 	}
 	resp, err := http.DefaultClient.Do(req)
 	if err != nil {
@@ -52,7 +84,7 @@ func postJSON(t *testing.T, ts *httptest.Server, path, adminKey string, body any
 func TestEnrollWhoamiRevokeFlow(t *testing.T) {
 	ts := newTestServer(t)
 
-	resp := postJSON(t, ts, "/admin/orgs", "admin-key", map[string]string{"name": "Acme"})
+	resp := postJSON(t, ts, "/admin/orgs", adminCookie, map[string]string{"name": "Acme"})
 	var org struct {
 		ID string `json:"id"`
 	}
@@ -62,7 +94,7 @@ func TestEnrollWhoamiRevokeFlow(t *testing.T) {
 		t.Fatal("no org id")
 	}
 
-	resp = postJSON(t, ts, "/admin/orgs/"+org.ID+"/enrollment-tokens", "admin-key",
+	resp = postJSON(t, ts, "/admin/orgs/"+org.ID+"/enrollment-tokens", adminCookie,
 		map[string]int{"expires_in_hours": 1, "max_uses": 1})
 	var mint struct {
 		Token string `json:"token"`
@@ -90,7 +122,7 @@ func TestEnrollWhoamiRevokeFlow(t *testing.T) {
 	}
 	who.Body.Close()
 
-	rv := postJSON(t, ts, "/admin/devices/"+enrRaw["device_id"]+"/revoke", "admin-key", nil)
+	rv := postJSON(t, ts, "/admin/devices/"+enrRaw["device_id"]+"/revoke", adminCookie, nil)
 	rv.Body.Close()
 	req2, _ := http.NewRequest("GET", ts.URL+"/v1/whoami", nil)
 	req2.Header.Set("Authorization", "Bearer "+enrRaw["token"])
@@ -113,13 +145,13 @@ func TestAdminKeyRequired(t *testing.T) {
 func TestPolicyDistribution(t *testing.T) {
 	ts := newTestServer(t)
 
-	r := postJSON(t, ts, "/admin/orgs", "admin-key", map[string]string{"name": "Acme"})
+	r := postJSON(t, ts, "/admin/orgs", adminCookie, map[string]string{"name": "Acme"})
 	var org struct {
 		ID string `json:"id"`
 	}
 	json.NewDecoder(r.Body).Decode(&org)
 	r.Body.Close()
-	r = postJSON(t, ts, "/admin/orgs/"+org.ID+"/enrollment-tokens", "admin-key", map[string]int{"max_uses": 0})
+	r = postJSON(t, ts, "/admin/orgs/"+org.ID+"/enrollment-tokens", adminCookie, map[string]int{"max_uses": 0})
 	var mint struct {
 		Token string `json:"token"`
 	}
@@ -134,7 +166,7 @@ func TestPolicyDistribution(t *testing.T) {
 	}
 
 	req, _ := http.NewRequest("PUT", ts.URL+"/admin/orgs/"+org.ID+"/policy", bytes.NewReader([]byte(`{"image":"redactr-base:v9","mountMode":"bind","denylist":["evil.test"]}`)))
-	req.Header.Set("X-Admin-Key", "admin-key")
+	req.AddCookie(adminSessionCookie(t, ts))
 	pr, _ := http.DefaultClient.Do(req)
 	pr.Body.Close()
 
@@ -189,7 +221,7 @@ func TestPolicyDistribution(t *testing.T) {
 func TestGetAdminPolicyUnknownOrg404(t *testing.T) {
 	ts := newTestServer(t)
 	req, _ := http.NewRequest("GET", ts.URL+"/admin/orgs/does-not-exist/policy", nil)
-	req.Header.Set("X-Admin-Key", "admin-key")
+	req.AddCookie(adminSessionCookie(t, ts))
 	resp, err := http.DefaultClient.Do(req)
 	if err != nil {
 		t.Fatal(err)
@@ -202,13 +234,13 @@ func TestGetAdminPolicyUnknownOrg404(t *testing.T) {
 
 func TestEventIngestionAndAdminRead(t *testing.T) {
 	ts := newTestServer(t)
-	r := postJSON(t, ts, "/admin/orgs", "admin-key", map[string]string{"name": "Acme"})
+	r := postJSON(t, ts, "/admin/orgs", adminCookie, map[string]string{"name": "Acme"})
 	var org struct {
 		ID string `json:"id"`
 	}
 	json.NewDecoder(r.Body).Decode(&org)
 	r.Body.Close()
-	r = postJSON(t, ts, "/admin/orgs/"+org.ID+"/enrollment-tokens", "admin-key", map[string]int{"max_uses": 0})
+	r = postJSON(t, ts, "/admin/orgs/"+org.ID+"/enrollment-tokens", adminCookie, map[string]int{"max_uses": 0})
 	var mint struct {
 		Token string `json:"token"`
 	}
@@ -239,7 +271,7 @@ func TestEventIngestionAndAdminRead(t *testing.T) {
 	u.Body.Close()
 
 	areq, _ := http.NewRequest("GET", ts.URL+"/admin/orgs/"+org.ID+"/events?limit=10", nil)
-	areq.Header.Set("X-Admin-Key", "admin-key")
+	areq.AddCookie(adminSessionCookie(t, ts))
 	ar, _ := http.DefaultClient.Do(areq)
 	var evs []map[string]any
 	json.NewDecoder(ar.Body).Decode(&evs)
@@ -287,9 +319,10 @@ func newTestServerWithSrv(t *testing.T) (*httptest.Server, *Server) {
 	}
 	t.Cleanup(func() { st.Close() })
 	priv, _ := ecdsa.GenerateKey(elliptic.P256(), rand.Reader)
-	srv := New(st, auth.NewSigner(priv), "admin-key")
+	srv := New(st, auth.NewSigner(priv), AuthConfig{SessionTTL: time.Hour, MaxBodyBytes: 1 << 20}, nil)
 	ts := httptest.NewServer(srv)
-	t.Cleanup(ts.Close)
+	testStores[ts] = st
+	t.Cleanup(func() { ts.Close(); delete(testStores, ts) })
 	return ts, srv
 }
 
@@ -297,7 +330,7 @@ func TestImageBuildSetsPolicy(t *testing.T) {
 	ts, srv := newTestServerWithSrv(t)
 	srv.SetBuilder(fakeBuilder{ref: "reg/acme/tools", digest: "sha256:cafe"}, "reg")
 
-	r := postJSON(t, ts, "/admin/orgs", "admin-key", map[string]string{"name": "Acme"})
+	r := postJSON(t, ts, "/admin/orgs", adminCookie, map[string]string{"name": "Acme"})
 	var org struct {
 		ID string `json:"id"`
 	}
@@ -306,7 +339,7 @@ func TestImageBuildSetsPolicy(t *testing.T) {
 
 	req, _ := http.NewRequest("POST", ts.URL+"/admin/orgs/"+org.ID+"/images",
 		bytes.NewReader([]byte(`{"dockerfile":"FROM redactr-base\nRUN echo hi","tag":"tools"}`)))
-	req.Header.Set("X-Admin-Key", "admin-key")
+	req.AddCookie(adminSessionCookie(t, ts))
 	resp, _ := http.DefaultClient.Do(req)
 	if resp.StatusCode != 200 {
 		t.Fatalf("POST images code = %d", resp.StatusCode)
@@ -314,12 +347,71 @@ func TestImageBuildSetsPolicy(t *testing.T) {
 	resp.Body.Close()
 
 	preq, _ := http.NewRequest("GET", ts.URL+"/admin/orgs/"+org.ID+"/policy", nil)
-	preq.Header.Set("X-Admin-Key", "admin-key")
+	preq.AddCookie(adminSessionCookie(t, ts))
 	pr, _ := http.DefaultClient.Do(preq)
 	var pol map[string]any
 	json.NewDecoder(pr.Body).Decode(&pol)
 	pr.Body.Close()
 	if pol["image"] != "reg/acme/tools@sha256:cafe" {
 		t.Fatalf("policy image = %v", pol["image"])
+	}
+}
+
+func TestIngestEndpointDedup(t *testing.T) {
+	ts := newTestServer(t)
+
+	resp := postJSON(t, ts, "/admin/orgs", adminCookie, map[string]string{"name": "Acme"})
+	var org struct {
+		ID string `json:"id"`
+	}
+	json.NewDecoder(resp.Body).Decode(&org)
+	resp.Body.Close()
+
+	resp = postJSON(t, ts, "/admin/orgs/"+org.ID+"/enrollment-tokens", adminCookie,
+		map[string]int{"expires_in_hours": 1, "max_uses": 1})
+	var mint struct {
+		Token string `json:"token"`
+	}
+	json.NewDecoder(resp.Body).Decode(&mint)
+	resp.Body.Close()
+
+	resp = postJSON(t, ts, "/v1/enroll", "",
+		map[string]string{"enrollment_token": mint.Token, "device_name": "laptop", "platform": "darwin"})
+	var enr map[string]string
+	json.NewDecoder(resp.Body).Decode(&enr)
+	resp.Body.Close()
+	token := enr["token"]
+
+	body := control.IngestRequest{Records: []control.IngestRecord{
+		{UUID: "m1", Kind: control.KindMonitor, Monitor: &control.MonitorEvent{Tool: "Claude Code", Verdict: "runaway", Reason: "x"}},
+		{UUID: "a1", Kind: control.KindAudit, Audit: &control.AuditRecord{Provider: "anthropic", Source: "proxy", Detector: "regex", Category: "aws_key", Action: "blocked"}},
+	}}
+	b, _ := json.Marshal(body)
+
+	post := func() int {
+		req, _ := http.NewRequest("POST", ts.URL+"/v1/ingest", bytes.NewReader(b))
+		req.Header.Set("Authorization", "Bearer "+token)
+		r, err := http.DefaultClient.Do(req)
+		if err != nil {
+			t.Fatal(err)
+		}
+		defer r.Body.Close()
+		return r.StatusCode
+	}
+	if code := post(); code != 200 {
+		t.Fatalf("first ingest code=%d", code)
+	}
+	if code := post(); code != 200 {
+		t.Fatalf("second ingest code=%d", code)
+	}
+
+	req, _ := http.NewRequest("GET", ts.URL+"/admin/orgs/"+org.ID+"/events", nil)
+	req.AddCookie(adminSessionCookie(t, ts))
+	r, _ := http.DefaultClient.Do(req)
+	var evs []map[string]any
+	json.NewDecoder(r.Body).Decode(&evs)
+	r.Body.Close()
+	if len(evs) != 1 {
+		t.Fatalf("events after dedup=%d want 1", len(evs))
 	}
 }
