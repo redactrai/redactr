@@ -70,9 +70,9 @@ func TestRetentionPrunesOldRowsKeepsNew(t *testing.T) {
 		t.Fatalf("CreateOrg: %v", err)
 	}
 
-	old := time.Unix(0, 0).UTC()           // epoch — well before cutoff
+	old := time.Unix(0, 0).UTC()                // epoch — well before cutoff
 	recent := time.Unix(1_700_000_000, 0).UTC() // well after cutoff
-	cutoff := time.Unix(86400, 0).UTC()    // 1 day after epoch
+	cutoff := time.Unix(86400, 0).UTC()         // 1 day after epoch
 
 	// Insert one old and one recent audit record.
 	insertAuditWithTime(t, s, org.ID, "uuid-old-audit", old)

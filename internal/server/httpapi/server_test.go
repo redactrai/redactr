@@ -361,13 +361,17 @@ func TestIngestEndpointDedup(t *testing.T) {
 	ts := newTestServer(t)
 
 	resp := postJSON(t, ts, "/admin/orgs", adminCookie, map[string]string{"name": "Acme"})
-	var org struct{ ID string `json:"id"` }
+	var org struct {
+		ID string `json:"id"`
+	}
 	json.NewDecoder(resp.Body).Decode(&org)
 	resp.Body.Close()
 
 	resp = postJSON(t, ts, "/admin/orgs/"+org.ID+"/enrollment-tokens", adminCookie,
 		map[string]int{"expires_in_hours": 1, "max_uses": 1})
-	var mint struct{ Token string `json:"token"` }
+	var mint struct {
+		Token string `json:"token"`
+	}
 	json.NewDecoder(resp.Body).Decode(&mint)
 	resp.Body.Close()
 
