@@ -5,6 +5,7 @@ import (
 	"crypto/rand"
 	"encoding/base64"
 	"errors"
+	"fmt"
 	"strings"
 
 	"github.com/coreos/go-oidc/v3/oidc"
@@ -41,7 +42,7 @@ type OIDCClaims struct {
 type OIDC struct {
 	provider *oidc.Provider
 	verifier *oidc.IDTokenVerifier
-	oauth2   oauth2.Config
+	conf     oauth2.Config
 }
 
 // NewOIDC discovers the provider via its issuer URL and builds the ID-token
@@ -50,7 +51,7 @@ type OIDC struct {
 func NewOIDC(ctx context.Context, cfg OIDCConfig) (*OIDC, error) {
 	provider, err := oidc.NewProvider(ctx, cfg.Issuer)
 	if err != nil {
-		return nil, err
+		return nil, fmt.Errorf("oidc: discover provider: %w", err)
 	}
 	verifier := provider.Verifier(&oidc.Config{ClientID: cfg.ClientID})
 	conf := oauth2.Config{
@@ -60,7 +61,7 @@ func NewOIDC(ctx context.Context, cfg OIDCConfig) (*OIDC, error) {
 		RedirectURL:  cfg.RedirectURL,
 		Scopes:       []string{oidc.ScopeOpenID, "email"},
 	}
-	return &OIDC{provider: provider, verifier: verifier, oauth2: conf}, nil
+	return &OIDC{provider: provider, verifier: verifier, conf: conf}, nil
 }
 
 // AuthState carries the per-login secrets the caller must persist (in a
@@ -83,7 +84,7 @@ func (o *OIDC) Start() (authURL string, st AuthState, err error) {
 		return "", AuthState{}, err
 	}
 	verifier := oauth2.GenerateVerifier()
-	url := o.oauth2.AuthCodeURL(state,
+	url := o.conf.AuthCodeURL(state,
 		oidc.Nonce(nonce),
 		oauth2.S256ChallengeOption(verifier),
 	)
@@ -97,9 +98,9 @@ func (o *OIDC) Exchange(ctx context.Context, code, gotState string, st AuthState
 	if gotState != st.State {
 		return OIDCClaims{}, ErrState
 	}
-	tok, err := o.oauth2.Exchange(ctx, code, oauth2.VerifierOption(st.Verifier))
+	tok, err := o.conf.Exchange(ctx, code, oauth2.VerifierOption(st.Verifier))
 	if err != nil {
-		return OIDCClaims{}, err
+		return OIDCClaims{}, fmt.Errorf("oidc: code exchange: %w", err)
 	}
 	rawID, _ := tok.Extra("id_token").(string)
 	if rawID == "" {
@@ -107,7 +108,7 @@ func (o *OIDC) Exchange(ctx context.Context, code, gotState string, st AuthState
 	}
 	idTok, err := o.verifier.Verify(ctx, rawID)
 	if err != nil {
-		return OIDCClaims{}, err
+		return OIDCClaims{}, fmt.Errorf("oidc: verify id token: %w", err)
 	}
 	if idTok.Nonce != st.Nonce {
 		return OIDCClaims{}, ErrNonce
@@ -117,7 +118,7 @@ func (o *OIDC) Exchange(ctx context.Context, code, gotState string, st AuthState
 		EmailVerified bool   `json:"email_verified"`
 	}
 	if err := idTok.Claims(&c); err != nil {
-		return OIDCClaims{}, err
+		return OIDCClaims{}, fmt.Errorf("oidc: decode claims: %w", err)
 	}
 	if !c.EmailVerified {
 		return OIDCClaims{}, ErrEmailUnverified
