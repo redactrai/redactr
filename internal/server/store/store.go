@@ -18,7 +18,10 @@ import (
 // expired, revoked, or exhausted). Deliberately generic — no oracle on which.
 var ErrEnrollment = errors.New("enrollment failed")
 
-type Store struct{ db *sql.DB }
+type Store struct {
+	db  *sql.DB
+	now func() time.Time
+}
 
 type Org struct {
 	ID        string    `json:"id"`
@@ -54,7 +57,7 @@ func Open(path string) (*Store, error) {
 		db.Close()
 		return nil, err
 	}
-	return &Store{db: db}, nil
+	return &Store{db: db, now: func() time.Time { return time.Now().UTC() }}, nil
 }
 
 func (s *Store) Close() error { return s.db.Close() }
