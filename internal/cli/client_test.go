@@ -4,11 +4,27 @@ import (
 	"encoding/json"
 	"net"
 	"net/http"
+	"os"
 	"path/filepath"
 	"testing"
 
 	"github.com/redactrai/redactr/internal/control"
 )
+
+// socketTempDir returns a temp dir whose path is short enough that unix sockets
+// created within it stay under the macOS 104-byte sun_path limit. The default
+// $TMPDIR on macOS (/var/folders/...) is long enough that longer test names
+// push the socket path past that limit; rooting under /tmp keeps it short.
+// Falls back to t.TempDir() where /tmp is unavailable (e.g. Windows).
+func socketTempDir(t *testing.T) string {
+	t.Helper()
+	dir, err := os.MkdirTemp("/tmp", "rdtr")
+	if err != nil {
+		return t.TempDir()
+	}
+	t.Cleanup(func() { os.RemoveAll(dir) })
+	return dir
+}
 
 // serveFakeSocket spins up a UDS server returning canned control responses.
 func serveFakeSocket(t *testing.T, dir string) string {
@@ -35,7 +51,7 @@ func serveFakeSocket(t *testing.T, dir string) string {
 }
 
 func TestClientStatusAndPolicy(t *testing.T) {
-	dir := t.TempDir()
+	dir := socketTempDir(t)
 	serveFakeSocket(t, dir)
 	c := NewClient(dir)
 
@@ -57,7 +73,7 @@ func TestClientStatusAndPolicy(t *testing.T) {
 }
 
 func TestEnableProxyPropagates502(t *testing.T) {
-	dir := t.TempDir()
+	dir := socketTempDir(t)
 	sock := filepath.Join(dir, "redactr.sock")
 	l, err := net.Listen("unix", sock)
 	if err != nil {
@@ -78,7 +94,7 @@ func TestEnableProxyPropagates502(t *testing.T) {
 }
 
 func TestEnsureDaemonSpawnsWhenDown(t *testing.T) {
-	dir := t.TempDir()
+	dir := socketTempDir(t)
 	spawned := false
 	err := ensureDaemon(dir, func() error {
 		spawned = true

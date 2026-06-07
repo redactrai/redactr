@@ -3,12 +3,28 @@ package daemon
 import (
 	"encoding/json"
 	"net/http"
+	"os"
 	"path/filepath"
 	"testing"
 )
 
+// socketTempDir returns a temp dir whose path is short enough that unix sockets
+// created within it stay under the macOS 104-byte sun_path limit. The default
+// $TMPDIR on macOS (/var/folders/...) is long enough that longer test names
+// push the socket path past that limit; rooting under /tmp keeps it short.
+// Falls back to t.TempDir() where /tmp is unavailable (e.g. Windows).
+func socketTempDir(t *testing.T) string {
+	t.Helper()
+	dir, err := os.MkdirTemp("/tmp", "rdtr")
+	if err != nil {
+		return t.TempDir()
+	}
+	t.Cleanup(func() { os.RemoveAll(dir) })
+	return dir
+}
+
 func TestControlSocketStatusAndPolicy(t *testing.T) {
-	base := t.TempDir()
+	base := socketTempDir(t)
 	d, err := Build(Options{BaseDir: base, Ephemeral: true})
 	if err != nil {
 		t.Fatalf("Build: %v", err)
