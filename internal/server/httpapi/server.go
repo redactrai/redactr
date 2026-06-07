@@ -79,6 +79,9 @@ func New(st *store.Store, signer *auth.Signer, cfg AuthConfig, oidc *auth.OIDC) 
 	s.mux.HandleFunc("GET /admin/oidc/start", s.handleOIDCStart)
 	s.mux.HandleFunc("GET /admin/oidc/callback", s.handleOIDCCallback)
 
+	// Session identity for the SPA (admin or superadmin).
+	s.mux.Handle("GET /admin/me", admin(http.HandlerFunc(s.handleMe)))
+
 	// Admin allowlist management (superadmin only).
 	s.mux.Handle("GET /admin/admins", superadmin(http.HandlerFunc(s.handleListAdmins)))
 	s.mux.Handle("POST /admin/admins", superadmin(http.HandlerFunc(s.handleAddAdmin)))

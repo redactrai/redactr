@@ -137,6 +137,16 @@ func (s *Server) handleOIDCCallback(w http.ResponseWriter, r *http.Request) {
 	http.Redirect(w, r, "/", http.StatusSeeOther)
 }
 
+// handleMe returns the identity of the current session (admin or superadmin).
+// The SPA calls this on load to populate the "whoami" label and to confirm the
+// session cookie is still valid (a 401 redirects the browser to /admin/login).
+func (s *Server) handleMe(w http.ResponseWriter, r *http.Request) {
+	writeJSON(w, http.StatusOK, map[string]string{
+		"subject": auth.SessionSubject(r.Context()),
+		"role":    auth.SessionRole(r.Context()),
+	})
+}
+
 // handleListAdmins returns the admin allowlist (superadmin only).
 func (s *Server) handleListAdmins(w http.ResponseWriter, r *http.Request) {
 	admins, err := s.store.ListAdmins()

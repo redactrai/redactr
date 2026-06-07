@@ -208,6 +208,94 @@ func TestExistingAdminRouteNeedsSession(t *testing.T) {
 	}
 }
 
+func TestMeReturnsSessionIdentity(t *testing.T) {
+	ts := newTestServer(t)
+	st := testStores[ts]
+
+	// With a superadmin session → 200 + correct subject/role.
+	sess, _ := st.CreateSession("root", "superadmin", time.Hour)
+	req, _ := http.NewRequest("GET", ts.URL+"/admin/me", nil)
+	req.AddCookie(&http.Cookie{Name: "redactr_admin", Value: sess.ID})
+	resp, err := http.DefaultClient.Do(req)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if resp.StatusCode != 200 {
+		resp.Body.Close()
+		t.Fatalf("GET /admin/me with session code = %d, want 200", resp.StatusCode)
+	}
+	var me struct {
+		Subject string `json:"subject"`
+		Role    string `json:"role"`
+	}
+	decodeJSON(t, resp, &me)
+	if me.Subject != "root" || me.Role != "superadmin" {
+		t.Fatalf("/admin/me identity = %+v, want subject=root role=superadmin", me)
+	}
+
+	// With no cookie → 401.
+	nr, err := http.Get(ts.URL + "/admin/me")
+	if err != nil {
+		t.Fatal(err)
+	}
+	nr.Body.Close()
+	if nr.StatusCode != http.StatusUnauthorized {
+		t.Fatalf("no-cookie GET /admin/me code = %d, want 401", nr.StatusCode)
+	}
+}
+
+func TestMachineKeyMintsToken(t *testing.T) {
+	ts := newTestServerCfg(t, AuthConfig{
+		SessionTTL:   time.Hour,
+		MaxBodyBytes: 1 << 20,
+		MachineKey:   "secret-machine-key",
+	})
+
+	// Create an org via a superadmin session.
+	r := postJSON(t, ts, "/admin/orgs", adminCookie, map[string]string{"name": "Acme"})
+	var org struct {
+		ID string `json:"id"`
+	}
+	decodeJSON(t, r, &org)
+	if org.ID == "" {
+		t.Fatal("no org id")
+	}
+
+	mint := func(key string) *http.Response {
+		req, _ := http.NewRequest("POST", ts.URL+"/admin/orgs/"+org.ID+"/enrollment-tokens",
+			bytes.NewReader([]byte(`{"max_uses":0}`)))
+		if key != "" {
+			req.Header.Set("X-Machine-Key", key)
+		}
+		resp, err := http.DefaultClient.Do(req)
+		if err != nil {
+			t.Fatal(err)
+		}
+		return resp
+	}
+
+	// Correct machine key, no session cookie → success + token.
+	ok := mint("secret-machine-key")
+	if ok.StatusCode != http.StatusOK {
+		ok.Body.Close()
+		t.Fatalf("machine-key mint code = %d, want 200", ok.StatusCode)
+	}
+	var out struct {
+		Token string `json:"token"`
+	}
+	decodeJSON(t, ok, &out)
+	if out.Token == "" {
+		t.Fatal("machine-key mint returned no token")
+	}
+
+	// Wrong machine key, no session cookie → 401.
+	bad := mint("wrong-machine-key")
+	bad.Body.Close()
+	if bad.StatusCode != http.StatusUnauthorized {
+		t.Fatalf("wrong machine-key mint code = %d, want 401", bad.StatusCode)
+	}
+}
+
 func TestIngestBodyCapReturns413(t *testing.T) {
 	// Body cap small enough that an oversized ingest payload trips it, but large
 	// enough for the org/enroll setup requests below.

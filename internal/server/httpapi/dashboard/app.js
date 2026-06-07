@@ -1,11 +1,6 @@
 "use strict";
 
-const KEY = "redactr_admin_key";
 const app = document.getElementById("app");
-
-function adminKey() { return sessionStorage.getItem(KEY) || ""; }
-function setKey(k) { sessionStorage.setItem(KEY, k); }
-function clearKey() { sessionStorage.removeItem(KEY); }
 
 function toast(msg, isErr) {
   const t = document.getElementById("toast");
@@ -15,13 +10,15 @@ function toast(msg, isErr) {
 }
 
 async function api(method, path, body) {
-  const opts = { method, headers: { "X-Admin-Key": adminKey() } };
+  // The admin session lives in an HttpOnly cookie that JS cannot read; the
+  // browser attaches it automatically on same-origin requests.
+  const opts = { method, headers: {}, credentials: "same-origin" };
   if (body !== undefined) {
     opts.headers["Content-Type"] = "application/json";
     opts.body = JSON.stringify(body);
   }
   const resp = await fetch(path, opts);
-  if (resp.status === 401) { clearKey(); render(); throw new Error("unauthorized"); }
+  if (resp.status === 401) { window.location.href = "/admin/login"; throw new Error("unauthorized"); }
   if (!resp.ok) throw new Error(method + " " + path + " → " + resp.status);
   const ct = resp.headers.get("Content-Type") || "";
   return ct.includes("application/json") ? resp.json() : resp.text();
@@ -38,26 +35,17 @@ function h(tag, attrs, ...kids) {
   return e;
 }
 
-function renderGate() {
-  app.replaceChildren(h("div", { class: "card" },
-    h("h2", {}, "Admin key"),
-    h("p", { class: "empty" }, "Enter the server's admin key (X-Admin-Key)."),
-    (() => {
-      const input = h("input", { type: "password", id: "k", placeholder: "admin key" });
-      const submit = async () => {
-        setKey(input.value.trim());
-        try { await api("GET", "/admin/orgs"); render(); }
-        catch (e) { clearKey(); toast("Invalid admin key", true); }
-      };
-      input.addEventListener("keydown", (ev) => { if (ev.key === "Enter") submit(); });
-      return h("div", {}, input, h("button", { class: "btn", onclick: submit }, "Unlock"));
-    })()
-  ));
+async function logout() {
+  try { await fetch("/admin/logout", { method: "POST", credentials: "same-origin" }); }
+  finally { window.location.href = "/admin/login"; }
 }
 
 async function renderOrgs() {
   const orgs = await api("GET", "/admin/orgs") || [];
-  const list = h("div", { class: "card" }, h("h2", {}, "Organizations"));
+  const list = h("div", { class: "card" },
+    h("div", { class: "row" },
+      h("h2", {}, "Organizations"),
+      h("button", { class: "btn", onclick: logout }, "Logout")));
   if (!orgs.length) list.append(h("p", { class: "empty" }, "No orgs yet."));
   for (const o of orgs) {
     list.append(h("div", { class: "row" },
@@ -191,10 +179,15 @@ async function tabEvents(orgID, panel) {
 
 function fmtTime(t) { if (!t) return "—"; const d = new Date(t); return isNaN(d) ? "—" : d.toLocaleString(); }
 
-function render() {
+async function render() {
   if (eventsTimer) { clearInterval(eventsTimer); eventsTimer = null; }
-  if (!adminKey()) { renderGate(); return; }
-  document.getElementById("whoami").textContent = "admin";
+  // Confirm the session cookie is valid and learn who we are. If the cookie is
+  // missing/expired, api() redirects to /admin/login and throws — so we bail
+  // before rendering any content.
+  let me;
+  try { me = await api("GET", "/admin/me"); }
+  catch (e) { return; }
+  document.getElementById("whoami").textContent = (me && (me.subject || me.role)) || "admin";
   const parts = location.hash.replace(/^#\//, "").split("/");
   if (parts[0] === "org" && parts[1]) renderOrg(parts[1]).catch((e) => toast(e.message, true));
   else renderOrgs().catch((e) => toast(e.message, true));
